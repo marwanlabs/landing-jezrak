@@ -40,7 +40,7 @@
     "body": {
       "id": "top-body",
       "en": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances from one connected commerce foundation — while every Store keeps its own brand, team, and stock ledger.",
-        "ar": "أدر واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية من أساس تجاري واحد مترابط، مع احتفاظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
+        "ar": "منظومة تجارية واحدة تربط واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية، مع احتفاظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
     },
     "premise": {
       "id": "top-premise",
@@ -405,7 +405,7 @@
     "body": {
       "id": "purchasing-body",
       "en": "Manage suppliers and purchase orders, receive into the intended Location, preserve option dimensions, and create or link products from purchase-order expansions without losing how variants map to inventory.",
-        "ar": "أدر الموردين وأوامر الشراء، واستلم في الموقع المقصود، واحتفظ بأبعاد الخيارات، وأنشئ المنتجات أو اربطها من تفاصيل أمر الشراء دون فقدان علاقة التركيبات بالمخزون."
+        "ar": "تدعم إدارة الموردين وأوامر الشراء الاستلام في الموقع المقصود، وحفظ أبعاد الخيارات، وإنشاء المنتجات أو ربطها من تفاصيل أمر الشراء دون فقدان علاقة التركيبات بالمخزون."
     },
     "premise": {
       "id": "purchasing-premise",
@@ -471,7 +471,7 @@
     "body": {
       "id": "orders-body",
       "en": "Search and manage Store orders through controlled status changes, fulfilment, partial or full refunds, exports, customer timelines, reordering, and abandoned-checkout recovery.",
-      "ar": "ابحث في طلبات المتجر وأدرها عبر تغييرات حالة منضبطة وتجهيز الطلبات والاسترداد الجزئي أو الكامل والتصدير والخط الزمني للعميل وإعادة الطلب واسترجاع عمليات الدفع المتروكة."
+      "ar": "توفر إدارة طلبات المتجر تغييرات حالة منضبطة وتجهيز الطلبات والاسترداد الجزئي أو الكامل والتصدير والخط الزمني للعميل وإعادة الطلب واسترجاع عمليات الدفع المتروكة."
     },
     "premise": {
       "id": "orders-premise",
@@ -598,7 +598,7 @@
     "heading": {
       "id": "customers-heading",
       "en": "Build the relationship without mixing customer histories across Stores.",
-        "ar": "أدر علاقة العميل مع الحفاظ على استقلال سجله بين المتاجر."
+        "ar": "إدارة علاقة العميل مع الحفاظ على استقلال سجله بين المتاجر."
     },
     "body": {
       "id": "customers-body",
