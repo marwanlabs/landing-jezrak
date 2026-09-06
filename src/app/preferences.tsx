@@ -81,6 +81,12 @@ export function PreferenceProvider({ children }: { children: ReactNode }) {
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute("content", metadata[locale].description);
+    document
+      .querySelector('meta[property="og:title"]')
+      ?.setAttribute("content", metadata[locale].title);
+    document
+      .querySelector('meta[property="og:description"]')
+      ?.setAttribute("content", metadata[locale].description);
     if (scroll.current) {
       const position = scroll.current;
       const restore = () =>

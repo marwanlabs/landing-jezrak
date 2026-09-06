@@ -29,13 +29,13 @@
     "title": "Hero: One Connected Commerce Root",
     "eyebrow": {
       "id": "top-eyebrow",
-      "en": "Jizrak — connected commerce in one system",
-        "ar": "جِذرك — تجارة مترابطة في نظام واحد"
+      "en": "Jizrak. Connected commerce in one system.",
+        "ar": "جِذرك. تجارة مترابطة في نظام واحد."
     },
     "heading": {
       "id": "top-headline",
-      "en": "One commerce foundation for every Store you build.",
-        "ar": "أساس تجاري واحد لكل متجر تنشئه."
+      "en": "One commerce foundation for every Store.",
+        "ar": "أساس تجاري واحد لكل متجر."
     },
     "body": {
       "id": "top-body",
@@ -44,8 +44,8 @@
     },
     "premise": {
       "id": "top-premise",
-      "en": "Your idea stays yours. Jizrak connects the work behind it.",
-      "ar": "تبقى فكرتك ملكاً لك. وتربط جِذرك العمليات التي تدعمها."
+      "en": "Your idea is yours. Jizrak connects the work that supports it.",
+      "ar": "فكرتك لك. ويربط جِذرك الأعمال التي تدعمها."
     },
     "details": []
   },
@@ -59,13 +59,13 @@
     },
     "heading": {
       "id": "connected-heading",
-      "en": "Keep every Store connected as you grow.",
-        "ar": "ترابط تشغيلي يدعم نمو أعمالك."
+      "en": "Keep every Store connected as your Business grows.",
+        "ar": "أبقِ متاجرك مترابطة مع توسّع نشاطك التجاري."
     },
     "body": {
       "id": "connected-body",
-      "en": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and Store ledgers run on one Business foundation. Each Store stays separate.",
-        "ar": "تعمل الكتالوجات والطلبات والتجهيز والمشتريات والموردون والمالية ودفاتر المتاجر على أساس تجاري واحد، مع بقاء كل متجر مستقلاً."
+      "en": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and Store ledgers share one Business foundation. Each Store stays separate.",
+        "ar": "يجمع أساس تجاري واحد الكتالوج والطلبات وتنفيذ الطلبات والمشتريات والموردين والمالية ودفاتر المتاجر، مع بقاء كل متجر مستقلاً."
     },
     "premise": {
       "id": "connected-premise",
@@ -111,7 +111,7 @@
     "heading": {
       "id": "business-heading",
       "en": "Run multiple brands without mixing their operations.",
-        "ar": "إدارة علامات متعددة مع استقلال عمليات كل متجر."
+        "ar": "شغّل علامات متعددة مع استقلال عمليات كل متجر."
     },
     "body": {
       "id": "business-body",

@@ -15,8 +15,8 @@ import {
 import {
   section,
   copy,
+  narrativeCopy,
   nodes,
-  pair,
   workflowNames,
   type SectionContent,
 } from "../content";
@@ -92,71 +92,43 @@ function Narrative({ id, index }: { id: string; index: number }) {
   if (id === "sell")
     visual = (
       <MiniFlow
-        steps={[
-          pair("discover", "Discover", "الاكتشاف"),
-          pair("choose", "Choose", "الاختيار"),
-          pair("checkout", "Checkout", "إتمام الشراء"),
-        ]}
+        steps={narrativeCopy.sellFlow}
       />
     );
   if (id === "purchasing")
     visual = (
       <MiniFlow
-        steps={[
-          pair("supplier", "Supplier", "المورد"),
-          pair("purchase-order", "Purchase order", "أمر الشراء"),
-          pair("receive-order", "Receive", "استلام"),
-        ]}
+        steps={narrativeCopy.purchasingFlow}
       />
     );
   if (id === "orders")
     visual = (
       <MiniFlow
-        steps={[
-          pair("reserve-order", "Reserve", "حجز"),
-          pair("fulfil", "Fulfil", "تجهيز"),
-          pair("history", "Order history", "سجل الطلبات"),
-        ]}
+        steps={narrativeCopy.ordersFlow}
       />
     );
   if (id === "pos")
     visual = (
       <MiniFlow
-        steps={[
-          pair("open-shift", "Open a shift", "فتح الوردية"),
-          pair("record-sale", "Record a sale", "تسجيل البيع"),
-          pair("receipt", "Issue a receipt", "إصدار الإيصال"),
-        ]}
+        steps={narrativeCopy.posFlow}
       />
     );
   if (id === "customers")
     visual = (
       <MiniFlow
-        steps={[
-          copy.business,
-          copy.storeA,
-          pair("profile", "Store customer profile", "ملف العميل في المتجر"),
-        ]}
+        steps={narrativeCopy.customersFlow}
       />
     );
   if (id === "understand")
     visual = (
       <MiniFlow
-        steps={[
-          pair("sales", "Sales & stock", "المبيعات والمخزون"),
-          pair("records", "Financial records", "السجلات المالية"),
-          pair("reports", "Operational reports", "تقارير التشغيل"),
-        ]}
+        steps={narrativeCopy.understandFlow}
       />
     );
   // Product truths take precedence over the working copy's platform-recovery reference.
   const body =
     id === "operate"
-      ? pair(
-          "operate-body-public",
-          "Business ownership, Store-specific grants, controlled stock movements, auditable events, and private media keep operating boundaries explicit.",
-          "تحافظ ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة على حدود تشغيل واضحة.",
-        )
+      ? narrativeCopy.operateBody
       : content.body;
   return (
     <section
@@ -363,11 +335,7 @@ export function Landing() {
               {atlas.groups?.map((group, i) => {
                 const inventory =
                   group.id === "group-17"
-                    ? pair(
-                        "platform-public",
-                        "Installable PWA and cached assets; web push when configured; Store-aware hosts; managed handles; custom-domain registry; private media.",
-                        "تطبيق قابل للتثبيت وأصول مخزنة؛ إشعارات ويب عند الإعداد؛ عناوين واعية بالمتجر؛ عناوين مُدارة؛ سجل النطاقات؛ وسائط خاصة.",
-                      )
+                    ? narrativeCopy.platform
                     : group.inventory;
                 return (
                   <Disclosure
@@ -485,7 +453,7 @@ export function Landing() {
                 جِذرك
               </span>
             </span>
-            <nav aria-label="Footer">
+            <nav aria-label={copy.footerNav[locale]}>
               <PairedLink text={copy.featureLink} href="#features" />
               <PairedLink text={copy.demoLink} href={config.demo} />
               <PairedLink text={copy.signin} href={config.signin} />

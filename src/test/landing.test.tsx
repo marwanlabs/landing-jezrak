@@ -8,6 +8,7 @@ import {
   usePreferences,
 } from "../app/preferences";
 import { ThemeControl } from "../components/Header";
+import { Brand } from "../components/Primitives";
 import { Disclosure } from "../components/Disclosure";
 import { sections, copy, pair, type BilingualText } from "../content";
 import { validateConfig } from "../../scripts/config-rules";
@@ -67,6 +68,26 @@ describe("bilingual content", () => {
     expect(screen.queryByText("Connected")).not.toBeInTheDocument();
     expect(screen.getAllByRole("heading")).toHaveLength(1);
     expect(document.documentElement).toHaveAttribute("dir", "rtl");
+  });
+  it("preserves the approved bilingual brand lockup", async () => {
+    render(
+      <PreferenceProvider>
+        <Switch />
+        <Brand />
+      </PreferenceProvider>,
+    );
+    expect(
+      screen.getByRole("link", { name: "Jizrak — جِذرك" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Jizrak")).toBeInTheDocument();
+    expect(screen.getByText("جِذرك")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Arabic" }));
+    await waitFor(() =>
+      expect(
+        screen.getByRole("link", { name: "Jizrak — جِذرك" }),
+      ).toBeInTheDocument(),
+    );
+    expect(screen.getByText("Jizrak")).toBeInTheDocument();
   });
   it("persists all three theme choices", async () => {
     render(

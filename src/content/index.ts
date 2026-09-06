@@ -57,8 +57,8 @@ export const copy = {
   location: pair("location-label", "Location", "الموقع"),
   native: pair(
     "native-label",
-    "Built for commerce in the region.",
-    "منظومة للتجارة في المنطقة.",
+    "For Arab businesses.",
+    "للأنشطة التجارية العربية.",
   ),
   stock: pair(
     "stock-label",
@@ -67,8 +67,8 @@ export const copy = {
   ),
   egp: pair(
     "egp-label",
-    "Built for Egyptian commerce.",
-    "مصمم للتجارة في مصر.",
+    "For Egyptian commerce.",
+    "للتجارة في مصر.",
   ),
   currentStep: pair("current-step", "Current step", "الخطوة الحالية"),
   closing: pair(
@@ -78,6 +78,7 @@ export const copy = {
   ),
   featureLink: pair("features-link", "Features", "المزايا"),
   demoLink: pair("demo-link", "Demo", "التجربة"),
+  footerNav: pair("footer-nav", "Footer", "تذييل الصفحة"),
   preview: pair(
     "preview-label",
     "Design preview. Product links will be added when they are ready.",
@@ -135,6 +136,60 @@ export const workflowNames = [
   pair("replenish", "Replenish", "تجديد"),
   pair("understand-step", "Understand", "فهم الأرقام"),
 ];
+export const diagramCopy = {
+  inventoryEquivalent: pair(
+    "inventory-equivalent",
+    "Receive into a Store ledger, reserve for orders, consume on sale, and assemble components into finished stock.",
+    "سجّل الاستلام في دفتر مخزون المتجر، واحجز للطلبات، واستهلك عند البيع، واجمع المكونات في مخزون نهائي.",
+  ),
+  catalogSurfaces: [
+    pair("catalogue-visual", "Catalog", "الكتالوج"),
+    pair("variants-visual", "Variants", "تركيبات المنتج"),
+    pair("stock-visual", "Store ledger", "دفتر مخزون المتجر"),
+  ],
+};
+export const narrativeCopy = {
+  sellFlow: [
+    pair("discover", "Discover", "الاكتشاف"),
+    pair("choose", "Choose", "الاختيار"),
+    pair("checkout", "Checkout", "إتمام الشراء"),
+  ],
+  purchasingFlow: [
+    pair("supplier", "Supplier", "المورد"),
+    pair("purchase-order", "Purchase order", "أمر الشراء"),
+    pair("receive-order", "Receive", "استلام"),
+  ],
+  ordersFlow: [
+    pair("reserve-order", "Reserve", "حجز"),
+    pair("fulfil", "Fulfil", "تجهيز"),
+    pair("history", "Order history", "سجل الطلبات"),
+  ],
+  posFlow: [
+    pair("open-shift", "Open a shift", "فتح الوردية"),
+    pair("record-sale", "Record a sale", "تسجيل البيع"),
+    pair("receipt", "Issue a receipt", "إصدار الإيصال"),
+  ],
+  customersFlow: [
+    copy.business,
+    copy.storeA,
+    pair("profile", "Store customer profile", "ملف العميل في المتجر"),
+  ],
+  understandFlow: [
+    pair("sales", "Sales & stock", "المبيعات والمخزون"),
+    pair("records", "Financial records", "السجلات المالية"),
+    pair("reports", "Operational reports", "تقارير التشغيل"),
+  ],
+  operateBody: pair(
+    "operate-body-public",
+    "Business ownership, Store-specific grants, controlled stock movements, auditable events, and private media keep operating boundaries explicit.",
+    "تحافظ ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة على حدود تشغيل واضحة.",
+  ),
+  platform: pair(
+    "platform-public",
+    "Installable PWA and cached assets; web push when configured; Store-aware hosts; managed handles; custom-domain registry; private media.",
+    "تطبيق قابل للتثبيت وأصول مخزنة؛ إشعارات ويب عند الإعداد؛ عناوين واعية بالمتجر؛ عناوين مُدارة؛ سجل النطاقات؛ وسائط خاصة.",
+  ),
+};
 export const metadata = {
   en: {
     title: "Jizrak — connected commerce for every Store",
@@ -161,6 +216,7 @@ export const ui = {
       localeStatus: "Language preference changed to English.",
       themeStatus: "Color theme changed.",
       current: "Current section",
+      mainNav: "Main navigation",
     },
   },
   ar: {
@@ -176,6 +232,7 @@ export const ui = {
       localeStatus: "تم تغيير تفضيل اللغة إلى العربية.",
       themeStatus: "تم تغيير سمة الألوان.",
       current: "القسم الحالي",
+      mainNav: "التنقل الرئيسي",
     },
   },
 };

@@ -12,7 +12,7 @@ import {
   Link2,
   ShieldCheck,
 } from "lucide-react";
-import { nodes, copy, flow, pair, type BilingualText } from "../content";
+import { nodes, copy, diagramCopy, flow, type BilingualText } from "../content";
 import { BilingualBlock } from "./BilingualBlock";
 import { RootMark } from "./Primitives";
 const icons = [
@@ -46,7 +46,7 @@ export function RootNetwork({
       aria-hidden="true"
       data-active-path={active}
     >
-      <div className="diagram-coordinate coord-start">J / 01</div>
+      <div className="diagram-coordinate coord-start">01</div>
       <div className="diagram-coordinate coord-end">
         <BilingualBlock inline text={copy.rootSystem} />
       </div>
@@ -166,25 +166,16 @@ export function InventoryDiagram() {
       </ol>
       <figcaption>
         <BilingualBlock
-          text={pair(
-            "inventory-equivalent",
-            "Receive into a Store ledger, reserve for orders, consume on sale, and assemble components into finished stock.",
-            "سجّل الاستلام في دفتر مخزون المتجر، واحجز للطلبات، واستهلك عند البيع، واجمع المكونات في مخزون نهائي.",
-          )}
+          text={diagramCopy.inventoryEquivalent}
         />
       </figcaption>
     </figure>
   );
 }
-const surfaceLabels = [
-  pair("catalogue-visual", "Catalog", "الكتالوج"),
-  pair("variants-visual", "Variants", "تركيبات المنتج"),
-  pair("stock-visual", "Store ledger", "دفتر مخزون المتجر"),
-];
 export function CatalogDiagram() {
   return (
     <div className="catalog-diagram" aria-hidden="true">
-      {surfaceLabels.map((text, i) => (
+      {diagramCopy.catalogSurfaces.map((text, i) => (
         <div className="catalog-stage" key={text.id}>
           <span className="stage-index">0{i + 1}</span>
           {i === 0 ? (

@@ -99,7 +99,7 @@ export function Header() {
           <Brand />
           <nav
             className="desktop-nav"
-            aria-label={locale === "ar" ? "التنقل الرئيسي" : "Main navigation"}
+            aria-label={t("mainNav")}
           >
             {links}
           </nav>
@@ -138,7 +138,7 @@ export function Header() {
           <nav
             id="mobile-navigation"
             className="mobile-nav container"
-            aria-label={locale === "ar" ? "التنقل الرئيسي" : "Main navigation"}
+            aria-label={t("mainNav")}
           >
             {links}
             <ThemeControl />
