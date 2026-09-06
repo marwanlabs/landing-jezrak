@@ -93,8 +93,8 @@ function Narrative({ id, index }: { id: string; index: number }) {
     visual = (
       <MiniFlow
         steps={[
-          pair("discover", "Discover", "اكتشف"),
-          pair("choose", "Choose", "اختر"),
+          pair("discover", "Discover", "الاكتشاف"),
+          pair("choose", "Choose", "الاختيار"),
           pair("checkout", "Checkout", "إتمام الشراء"),
         ]}
       />
@@ -123,9 +123,9 @@ function Narrative({ id, index }: { id: string; index: number }) {
     visual = (
       <MiniFlow
         steps={[
-          pair("open-shift", "Open a shift", "افتح الوردية"),
-          pair("record-sale", "Record a sale", "سجّل البيع"),
-          pair("receipt", "Issue a receipt", "اعرض الإيصال"),
+          pair("open-shift", "Open a shift", "فتح الوردية"),
+          pair("record-sale", "Record a sale", "تسجيل البيع"),
+          pair("receipt", "Issue a receipt", "إصدار الإيصال"),
         ]}
       />
     );
