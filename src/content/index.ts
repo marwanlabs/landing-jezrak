@@ -58,7 +58,7 @@ export const copy = {
   native: pair(
     "native-label",
     "Arabic-first. Built for Arab businesses.",
-    "بالعربية أولاً. للأنشطة التجارية العربية.",
+    "منظومة مصممة بالعربية لاحتياجات التجارة في المنطقة.",
   ),
   stock: pair(
     "stock-label",
