@@ -29,23 +29,23 @@
     "title": "Hero: One Connected Commerce Root",
     "eyebrow": {
       "id": "top-eyebrow",
-      "en": "Jizrak — commerce rooted in one system",
-        "ar": "جِذرك — تجارة مترابطة في منظومة واحدة"
+      "en": "Jizrak — connected commerce in one system",
+        "ar": "جِذرك — تجارة مترابطة في نظام واحد"
     },
     "heading": {
       "id": "top-headline",
-      "en": "A foundation that grows with every Store you build.",
-        "ar": "أساس ينمو مع كل متجر تنشئه."
+      "en": "One commerce foundation for every Store you build.",
+        "ar": "أساس تجاري واحد لكل متجر تنشئه."
     },
     "body": {
       "id": "top-body",
-      "en": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances from one connected commerce foundation — while every Store keeps its own brand, team, and stock ledger.",
-        "ar": "منظومة تجارية واحدة تربط واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية، مع احتفاظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
+      "en": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances in one system. Every Store keeps its own brand, team, and stock ledger.",
+        "ar": "يجمع نظام واحد واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية. ويحتفظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
     },
     "premise": {
       "id": "top-premise",
-      "en": "Your idea stays yours. Jizrak keeps the operational roots connected.",
-      "ar": "تبقى فكرتك ملكاً لك. وتجمع جِذرك عملياتك التجارية في منظومة واحدة."
+      "en": "Your idea stays yours. Jizrak connects the work behind it.",
+      "ar": "تبقى فكرتك ملكاً لك. وتربط جِذرك العمليات التي تدعمها."
     },
     "details": []
   },
@@ -54,18 +54,18 @@
     "title": "Root Map: The Work Stays Connected",
     "eyebrow": {
       "id": "connected-eyebrow",
-      "en": "One connected root",
-        "ar": "أساس واحد مترابط"
+      "en": "One connected foundation",
+        "ar": "أساس تشغيلي واحد"
     },
     "heading": {
       "id": "connected-heading",
-      "en": "The work stays connected as you grow.",
-        "ar": "تبقى عملياتك مترابطة مع نمو أعمالك."
+      "en": "Keep every Store connected as you grow.",
+        "ar": "ترابط تشغيلي يدعم نمو أعمالك."
     },
     "body": {
       "id": "connected-body",
-      "en": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and each Store ledger share one clear Business foundation — without blending the Stores you operate.",
-        "ar": "تجتمع الكتالوجات والطلبات والتجهيز والمشتريات والموردون والمالية ودفتر كل متجر ضمن أساس واضح للنشاط التجاري، مع الحفاظ على استقلال المتاجر التي تديرها."
+      "en": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and Store ledgers run on one Business foundation. Each Store stays separate.",
+        "ar": "تعمل الكتالوجات والطلبات والتجهيز والمشتريات والموردون والمالية ودفاتر المتاجر على أساس تجاري واحد، مع بقاء كل متجر مستقلاً."
     },
     "premise": {
       "id": "connected-premise",
@@ -110,8 +110,8 @@
     },
     "heading": {
       "id": "business-heading",
-      "en": "Grow more than one brand without mixing their operations.",
-        "ar": "وسّع أعمالك عبر علامات متعددة مع الحفاظ على استقلال عمليات كل متجر."
+      "en": "Run multiple brands without mixing their operations.",
+        "ar": "إدارة علامات متعددة مع استقلال عمليات كل متجر."
     },
     "body": {
       "id": "business-body",
@@ -166,12 +166,12 @@
     },
     "heading": {
       "id": "sell-heading",
-      "en": "A Storefront built around discovery, confidence, and a safe checkout.",
-        "ar": "واجهة متجر مصممة لاكتشاف المنتجات واتخاذ قرار الشراء بثقة."
+      "en": "A Storefront that helps customers find products and check out with confidence.",
+        "ar": "واجهة متجر تساعد العملاء على العثور على المنتجات وإتمام الشراء بثقة."
     },
     "body": {
       "id": "sell-body",
-      "en": "Give each Store its own branded shopping experience, from search and product discovery through variant selection, cart, shipping, payment choice, confirmation, and post-purchase account journeys.",
+      "en": "Give each Store a branded shopping experience, from search and product selection through cart, shipping, payment, confirmation, and post-purchase service.",
       "ar": "امنح كل متجر تجربة تسوق بعلامته، من البحث واكتشاف المنتجات واختيار الخيارات إلى السلة والشحن وطريقة الدفع والتأكيد وخدمات ما بعد الشراء."
     },
     "premise": {
@@ -237,8 +237,8 @@
     },
     "heading": {
       "id": "catalog-heading",
-      "en": "From a simple product to a full variant and bundle catalog.",
-        "ar": "من منتج واحد إلى كتالوج متكامل بالخيارات والباقات."
+      "en": "From a single product to a catalog with variants and bundles.",
+        "ar": "من منتج واحد إلى كتالوج يضم الخيارات والباقات."
     },
     "body": {
       "id": "catalog-body",
@@ -318,13 +318,13 @@
     "title": "Inventory, Locations, and Assembly",
     "eyebrow": {
       "id": "inventory-eyebrow",
-      "en": "One inventory truth, wherever you sell",
-      "ar": "حقيقة مخزون واحدة، أينما تبيع"
+      "en": "Accurate inventory, wherever you sell",
+      "ar": "مخزون دقيق أينما تبيع"
     },
     "heading": {
       "id": "inventory-heading",
-      "en": "Know what can be sold, what it depends on, and where it moved.",
-        "ar": "حدّد ما يتاح للبيع، ومكوناته، ومسار حركته."
+      "en": "Know what you can sell, what it requires, and where it moved.",
+        "ar": "معرفة ما يتاح للبيع، وما يتطلبه، ومسار حركته."
     },
     "body": {
       "id": "inventory-body",
@@ -394,12 +394,12 @@
     "title": "Purchasing and Suppliers",
     "eyebrow": {
       "id": "purchasing-eyebrow",
-      "en": "Replenish with context",
-        "ar": "أعد تزويد المخزون بسياق كامل"
+      "en": "Replenish with the full product context",
+        "ar": "تزويد المخزون بسياق المنتج الكامل"
     },
     "heading": {
       "id": "purchasing-heading",
-      "en": "Carry product detail from the purchase order into sellable inventory.",
+      "en": "Carry product detail from purchase order to sellable inventory.",
       "ar": "انقل تفاصيل المنتج من أمر الشراء إلى مخزون جاهز للبيع."
     },
     "body": {
@@ -460,13 +460,13 @@
     "title": "Orders, Fulfilment, Refunds, and Recovery",
     "eyebrow": {
       "id": "orders-eyebrow",
-      "en": "Orders end to end",
-        "ar": "إدارة الطلبات من البداية إلى النهاية"
+      "en": "Order management",
+        "ar": "إدارة الطلبات"
     },
     "heading": {
       "id": "orders-heading",
-      "en": "Keep the order, stock, payment record, and customer history aligned.",
-        "ar": "حافظ على اتساق الطلب والمخزون وسجل الدفع وتاريخ العميل."
+      "en": "Keep orders, stock, payments, and customer history aligned.",
+        "ar": "اتساق الطلبات والمخزون والمدفوعات وسجل العميل."
     },
     "body": {
       "id": "orders-body",
@@ -526,8 +526,8 @@
     },
     "heading": {
       "id": "pos-heading",
-      "en": "A register that sells from the same inventory discipline.",
-        "ar": "نقطة بيع تعتمد نظام المخزون المنضبط ذاته."
+      "en": "A register built on the same inventory rules.",
+        "ar": "نقطة بيع تعتمد قواعد المخزون نفسها."
     },
     "body": {
       "id": "pos-body",
@@ -597,8 +597,8 @@
     },
     "heading": {
       "id": "customers-heading",
-      "en": "Build the relationship without mixing customer histories across Stores.",
-        "ar": "إدارة علاقة العميل مع الحفاظ على استقلال سجله بين المتاجر."
+      "en": "Keep customer history separate for every Store.",
+        "ar": "سجل عميل مستقل لكل متجر."
     },
     "body": {
       "id": "customers-body",
@@ -668,13 +668,13 @@
     "title": "Finance and Analytics",
     "eyebrow": {
       "id": "understand-eyebrow",
-      "en": "See the operating picture",
-        "ar": "رؤية متكاملة للتشغيل"
+      "en": "Measure Store performance",
+        "ar": "قياس أداء المتجر"
     },
     "heading": {
       "id": "understand-heading",
-      "en": "Connect stock and sales to the numbers that explain the Business.",
-        "ar": "اربط المخزون والمبيعات بالمؤشرات التي تفسر أداء نشاطك."
+      "en": "Use stock and sales data to understand the Business.",
+        "ar": "فهم أداء النشاط من بيانات المخزون والمبيعات."
     },
     "body": {
       "id": "understand-body",
@@ -784,13 +784,13 @@
     "title": "Store Identity, Settings, SEO, and PWA",
     "eyebrow": {
       "id": "identity-eyebrow",
-      "en": "Your Store stays your brand",
-        "ar": "يبقى متجرك بهويته الخاصة"
+      "en": "Each Store keeps its identity",
+        "ar": "لكل متجر هويته الخاصة"
     },
     "heading": {
       "id": "identity-heading",
-      "en": "Control how every Store looks, speaks, sells, and appears in search.",
-        "ar": "تحكم في هوية كل متجر ولغته وآلية البيع وظهوره في البحث."
+      "en": "Set each Store's identity, language, selling rules, and search presence.",
+        "ar": "تحديد هوية كل متجر ولغته وقواعد البيع وظهوره في البحث."
     },
     "body": {
       "id": "identity-body",
@@ -870,13 +870,13 @@
     "title": "Access, Isolation, Safety, and Recovery",
     "eyebrow": {
       "id": "operate-eyebrow",
-      "en": "Control without confusion",
-        "ar": "ضوابط واضحة وحدود محددة"
+      "en": "Clear access and Store boundaries",
+        "ar": "صلاحيات واضحة وحدود محددة للمتجر"
     },
     "heading": {
       "id": "operate-heading",
-      "en": "Give people the access they need and keep every Store boundary explicit.",
-        "ar": "امنح كل مستخدم الصلاحيات اللازمة، وحافظ على حدود كل متجر بوضوح."
+      "en": "Give people the access they need while keeping Store boundaries clear.",
+        "ar": "الصلاحيات اللازمة للمستخدمين مع حدود واضحة لكل متجر."
     },
     "body": {
       "id": "operate-body",
@@ -951,18 +951,18 @@
     "title": "Complete Feature Atlas",
     "eyebrow": {
       "id": "features-eyebrow",
-      "en": "The complete operating system",
-        "ar": "منظومة التشغيل المتكاملة"
+      "en": "What Jizrak covers",
+        "ar": "ما تغطيه جِذرك"
     },
     "heading": {
       "id": "features-heading",
-      "en": "Every connected capability, in one place.",
-        "ar": "جميع القدرات المترابطة في مكان واحد."
+      "en": "Commerce operations in one place.",
+        "ar": "عمليات التجارة في مكان واحد."
     },
     "body": {
       "id": "features-introduction",
-      "en": "Open any group to see the detailed workflows Jizrak connects. Nothing here replaces the product itself; it gives your team a clear map of what can be explored.",
-        "ar": "استعرض كل مجموعة للتعرف إلى تفاصيل سير العمل التي تجمعها جِذرك. لا تحل هذه القائمة محل تجربة المنتج، لكنها تقدم لفريقك خريطة واضحة للقدرات المتاحة للاستكشاف."
+      "en": "Open a group to see the workflows it covers. This list shows the product's scope; it does not replace a product walkthrough.",
+        "ar": "افتح أي مجموعة للاطلاع على سير العمل الذي تغطيه. توضح هذه القائمة نطاق المنتج، ولا تغني عن استعراضه."
     },
     "premise": {
       "id": "features-premise",
@@ -1285,18 +1285,18 @@
     "title": "Demo Conversion",
     "eyebrow": {
       "id": "demo-eyebrow",
-      "en": "See the connected workflow",
-        "ar": "اطّلع على سير العمل المترابط"
+      "en": "See how the workflow connects",
+        "ar": "اطّلع على ترابط سير العمل"
     },
     "heading": {
       "id": "demo-heading",
-      "en": "Explore a demonstration Store before you start.",
-        "ar": "استكشف متجراً تجريبياً قبل بدء نشاطك التجاري."
+      "en": "Explore a demonstration Store.",
+        "ar": "استكشف المتجر التجريبي."
     },
     "body": {
       "id": "demo-body",
-      "en": "Follow products from discovery through cart and checkout, then explore how Store operations connect catalog, stock, purchasing, orders, customers, finance, and POS. Demo data demonstrates workflows; it is not customer proof.",
-        "ar": "تابع المنتجات من الاكتشاف إلى السلة والدفع، ثم استكشف كيفية ربط عمليات المتجر بالكتالوج والمخزون والمشتريات والطلبات والعملاء والمالية ونقطة البيع. تشرح البيانات التجريبية آلية العمل ولا تمثل نتائج فعلية لعملاء."
+      "en": "Follow a product from discovery to checkout. Then see how catalog, stock, purchasing, orders, customers, finance, and POS connect. The demo uses sample data.",
+        "ar": "تابع المنتج من الاكتشاف إلى إتمام الشراء، ثم اطّلع على ترابط الكتالوج والمخزون والمشتريات والطلبات والعملاء والمالية ونقطة البيع. تستخدم التجربة بيانات نموذجية."
     },
     "premise": {
       "id": "demo-premise",
@@ -1315,13 +1315,13 @@
     },
     "heading": {
       "id": "start-heading",
-      "en": "Build your brand on roots that stay connected.",
-        "ar": "ابنِ علامتك التجارية على أساس يبقى مترابطاً."
+      "en": "Build your brand on a connected commerce foundation.",
+        "ar": "ابنِ علامتك التجارية على أساس تجاري مترابط."
     },
     "body": {
       "id": "start-body",
-      "en": "Start with one Business and give every Store a clear place to grow.",
-        "ar": "ابدأ بنشاط تجاري واحد، وامنح كل متجر مساراً واضحاً للنمو."
+      "en": "Start with one Business. Add Stores when you need them.",
+        "ar": "ابدأ بنشاط تجاري واحد، وأضف المتاجر عند الحاجة."
     },
     "premise": {
       "id": "start-premise",

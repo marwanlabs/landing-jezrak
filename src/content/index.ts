@@ -35,14 +35,14 @@ export const copy = {
   lockup: pair("lockup", "Jizrak", "جِذرك"),
   detail: pair(
     "workflow-detail",
-    "Explore the workflows",
-    "استعرض تفاصيل سير العمل",
+    "View workflow details",
+    "عرض تفاصيل سير العمل",
   ),
   close: pair("close-detail", "Workflow details", "تفاصيل سير العمل"),
   rootLabel: pair(
     "root-label",
-    "Your commerce, connected.",
-    "تجارة مترابطة بمنظومة واحدة.",
+    "Connected commerce for every Store.",
+    "تجارة مترابطة لكل متجر.",
   ),
   ledgerNote: pair(
     "ledger-note",
@@ -57,18 +57,18 @@ export const copy = {
   location: pair("location-label", "Location", "الموقع"),
   native: pair(
     "native-label",
-    "Arabic-first. Built for Arab businesses.",
-    "منظومة مصممة بالعربية لاحتياجات التجارة في المنطقة.",
+    "Built for commerce in the region.",
+    "منظومة للتجارة في المنطقة.",
   ),
   stock: pair(
     "stock-label",
-    "Independent Stores. Connected operations.",
-    "متاجر مستقلة. عمليات مترابطة.",
+    "Independent Stores. Shared operations.",
+    "متاجر مستقلة وعمليات مشتركة.",
   ),
   egp: pair(
     "egp-label",
-    "Rooted in Egyptian commerce.",
-    "مصمم للتجارة المصرية.",
+    "Built for Egyptian commerce.",
+    "مصمم للتجارة في مصر.",
   ),
   currentStep: pair("current-step", "Current step", "الخطوة الحالية"),
   closing: pair(
@@ -80,23 +80,23 @@ export const copy = {
   demoLink: pair("demo-link", "Demo", "التجربة"),
   preview: pair(
     "preview-label",
-    "Design preview · Product journeys await deployment verification.",
-    "معاينة التصميم · مسارات المنتج بانتظار التحقق في النسخة المنشورة.",
+    "Design preview. Product links will be added when they are ready.",
+    "معاينة للتصميم. تُضاف روابط المنتج عند جاهزيتها.",
   ),
   startPending: pair(
     "start-pending",
-    "Business onboarding will be available here when the launch destination is confirmed.",
-    "سيكون بدء النشاط التجاري متاحاً هنا عند تأكيد رابط الإطلاق.",
+    "Business onboarding will be linked here when it is ready.",
+    "يُضاف رابط بدء النشاط التجاري هنا عند جاهزيته.",
   ),
   demoPending: pair(
     "demo-pending",
-    "The demonstration Store will be linked here when its destination is confirmed.",
-    "سيتم ربط المتجر التجريبي هنا عند تأكيد وجهته.",
+    "The demonstration Store will be linked here when it is ready.",
+    "يُضاف رابط المتجر التجريبي هنا عند جاهزيته.",
   ),
   signPending: pair(
     "sign-pending",
-    "The sign-in destination has not been configured for this preview.",
-    "لم يتم إعداد رابط تسجيل الدخول لهذه المعاينة.",
+    "Sign-in will be linked here when it is ready.",
+    "يُضاف رابط تسجيل الدخول هنا عند جاهزيته.",
   ),
   error: pair(
     "error",
@@ -144,7 +144,7 @@ export const metadata = {
   ar: {
     title: "جِذرك — تجارة مترابطة لكل متجر",
     description:
-      "إدارة المتاجر بعلاماتها والكتالوج والطلبات والمخزون والمشتريات والعملاء والمالية ونقاط البيع ضمن نظام تجاري واحد صُمم بالعربية أولاً لاحتياجات الأنشطة العربية.",
+      "نظام واحد لإدارة المتاجر بعلاماتها والكتالوج والطلبات والمخزون والمشتريات والعملاء والمالية ونقاط البيع، مصمم للتجارة في المنطقة.",
   },
 };
 export const ui = {
