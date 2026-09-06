@@ -169,7 +169,7 @@ export function InventoryDiagram() {
           text={pair(
             "inventory-equivalent",
             "Receive into a Store ledger, reserve for orders, consume on sale, and assemble components into finished stock.",
-            "استلم في دفتر مخزون المتجر، واحجز للطلبات، واستهلك عند البيع، وجمّع المكونات إلى مخزون نهائي.",
+            "سجّل الاستلام في دفتر مخزون المتجر، واحجز للطلبات، واستهلك عند البيع، واجمع المكونات في مخزون نهائي.",
           )}
         />
       </figcaption>

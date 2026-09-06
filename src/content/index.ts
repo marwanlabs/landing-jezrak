@@ -36,13 +36,13 @@ export const copy = {
   detail: pair(
     "workflow-detail",
     "Explore the workflows",
-    "استكشف تفاصيل العمل",
+    "استعرض تفاصيل سير العمل",
   ),
   close: pair("close-detail", "Workflow details", "تفاصيل سير العمل"),
   rootLabel: pair(
     "root-label",
     "Your commerce, connected.",
-    "تجارتك، مترابطة.",
+    "تجارة مترابطة بمنظومة واحدة.",
   ),
   ledgerNote: pair(
     "ledger-note",
@@ -68,7 +68,7 @@ export const copy = {
   egp: pair(
     "egp-label",
     "Rooted in Egyptian commerce.",
-    "متجذّر في التجارة المصرية.",
+    "مصمم للتجارة المصرية.",
   ),
   currentStep: pair("current-step", "Current step", "الخطوة الحالية"),
   closing: pair(
@@ -107,7 +107,7 @@ export const copy = {
   terms: pair("terms", "Terms", "الشروط"),
 };
 export const nav = [
-  { id: "connected", en: "How it connects", ar: "كيف تتصل المنظومة" },
+  { id: "connected", en: "How it connects", ar: "آلية ترابط المنظومة" },
   { id: "sell", en: "Sell", ar: "البيع" },
   { id: "operate", en: "Operate", ar: "التشغيل" },
   { id: "understand", en: "Understand", ar: "فهم الأرقام" },

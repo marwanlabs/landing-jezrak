@@ -30,22 +30,22 @@
     "eyebrow": {
       "id": "top-eyebrow",
       "en": "Jizrak — commerce rooted in one system",
-      "ar": "جِذرك — تجارة متصلة في نظام واحد"
+        "ar": "جِذرك — تجارة مترابطة في منظومة واحدة"
     },
     "heading": {
       "id": "top-headline",
       "en": "A foundation that grows with every Store you build.",
-      "ar": "أساس بيكبر مع كل متجر تبنيه."
+        "ar": "أساس ينمو مع كل متجر تنشئه."
     },
     "body": {
       "id": "top-body",
       "en": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances from one connected commerce foundation — while every Store keeps its own brand, team, and stock ledger.",
-      "ar": "أدر واجهة متجرك ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية من أساس تجاري واحد ومترابط — مع احتفاظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
+        "ar": "أدر واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية من أساس تجاري واحد مترابط، مع احتفاظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
     },
     "premise": {
       "id": "top-premise",
       "en": "Your idea stays yours. Jizrak keeps the operational roots connected.",
-      "ar": "فكرتك تفضل فكرتك. جِذرك بيربط جذور التشغيل مع بعض."
+      "ar": "تبقى فكرتك ملكاً لك. وتجمع جِذرك عملياتك التجارية في منظومة واحدة."
     },
     "details": []
   },
@@ -55,17 +55,17 @@
     "eyebrow": {
       "id": "connected-eyebrow",
       "en": "One connected root",
-      "ar": "جذر واحد متصل"
+        "ar": "أساس واحد مترابط"
     },
     "heading": {
       "id": "connected-heading",
       "en": "The work stays connected as you grow.",
-      "ar": "الشغل يفضل متصل وإنت بتكبر."
+        "ar": "تبقى عملياتك مترابطة مع نمو أعمالك."
     },
     "body": {
       "id": "connected-body",
       "en": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and each Store ledger share one clear Business foundation — without blending the Stores you operate.",
-      "ar": "الكتالوج والطلبات والتجهيز والمشتريات والموردون والمالية ودفتر كل متجر يجتمعون على أساس واضح للنشاط التجاري — من غير ما المتاجر التي تديرها تختلط ببعض."
+        "ar": "تجتمع الكتالوجات والطلبات والتجهيز والمشتريات والموردون والمالية ودفتر كل متجر ضمن أساس واضح للنشاط التجاري، مع الحفاظ على استقلال المتاجر التي تديرها."
     },
     "premise": {
       "id": "connected-premise",
@@ -81,7 +81,7 @@
       {
         "id": "connected-detail-2",
         "en": "Sell it through the Storefront or POS against the correct Store ledger.",
-        "ar": "بِعه من واجهة المتجر أو نقطة البيع من دفتر مخزون المتجر الصحيح."
+        "ar": "نفّذ البيع من واجهة المتجر أو نقطة البيع باستخدام دفتر مخزون المتجر الصحيح."
       },
       {
         "id": "connected-detail-3",
@@ -91,12 +91,12 @@
       {
         "id": "connected-detail-4",
         "en": "Replenish through suppliers, purchase orders, receiving, or assembly.",
-        "ar": "جدّد المخزون عبر الموردين وأوامر الشراء والاستلام أو التجميع."
+        "ar": "أعد تزويد المخزون عبر الموردين وأوامر الشراء والاستلام أو التجميع."
       },
       {
         "id": "connected-detail-5",
         "en": "Follow orders, refunds, costs, and performance without rebuilding the story in spreadsheets.",
-        "ar": "تابع الطلبات والاستردادات والتكاليف والأداء من غير إعادة تجميع الصورة في ملفات منفصلة."
+        "ar": "تابع الطلبات والاستردادات والتكاليف والأداء دون إعادة تجميع البيانات في ملفات منفصلة."
       }
     ]
   },
@@ -111,7 +111,7 @@
     "heading": {
       "id": "business-heading",
       "en": "Grow more than one brand without mixing their operations.",
-      "ar": "كبّر أكتر من علامة من غير ما عمليات متاجرك تختلط."
+        "ar": "وسّع أعمالك عبر علامات متعددة مع الحفاظ على استقلال عمليات كل متجر."
     },
     "body": {
       "id": "business-body",
@@ -162,12 +162,12 @@
     "eyebrow": {
       "id": "sell-eyebrow",
       "en": "Sell online",
-      "ar": "البيع أونلاين"
+        "ar": "البيع عبر الإنترنت"
     },
     "heading": {
       "id": "sell-heading",
       "en": "A Storefront built around discovery, confidence, and a safe checkout.",
-      "ar": "واجهة متجر تساعد العميل يكتشف ويختار ويكمل شراءه بثقة."
+        "ar": "واجهة متجر مصممة لاكتشاف المنتجات واتخاذ قرار الشراء بثقة."
     },
     "body": {
       "id": "sell-body",
@@ -233,12 +233,12 @@
     "eyebrow": {
       "id": "catalog-eyebrow",
       "en": "Shape the offer",
-      "ar": "كوّن عرضك"
+        "ar": "صمّم عرضك التجاري"
     },
     "heading": {
       "id": "catalog-heading",
       "en": "From a simple product to a full variant and bundle catalog.",
-      "ar": "من منتج بسيط إلى كتالوج كامل بالخيارات والباقات."
+        "ar": "من منتج واحد إلى كتالوج متكامل بالخيارات والباقات."
     },
     "body": {
       "id": "catalog-body",
@@ -324,12 +324,12 @@
     "heading": {
       "id": "inventory-heading",
       "en": "Know what can be sold, what it depends on, and where it moved.",
-      "ar": "اعرف ما يمكن بيعه، وممَّ يتكوّن، وأين تحرّك."
+        "ar": "حدّد ما يتاح للبيع، ومكوناته، ومسار حركته."
     },
     "body": {
       "id": "inventory-body",
       "en": "Storefront and POS availability come back to controlled Store ledgers at Business-owned Locations. Products can link to finished inventory or depend on several components, so orderability reflects the materials actually available.",
-      "ar": "ترجع إتاحة المنتجات في واجهة المتجر ونقطة البيع إلى دفاتر مخزون منضبطة داخل مواقع يملكها النشاط. يمكن ربط المنتج بمخزون نهائي أو بعدة مكونات، فتعبّر الكمية القابلة للبيع عن المواد المتاحة فعلاً."
+        "ar": "تستند إتاحة المنتجات في واجهة المتجر ونقطة البيع إلى دفاتر مخزون منضبطة داخل مواقع يملكها النشاط التجاري. ويمكن ربط المنتج بمخزون نهائي أو بعدة مكونات، فتعبّر الكمية القابلة للبيع عن المواد المتاحة فعلياً."
     },
     "premise": {
       "id": "inventory-premise",
@@ -395,7 +395,7 @@
     "eyebrow": {
       "id": "purchasing-eyebrow",
       "en": "Replenish with context",
-      "ar": "جدّد مخزونك بسياقه الكامل"
+        "ar": "أعد تزويد المخزون بسياق كامل"
     },
     "heading": {
       "id": "purchasing-heading",
@@ -405,7 +405,7 @@
     "body": {
       "id": "purchasing-body",
       "en": "Manage suppliers and purchase orders, receive into the intended Location, preserve option dimensions, and create or link products from purchase-order expansions without losing how variants map to inventory.",
-      "ar": "أدر الموردين وأوامر الشراء، واستلم في الموقع المقصود، واحتفظ بأبعاد الخيارات، وأنشئ المنتجات أو اربطها من تفاصيل أمر الشراء من غير فقدان علاقة التركيبات بالمخزون."
+        "ar": "أدر الموردين وأوامر الشراء، واستلم في الموقع المقصود، واحتفظ بأبعاد الخيارات، وأنشئ المنتجات أو اربطها من تفاصيل أمر الشراء دون فقدان علاقة التركيبات بالمخزون."
     },
     "premise": {
       "id": "purchasing-premise",
@@ -461,12 +461,12 @@
     "eyebrow": {
       "id": "orders-eyebrow",
       "en": "Orders end to end",
-      "ar": "الطلبات من البداية للنهاية"
+        "ar": "إدارة الطلبات من البداية إلى النهاية"
     },
     "heading": {
       "id": "orders-heading",
       "en": "Keep the order, stock, payment record, and customer history aligned.",
-      "ar": "خلّي الطلب والمخزون وسجل الدفع وتاريخ العميل متوافقين."
+        "ar": "حافظ على اتساق الطلب والمخزون وسجل الدفع وتاريخ العميل."
     },
     "body": {
       "id": "orders-body",
@@ -527,7 +527,7 @@
     "heading": {
       "id": "pos-heading",
       "en": "A register that sells from the same inventory discipline.",
-      "ar": "صندوق بيع يعمل من نفس نظام المخزون المنضبط."
+        "ar": "نقطة بيع تعتمد نظام المخزون المنضبط ذاته."
     },
     "body": {
       "id": "pos-body",
@@ -593,12 +593,12 @@
     "eyebrow": {
       "id": "customers-eyebrow",
       "en": "Know each Store's customers",
-      "ar": "اعرف عملاء كل متجر"
+        "ar": "إدارة عملاء كل متجر"
     },
     "heading": {
       "id": "customers-heading",
       "en": "Build the relationship without mixing customer histories across Stores.",
-      "ar": "ابنِ علاقة العميل من غير خلط تاريخه بين المتاجر."
+        "ar": "أدر علاقة العميل مع الحفاظ على استقلال سجله بين المتاجر."
     },
     "body": {
       "id": "customers-body",
@@ -669,17 +669,17 @@
     "eyebrow": {
       "id": "understand-eyebrow",
       "en": "See the operating picture",
-      "ar": "شوف صورة التشغيل كاملة"
+        "ar": "رؤية متكاملة للتشغيل"
     },
     "heading": {
       "id": "understand-heading",
       "en": "Connect stock and sales to the numbers that explain the Business.",
-      "ar": "اربط المخزون والمبيعات بالأرقام التي تشرح نشاطك."
+        "ar": "اربط المخزون والمبيعات بالمؤشرات التي تفسر أداء نشاطك."
     },
     "body": {
       "id": "understand-body",
       "en": "Follow Store performance by date range, understand product and customer patterns, and maintain core accounting records without separating commerce from its financial consequences.",
-      "ar": "تابع أداء المتجر حسب الفترة، وافهم أنماط المنتجات والعملاء، واحتفظ بالسجلات المحاسبية الأساسية من غير فصل التجارة عن نتائجها المالية."
+        "ar": "تابع أداء المتجر حسب الفترة، وافهم أنماط المنتجات والعملاء، واحتفظ بالسجلات المحاسبية الأساسية دون فصل العمليات التجارية عن نتائجها المالية."
     },
     "premise": {
       "id": "understand-premise",
@@ -785,12 +785,12 @@
     "eyebrow": {
       "id": "identity-eyebrow",
       "en": "Your Store stays your brand",
-      "ar": "متجرك يفضل بعلامتك"
+        "ar": "يبقى متجرك بهويته الخاصة"
     },
     "heading": {
       "id": "identity-heading",
       "en": "Control how every Store looks, speaks, sells, and appears in search.",
-      "ar": "تحكّم في شكل كل متجر ولغته وبيعه وظهوره في البحث."
+        "ar": "تحكم في هوية كل متجر ولغته وآلية البيع وظهوره في البحث."
     },
     "body": {
       "id": "identity-body",
@@ -871,17 +871,17 @@
     "eyebrow": {
       "id": "operate-eyebrow",
       "en": "Control without confusion",
-      "ar": "تحكّم واضح من غير لخبطة"
+        "ar": "ضوابط واضحة وحدود محددة"
     },
     "heading": {
       "id": "operate-heading",
       "en": "Give people the access they need and keep every Store boundary explicit.",
-      "ar": "امنح كل شخص الصلاحية التي يحتاجها وحافظ على حدود كل متجر."
+        "ar": "امنح كل مستخدم الصلاحيات اللازمة، وحافظ على حدود كل متجر بوضوح."
     },
     "body": {
       "id": "operate-body",
       "en": "Business ownership, Store-specific grants, controlled stock movements, auditable events, private media, and restricted platform recovery infrastructure create a safer operating foundation without turning the landing page into a certification claim.",
-      "ar": "توفّر ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة وبنية استعادة المنصة المقيّدة أساساً أكثر أماناً، من غير تقديم ادعاءات اعتماد غير مثبتة."
+      "ar": "توفّر ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة وبنية استعادة المنصة المقيّدة أساساً أكثر أماناً، دون تقديم ادعاءات اعتماد غير مثبتة."
     },
     "premise": {
       "id": "operate-premise",
@@ -907,7 +907,7 @@
       {
         "id": "operate-detail-4",
         "en": "Safe Store entry and Store switching without carrying another Store's cart, draft, filter, deep route, or mutation state.",
-        "ar": "دخول وتبديل آمن للمتجر من غير نقل سلة أو مسودة أو فلتر أو صفحة داخلية أو عملية تعديل من متجر آخر."
+        "ar": "دخول وتبديل آمن للمتجر دون نقل سلة أو مسودة أو فلتر أو صفحة داخلية أو عملية تعديل من متجر آخر."
       },
       {
         "id": "operate-detail-5",
@@ -952,17 +952,17 @@
     "eyebrow": {
       "id": "features-eyebrow",
       "en": "The complete operating system",
-      "ar": "نظام التشغيل الكامل"
+        "ar": "منظومة التشغيل المتكاملة"
     },
     "heading": {
       "id": "features-heading",
       "en": "Every connected capability, in one place.",
-      "ar": "كل الإمكانات المترابطة، في مكان واحد."
+        "ar": "جميع القدرات المترابطة في مكان واحد."
     },
     "body": {
       "id": "features-introduction",
       "en": "Open any group to see the detailed workflows Jizrak connects. Nothing here replaces the product itself; it gives your team a clear map of what can be explored.",
-      "ar": "افتح أي مجموعة لرؤية تفاصيل سير العمل الذي يربطه جِذرك. هذه القائمة لا تستبدل تجربة المنتج؛ لكنها تعطي فريقك خريطة واضحة لما يمكن استكشافه."
+        "ar": "استعرض كل مجموعة للتعرف إلى تفاصيل سير العمل التي تجمعها جِذرك. لا تحل هذه القائمة محل تجربة المنتج، لكنها تقدم لفريقك خريطة واضحة للقدرات المتاحة للاستكشاف."
     },
     "premise": {
       "id": "features-premise",
@@ -1286,17 +1286,17 @@
     "eyebrow": {
       "id": "demo-eyebrow",
       "en": "See the connected workflow",
-      "ar": "شاهد سير العمل المترابط"
+        "ar": "اطّلع على سير العمل المترابط"
     },
     "heading": {
       "id": "demo-heading",
       "en": "Explore a demonstration Store before you start.",
-      "ar": "استكشف متجراً تجريبياً قبل أن تبدأ."
+        "ar": "استكشف متجراً تجريبياً قبل بدء نشاطك التجاري."
     },
     "body": {
       "id": "demo-body",
       "en": "Follow products from discovery through cart and checkout, then explore how Store operations connect catalog, stock, purchasing, orders, customers, finance, and POS. Demo data demonstrates workflows; it is not customer proof.",
-      "ar": "تابع المنتجات من الاكتشاف إلى السلة والدفع، ثم استكشف كيف تربط عمليات المتجر الكتالوج والمخزون والمشتريات والطلبات والعملاء والمالية ونقطة البيع. البيانات التجريبية تشرح طريقة العمل ولا تمثل نتائج حقيقية لعملاء."
+        "ar": "تابع المنتجات من الاكتشاف إلى السلة والدفع، ثم استكشف كيفية ربط عمليات المتجر بالكتالوج والمخزون والمشتريات والطلبات والعملاء والمالية ونقطة البيع. تشرح البيانات التجريبية آلية العمل ولا تمثل نتائج فعلية لعملاء."
     },
     "premise": {
       "id": "demo-premise",
@@ -1316,12 +1316,12 @@
     "heading": {
       "id": "start-heading",
       "en": "Build your brand on roots that stay connected.",
-      "ar": "ابنِ علامتك على جذور تفضل متصلة."
+        "ar": "ابنِ علامتك التجارية على أساس يبقى مترابطاً."
     },
     "body": {
       "id": "start-body",
       "en": "Start with one Business and give every Store a clear place to grow.",
-      "ar": "ابدأ بنشاط تجاري واحد وامنح كل متجر مساحة واضحة للنمو."
+        "ar": "ابدأ بنشاط تجاري واحد، وامنح كل متجر مساراً واضحاً للنمو."
     },
     "premise": {
       "id": "start-premise",
