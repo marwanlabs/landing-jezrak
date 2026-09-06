@@ -973,87 +973,87 @@
       {
         "id": "features-detail-1",
         "en": "Business and Stores / النشاط والمتاجر",
-        "ar": "Business discovery and search; Business creation; workspace; subscription/trial state; Store capacity and billing-recovery guidance; Store search and creation; managed handles; localized names; launch-readiness checklist; publication; multiple independent Stores; Active Store switching; shared Locations with separate ledgers."
+        "ar": "اكتشاف الأنشطة والبحث فيها؛ إنشاء النشاط؛ مساحة العمل؛ حالة الاشتراك والفترة التجريبية؛ سعة المتاجر وإرشادات استعادة الفوترة؛ البحث عن المتاجر وإنشاؤها؛ عناوين مُدارة؛ أسماء محلية؛ قائمة جاهزية الإطلاق؛ النشر؛ عدة متاجر مستقلة؛ تبديل المتجر النشط؛ مواقع مشتركة بدفاتر منفصلة."
       },
       {
         "id": "features-detail-2",
         "en": "Team and access / الفريق والصلاحيات",
-        "ar": "Owner-wide access; Store-specific grants; predefined and custom roles; permission-filtered navigation; staff lookup; invitation; update; suspension; revocation; access-loss handling."
+        "ar": "وصول المالك لكل المتاجر؛ صلاحيات خاصة بكل متجر؛ أدوار جاهزة ومخصصة؛ تنقل حسب الصلاحية؛ البحث عن الموظفين؛ الدعوة؛ التعديل؛ الإيقاف؛ الإلغاء؛ التعامل مع فقدان الوصول."
       },
       {
         "id": "features-detail-3",
         "en": "Catalog / الكتالوج",
-        "ar": "Products; bilingual content; statuses; images; hierarchical categories; reusable options; option values; color or visual swatches; generated variants; SKU and price overrides; image inheritance; product defaults; CSV import preview, import, and export; guided product workflows."
+        "ar": "المنتجات؛ محتوى ثنائي اللغة؛ الحالات؛ الصور؛ فئات متدرجة؛ خيارات قابلة لإعادة الاستخدام؛ قيم الخيارات؛ عينات ألوان أو خيارات مرئية؛ توليد التركيبات؛ رموز وأسعار مخصصة؛ وراثة الصور؛ إعدادات المنتج الافتراضية؛ معاينة واستيراد وتصدير CSV؛ إرشادات داخلية لعمليات المنتج."
       },
       {
         "id": "features-detail-4",
         "en": "Merchandising / العرض والترويج",
-        "ar": "Bundles; tier pricing; combo offers; coupons; product/category targeting; hero banners; announcement bar; custom navigation; product widgets; reviews; recommendations; recently viewed; newsletter."
+        "ar": "الباقات؛ أسعار الشرائح؛ العروض المجمعة؛ الكوبونات؛ استهداف المنتجات والفئات؛ البانرات؛ شريط الإعلانات؛ تنقل مخصص؛ مكونات صفحة المنتج؛ المراجعات؛ التوصيات؛ المشاهدة الأخيرة؛ النشرة البريدية."
       },
       {
         "id": "features-detail-5",
         "en": "Inventory / المخزون",
-        "ar": "Inventory items and categories; multi-Location Store ledgers; reserved and available quantities; costs and valuation; low/out-of-stock visibility; controlled adjustments; movements; history; inline reports; CSV; guarded deletion; guided inventory workflows."
+        "ar": "أصناف وفئات المخزون؛ دفاتر المتجر متعددة المواقع؛ الكميات المحجوزة والمتاحة؛ التكاليف والتقييم؛ تنبيهات النقص والنفاد؛ تسويات منضبطة؛ الحركات؛ السجل؛ تقارير داخل الصفحة؛ CSV؛ حذف محمي؛ إرشادات داخلية لعمليات المخزون."
       },
       {
         "id": "features-detail-6",
         "en": "Dependencies and assembly / المكونات والتجميع",
-        "ar": "Product and variant stock links; shared and variant dependencies; multi-component bills of materials; dependency-aware availability; assembly preview; assembly as one indivisible operation; auto-link on first build; assembly history."
+        "ar": "ربط مخزون المنتج والتركيبة؛ مكونات مشتركة وخاصة بالتركيبة؛ قوائم مكونات متعددة؛ إتاحة حسب المكونات؛ معاينة التجميع؛ تنفيذ التجميع كعملية واحدة؛ ربط تلقائي عند أول إنتاج؛ سجل التجميع."
       },
       {
         "id": "features-detail-7",
         "en": "Purchasing / المشتريات",
-        "ar": "Supplier CRUD/search; purchase orders; references and notes; option expansion; PO snapshots; Location receiving; receipt cancellation; deletion safeguards; purchase-order CSV export; create product from PO; link to existing product; multidimensional matching."
+        "ar": "إنشاء الموردين وعرضهم وتعديلهم وحذفهم والبحث فيهم؛ أوامر الشراء؛ المراجع والملاحظات؛ توسيع الخيارات؛ لقطات أمر الشراء؛ الاستلام في الموقع؛ إلغاء الاستلام؛ حماية الحذف؛ تصدير أوامر الشراء CSV؛ إنشاء منتج من الأمر؛ الربط بمنتج موجود؛ مطابقة متعددة الأبعاد."
       },
       {
         "id": "features-detail-8",
         "en": "Storefront / واجهة المتجر",
-        "ar": "Search, suggestions, and command navigation; categories; option filters; sort; pagination; URL state; remembered filters; multiple views; cards; quick view; galleries; product detail; variants; pricing; availability; bundles; recommendations; recently viewed; ratings and reviews."
+        "ar": "البحث والاقتراحات والتنقل السريع؛ الفئات؛ فلاتر الخيارات؛ الترتيب؛ الصفحات؛ حالة الرابط؛ تذكر الفلاتر؛ طرق عرض؛ البطاقات؛ المعاينة السريعة؛ الصور؛ تفاصيل المنتج؛ التركيبات؛ الأسعار؛ الإتاحة؛ الباقات؛ التوصيات؛ المشاهدة الأخيرة؛ التقييمات والمراجعات."
       },
       {
         "id": "features-detail-9",
         "en": "Cart and checkout / السلة والدفع",
-        "ar": "Store-scoped persistent cart; quantity limits; stock reconciliation; offers; coupons; saved/new addresses; governorate/area shipping; tax; COD; authoritative totals; order creation as one operation; last-unit concurrency protection; confirmation; token recovery with provider-dependent email delivery."
+        "ar": "سلة محفوظة لكل متجر؛ حدود الكمية؛ مراجعة المخزون؛ العروض؛ الكوبونات؛ عناوين محفوظة أو جديدة؛ شحن المحافظة والمنطقة؛ الضريبة؛ الدفع عند الاستلام؛ إجماليات موثوقة؛ إنشاء الطلب كعملية واحدة؛ حماية آخر قطعة عند تزامن المشترين؛ التأكيد؛ استعادة برمز مع إرسال بريد يعتمد على إعداد المزود."
       },
       {
         "id": "features-detail-10",
         "en": "Orders / الطلبات",
-        "ar": "Search; filters; details; option snapshots; consolidated pick lists; controlled statuses; fulfilment timeline; partial/full internal refund records; exports; customer history; reorder; reservations; payment attempts and events; guided workflows."
+        "ar": "البحث؛ الفلاتر؛ التفاصيل؛ لقطات الخيارات؛ قوائم تجهيز مجمعة؛ حالات منضبطة؛ خط التجهيز الزمني؛ سجلات استرداد جزئي وكامل؛ التصدير؛ تاريخ العميل؛ إعادة الطلب؛ الحجوزات؛ محاولات وأحداث الدفع؛ إرشادات داخلية."
       },
       {
         "id": "features-detail-11",
         "en": "POS / نقطة البيع",
-        "ar": "Store, Location, and register context; register lifecycle; shift open/close/history; cash counts and variance; catalog search; variants; availability; cart; discount; tax; customer name; cash/card/transfer/other tender; cash change; one-operation sale; duplicate-safe retry; receipt; sale history; guided workflow."
+        "ar": "سياق المتجر والموقع وصندوق البيع؛ دورة حياة الصندوق؛ فتح وإغلاق وسجل الورديات؛ عد النقدية والفرق؛ البحث؛ التركيبات؛ الإتاحة؛ السلة؛ الخصم؛ الضريبة؛ اسم العميل؛ الدفع نقداً أو بالبطاقة أو التحويل أو غيره؛ باقي النقد؛ بيع في عملية واحدة؛ إعادة محاولة بلا تكرار؛ الإيصال؛ سجل البيع؛ إرشادات داخلية."
       },
       {
         "id": "features-detail-12",
         "en": "Customers / العملاء",
-        "ar": "Directory; Business identity; Store profiles; profile edit; address CRUD/default; favorites and guest merge; consent; order history/detail/reorder; loyalty balance and history; eligible reviews."
+        "ar": "الدليل؛ هوية النشاط؛ ملفات المتاجر؛ تعديل الملف؛ إدارة العناوين والافتراضي؛ المفضلة ودمج الضيف؛ الموافقات؛ سجل وتفاصيل وإعادة الطلب؛ رصيد وسجل الولاء؛ المراجعات المؤهلة."
       },
       {
         "id": "features-detail-13",
         "en": "Engagement / التواصل",
-        "ar": "Coupons and usage; loyalty earning/admin adjustment; review moderation; newsletter subscribers; push opt-in; Store broadcasts; notification inbox/read/delete; abandoned-cart recovery status."
+        "ar": "الكوبونات والاستخدام؛ كسب الولاء وتعديل الإدارة؛ مراجعة التقييمات؛ مشتركو النشرة؛ الاشتراك في الإشعارات؛ بث المتجر؛ صندوق الإشعارات وقراءتها وحذفها؛ حالة استرجاع السلة."
       },
       {
         "id": "features-detail-14",
         "en": "Finance / المالية",
-        "ar": "Overview; chart of accounts; double-entry journal foundation; expenses; assets; income statement; balance sheet; inventory accounting configuration; supported automatic commerce postings."
+        "ar": "النظرة العامة؛ دليل الحسابات؛ أساس القيود المزدوجة؛ المصروفات؛ الأصول؛ قائمة الدخل؛ الميزانية؛ إعداد محاسبة المخزون؛ قيود تلقائية للعمليات المدعومة."
       },
       {
         "id": "features-detail-15",
         "en": "Analytics / التحليلات",
-        "ar": "Revenue; orders; AOV; customer acquisition; daily trends; category revenue; top products; governorates; payment mix; coupons; loyalty; ratings; refunds; date ranges."
+        "ar": "الإيراد؛ الطلبات؛ متوسط قيمة الطلب؛ اكتساب العملاء؛ الاتجاهات اليومية؛ إيراد الفئات؛ أفضل المنتجات؛ المحافظات؛ مزيج الدفع؛ الكوبونات؛ الولاء؛ التقييمات؛ الاستردادات؛ الفترات الزمنية."
       },
       {
         "id": "features-detail-16",
         "en": "Store configuration / إعداد المتجر",
-        "ar": "Contact and currency; COD; tax; shipping; stock thresholds; accounting mode; layout; cards; grid; ratings; out-of-stock behavior; ticker; loyalty; social links; bilingual SEO; colors; themes; banners; navigation; widgets."
+        "ar": "الاتصال والعملة؛ الدفع عند الاستلام؛ الضريبة؛ الشحن؛ حد المخزون؛ وضع المحاسبة؛ التخطيط؛ البطاقات؛ الشبكة؛ التقييمات؛ سلوك النفاد؛ الشريط؛ الولاء؛ الروابط الاجتماعية؛ SEO ثنائي اللغة؛ الألوان؛ القوالب؛ البانرات؛ التنقل؛ المكونات."
       },
       {
         "id": "features-detail-17",
         "en": "Platform and resilience / المنصة والاستمرارية",
-        "ar": "Installable PWA and cached assets; web push when configured; Store-aware hosts; managed handles; custom-domain registry; private media; restricted Super Admin recovery infrastructure; encrypted artifacts and checksums; platform health, lifecycle, archive/restore, domain controls, and bounded support access."
+        "ar": "تطبيق قابل للتثبيت وأصول مخزنة؛ إشعارات ويب عند الإعداد؛ عناوين واعية بالمتجر؛ عناوين مُدارة؛ سجل النطاقات؛ وسائط خاصة؛ بنية استعادة مقيّدة لمسؤول المنصة؛ ملفات مشفرة وفحص سلامة؛ صحة المنصة ودورة الحياة والأرشفة والاستعادة والنطاقات ودعم محدود."
       }
     ],
     "groups": [
