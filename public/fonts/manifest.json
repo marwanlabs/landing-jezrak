@@ -1,0 +1,68 @@
+{
+  "license": "SIL Open Font License 1.1",
+  "plexCommit": "bf260093582f04622aacc1e9f9ca604d7ccd0c42",
+  "alexandriaCommit": "4fd1422be3488837c41fbdb84a77350f0f56a734",
+  "files": [
+    {
+      "path": "Alexandria-source.ttf",
+      "url": "https://raw.githubusercontent.com/Gue3bara/Alexandria/4fd1422be3488837c41fbdb84a77350f0f56a734/fonts/variable/Alexandria%5Bwght%5D.ttf",
+      "sha256": "db8ae03b62d55a65aa4e04307878df8c00d6e5388e4800635cbe0e22b6411b64",
+      "bytes": 332488
+    },
+    {
+      "path": "licenses/Alexandria-OFL.txt",
+      "url": "https://raw.githubusercontent.com/Gue3bara/Alexandria/4fd1422be3488837c41fbdb84a77350f0f56a734/OFL.txt",
+      "sha256": "56372aed19c2701f50e6e784110af55bf8796ed51648805324ad1adb0a3860bb",
+      "bytes": 4483
+    },
+    {
+      "path": "licenses/IBM-Plex-OFL.txt",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/LICENSE.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "bytes": 4456
+    },
+    {
+      "path": "IBMPlexSans-Regular.woff2",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/packages/plex-sans/fonts/complete/woff2/IBMPlexSans-Regular.woff2",
+      "sha256": "ba711a3085ff9f27440b6b9c4550cfc47c97bf36591d5da958b975bb3add8c1a",
+      "bytes": 63020
+    },
+    {
+      "path": "IBMPlexSansArabic-Regular.woff2",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/packages/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-Regular.woff2",
+      "sha256": "74112e1b7bf2e2c547989a4e947a60cba6cd1f9156e0065670134636e717199d",
+      "bytes": 71904
+    },
+    {
+      "path": "IBMPlexSans-Medium.woff2",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/packages/plex-sans/fonts/complete/woff2/IBMPlexSans-Medium.woff2",
+      "sha256": "5660f8a658f8bb50dbc005232f885eadffd2bc1c235c4f6fbb63469d1f9cde6d",
+      "bytes": 66740
+    },
+    {
+      "path": "IBMPlexSansArabic-Medium.woff2",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/packages/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-Medium.woff2",
+      "sha256": "c72f6986f50ded745d06e71e508096209c52a55a6b3a81029954e33c52ba1dd2",
+      "bytes": 75936
+    },
+    {
+      "path": "IBMPlexSans-SemiBold.woff2",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/packages/plex-sans/fonts/complete/woff2/IBMPlexSans-SemiBold.woff2",
+      "sha256": "f78048030eab62e860efa39a0df79e2e5581bf122eb95b9bc42c0b8a4988d205",
+      "bytes": 67060
+    },
+    {
+      "path": "IBMPlexSansArabic-SemiBold.woff2",
+      "url": "https://raw.githubusercontent.com/IBM/plex/bf260093582f04622aacc1e9f9ca604d7ccd0c42/packages/plex-sans-arabic/fonts/complete/woff2/IBMPlexSansArabic-SemiBold.woff2",
+      "sha256": "869b2acd0a9660607a2025f0fe1c640110bf23d33417509328f07722922b8063",
+      "bytes": 76408
+    },
+    {
+      "path": "Alexandria-Medium.woff2",
+      "derivedFrom": "Alexandria-source.ttf",
+      "operation": "Instantiate the used weight 500 and package as WOFF2; permitted by OFL, no reserved font name declared",
+      "sha256": "5746c0b7f48b98696acf11aeb06c75e25954d679121fe5adf31c823a3daa8ec5",
+      "bytes": 57956
+    }
+  ]
+}

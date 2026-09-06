@@ -1,0 +1,4 @@
+*.woff2 binary
+*.ttf binary
+*.png binary
+public/fonts/licenses/* -text

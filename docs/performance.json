@@ -1,0 +1,293 @@
+{
+  "kind": "Local synthetic lab observations, not deployed Core Web Vitals or a Lighthouse score",
+  "measurements": [
+    {
+      "locale": "en",
+      "theme": "light",
+      "viewport": "375 × 900",
+      "cpuSlowdown": 4,
+      "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
+      "lcp": 884,
+      "cls": 0.0005281375514403293,
+      "longTaskMs": 258,
+      "resources": [
+        {
+          "name": "globals-C7VPYw12.css",
+          "bytes": 8166,
+          "duration": 364
+        },
+        {
+          "name": "index-XTCQRykz.js",
+          "bytes": 119887,
+          "duration": 3033
+        },
+        {
+          "name": "index-OHCtPrxt.js",
+          "bytes": 8972,
+          "duration": 410
+        },
+        {
+          "name": "Alexandria-Medium.woff2",
+          "bytes": 58256,
+          "duration": 1402
+        },
+        {
+          "name": "IBMPlexSans-Regular.woff2",
+          "bytes": 63320,
+          "duration": 2236
+        },
+        {
+          "name": "IBMPlexSans-SemiBold.woff2",
+          "bytes": 67360,
+          "duration": 2267
+        },
+        {
+          "name": "IBMPlexSansArabic-SemiBold.woff2",
+          "bytes": 76708,
+          "duration": 2498
+        },
+        {
+          "name": "IBMPlexSansArabic-Regular.woff2",
+          "bytes": 72204,
+          "duration": 2699
+        },
+        {
+          "name": "IBMPlexSans-Medium.woff2",
+          "bytes": 67040,
+          "duration": 2900
+        },
+        {
+          "name": "LandingMotion-DITcva9Q.js",
+          "bytes": 41900,
+          "duration": 373
+        }
+      ],
+      "overflow": false,
+      "seriousOrCritical": []
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "viewport": "375 × 900",
+      "cpuSlowdown": 4,
+      "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
+      "lcp": 884,
+      "cls": 0.0005281375514403293,
+      "longTaskMs": 230,
+      "resources": [
+        {
+          "name": "globals-C7VPYw12.css",
+          "bytes": 8166,
+          "duration": 369
+        },
+        {
+          "name": "index-XTCQRykz.js",
+          "bytes": 119887,
+          "duration": 3044
+        },
+        {
+          "name": "index-OHCtPrxt.js",
+          "bytes": 8972,
+          "duration": 415
+        },
+        {
+          "name": "Alexandria-Medium.woff2",
+          "bytes": 58256,
+          "duration": 1427
+        },
+        {
+          "name": "IBMPlexSans-Regular.woff2",
+          "bytes": 63320,
+          "duration": 2226
+        },
+        {
+          "name": "IBMPlexSans-SemiBold.woff2",
+          "bytes": 67360,
+          "duration": 2256
+        },
+        {
+          "name": "IBMPlexSansArabic-SemiBold.woff2",
+          "bytes": 76708,
+          "duration": 2487
+        },
+        {
+          "name": "IBMPlexSansArabic-Regular.woff2",
+          "bytes": 72204,
+          "duration": 2706
+        },
+        {
+          "name": "IBMPlexSans-Medium.woff2",
+          "bytes": 67040,
+          "duration": 2908
+        },
+        {
+          "name": "LandingMotion-DITcva9Q.js",
+          "bytes": 41900,
+          "duration": 389
+        }
+      ],
+      "overflow": false,
+      "seriousOrCritical": []
+    },
+    {
+      "locale": "ar",
+      "theme": "light",
+      "viewport": "375 × 900",
+      "cpuSlowdown": 4,
+      "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
+      "lcp": 868,
+      "cls": 0.03416501985596707,
+      "longTaskMs": 371,
+      "resources": [
+        {
+          "name": "globals-C7VPYw12.css",
+          "bytes": 8166,
+          "duration": 353
+        },
+        {
+          "name": "index-XTCQRykz.js",
+          "bytes": 119887,
+          "duration": 3027
+        },
+        {
+          "name": "index-OHCtPrxt.js",
+          "bytes": 8972,
+          "duration": 398
+        },
+        {
+          "name": "Alexandria-Medium.woff2",
+          "bytes": 58256,
+          "duration": 1423
+        },
+        {
+          "name": "IBMPlexSans-Regular.woff2",
+          "bytes": 63320,
+          "duration": 2240
+        },
+        {
+          "name": "IBMPlexSans-SemiBold.woff2",
+          "bytes": 67360,
+          "duration": 2270
+        },
+        {
+          "name": "IBMPlexSansArabic-SemiBold.woff2",
+          "bytes": 76708,
+          "duration": 2472
+        },
+        {
+          "name": "IBMPlexSansArabic-Regular.woff2",
+          "bytes": 72204,
+          "duration": 2707
+        },
+        {
+          "name": "IBMPlexSans-Medium.woff2",
+          "bytes": 67040,
+          "duration": 2944
+        },
+        {
+          "name": "LandingMotion-DITcva9Q.js",
+          "bytes": 41900,
+          "duration": 436
+        },
+        {
+          "name": "IBMPlexSansArabic-Medium.woff2",
+          "bytes": 76236,
+          "duration": 741
+        }
+      ],
+      "overflow": false,
+      "seriousOrCritical": []
+    },
+    {
+      "locale": "ar",
+      "theme": "dark",
+      "viewport": "375 × 900",
+      "cpuSlowdown": 4,
+      "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
+      "lcp": 856,
+      "cls": 0.03416501985596707,
+      "longTaskMs": 344,
+      "resources": [
+        {
+          "name": "globals-C7VPYw12.css",
+          "bytes": 8166,
+          "duration": 368
+        },
+        {
+          "name": "index-XTCQRykz.js",
+          "bytes": 119887,
+          "duration": 3045
+        },
+        {
+          "name": "index-OHCtPrxt.js",
+          "bytes": 8972,
+          "duration": 413
+        },
+        {
+          "name": "Alexandria-Medium.woff2",
+          "bytes": 58256,
+          "duration": 1439
+        },
+        {
+          "name": "IBMPlexSans-Regular.woff2",
+          "bytes": 63320,
+          "duration": 2214
+        },
+        {
+          "name": "IBMPlexSans-SemiBold.woff2",
+          "bytes": 67360,
+          "duration": 2260
+        },
+        {
+          "name": "IBMPlexSansArabic-SemiBold.woff2",
+          "bytes": 76708,
+          "duration": 2462
+        },
+        {
+          "name": "IBMPlexSansArabic-Regular.woff2",
+          "bytes": 72204,
+          "duration": 2711
+        },
+        {
+          "name": "IBMPlexSans-Medium.woff2",
+          "bytes": 67040,
+          "duration": 2913
+        },
+        {
+          "name": "LandingMotion-DITcva9Q.js",
+          "bytes": 41900,
+          "duration": 401
+        },
+        {
+          "name": "IBMPlexSansArabic-Medium.woff2",
+          "bytes": 76236,
+          "duration": 734
+        }
+      ],
+      "overflow": false,
+      "seriousOrCritical": []
+    }
+  ],
+  "bundle": [
+    {
+      "name": "globals-C7VPYw12.css",
+      "rawBytes": 42840,
+      "gzipBytes": 8939
+    },
+    {
+      "name": "index-OHCtPrxt.js",
+      "rawBytes": 31709,
+      "gzipBytes": 10094
+    },
+    {
+      "name": "index-XTCQRykz.js",
+      "rawBytes": 439416,
+      "gzipBytes": 139247
+    },
+    {
+      "name": "LandingMotion-DITcva9Q.js",
+      "rawBytes": 118031,
+      "gzipBytes": 46641
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "jizrak-landing",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.2.23",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3000",
+    "build": "bun run validate:config && vite build",
+    "build:preview": "vite build --mode review",
+    "preview": "node .output/server/index.mjs",
+    "validate:config": "bun scripts/validate-config.ts",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "format": "prettier --write src scripts e2e *.ts *.json *.md"
+  },
+  "dependencies": {
+    "@tanstack/react-start": "1.168.49",
+    "@tanstack/react-router": "1.170.32",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "gsap": "3.13.0",
+    "@gsap/react": "2.1.2",
+    "i18next": "25.5.2",
+    "react-i18next": "15.7.3",
+    "lucide-react": "0.544.0"
+  },
+  "devDependencies": {
+    "nitro": "3.0.1-alpha.2",
+    "vite": "7.1.7",
+    "@vitejs/plugin-react": "5.0.3",
+    "tailwindcss": "4.1.13",
+    "@tailwindcss/vite": "4.1.13",
+    "typescript": "5.8.3",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "@types/node": "22.18.6",
+    "vitest": "3.2.4",
+    "jsdom": "26.1.0",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/jest-dom": "6.8.0",
+    "@playwright/test": "1.55.1",
+    "@axe-core/playwright": "4.10.2",
+    "eslint": "9.36.0",
+    "typescript-eslint": "8.44.1",
+    "prettier": "3.6.2"
+  }
+}

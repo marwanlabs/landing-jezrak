@@ -1,0 +1,1358 @@
+[
+  {
+    "id": "header",
+    "title": "Header",
+    "eyebrow": {
+      "id": "header-eyebrow",
+      "en": "",
+      "ar": ""
+    },
+    "heading": {
+      "id": "header-headline",
+      "en": "",
+      "ar": ""
+    },
+    "body": {
+      "id": "header-introduction",
+      "en": "",
+      "ar": ""
+    },
+    "premise": {
+      "id": "header-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": []
+  },
+  {
+    "id": "top",
+    "title": "Hero: One Connected Commerce Root",
+    "eyebrow": {
+      "id": "top-eyebrow",
+      "en": "Jizrak — commerce rooted in one system",
+      "ar": "جِذرك — تجارة متصلة في نظام واحد"
+    },
+    "heading": {
+      "id": "top-headline",
+      "en": "A foundation that grows with every Store you build.",
+      "ar": "أساس بيكبر مع كل متجر تبنيه."
+    },
+    "body": {
+      "id": "top-body",
+      "en": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances from one connected commerce foundation — while every Store keeps its own brand, team, and stock ledger.",
+      "ar": "أدر واجهة متجرك ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية من أساس تجاري واحد ومترابط — مع احتفاظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل."
+    },
+    "premise": {
+      "id": "top-premise",
+      "en": "Your idea stays yours. Jizrak keeps the operational roots connected.",
+      "ar": "فكرتك تفضل فكرتك. جِذرك بيربط جذور التشغيل مع بعض."
+    },
+    "details": []
+  },
+  {
+    "id": "connected",
+    "title": "Root Map: The Work Stays Connected",
+    "eyebrow": {
+      "id": "connected-eyebrow",
+      "en": "One connected root",
+      "ar": "جذر واحد متصل"
+    },
+    "heading": {
+      "id": "connected-heading",
+      "en": "The work stays connected as you grow.",
+      "ar": "الشغل يفضل متصل وإنت بتكبر."
+    },
+    "body": {
+      "id": "connected-body",
+      "en": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and each Store ledger share one clear Business foundation — without blending the Stores you operate.",
+      "ar": "الكتالوج والطلبات والتجهيز والمشتريات والموردون والمالية ودفتر كل متجر يجتمعون على أساس واضح للنشاط التجاري — من غير ما المتاجر التي تديرها تختلط ببعض."
+    },
+    "premise": {
+      "id": "connected-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "connected-detail-1",
+        "en": "Publish a product once its variants and stock links are ready.",
+        "ar": "انشر المنتج بعد تجهيز خياراته وربطه بالمخزون."
+      },
+      {
+        "id": "connected-detail-2",
+        "en": "Sell it through the Storefront or POS against the correct Store ledger.",
+        "ar": "بِعه من واجهة المتجر أو نقطة البيع من دفتر مخزون المتجر الصحيح."
+      },
+      {
+        "id": "connected-detail-3",
+        "en": "Reserve and move stock through controlled inventory flows.",
+        "ar": "احجز المخزون وحرّكه من خلال عمليات مخزون منضبطة."
+      },
+      {
+        "id": "connected-detail-4",
+        "en": "Replenish through suppliers, purchase orders, receiving, or assembly.",
+        "ar": "جدّد المخزون عبر الموردين وأوامر الشراء والاستلام أو التجميع."
+      },
+      {
+        "id": "connected-detail-5",
+        "en": "Follow orders, refunds, costs, and performance without rebuilding the story in spreadsheets.",
+        "ar": "تابع الطلبات والاستردادات والتكاليف والأداء من غير إعادة تجميع الصورة في ملفات منفصلة."
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "title": "Multi-Store Business Foundation",
+    "eyebrow": {
+      "id": "business-eyebrow",
+      "en": "One Business, independent Stores",
+      "ar": "نشاط تجاري واحد، متاجر مستقلة"
+    },
+    "heading": {
+      "id": "business-heading",
+      "en": "Grow more than one brand without mixing their operations.",
+      "ar": "كبّر أكتر من علامة من غير ما عمليات متاجرك تختلط."
+    },
+    "body": {
+      "id": "business-body",
+      "en": "A Business can own multiple Stores and shared physical Locations. Each Store keeps its own branding, catalog, customers, orders, finances, permissions, and inventory ledger. Business Owners retain oversight while operators enter only the Stores they are allowed to run.",
+      "ar": "يمكن للنشاط التجاري امتلاك عدة متاجر واستخدام مواقع فعلية مشتركة. يحتفظ كل متجر بعلامته وكتالوجه وعملائه وطلباته وماليته وصلاحياته ودفتر مخزونه. يظل لمالك النشاط إشراف كامل، بينما يدخل كل مشغّل إلى المتاجر المصرح له بإدارتها فقط."
+    },
+    "premise": {
+      "id": "business-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "business-detail-1",
+        "en": "Store-specific branding and commerce data",
+        "ar": "علامة وبيانات تجارية مستقلة لكل متجر"
+      },
+      {
+        "id": "business-detail-2",
+        "en": "Business-owned Locations serving one or more Stores",
+        "ar": "مواقع يملكها النشاط وتخدم متجراً أو أكثر"
+      },
+      {
+        "id": "business-detail-3",
+        "en": "Separate Store stock ledgers at a shared Location",
+        "ar": "دفتر مخزون منفصل لكل متجر داخل الموقع المشترك"
+      },
+      {
+        "id": "business-detail-4",
+        "en": "Owner access across the Business",
+        "ar": "وصول المالك إلى كل متاجر النشاط"
+      },
+      {
+        "id": "business-detail-5",
+        "en": "Store-specific staff roles and permissions",
+        "ar": "أدوار وصلاحيات موظفين خاصة بكل متجر"
+      },
+      {
+        "id": "business-detail-6",
+        "en": "Safe Store switching that starts at the selected Store dashboard",
+        "ar": "تبديل آمن يفتح لوحة المتجر المختار"
+      }
+    ]
+  },
+  {
+    "id": "sell",
+    "title": "Storefront and Buying Journey",
+    "eyebrow": {
+      "id": "sell-eyebrow",
+      "en": "Sell online",
+      "ar": "البيع أونلاين"
+    },
+    "heading": {
+      "id": "sell-heading",
+      "en": "A Storefront built around discovery, confidence, and a safe checkout.",
+      "ar": "واجهة متجر تساعد العميل يكتشف ويختار ويكمل شراءه بثقة."
+    },
+    "body": {
+      "id": "sell-body",
+      "en": "Give each Store its own branded shopping experience, from search and product discovery through variant selection, cart, shipping, payment choice, confirmation, and post-purchase account journeys.",
+      "ar": "امنح كل متجر تجربة تسوق بعلامته، من البحث واكتشاف المنتجات واختيار الخيارات إلى السلة والشحن وطريقة الدفع والتأكيد وخدمات ما بعد الشراء."
+    },
+    "premise": {
+      "id": "sell-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "sell-detail-1",
+        "en": "Bilingual Storefront foundations with native RTL/LTR layouts; complete localization across every admin and customer workflow remains subject to deployment verification.",
+        "ar": "أساس ثنائي اللغة لواجهة المتجر مع اتجاه أصلي من اليمين إلى اليسار ومن اليسار إلى اليمين؛ وتظل الترجمة الكاملة لكل مسارات الإدارة والعملاء خاضعة للتحقق في النسخة المنشورة."
+      },
+      {
+        "id": "sell-detail-2",
+        "en": "Configurable announcement bar, navigation, hero banners, social links, and layout.",
+        "ar": "شريط إعلانات وتنقل وبانرات رئيسية وروابط اجتماعية وتخطيط قابل للتخصيص."
+      },
+      {
+        "id": "sell-detail-3",
+        "en": "Product search and suggestions; category trees; option filters; sorting; pagination; grid, row, and immersive views; URL-backed shareable catalog state; and remembered filters.",
+        "ar": "بحث واقتراحات؛ شجرة فئات؛ فلاتر للخيارات؛ ترتيب؛ تقسيم صفحات؛ عرض شبكي أو صفّي أو غامر؛ حالة كتالوج محفوظة في الرابط وقابلة للمشاركة؛ وتذكّر الفلاتر."
+      },
+      {
+        "id": "sell-detail-4",
+        "en": "Product cards, quick view, galleries, variant and option selection, effective pricing, live orderable quantity, ratings, reviews, recommendations, and recently viewed products.",
+        "ar": "بطاقات المنتجات والمعاينة السريعة ومعارض الصور واختيار التركيبات والخيارات والأسعار الفعلية والكمية المتاحة للطلب والتقييمات والمراجعات والتوصيات والمنتجات المشاهدة أخيراً."
+      },
+      {
+        "id": "sell-detail-5",
+        "en": "Bundle pages with tier pricing and availability-safe cart insertion.",
+        "ar": "صفحات باقات بأسعار شرائح وإضافة إلى السلة تراعي التوفر الفعلي."
+      },
+      {
+        "id": "sell-detail-6",
+        "en": "Persistent Store-scoped cart, quantity changes, combo-offer detection, authoritative line and stock reconciliation, and coupons.",
+        "ar": "سلة محفوظة خاصة بكل متجر وتعديل الكميات واكتشاف العروض المجمعة ومراجعة موثوقة لبنود السلة والمخزون والكوبونات."
+      },
+      {
+        "id": "sell-detail-7",
+        "en": "Staged checkout with saved or new addresses, Egyptian governorate and area shipping, configured shipping and tax, cash on delivery where enabled, server-authoritative totals, indivisible order placement, and protection when customers compete for the last unit.",
+        "ar": "دفع على مراحل بعناوين محفوظة أو جديدة وشحن حسب المحافظة والمنطقة وإعدادات الشحن والضريبة والدفع عند الاستلام عند تفعيله وإجماليات يحسبها الخادم وإنشاء الطلب كوحدة واحدة وحماية عند محاولة أكثر من عميل شراء آخر قطعة."
+      },
+      {
+        "id": "sell-detail-8",
+        "en": "Confirmation, customer order lookup, abandoned-checkout capture, recovery-token restoration, recovery status, and email-attempt timestamps. Actual email delivery requires configured provider and worker infrastructure.",
+        "ar": "تأكيد الطلب وبحث العميل عن طلبه وحفظ عملية الدفع المتروكة واستعادتها برمز مخصص ومتابعة حالة الاستعادة وتوقيت محاولات البريد. يتطلب إرسال البريد فعلياً إعداد مزود الخدمة وعمليات الخلفية."
+      },
+      {
+        "id": "sell-detail-9",
+        "en": "Favorites, including guest favorites merged into the customer's Store account after sign-in.",
+        "ar": "المفضلة، بما فيها دمج اختيارات الزائر في حسابه الخاص بالمتجر بعد تسجيل الدخول."
+      }
+    ]
+  },
+  {
+    "id": "catalog",
+    "title": "Catalog and Merchandising",
+    "eyebrow": {
+      "id": "catalog-eyebrow",
+      "en": "Shape the offer",
+      "ar": "كوّن عرضك"
+    },
+    "heading": {
+      "id": "catalog-heading",
+      "en": "From a simple product to a full variant and bundle catalog.",
+      "ar": "من منتج بسيط إلى كتالوج كامل بالخيارات والباقات."
+    },
+    "body": {
+      "id": "catalog-body",
+      "en": "Build a bilingual catalog, reuse option groups, generate variant combinations, connect every sellable choice to the right inventory, and merchandise products through categories, images, bundles, offers, banners, and reviews.",
+      "ar": "أنشئ كتالوجاً ثنائي اللغة، وأعد استخدام مجموعات الخيارات، وولّد تركيبات المنتجات، واربط كل اختيار قابل للبيع بمخزونه الصحيح، ثم اعرضه بالفئات والصور والباقات والعروض والبانرات والمراجعات."
+    },
+    "premise": {
+      "id": "catalog-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "catalog-detail-1",
+        "en": "Product search, status, create, edit, draft delete, hard delete, and CSV preview/import/export.",
+        "ar": "البحث عن المنتجات وحالاتها وإنشاؤها وتعديلها وحذف المسودة أو الحذف النهائي ومعاينة CSV واستيراده وتصديره."
+      },
+      {
+        "id": "catalog-detail-2",
+        "en": "Arabic and English product names and descriptions.",
+        "ar": "أسماء وأوصاف المنتجات بالعربية والإنجليزية."
+      },
+      {
+        "id": "catalog-detail-3",
+        "en": "Hierarchical categories with ordering, activation, quick creation, and CSV operations.",
+        "ar": "فئات متدرجة مع الترتيب والتفعيل والإنشاء السريع وعمليات CSV."
+      },
+      {
+        "id": "catalog-detail-4",
+        "en": "Multiple product images and image selection.",
+        "ar": "صور متعددة للمنتج مع اختيار الصورة المستخدمة."
+      },
+      {
+        "id": "catalog-detail-5",
+        "en": "Reusable option-group library and per-product option copies.",
+        "ar": "مكتبة مجموعات خيارات قابلة لإعادة الاستخدام مع نسخة خيارات خاصة بكل منتج."
+      },
+      {
+        "id": "catalog-detail-6",
+        "en": "Option values, ordering, color or visual swatches, image inheritance, option-value image overrides, and safe-removal preview.",
+        "ar": "قيم الخيارات وترتيبها وعينات الألوان أو الخيارات المرئية ووراثة الصور وتخصيص صورة لقيمة معينة ومعاينة أثر الحذف قبل تنفيذه."
+      },
+      {
+        "id": "catalog-detail-7",
+        "en": "Automatic variant combination generation.",
+        "ar": "توليد تركيبات المنتج تلقائياً."
+      },
+      {
+        "id": "catalog-detail-8",
+        "en": "Variant activation, SKU, price overrides, grouped views, detail editing, and product defaults.",
+        "ar": "تفعيل التركيبات ورمز SKU والسعر المخصص والعرض المجمع وتعديل التفاصيل والقيم الافتراضية للمنتج."
+      },
+      {
+        "id": "catalog-detail-9",
+        "en": "Product-to-inventory and variant-to-inventory links.",
+        "ar": "ربط المنتج أو تركيبته بصنف المخزون الصحيح."
+      },
+      {
+        "id": "catalog-detail-10",
+        "en": "Bundles with selected products and tier pricing.",
+        "ar": "باقات بمنتجات مختارة وأسعار حسب الشريحة."
+      },
+      {
+        "id": "catalog-detail-11",
+        "en": "Combo offers targeting products or categories.",
+        "ar": "عروض مجمعة تستهدف منتجات أو فئات."
+      },
+      {
+        "id": "catalog-detail-12",
+        "en": "Product review moderation.",
+        "ar": "مراجعة تقييمات المنتجات وإدارتها."
+      }
+    ]
+  },
+  {
+    "id": "inventory",
+    "title": "Inventory, Locations, and Assembly",
+    "eyebrow": {
+      "id": "inventory-eyebrow",
+      "en": "One inventory truth, wherever you sell",
+      "ar": "حقيقة مخزون واحدة، أينما تبيع"
+    },
+    "heading": {
+      "id": "inventory-heading",
+      "en": "Know what can be sold, what it depends on, and where it moved.",
+      "ar": "اعرف ما يمكن بيعه، وممَّ يتكوّن، وأين تحرّك."
+    },
+    "body": {
+      "id": "inventory-body",
+      "en": "Storefront and POS availability come back to controlled Store ledgers at Business-owned Locations. Products can link to finished inventory or depend on several components, so orderability reflects the materials actually available.",
+      "ar": "ترجع إتاحة المنتجات في واجهة المتجر ونقطة البيع إلى دفاتر مخزون منضبطة داخل مواقع يملكها النشاط. يمكن ربط المنتج بمخزون نهائي أو بعدة مكونات، فتعبّر الكمية القابلة للبيع عن المواد المتاحة فعلاً."
+    },
+    "premise": {
+      "id": "inventory-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "inventory-detail-1",
+        "en": "Inventory item search, SKU details, category assignment, costs, and guarded deletion.",
+        "ar": "البحث في أصناف المخزون وتفاصيل SKU وربط الفئات والتكاليف والحذف المحمي."
+      },
+      {
+        "id": "inventory-detail-2",
+        "en": "Business-owned Location creation, editing, activation, and Store linking.",
+        "ar": "إنشاء المواقع التي يملكها النشاط وتعديلها وتفعيلها وربطها بالمتاجر."
+      },
+      {
+        "id": "inventory-detail-3",
+        "en": "Separate Store-ledger stock, reserved quantity, available quantity, valuation, low-stock, and out-of-stock visibility.",
+        "ar": "مخزون منفصل في دفتر كل متجر مع الكمية المحجوزة والمتاحة والتقييم وتنبيهات النقص والنفاد."
+      },
+      {
+        "id": "inventory-detail-4",
+        "en": "Controlled movements for opening balance, adjustment, damage, return, waste, internal use, sales, receiving, and assembly.",
+        "ar": "حركات منضبطة للرصيد الافتتاحي والتسوية والتلف والمرتجع والهالك والاستخدام الداخلي والمبيعات والاستلام والتجميع."
+      },
+      {
+        "id": "inventory-detail-5",
+        "en": "Movement history, inventory reports, inline report viewing, and CSV export.",
+        "ar": "سجل الحركات وتقارير المخزون وعرض التقرير داخل الصفحة وتصدير CSV."
+      },
+      {
+        "id": "inventory-detail-6",
+        "en": "Product and variant inventory links.",
+        "ar": "ربط المنتجات وتركيباتها بأصناف المخزون."
+      },
+      {
+        "id": "inventory-detail-7",
+        "en": "Multi-component dependencies or bills of materials, including variant-specific dependency sets.",
+        "ar": "وصفات أو قوائم مكونات متعددة، ومنها مكونات خاصة بتركيبة منتج معينة."
+      },
+      {
+        "id": "inventory-detail-8",
+        "en": "Dependency-aware maximum orderable quantity across Storefront and POS.",
+        "ar": "حساب أقصى كمية قابلة للطلب حسب المكونات في واجهة المتجر ونقطة البيع."
+      },
+      {
+        "id": "inventory-detail-9",
+        "en": "Assembly preview, indivisible component consumption and finished-item production, automatic link on first build where applicable, and assembly history.",
+        "ar": "معاينة التجميع واستهلاك المكونات وإنتاج الصنف النهائي في عملية واحدة وربطه تلقائياً عند أول إنتاج عند انطباق ذلك وحفظ سجل التجميع."
+      },
+      {
+        "id": "inventory-detail-10",
+        "en": "Safeguards that prevent adjustments from violating active reservations.",
+        "ar": "ضوابط تمنع التسويات من الإخلال بالكميات المحجوزة للطلبات النشطة."
+      }
+    ]
+  },
+  {
+    "id": "purchasing",
+    "title": "Purchasing and Suppliers",
+    "eyebrow": {
+      "id": "purchasing-eyebrow",
+      "en": "Replenish with context",
+      "ar": "جدّد مخزونك بسياقه الكامل"
+    },
+    "heading": {
+      "id": "purchasing-heading",
+      "en": "Carry product detail from the purchase order into sellable inventory.",
+      "ar": "انقل تفاصيل المنتج من أمر الشراء إلى مخزون جاهز للبيع."
+    },
+    "body": {
+      "id": "purchasing-body",
+      "en": "Manage suppliers and purchase orders, receive into the intended Location, preserve option dimensions, and create or link products from purchase-order expansions without losing how variants map to inventory.",
+      "ar": "أدر الموردين وأوامر الشراء، واستلم في الموقع المقصود، واحتفظ بأبعاد الخيارات، وأنشئ المنتجات أو اربطها من تفاصيل أمر الشراء من غير فقدان علاقة التركيبات بالمخزون."
+    },
+    "premise": {
+      "id": "purchasing-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "purchasing-detail-1",
+        "en": "Supplier create, view, update, delete, and search.",
+        "ar": "إنشاء الموردين وعرضهم وتعديلهم وحذفهم والبحث فيهم."
+      },
+      {
+        "id": "purchasing-detail-2",
+        "en": "Purchase-order search, creation, supplier references, notes, line validation, detail, and CSV export.",
+        "ar": "البحث في أوامر الشراء وإنشاؤها وإضافة مرجع المورد والملاحظات والتحقق من البنود وعرض التفاصيل وتصدير CSV."
+      },
+      {
+        "id": "purchasing-detail-3",
+        "en": "Multi-dimensional option-group expansion on purchase-order lines.",
+        "ar": "توسيع مجموعات الخيارات متعددة الأبعاد داخل بنود أمر الشراء."
+      },
+      {
+        "id": "purchasing-detail-4",
+        "en": "Snapshots that preserve variant dimensions for later matching.",
+        "ar": "لقطات تحفظ أبعاد التركيبات لمطابقتها لاحقاً."
+      },
+      {
+        "id": "purchasing-detail-5",
+        "en": "Receiving into a selected Location through controlled stock movements.",
+        "ar": "استلام البضاعة في موقع محدد عبر حركات مخزون منضبطة."
+      },
+      {
+        "id": "purchasing-detail-6",
+        "en": "Receipt reversal and guarded purchase-order deletion.",
+        "ar": "إلغاء عملية الاستلام وحذف أمر الشراء بضوابط حماية."
+      },
+      {
+        "id": "purchasing-detail-7",
+        "en": "Create a new product from a purchase-order expansion or link the expansion to an existing product.",
+        "ar": "إنشاء منتج جديد من تفاصيل أمر الشراء أو ربطها بمنتج موجود."
+      },
+      {
+        "id": "purchasing-detail-8",
+        "en": "Stable matching of multi-dimensional option signatures.",
+        "ar": "مطابقة ثابتة لتركيبات الخيارات متعددة الأبعاد."
+      }
+    ]
+  },
+  {
+    "id": "orders",
+    "title": "Orders, Fulfilment, Refunds, and Recovery",
+    "eyebrow": {
+      "id": "orders-eyebrow",
+      "en": "Orders end to end",
+      "ar": "الطلبات من البداية للنهاية"
+    },
+    "heading": {
+      "id": "orders-heading",
+      "en": "Keep the order, stock, payment record, and customer history aligned.",
+      "ar": "خلّي الطلب والمخزون وسجل الدفع وتاريخ العميل متوافقين."
+    },
+    "body": {
+      "id": "orders-body",
+      "en": "Search and manage Store orders through controlled status changes, fulfilment, partial or full refunds, exports, customer timelines, reordering, and abandoned-checkout recovery.",
+      "ar": "ابحث في طلبات المتجر وأدرها عبر تغييرات حالة منضبطة وتجهيز الطلبات والاسترداد الجزئي أو الكامل والتصدير والخط الزمني للعميل وإعادة الطلب واسترجاع عمليات الدفع المتروكة."
+    },
+    "premise": {
+      "id": "orders-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "orders-detail-1",
+        "en": "Admin order search, filters, detail, controlled status transitions, option snapshots on order lines, and consolidated inventory pick lists.",
+        "ar": "البحث في الطلبات وفلاترها وتفاصيلها وتغييرات الحالة المنضبطة ولقطات الخيارات داخل بنود الطلب وقوائم تجهيز مخزون مجمعة."
+      },
+      {
+        "id": "orders-detail-2",
+        "en": "Fulfilment records and customer-visible progress timeline.",
+        "ar": "سجلات تجهيز الطلب وخط زمني يوضح التقدم للعميل."
+      },
+      {
+        "id": "orders-detail-3",
+        "en": "Partial and full refund requests bounded by captured funds, with internal accounting records and exports.",
+        "ar": "طلبات استرداد جزئي أو كامل في حدود المبلغ المحصّل، مع سجلات محاسبية داخلية وتصدير."
+      },
+      {
+        "id": "orders-detail-4",
+        "en": "Customer order history, detail, and reorder from a previous purchase.",
+        "ar": "سجل طلبات العميل وتفاصيلها وإعادة الطلب من عملية شراء سابقة."
+      },
+      {
+        "id": "orders-detail-5",
+        "en": "Abandoned-checkout persistence, recovery-token restoration, recovery status, and email-attempt timestamps; delivery requires configured email and worker infrastructure.",
+        "ar": "حفظ عملية الدفع المتروكة واستعادتها برمز مخصص ومتابعة حالة الاستعادة وتوقيت محاولات البريد؛ ويتطلب الإرسال إعداد البريد وعمليات الخلفية."
+      },
+      {
+        "id": "orders-detail-6",
+        "en": "Idempotent order placement, payment-attempt/event accounting foundation, stock reservation, release, and consumption.",
+        "ar": "إنشاء الطلب بأمان عند إعادة المحاولة وأساس محاسبي لمحاولات وأحداث الدفع وحجز المخزون وتحريره واستهلاكه."
+      },
+      {
+        "id": "orders-detail-7",
+        "en": "Order and refund CSV export.",
+        "ar": "تصدير الطلبات والاستردادات بصيغة CSV."
+      }
+    ]
+  },
+  {
+    "id": "pos",
+    "title": "Point of Sale",
+    "eyebrow": {
+      "id": "pos-eyebrow",
+      "en": "Sell in person",
+      "ar": "البيع داخل المتجر"
+    },
+    "heading": {
+      "id": "pos-heading",
+      "en": "A register that sells from the same inventory discipline.",
+      "ar": "صندوق بيع يعمل من نفس نظام المخزون المنضبط."
+    },
+    "body": {
+      "id": "pos-body",
+      "en": "Select the Store, Location, and register; open a shift; search products and variants; record cash, card, transfer, or other tender; calculate change for cash; issue a receipt; and keep the sale and stock movement durable and retry-safe.",
+      "ar": "اختر المتجر والموقع وصندوق البيع، وافتح الوردية، وابحث عن المنتجات وتركيباتها، وسجّل الدفع النقدي أو البطاقة أو التحويل أو طريقة أخرى، واحسب الباقي للنقد، واعرض الإيصال، وامنع تكرار البيع عند إعادة المحاولة."
+    },
+    "premise": {
+      "id": "pos-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "pos-detail-1",
+        "en": "Active Store, Location, and register selection.",
+        "ar": "اختيار المتجر النشط والموقع وصندوق البيع."
+      },
+      {
+        "id": "pos-detail-2",
+        "en": "Register lifecycle and shift opening, closing, opening cash, counted cash, variance, and shift history.",
+        "ar": "دورة حياة صندوق البيع وفتح الوردية وإغلاقها والنقدية الافتتاحية والنقدية المعدودة والفرق وسجل الورديات."
+      },
+      {
+        "id": "pos-detail-3",
+        "en": "Product catalog search, browsing, and variant selection.",
+        "ar": "البحث في كتالوج المنتجات وتصفحه واختيار تركيبة المنتج."
+      },
+      {
+        "id": "pos-detail-4",
+        "en": "Store-ledger and dependency-aware availability.",
+        "ar": "إتاحة محسوبة من دفتر مخزون المتجر ومكونات المنتج."
+      },
+      {
+        "id": "pos-detail-5",
+        "en": "Cart quantity controls and customer-name capture.",
+        "ar": "التحكم في كميات السلة وتسجيل اسم العميل."
+      },
+      {
+        "id": "pos-detail-6",
+        "en": "Order-level discounts, configured tax, cash/card/transfer/other tender recording, and cash change calculation.",
+        "ar": "خصم على مستوى الطلب وضريبة حسب الإعداد وتسجيل الدفع نقداً أو بالبطاقة أو التحويل أو طريقة أخرى وحساب الباقي للنقد."
+      },
+      {
+        "id": "pos-detail-7",
+        "en": "Sale creation as one indivisible operation, with safe retry protection against duplicate sales.",
+        "ar": "إنشاء البيع كعملية واحدة لا تتجزأ مع حماية إعادة المحاولة من تكرار البيع."
+      },
+      {
+        "id": "pos-detail-8",
+        "en": "Receipt view and durable searchable sale history.",
+        "ar": "عرض الإيصال وسجل بيع ثابت وقابل للبحث."
+      },
+      {
+        "id": "pos-detail-9",
+        "en": "Stock movements shared with the same inventory lifecycle used by online orders.",
+        "ar": "حركات مخزون تستخدم دورة المخزون نفسها الخاصة بالطلبات الإلكترونية."
+      }
+    ]
+  },
+  {
+    "id": "customers",
+    "title": "Customers, Loyalty, Reviews, and Messaging",
+    "eyebrow": {
+      "id": "customers-eyebrow",
+      "en": "Know each Store's customers",
+      "ar": "اعرف عملاء كل متجر"
+    },
+    "heading": {
+      "id": "customers-heading",
+      "en": "Build the relationship without mixing customer histories across Stores.",
+      "ar": "ابنِ علاقة العميل من غير خلط تاريخه بين المتاجر."
+    },
+    "body": {
+      "id": "customers-body",
+      "en": "A customer can use one Business-level identity while each Store keeps its own profile, addresses, favorites, consent, loyalty, reviews, and commerce history.",
+      "ar": "يمكن للعميل استخدام هوية واحدة داخل النشاط التجاري، بينما يحتفظ كل متجر بملفه وعناوينه ومفضلته وموافقاته وولائه ومراجعاته وتاريخه التجاري بشكل مستقل."
+    },
+    "premise": {
+      "id": "customers-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "customers-detail-1",
+        "en": "Customer search and directory.",
+        "ar": "دليل العملاء والبحث فيه."
+      },
+      {
+        "id": "customers-detail-2",
+        "en": "Registration, login, logout, email confirmation, forgot password, password reset, recovery, and invitation acceptance.",
+        "ar": "التسجيل وتسجيل الدخول والخروج وتأكيد البريد ونسيان كلمة المرور وإعادة تعيينها والاستعادة وقبول الدعوة."
+      },
+      {
+        "id": "customers-detail-3",
+        "en": "Store-specific profile editing and address create, edit, delete, and default selection.",
+        "ar": "تعديل ملف العميل الخاص بالمتجر وإنشاء العناوين وتعديلها وحذفها واختيار العنوان الافتراضي."
+      },
+      {
+        "id": "customers-detail-4",
+        "en": "Favorites with guest-to-account merge.",
+        "ar": "المفضلة مع دمج اختيارات الزائر في الحساب."
+      },
+      {
+        "id": "customers-detail-5",
+        "en": "Loyalty earning rules, point-value settings, balance, transaction history, and administrative point adjustment.",
+        "ar": "قواعد كسب الولاء وإعداد قيمة النقاط والرصيد وسجل الحركات وتعديل النقاط إدارياً."
+      },
+      {
+        "id": "customers-detail-6",
+        "en": "Eligible customer review creation, editing, deletion, rating display, and admin moderation.",
+        "ar": "إنشاء العميل المؤهل للمراجعة وتعديلها وحذفها وعرض التقييم وإدارة المراجعات."
+      },
+      {
+        "id": "customers-detail-7",
+        "en": "Email, WhatsApp, personalization, and browser-push consent controls.",
+        "ar": "التحكم في موافقات البريد وواتساب والتخصيص وإشعارات المتصفح."
+      },
+      {
+        "id": "customers-detail-8",
+        "en": "Newsletter subscription and subscriber administration.",
+        "ar": "الاشتراك في النشرة البريدية وإدارة المشتركين."
+      },
+      {
+        "id": "customers-detail-9",
+        "en": "Store-scoped web push subscription and permission-controlled admin broadcasts when deployment keys are configured.",
+        "ar": "اشتراك إشعارات الويب الخاص بالمتجر وبث إداري محكوم بالصلاحيات عند إعداد مفاتيح النشر."
+      },
+      {
+        "id": "customers-detail-10",
+        "en": "Admin notification inbox with unread state, filters, mark read, mark all read, and delete.",
+        "ar": "صندوق إشعارات الإدارة مع حالة غير المقروء والفلاتر وتحديد المقروء وتحديد الكل وحذف الإشعار."
+      }
+    ]
+  },
+  {
+    "id": "understand",
+    "title": "Finance and Analytics",
+    "eyebrow": {
+      "id": "understand-eyebrow",
+      "en": "See the operating picture",
+      "ar": "شوف صورة التشغيل كاملة"
+    },
+    "heading": {
+      "id": "understand-heading",
+      "en": "Connect stock and sales to the numbers that explain the Business.",
+      "ar": "اربط المخزون والمبيعات بالأرقام التي تشرح نشاطك."
+    },
+    "body": {
+      "id": "understand-body",
+      "en": "Follow Store performance by date range, understand product and customer patterns, and maintain core accounting records without separating commerce from its financial consequences.",
+      "ar": "تابع أداء المتجر حسب الفترة، وافهم أنماط المنتجات والعملاء، واحتفظ بالسجلات المحاسبية الأساسية من غير فصل التجارة عن نتائجها المالية."
+    },
+    "premise": {
+      "id": "understand-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "understand-detail-1",
+        "en": "Revenue, order count, average order value, and customer acquisition.",
+        "ar": "الإيراد وعدد الطلبات ومتوسط قيمة الطلب واكتساب العملاء."
+      },
+      {
+        "id": "understand-detail-2",
+        "en": "Daily revenue, orders, and customers.",
+        "ar": "الإيراد والطلبات والعملاء يومياً."
+      },
+      {
+        "id": "understand-detail-3",
+        "en": "Revenue by category.",
+        "ar": "الإيراد حسب الفئة."
+      },
+      {
+        "id": "understand-detail-4",
+        "en": "Top products by revenue and units.",
+        "ar": "أفضل المنتجات حسب الإيراد والوحدات."
+      },
+      {
+        "id": "understand-detail-5",
+        "en": "Geographic distribution by Egyptian governorate.",
+        "ar": "التوزيع الجغرافي حسب المحافظة المصرية."
+      },
+      {
+        "id": "understand-detail-6",
+        "en": "Payment-method split.",
+        "ar": "توزيع المبيعات حسب طريقة الدفع."
+      },
+      {
+        "id": "understand-detail-7",
+        "en": "Coupon usage and discount totals.",
+        "ar": "استخدام الكوبونات وإجمالي الخصومات."
+      },
+      {
+        "id": "understand-detail-8",
+        "en": "Loyalty points issued and redeemed in recorded transactions.",
+        "ar": "نقاط الولاء الممنوحة والمستخدمة في الحركات المسجلة."
+      },
+      {
+        "id": "understand-detail-9",
+        "en": "Rating distribution.",
+        "ar": "توزيع التقييمات."
+      },
+      {
+        "id": "understand-detail-10",
+        "en": "Refund totals and daily refund activity.",
+        "ar": "إجمالي الاستردادات وحركتها اليومية."
+      },
+      {
+        "id": "understand-detail-11",
+        "en": "Finance overview.",
+        "ar": "نظرة عامة على المالية."
+      },
+      {
+        "id": "understand-detail-12",
+        "en": "Date-ranged income statement.",
+        "ar": "قائمة دخل حسب الفترة الزمنية."
+      },
+      {
+        "id": "understand-detail-13",
+        "en": "Balance sheet.",
+        "ar": "الميزانية."
+      },
+      {
+        "id": "understand-detail-14",
+        "en": "Expense list and creation.",
+        "ar": "عرض المصروفات وإنشاؤها."
+      },
+      {
+        "id": "understand-detail-15",
+        "en": "Asset register and editing.",
+        "ar": "سجل الأصول وتعديلها."
+      },
+      {
+        "id": "understand-detail-16",
+        "en": "Chart of accounts.",
+        "ar": "دليل الحسابات."
+      },
+      {
+        "id": "understand-detail-17",
+        "en": "Balanced double-entry journal foundation.",
+        "ar": "أساس قيود يومية متوازنة بالقيد المزدوج."
+      },
+      {
+        "id": "understand-detail-18",
+        "en": "Configurable inventory accounting and automated records for supported sales, cost, refund, receipt, and expense flows.",
+        "ar": "محاسبة مخزون قابلة للإعداد وسجلات تلقائية لعمليات البيع والتكلفة والاسترداد والاستلام والمصروفات المدعومة."
+      }
+    ]
+  },
+  {
+    "id": "identity",
+    "title": "Store Identity, Settings, SEO, and PWA",
+    "eyebrow": {
+      "id": "identity-eyebrow",
+      "en": "Your Store stays your brand",
+      "ar": "متجرك يفضل بعلامتك"
+    },
+    "heading": {
+      "id": "identity-heading",
+      "en": "Control how every Store looks, speaks, sells, and appears in search.",
+      "ar": "تحكّم في شكل كل متجر ولغته وبيعه وظهوره في البحث."
+    },
+    "body": {
+      "id": "identity-body",
+      "en": "Jizrak supplies the operating structure while each Store controls its localized identity, content, commerce rules, and public presentation.",
+      "ar": "يوفّر جِذرك هيكل التشغيل، بينما يتحكم كل متجر في هويته ومحتواه وقواعده التجارية وظهوره العام بكل لغة."
+    },
+    "premise": {
+      "id": "identity-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "identity-detail-1",
+        "en": "Localized Store name, logo, colors, typography, radius, imagery, metadata, and content.",
+        "ar": "اسم المتجر المحلي وشعاره وألوانه وخطوطه واستدارة عناصره وصوره وبياناته الوصفية ومحتواه."
+      },
+      {
+        "id": "identity-detail-2",
+        "en": "Validated appearance themes with light/dark preview and theme import/export.",
+        "ar": "سمات مظهر خاضعة للتحقق مع معاينة فاتحة وداكنة واستيراد السمة وتصديرها."
+      },
+      {
+        "id": "identity-detail-3",
+        "en": "Bilingual hero banners and announcement ticker.",
+        "ar": "بانرات رئيسية وشريط إعلانات بالعربية والإنجليزية."
+      },
+      {
+        "id": "identity-detail-4",
+        "en": "Built-in and custom Storefront navigation with order and enablement controls.",
+        "ar": "تنقل جاهز أو مخصص لواجهة المتجر مع التحكم في الترتيب والتفعيل."
+      },
+      {
+        "id": "identity-detail-5",
+        "en": "Store contact details, primary currency, COD, tax, fallback shipping, low-stock threshold, and inventory-accounting mode.",
+        "ar": "بيانات اتصال المتجر وعملته الأساسية والدفع عند الاستلام والضريبة والشحن الاحتياطي وحد نقص المخزون ووضع محاسبة المخزون."
+      },
+      {
+        "id": "identity-detail-6",
+        "en": "Product-card style, layout, grid columns, ratings display, and out-of-stock hide or gray behavior.",
+        "ar": "نمط بطاقة المنتج والتخطيط وأعمدة الشبكة وعرض التقييمات وإخفاء المنتج النافد أو عرضه بالرمادي."
+      },
+      {
+        "id": "identity-detail-7",
+        "en": "Loyalty earning and point-value rules, plus social links.",
+        "ar": "قواعد كسب نقاط الولاء وقيمتها والروابط الاجتماعية."
+      },
+      {
+        "id": "identity-detail-8",
+        "en": "Bilingual SEO defaults, per-product and per-bundle metadata, Open Graph imagery, sitemap, and robots behavior.",
+        "ar": "إعدادات SEO بالعربية والإنجليزية وبيانات كل منتج وباقة وصور Open Graph وخريطة الموقع وسلوك محركات البحث."
+      },
+      {
+        "id": "identity-detail-9",
+        "en": "Governorate-based shipping rules, rates, priority, free-shipping thresholds, and CSV operations.",
+        "ar": "قواعد شحن حسب المحافظة وأسعارها وأولويتها وحد الشحن المجاني وعمليات CSV."
+      },
+      {
+        "id": "identity-detail-10",
+        "en": "Configurable product-page widgets.",
+        "ar": "مكونات قابلة للإعداد داخل صفحة المنتج."
+      },
+      {
+        "id": "identity-detail-11",
+        "en": "Installable Store PWA with cached Storefront assets and browser push support when configured.",
+        "ar": "تطبيق متجر قابل للتثبيت مع تخزين أصول الواجهة ودعم إشعارات المتصفح عند إعدادها."
+      },
+      {
+        "id": "identity-detail-12",
+        "en": "Store-aware managed handles, custom-domain registry, canonical host behavior, and fail-closed Store resolution.",
+        "ar": "عناوين مُدارة تراعي المتجر وسجل للنطاقات المخصصة وسلوك العنوان الأساسي وحل هوية المتجر بشكل يرفض الحالات غير الموثوقة."
+      }
+    ]
+  },
+  {
+    "id": "operate",
+    "title": "Access, Isolation, Safety, and Recovery",
+    "eyebrow": {
+      "id": "operate-eyebrow",
+      "en": "Control without confusion",
+      "ar": "تحكّم واضح من غير لخبطة"
+    },
+    "heading": {
+      "id": "operate-heading",
+      "en": "Give people the access they need and keep every Store boundary explicit.",
+      "ar": "امنح كل شخص الصلاحية التي يحتاجها وحافظ على حدود كل متجر."
+    },
+    "body": {
+      "id": "operate-body",
+      "en": "Business ownership, Store-specific grants, controlled stock movements, auditable events, private media, and restricted platform recovery infrastructure create a safer operating foundation without turning the landing page into a certification claim.",
+      "ar": "توفّر ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة وبنية استعادة المنصة المقيّدة أساساً أكثر أماناً، من غير تقديم ادعاءات اعتماد غير مثبتة."
+    },
+    "premise": {
+      "id": "operate-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "operate-detail-1",
+        "en": "Permission-filtered Store admin navigation and product/order command search.",
+        "ar": "تنقل إدارة المتجر حسب الصلاحيات وبحث سريع في أوامر المنتجات والطلبات."
+      },
+      {
+        "id": "operate-detail-2",
+        "en": "Business Owner authority and Store-specific predefined or custom staff roles.",
+        "ar": "صلاحيات مالك النشاط وأدوار موظفين جاهزة أو مخصصة لكل متجر."
+      },
+      {
+        "id": "operate-detail-3",
+        "en": "Staff lookup, hashed expiring invitations, grant editing, suspension, revocation, and mid-session access-revocation handling.",
+        "ar": "البحث عن الموظفين ودعوات مشفّرة محددة المدة وتعديل الصلاحية وتعليقها وإلغاؤها والتعامل مع سحب الوصول أثناء الجلسة."
+      },
+      {
+        "id": "operate-detail-4",
+        "en": "Safe Store entry and Store switching without carrying another Store's cart, draft, filter, deep route, or mutation state.",
+        "ar": "دخول وتبديل آمن للمتجر من غير نقل سلة أو مسودة أو فلتر أو صفحة داخلية أو عملية تعديل من متجر آخر."
+      },
+      {
+        "id": "operate-detail-5",
+        "en": "Business workspace subscription state, trial end, Store capacity, and billing-recovery guidance.",
+        "ar": "حالة الاشتراك في مساحة النشاط ونهاية الفترة التجريبية وسعة المتاجر وإرشادات استعادة الفوترة."
+      },
+      {
+        "id": "operate-detail-6",
+        "en": "Store-aware host resolution that fails closed for unknown, ambiguous, inactive, or untrusted hosts.",
+        "ar": "حل عنوان الموقع حسب المتجر مع رفض العناوين المجهولة أو الملتبسة أو غير النشطة أو غير الموثوقة."
+      },
+      {
+        "id": "operate-detail-7",
+        "en": "Store-partitioned cart and checkout persistence.",
+        "ar": "حفظ السلة والدفع في مساحة منفصلة لكل متجر."
+      },
+      {
+        "id": "operate-detail-8",
+        "en": "Store-scoped database policy foundation, transaction-bound context, and immutable operational history where required.",
+        "ar": "أساس سياسات بيانات خاص بكل متجر وسياق مرتبط بالمعاملة وسجل تشغيل غير قابل للتعديل عند الحاجة."
+      },
+      {
+        "id": "operate-detail-9",
+        "en": "Private Store media with signed access.",
+        "ar": "وسائط خاصة بالمتجر بوصول موقّع."
+      },
+      {
+        "id": "operate-detail-10",
+        "en": "Restricted Platform Super Admin recovery infrastructure with encrypted, checksummed artifacts; it is not a merchant Store-admin backup feature and may be disabled by deployment configuration.",
+        "ar": "بنية استعادة مقيّدة لمسؤول المنصة بملفات مشفّرة ومزوّدة بفحص سلامة؛ وليست ميزة نسخ احتياطي لمسؤول المتجر وقد تكون معطلة حسب إعداد النشر."
+      },
+      {
+        "id": "operate-detail-11",
+        "en": "Platform operations overview, Business health and alerts, subscription-state controls, Store lifecycle overrides, archive/restore workflow, domain-state controls, and audited time-limited support access.",
+        "ar": "نظرة عامة لعمليات المنصة وصحة الأنشطة وتنبيهاتها والتحكم في حالة الاشتراك ودورة حياة المتجر والأرشفة والاستعادة وحالة النطاق ووصول دعم مؤقت وخاضع للمراجعة."
+      }
+    ]
+  },
+  {
+    "id": "features",
+    "title": "Complete Feature Atlas",
+    "eyebrow": {
+      "id": "features-eyebrow",
+      "en": "The complete operating system",
+      "ar": "نظام التشغيل الكامل"
+    },
+    "heading": {
+      "id": "features-heading",
+      "en": "Every connected capability, in one place.",
+      "ar": "كل الإمكانات المترابطة، في مكان واحد."
+    },
+    "body": {
+      "id": "features-introduction",
+      "en": "Open any group to see the detailed workflows Jizrak connects. Nothing here replaces the product itself; it gives your team a clear map of what can be explored.",
+      "ar": "افتح أي مجموعة لرؤية تفاصيل سير العمل الذي يربطه جِذرك. هذه القائمة لا تستبدل تجربة المنتج؛ لكنها تعطي فريقك خريطة واضحة لما يمكن استكشافه."
+    },
+    "premise": {
+      "id": "features-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": [
+      {
+        "id": "features-detail-1",
+        "en": "Business and Stores / النشاط والمتاجر",
+        "ar": "Business discovery and search; Business creation; workspace; subscription/trial state; Store capacity and billing-recovery guidance; Store search and creation; managed handles; localized names; launch-readiness checklist; publication; multiple independent Stores; Active Store switching; shared Locations with separate ledgers."
+      },
+      {
+        "id": "features-detail-2",
+        "en": "Team and access / الفريق والصلاحيات",
+        "ar": "Owner-wide access; Store-specific grants; predefined and custom roles; permission-filtered navigation; staff lookup; invitation; update; suspension; revocation; access-loss handling."
+      },
+      {
+        "id": "features-detail-3",
+        "en": "Catalog / الكتالوج",
+        "ar": "Products; bilingual content; statuses; images; hierarchical categories; reusable options; option values; color or visual swatches; generated variants; SKU and price overrides; image inheritance; product defaults; CSV import preview, import, and export; guided product workflows."
+      },
+      {
+        "id": "features-detail-4",
+        "en": "Merchandising / العرض والترويج",
+        "ar": "Bundles; tier pricing; combo offers; coupons; product/category targeting; hero banners; announcement bar; custom navigation; product widgets; reviews; recommendations; recently viewed; newsletter."
+      },
+      {
+        "id": "features-detail-5",
+        "en": "Inventory / المخزون",
+        "ar": "Inventory items and categories; multi-Location Store ledgers; reserved and available quantities; costs and valuation; low/out-of-stock visibility; controlled adjustments; movements; history; inline reports; CSV; guarded deletion; guided inventory workflows."
+      },
+      {
+        "id": "features-detail-6",
+        "en": "Dependencies and assembly / المكونات والتجميع",
+        "ar": "Product and variant stock links; shared and variant dependencies; multi-component bills of materials; dependency-aware availability; assembly preview; assembly as one indivisible operation; auto-link on first build; assembly history."
+      },
+      {
+        "id": "features-detail-7",
+        "en": "Purchasing / المشتريات",
+        "ar": "Supplier CRUD/search; purchase orders; references and notes; option expansion; PO snapshots; Location receiving; receipt cancellation; deletion safeguards; purchase-order CSV export; create product from PO; link to existing product; multidimensional matching."
+      },
+      {
+        "id": "features-detail-8",
+        "en": "Storefront / واجهة المتجر",
+        "ar": "Search, suggestions, and command navigation; categories; option filters; sort; pagination; URL state; remembered filters; multiple views; cards; quick view; galleries; product detail; variants; pricing; availability; bundles; recommendations; recently viewed; ratings and reviews."
+      },
+      {
+        "id": "features-detail-9",
+        "en": "Cart and checkout / السلة والدفع",
+        "ar": "Store-scoped persistent cart; quantity limits; stock reconciliation; offers; coupons; saved/new addresses; governorate/area shipping; tax; COD; authoritative totals; order creation as one operation; last-unit concurrency protection; confirmation; token recovery with provider-dependent email delivery."
+      },
+      {
+        "id": "features-detail-10",
+        "en": "Orders / الطلبات",
+        "ar": "Search; filters; details; option snapshots; consolidated pick lists; controlled statuses; fulfilment timeline; partial/full internal refund records; exports; customer history; reorder; reservations; payment attempts and events; guided workflows."
+      },
+      {
+        "id": "features-detail-11",
+        "en": "POS / نقطة البيع",
+        "ar": "Store, Location, and register context; register lifecycle; shift open/close/history; cash counts and variance; catalog search; variants; availability; cart; discount; tax; customer name; cash/card/transfer/other tender; cash change; one-operation sale; duplicate-safe retry; receipt; sale history; guided workflow."
+      },
+      {
+        "id": "features-detail-12",
+        "en": "Customers / العملاء",
+        "ar": "Directory; Business identity; Store profiles; profile edit; address CRUD/default; favorites and guest merge; consent; order history/detail/reorder; loyalty balance and history; eligible reviews."
+      },
+      {
+        "id": "features-detail-13",
+        "en": "Engagement / التواصل",
+        "ar": "Coupons and usage; loyalty earning/admin adjustment; review moderation; newsletter subscribers; push opt-in; Store broadcasts; notification inbox/read/delete; abandoned-cart recovery status."
+      },
+      {
+        "id": "features-detail-14",
+        "en": "Finance / المالية",
+        "ar": "Overview; chart of accounts; double-entry journal foundation; expenses; assets; income statement; balance sheet; inventory accounting configuration; supported automatic commerce postings."
+      },
+      {
+        "id": "features-detail-15",
+        "en": "Analytics / التحليلات",
+        "ar": "Revenue; orders; AOV; customer acquisition; daily trends; category revenue; top products; governorates; payment mix; coupons; loyalty; ratings; refunds; date ranges."
+      },
+      {
+        "id": "features-detail-16",
+        "en": "Store configuration / إعداد المتجر",
+        "ar": "Contact and currency; COD; tax; shipping; stock thresholds; accounting mode; layout; cards; grid; ratings; out-of-stock behavior; ticker; loyalty; social links; bilingual SEO; colors; themes; banners; navigation; widgets."
+      },
+      {
+        "id": "features-detail-17",
+        "en": "Platform and resilience / المنصة والاستمرارية",
+        "ar": "Installable PWA and cached assets; web push when configured; Store-aware hosts; managed handles; custom-domain registry; private media; restricted Super Admin recovery infrastructure; encrypted artifacts and checksums; platform health, lifecycle, archive/restore, domain controls, and bounded support access."
+      }
+    ],
+    "groups": [
+      {
+        "id": "group-1",
+        "name": {
+          "id": "group-1-name",
+          "en": "Business and Stores",
+          "ar": "النشاط والمتاجر"
+        },
+        "inventory": {
+          "id": "group-1-inventory",
+          "en": "Business discovery and search; Business creation; workspace; subscription/trial state; Store capacity and billing-recovery guidance; Store search and creation; managed handles; localized names; launch-readiness checklist; publication; multiple independent Stores; Active Store switching; shared Locations with separate ledgers.",
+          "ar": "اكتشاف الأنشطة والبحث فيها؛ إنشاء النشاط؛ مساحة العمل؛ حالة الاشتراك والفترة التجريبية؛ سعة المتاجر وإرشادات استعادة الفوترة؛ البحث عن المتاجر وإنشاؤها؛ عناوين مُدارة؛ أسماء محلية؛ قائمة جاهزية الإطلاق؛ النشر؛ عدة متاجر مستقلة؛ تبديل المتجر النشط؛ مواقع مشتركة بدفاتر منفصلة."
+        }
+      },
+      {
+        "id": "group-2",
+        "name": {
+          "id": "group-2-name",
+          "en": "Team and access",
+          "ar": "الفريق والصلاحيات"
+        },
+        "inventory": {
+          "id": "group-2-inventory",
+          "en": "Owner-wide access; Store-specific grants; predefined and custom roles; permission-filtered navigation; staff lookup; invitation; update; suspension; revocation; access-loss handling.",
+          "ar": "وصول المالك لكل المتاجر؛ صلاحيات خاصة بكل متجر؛ أدوار جاهزة ومخصصة؛ تنقل حسب الصلاحية؛ البحث عن الموظفين؛ الدعوة؛ التعديل؛ الإيقاف؛ الإلغاء؛ التعامل مع فقدان الوصول."
+        }
+      },
+      {
+        "id": "group-3",
+        "name": {
+          "id": "group-3-name",
+          "en": "Catalog",
+          "ar": "الكتالوج"
+        },
+        "inventory": {
+          "id": "group-3-inventory",
+          "en": "Products; bilingual content; statuses; images; hierarchical categories; reusable options; option values; color or visual swatches; generated variants; SKU and price overrides; image inheritance; product defaults; CSV import preview, import, and export; guided product workflows.",
+          "ar": "المنتجات؛ محتوى ثنائي اللغة؛ الحالات؛ الصور؛ فئات متدرجة؛ خيارات قابلة لإعادة الاستخدام؛ قيم الخيارات؛ عينات ألوان أو خيارات مرئية؛ توليد التركيبات؛ رموز وأسعار مخصصة؛ وراثة الصور؛ إعدادات المنتج الافتراضية؛ معاينة واستيراد وتصدير CSV؛ إرشادات داخلية لعمليات المنتج."
+        }
+      },
+      {
+        "id": "group-4",
+        "name": {
+          "id": "group-4-name",
+          "en": "Merchandising",
+          "ar": "العرض والترويج"
+        },
+        "inventory": {
+          "id": "group-4-inventory",
+          "en": "Bundles; tier pricing; combo offers; coupons; product/category targeting; hero banners; announcement bar; custom navigation; product widgets; reviews; recommendations; recently viewed; newsletter.",
+          "ar": "الباقات؛ أسعار الشرائح؛ العروض المجمعة؛ الكوبونات؛ استهداف المنتجات والفئات؛ البانرات؛ شريط الإعلانات؛ تنقل مخصص؛ مكونات صفحة المنتج؛ المراجعات؛ التوصيات؛ المشاهدة الأخيرة؛ النشرة البريدية."
+        }
+      },
+      {
+        "id": "group-5",
+        "name": {
+          "id": "group-5-name",
+          "en": "Inventory",
+          "ar": "المخزون"
+        },
+        "inventory": {
+          "id": "group-5-inventory",
+          "en": "Inventory items and categories; multi-Location Store ledgers; reserved and available quantities; costs and valuation; low/out-of-stock visibility; controlled adjustments; movements; history; inline reports; CSV; guarded deletion; guided inventory workflows.",
+          "ar": "أصناف وفئات المخزون؛ دفاتر المتجر متعددة المواقع؛ الكميات المحجوزة والمتاحة؛ التكاليف والتقييم؛ تنبيهات النقص والنفاد؛ تسويات منضبطة؛ الحركات؛ السجل؛ تقارير داخل الصفحة؛ CSV؛ حذف محمي؛ إرشادات داخلية لعمليات المخزون."
+        }
+      },
+      {
+        "id": "group-6",
+        "name": {
+          "id": "group-6-name",
+          "en": "Dependencies and assembly",
+          "ar": "المكونات والتجميع"
+        },
+        "inventory": {
+          "id": "group-6-inventory",
+          "en": "Product and variant stock links; shared and variant dependencies; multi-component bills of materials; dependency-aware availability; assembly preview; assembly as one indivisible operation; auto-link on first build; assembly history.",
+          "ar": "ربط مخزون المنتج والتركيبة؛ مكونات مشتركة وخاصة بالتركيبة؛ قوائم مكونات متعددة؛ إتاحة حسب المكونات؛ معاينة التجميع؛ تنفيذ التجميع كعملية واحدة؛ ربط تلقائي عند أول إنتاج؛ سجل التجميع."
+        }
+      },
+      {
+        "id": "group-7",
+        "name": {
+          "id": "group-7-name",
+          "en": "Purchasing",
+          "ar": "المشتريات"
+        },
+        "inventory": {
+          "id": "group-7-inventory",
+          "en": "Supplier CRUD/search; purchase orders; references and notes; option expansion; PO snapshots; Location receiving; receipt cancellation; deletion safeguards; purchase-order CSV export; create product from PO; link to existing product; multidimensional matching.",
+          "ar": "إنشاء الموردين وعرضهم وتعديلهم وحذفهم والبحث فيهم؛ أوامر الشراء؛ المراجع والملاحظات؛ توسيع الخيارات؛ لقطات أمر الشراء؛ الاستلام في الموقع؛ إلغاء الاستلام؛ حماية الحذف؛ تصدير أوامر الشراء CSV؛ إنشاء منتج من الأمر؛ الربط بمنتج موجود؛ مطابقة متعددة الأبعاد."
+        }
+      },
+      {
+        "id": "group-8",
+        "name": {
+          "id": "group-8-name",
+          "en": "Storefront",
+          "ar": "واجهة المتجر"
+        },
+        "inventory": {
+          "id": "group-8-inventory",
+          "en": "Search, suggestions, and command navigation; categories; option filters; sort; pagination; URL state; remembered filters; multiple views; cards; quick view; galleries; product detail; variants; pricing; availability; bundles; recommendations; recently viewed; ratings and reviews.",
+          "ar": "البحث والاقتراحات والتنقل السريع؛ الفئات؛ فلاتر الخيارات؛ الترتيب؛ الصفحات؛ حالة الرابط؛ تذكر الفلاتر؛ طرق عرض؛ البطاقات؛ المعاينة السريعة؛ الصور؛ تفاصيل المنتج؛ التركيبات؛ الأسعار؛ الإتاحة؛ الباقات؛ التوصيات؛ المشاهدة الأخيرة؛ التقييمات والمراجعات."
+        }
+      },
+      {
+        "id": "group-9",
+        "name": {
+          "id": "group-9-name",
+          "en": "Cart and checkout",
+          "ar": "السلة والدفع"
+        },
+        "inventory": {
+          "id": "group-9-inventory",
+          "en": "Store-scoped persistent cart; quantity limits; stock reconciliation; offers; coupons; saved/new addresses; governorate/area shipping; tax; COD; authoritative totals; order creation as one operation; last-unit concurrency protection; confirmation; token recovery with provider-dependent email delivery.",
+          "ar": "سلة محفوظة لكل متجر؛ حدود الكمية؛ مراجعة المخزون؛ العروض؛ الكوبونات؛ عناوين محفوظة أو جديدة؛ شحن المحافظة والمنطقة؛ الضريبة؛ الدفع عند الاستلام؛ إجماليات موثوقة؛ إنشاء الطلب كعملية واحدة؛ حماية آخر قطعة عند تزامن المشترين؛ التأكيد؛ استعادة برمز مع إرسال بريد يعتمد على إعداد المزود."
+        }
+      },
+      {
+        "id": "group-10",
+        "name": {
+          "id": "group-10-name",
+          "en": "Orders",
+          "ar": "الطلبات"
+        },
+        "inventory": {
+          "id": "group-10-inventory",
+          "en": "Search; filters; details; option snapshots; consolidated pick lists; controlled statuses; fulfilment timeline; partial/full internal refund records; exports; customer history; reorder; reservations; payment attempts and events; guided workflows.",
+          "ar": "البحث؛ الفلاتر؛ التفاصيل؛ لقطات الخيارات؛ قوائم تجهيز مجمعة؛ حالات منضبطة؛ خط التجهيز الزمني؛ سجلات استرداد جزئي وكامل؛ التصدير؛ تاريخ العميل؛ إعادة الطلب؛ الحجوزات؛ محاولات وأحداث الدفع؛ إرشادات داخلية."
+        }
+      },
+      {
+        "id": "group-11",
+        "name": {
+          "id": "group-11-name",
+          "en": "POS",
+          "ar": "نقطة البيع"
+        },
+        "inventory": {
+          "id": "group-11-inventory",
+          "en": "Store, Location, and register context; register lifecycle; shift open/close/history; cash counts and variance; catalog search; variants; availability; cart; discount; tax; customer name; cash/card/transfer/other tender; cash change; one-operation sale; duplicate-safe retry; receipt; sale history; guided workflow.",
+          "ar": "سياق المتجر والموقع وصندوق البيع؛ دورة حياة الصندوق؛ فتح وإغلاق وسجل الورديات؛ عد النقدية والفرق؛ البحث؛ التركيبات؛ الإتاحة؛ السلة؛ الخصم؛ الضريبة؛ اسم العميل؛ الدفع نقداً أو بالبطاقة أو التحويل أو غيره؛ باقي النقد؛ بيع في عملية واحدة؛ إعادة محاولة بلا تكرار؛ الإيصال؛ سجل البيع؛ إرشادات داخلية."
+        }
+      },
+      {
+        "id": "group-12",
+        "name": {
+          "id": "group-12-name",
+          "en": "Customers",
+          "ar": "العملاء"
+        },
+        "inventory": {
+          "id": "group-12-inventory",
+          "en": "Directory; Business identity; Store profiles; profile edit; address CRUD/default; favorites and guest merge; consent; order history/detail/reorder; loyalty balance and history; eligible reviews.",
+          "ar": "الدليل؛ هوية النشاط؛ ملفات المتاجر؛ تعديل الملف؛ إدارة العناوين والافتراضي؛ المفضلة ودمج الضيف؛ الموافقات؛ سجل وتفاصيل وإعادة الطلب؛ رصيد وسجل الولاء؛ المراجعات المؤهلة."
+        }
+      },
+      {
+        "id": "group-13",
+        "name": {
+          "id": "group-13-name",
+          "en": "Engagement",
+          "ar": "التواصل"
+        },
+        "inventory": {
+          "id": "group-13-inventory",
+          "en": "Coupons and usage; loyalty earning/admin adjustment; review moderation; newsletter subscribers; push opt-in; Store broadcasts; notification inbox/read/delete; abandoned-cart recovery status.",
+          "ar": "الكوبونات والاستخدام؛ كسب الولاء وتعديل الإدارة؛ مراجعة التقييمات؛ مشتركو النشرة؛ الاشتراك في الإشعارات؛ بث المتجر؛ صندوق الإشعارات وقراءتها وحذفها؛ حالة استرجاع السلة."
+        }
+      },
+      {
+        "id": "group-14",
+        "name": {
+          "id": "group-14-name",
+          "en": "Finance",
+          "ar": "المالية"
+        },
+        "inventory": {
+          "id": "group-14-inventory",
+          "en": "Overview; chart of accounts; double-entry journal foundation; expenses; assets; income statement; balance sheet; inventory accounting configuration; supported automatic commerce postings.",
+          "ar": "النظرة العامة؛ دليل الحسابات؛ أساس القيود المزدوجة؛ المصروفات؛ الأصول؛ قائمة الدخل؛ الميزانية؛ إعداد محاسبة المخزون؛ قيود تلقائية للعمليات المدعومة."
+        }
+      },
+      {
+        "id": "group-15",
+        "name": {
+          "id": "group-15-name",
+          "en": "Analytics",
+          "ar": "التحليلات"
+        },
+        "inventory": {
+          "id": "group-15-inventory",
+          "en": "Revenue; orders; AOV; customer acquisition; daily trends; category revenue; top products; governorates; payment mix; coupons; loyalty; ratings; refunds; date ranges.",
+          "ar": "الإيراد؛ الطلبات؛ متوسط قيمة الطلب؛ اكتساب العملاء؛ الاتجاهات اليومية؛ إيراد الفئات؛ أفضل المنتجات؛ المحافظات؛ مزيج الدفع؛ الكوبونات؛ الولاء؛ التقييمات؛ الاستردادات؛ الفترات الزمنية."
+        }
+      },
+      {
+        "id": "group-16",
+        "name": {
+          "id": "group-16-name",
+          "en": "Store configuration",
+          "ar": "إعداد المتجر"
+        },
+        "inventory": {
+          "id": "group-16-inventory",
+          "en": "Contact and currency; COD; tax; shipping; stock thresholds; accounting mode; layout; cards; grid; ratings; out-of-stock behavior; ticker; loyalty; social links; bilingual SEO; colors; themes; banners; navigation; widgets.",
+          "ar": "الاتصال والعملة؛ الدفع عند الاستلام؛ الضريبة؛ الشحن؛ حد المخزون؛ وضع المحاسبة؛ التخطيط؛ البطاقات؛ الشبكة؛ التقييمات؛ سلوك النفاد؛ الشريط؛ الولاء؛ الروابط الاجتماعية؛ SEO ثنائي اللغة؛ الألوان؛ القوالب؛ البانرات؛ التنقل؛ المكونات."
+        }
+      },
+      {
+        "id": "group-17",
+        "name": {
+          "id": "group-17-name",
+          "en": "Platform and resilience",
+          "ar": "المنصة والاستمرارية"
+        },
+        "inventory": {
+          "id": "group-17-inventory",
+          "en": "Installable PWA and cached assets; web push when configured; Store-aware hosts; managed handles; custom-domain registry; private media; restricted Super Admin recovery infrastructure; encrypted artifacts and checksums; platform health, lifecycle, archive/restore, domain controls, and bounded support access.",
+          "ar": "تطبيق قابل للتثبيت وأصول مخزنة؛ إشعارات ويب عند الإعداد؛ عناوين واعية بالمتجر؛ عناوين مُدارة؛ سجل النطاقات؛ وسائط خاصة؛ بنية استعادة مقيّدة لمسؤول المنصة؛ ملفات مشفرة وفحص سلامة؛ صحة المنصة ودورة الحياة والأرشفة والاستعادة والنطاقات ودعم محدود."
+        }
+      }
+    ]
+  },
+  {
+    "id": "demo",
+    "title": "Demo Conversion",
+    "eyebrow": {
+      "id": "demo-eyebrow",
+      "en": "See the connected workflow",
+      "ar": "شاهد سير العمل المترابط"
+    },
+    "heading": {
+      "id": "demo-heading",
+      "en": "Explore a demonstration Store before you start.",
+      "ar": "استكشف متجراً تجريبياً قبل أن تبدأ."
+    },
+    "body": {
+      "id": "demo-body",
+      "en": "Follow products from discovery through cart and checkout, then explore how Store operations connect catalog, stock, purchasing, orders, customers, finance, and POS. Demo data demonstrates workflows; it is not customer proof.",
+      "ar": "تابع المنتجات من الاكتشاف إلى السلة والدفع، ثم استكشف كيف تربط عمليات المتجر الكتالوج والمخزون والمشتريات والطلبات والعملاء والمالية ونقطة البيع. البيانات التجريبية تشرح طريقة العمل ولا تمثل نتائج حقيقية لعملاء."
+    },
+    "premise": {
+      "id": "demo-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": []
+  },
+  {
+    "id": "start",
+    "title": "Final CTA",
+    "eyebrow": {
+      "id": "start-eyebrow",
+      "en": "",
+      "ar": ""
+    },
+    "heading": {
+      "id": "start-heading",
+      "en": "Build your brand on roots that stay connected.",
+      "ar": "ابنِ علامتك على جذور تفضل متصلة."
+    },
+    "body": {
+      "id": "start-body",
+      "en": "Start with one Business and give every Store a clear place to grow.",
+      "ar": "ابدأ بنشاط تجاري واحد وامنح كل متجر مساحة واضحة للنمو."
+    },
+    "premise": {
+      "id": "start-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": []
+  },
+  {
+    "id": "footer",
+    "title": "Footer",
+    "eyebrow": {
+      "id": "footer-eyebrow",
+      "en": "",
+      "ar": ""
+    },
+    "heading": {
+      "id": "footer-headline",
+      "en": "",
+      "ar": ""
+    },
+    "body": {
+      "id": "footer-introduction",
+      "en": "",
+      "ar": ""
+    },
+    "premise": {
+      "id": "footer-premise",
+      "en": "",
+      "ar": ""
+    },
+    "details": []
+  }
+]
