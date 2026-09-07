@@ -1,0 +1,686 @@
+.apple-page {
+  --a-width: 76rem;
+  background: var(--chalk);
+  color: var(--ink);
+  min-height: 100vh;
+  font:
+    400 1rem/1.6 system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Tahoma,
+    sans-serif;
+  letter-spacing: normal;
+  overflow-wrap: anywhere;
+  isolation: isolate;
+}
+.apple-page *,
+.apple-page [lang] {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.apple-page h1,
+.apple-page h2,
+.apple-page h3 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 650;
+  margin: 0;
+  text-wrap: balance;
+}
+.apple-page h1 {
+  font-size: clamp(3rem, 6.5vw, 6.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+  max-width: 16ch;
+  margin-inline: auto;
+}
+.apple-page h2 {
+  font-size: clamp(2rem, 3.7vw, 3.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+.apple-page h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+.apple-page[dir="rtl"] h1,
+.apple-page[dir="rtl"] h2 {
+  line-height: 1.45;
+  letter-spacing: normal;
+}
+.apple-page[dir="rtl"] h1 {
+  max-width: 19ch;
+}
+.apple-page p {
+  margin: 0;
+}
+.apple-page a,
+.apple-page button,
+.apple-page select,
+.apple-page summary {
+  color: inherit;
+  font: inherit;
+  touch-action: manipulation;
+}
+.apple-page :is(a, button, select, summary):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+.apple-page :is(a, button, summary) {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.2s;
+}
+.apple-page :is(button, .a-button, summary):active {
+  transform: scale(0.98);
+  transition-duration: 0s;
+}
+.apple-page .a-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 0.7rem 1.35rem;
+  border-radius: 99px;
+  background: var(--forest);
+  color: var(--chalk);
+  font-weight: 600;
+}
+.apple-page .a-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--forest);
+}
+.apple-page .a-link:hover {
+  text-decoration: underline;
+}
+.apple-page .a-skip {
+  position: fixed;
+  inset-block-start: -10rem;
+  inset-inline-start: 1rem;
+  z-index: 50;
+  padding: 1rem;
+  background: var(--chalk);
+}
+.apple-page .a-skip:focus {
+  inset-block-start: 1rem;
+}
+.apple-page .a-nav {
+  position: sticky;
+  inset-block-start: 0.8rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  margin: 0 auto;
+  width: min(calc(100% - 2rem), 90rem);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  background: var(--chalk);
+  box-shadow: 0 8px 24px #0b241910;
+}
+@supports (backdrop-filter: blur(20px)) {
+  .apple-page .a-nav {
+    background: color-mix(in srgb, var(--chalk) 94%, transparent);
+    backdrop-filter: blur(20px);
+  }
+}
+.apple-page .a-brand {
+  font-size: 1.65rem;
+  font-weight: 750;
+  letter-spacing: -0.07em;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.apple-page .a-brand span {
+  color: var(--forest);
+}
+.apple-page .a-desktop {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 0.8rem;
+}
+.apple-page .a-desktop a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+.apple-page .a-tools {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-inline-start: auto;
+  font-size: 0.8rem;
+}
+.apple-page .a-tools button,
+.apple-page .a-tools select {
+  min-height: 44px;
+  background: transparent;
+  border: 0;
+  padding: 0.45rem;
+  border-radius: 0.5rem;
+}
+.apple-page .a-tools option {
+  background: var(--chalk);
+  color: var(--ink);
+}
+.apple-page .a-menu {
+  display: none;
+}
+.apple-page main {
+  width: min(calc(100% - 3rem), var(--a-width));
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+.apple-page main > section {
+  grid-column: 1/-1;
+  min-width: 0;
+  scroll-margin-block-start: 1rem;
+}
+.apple-page .a-hero {
+  text-align: center;
+  padding-block: 6.5rem 4rem;
+}
+.apple-page .a-kicker {
+  font-size: 0.9rem;
+  color: var(--forest);
+  font-weight: 650;
+  margin-block-end: 1.5rem;
+}
+.apple-page .a-body {
+  font-size: clamp(1.08rem, 1.5vw, 1.35rem);
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 56ch;
+  margin-block-start: 1.7rem;
+}
+.apple-page .a-hero .a-body {
+  margin-inline: auto;
+}
+.apple-page .a-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  margin-block: 2rem;
+}
+.apple-page .a-premise {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.apple-page .a-overview {
+  margin-block-start: 4.5rem;
+  padding: 2.7rem 2rem;
+  border-radius: 2.4rem;
+  background: var(--limestone);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 55px #0b24190c;
+}
+.apple-page .a-overview-title {
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin-block-end: 2.2rem;
+}
+.apple-page .a-applications {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.apple-page .a-applications a {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  min-width: 6rem;
+}
+.apple-page .a-symbol {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  border-radius: 1.1rem;
+  background: var(--chalk);
+  border: 1px solid var(--line);
+  position: relative;
+  box-shadow: 0 5px 12px #0b241909;
+}
+.apple-page .a-symbol::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 2px solid var(--forest);
+  border-radius: 0.35rem;
+}
+.apple-page .a-symbol-pos::before {
+  inset: 0.9rem 1.3rem;
+}
+.apple-page .a-symbol-inventory::before {
+  box-shadow: 5px 5px 0 var(--sprout);
+}
+.apple-page .a-symbol-orders::before {
+  border-radius: 50%;
+}
+.apple-page .a-symbol-purchasing::before {
+  transform: rotate(45deg);
+  inset: 1.2rem;
+}
+.apple-page .a-symbol-customers::before {
+  border-radius: 50% 50% 0.2rem 0.2rem;
+}
+.apple-page .a-symbol-finance::before {
+  border-width: 0 0 2px 2px;
+  border-radius: 0;
+}
+.apple-page .a-connected {
+  padding-block: 5rem;
+}
+.apple-page .a-connected .a-intro {
+  max-width: 48rem;
+}
+.apple-page .a-workflow {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.7rem;
+  margin-block-start: 3rem;
+}
+.apple-page .a-workflow li {
+  padding-block-start: 1.2rem;
+  border-block-start: 2px solid var(--forest);
+}
+.apple-page .a-workflow p {
+  margin-block-start: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.apple-page .a-positioning {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-block-start: 3.5rem;
+  font-weight: 600;
+}
+.apple-page .a-story {
+  padding: 3rem;
+  margin-block: 1rem;
+  border-radius: 2rem;
+  background: var(--limestone);
+}
+.apple-page .a-business {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.apple-page .a-business .a-details {
+  grid-column: 1/-1;
+}
+.apple-page .a-business-model {
+  align-self: center;
+  text-align: center;
+  padding: 1.6rem;
+  background: var(--chalk);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+}
+.apple-page .a-store-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+.apple-page .a-store-pair > div {
+  border: 1px solid var(--forest);
+  border-radius: 1rem;
+  padding: 1.2rem 0.5rem;
+}
+.apple-page .a-store-pair p {
+  margin-block-start: 0.6rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.apple-page .a-location {
+  background: var(--limestone);
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  margin-block-end: 1rem;
+}
+.apple-page .a-sell {
+  grid-column: 1/9;
+  padding-block: 4rem;
+}
+.apple-page .a-pos {
+  grid-column: 9/-1;
+  background: var(--forest);
+  color: var(--chalk);
+}
+.apple-page .a-pos :is(.a-kicker, .a-body) {
+  color: inherit;
+}
+.apple-page .a-pos h2 {
+  font-size: 2.2rem;
+}
+.apple-page .a-catalog {
+  background: transparent;
+  border: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.apple-page .a-catalog .a-details {
+  grid-column: 1/-1;
+}
+.apple-page .a-path {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  list-style: none;
+  margin-block: 2rem;
+}
+.apple-page .a-path li {
+  flex: 1;
+  border-block-start: 1px solid currentColor;
+  padding-block: 0.8rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.apple-page .a-pos .a-path {
+  flex-direction: column;
+}
+.apple-page .a-caption {
+  color: var(--muted);
+  max-width: 65ch;
+}
+.apple-page .a-inventory {
+  background: transparent;
+  padding: 4rem 0 1rem;
+}
+.apple-page .a-purchasing {
+  grid-column: 1/7;
+}
+.apple-page .a-orders {
+  grid-column: 7/-1;
+}
+.apple-page .a-customers {
+  background: transparent;
+  border-block: 1px solid var(--line);
+  border-radius: 0;
+  padding: 5rem 0;
+}
+.apple-page .a-customers .a-intro {
+  max-width: 55rem;
+}
+.apple-page .a-understand {
+  padding-block: 5rem;
+}
+.apple-page .a-identity {
+  grid-column: 1/7;
+  background: transparent;
+  padding-inline: 0;
+}
+.apple-page .a-operate {
+  grid-column: 8/-1;
+  background: transparent;
+  padding-inline: 0;
+}
+.apple-page .a-details {
+  margin-block-start: 2rem;
+  border-block-start: 1px solid var(--line);
+}
+.apple-page summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  min-height: 48px;
+  font-weight: 600;
+}
+.apple-page summary::-webkit-details-marker {
+  display: none;
+}
+.apple-page summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.apple-page details[open] > summary::after {
+  content: "−";
+}
+.apple-page .a-details ul {
+  padding-inline-start: 1.2rem;
+  padding-block-end: 1rem;
+  list-style: disc;
+}
+.apple-page .a-details li {
+  margin-block: 0.8rem;
+}
+.apple-page .a-features {
+  padding-block: 5rem;
+}
+.apple-page .a-features .a-intro {
+  max-width: 50rem;
+  margin-block-end: 3rem;
+}
+.apple-page .a-index {
+  border-block-start: 1px solid var(--line);
+}
+.apple-page .a-index details {
+  border-block-end: 1px solid var(--line);
+  padding-inline: 0.5rem;
+}
+.apple-page .a-index summary {
+  font-size: 1.3rem;
+}
+.apple-page .a-index p {
+  max-width: 85ch;
+  color: var(--muted);
+  padding-block: 0.4rem 2rem;
+}
+.apple-page .a-demo {
+  padding: 3rem;
+  background: var(--limestone);
+  border-radius: 2rem;
+}
+.apple-page .a-notice {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-block-start: 1.5rem;
+}
+.apple-page .a-start {
+  padding-block: 6rem;
+  text-align: center;
+}
+.apple-page .a-start .a-body {
+  margin-inline: auto;
+}
+.apple-page .a-closing {
+  margin-block-start: 5rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  color: var(--forest);
+  text-wrap: balance;
+}
+.apple-page .a-signin {
+  padding-block: 2rem 4rem;
+}
+.apple-page .a-signin h2 {
+  font-size: 1.5rem;
+  margin-block-end: 1rem;
+}
+.apple-page .a-footer {
+  padding: 3rem max(1.5rem, calc((100% - var(--a-width)) / 2));
+  background: var(--limestone);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.apple-page .a-footer-brand {
+  font-size: 1.7rem;
+  font-weight: 650;
+}
+.apple-page .a-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-inline-start: auto;
+  align-items: center;
+}
+.apple-page .a-footer nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+.apple-page .a-footer > p {
+  flex-basis: 100%;
+  font-size: 0.85rem;
+}
+@media (max-width: 70rem) {
+  .apple-page .a-desktop,
+  .apple-page .a-nav-signin,
+  .apple-page .a-nav-start {
+    display: none;
+  }
+  .apple-page .a-menu {
+    display: block;
+  }
+  .apple-page .a-menu > summary {
+    padding: 0;
+    width: 44px;
+    justify-content: center;
+  }
+  .apple-page .a-menu > summary::after {
+    content: none;
+  }
+  .apple-page .a-menu nav {
+    position: absolute;
+    inset-inline: 0;
+    top: calc(100% + 0.5rem);
+    background: var(--chalk);
+    border: 1px solid var(--line);
+    border-radius: 1.4rem;
+    padding: 1rem;
+    display: grid;
+    max-height: 75vh;
+    overflow: auto;
+    box-shadow: 0 12px 30px #0b24191a;
+  }
+  .apple-page .a-menu nav a {
+    padding: 0.7rem;
+    min-height: 44px;
+  }
+  .apple-page .a-workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .apple-page .a-sell,
+  .apple-page .a-pos {
+    grid-column: 1/-1;
+  }
+  .apple-page .a-pos .a-path {
+    flex-direction: row;
+  }
+}
+@media (max-width: 48rem) {
+  .apple-page main {
+    width: calc(100% - 2rem);
+    column-gap: 0;
+  }
+  .apple-page main > section {
+    grid-column: 1/-1;
+  }
+  .apple-page .a-nav {
+    width: calc(100% - 1rem);
+    gap: 0.3rem;
+    padding-inline: 0.7rem;
+  }
+  .apple-page .a-tools {
+    gap: 0.15rem;
+  }
+  .apple-page .a-hero {
+    padding-block: 4rem 2rem;
+  }
+  .apple-page .a-overview {
+    padding: 2rem 1rem;
+    margin-block-start: 3rem;
+  }
+  .apple-page .a-applications {
+    gap: 1.2rem 0.5rem;
+  }
+  .apple-page .a-story,
+  .apple-page .a-demo {
+    padding: 2rem 1.3rem;
+    border-radius: 1.4rem;
+  }
+  .apple-page .a-business,
+  .apple-page .a-catalog {
+    display: block;
+  }
+  .apple-page .a-business-model {
+    margin-block-start: 2rem;
+    padding: 1rem;
+  }
+  .apple-page .a-workflow {
+    grid-template-columns: 1fr;
+  }
+  .apple-page .a-path {
+    flex-wrap: wrap;
+  }
+  .apple-page .a-path li {
+    flex-basis: 40%;
+  }
+  .apple-page .a-connected,
+  .apple-page .a-features {
+    padding-block: 3rem;
+  }
+  .apple-page .a-footer nav {
+    margin-inline-start: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .apple-page :is(a, button, summary) {
+    transition: none;
+    transform: none !important;
+  }
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .apple-page .a-nav {
+    background: var(--chalk);
+    backdrop-filter: none;
+    border-color: var(--ink);
+  }
+}
+@media (forced-colors: active) {
+  .apple-page .a-button,
+  .apple-page .a-story,
+  .apple-page .a-symbol {
+    border: 1px solid ButtonText;
+  }
+}
+
+.apple-page[dir="rtl"] * {
+  letter-spacing: normal !important;
+}
+
+.apple-page {
+  overflow-anchor: none;
+}
+
+@media (max-width: 48rem) {
+  .apple-page .a-nav {
+    flex-wrap: wrap;
+  }
+}

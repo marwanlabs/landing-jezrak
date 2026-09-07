@@ -11,42 +11,53 @@ import { BilingualBlock } from "../components/BilingualBlock";
 import { Cta } from "../components/Primitives";
 import stylesheet from "../styles/globals.css?url";
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: metadata.en.title },
-      { name: "description", content: metadata.en.description },
-      { name: "theme-color", content: "#F4F1E8" },
-      { property: "og:type", content: "website" },
-      { property: "og:title", content: metadata.en.title },
-      { property: "og:description", content: metadata.en.description },
-      { property: "og:url", content: config.site },
-      { property: "og:image", content: `${config.site}/og/jizrak.png` },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `${config.site}/og/jizrak.png` },
-      ...(config.review
-        ? [{ name: "robots", content: "noindex, nofollow" }]
-        : []),
-    ],
-    links: [
-      {
-        rel: "preload",
-        href: "/fonts/Alexandria-Medium.woff2",
-        as: "font",
-        type: "font/woff2",
-        crossOrigin: "anonymous",
-      },
-      { rel: "stylesheet", href: stylesheet },
-      { rel: "canonical", href: config.site },
-      { rel: "icon", href: "/icons/favicon.svg", type: "image/svg+xml" },
-      { rel: "mask-icon", href: "/icons/mask.svg", color: "#153C2B" },
-      { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" },
-      { rel: "manifest", href: "/site.webmanifest" },
-    ],
-  }),
+  head: ({ matches }) => {
+    const candidate = matches.some((match) => match.pathname === "/apple");
+    const pageUrl = candidate ? `${config.site}/apple` : config.site;
+    return {
+      meta: [
+        { charSet: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { title: metadata.en.title },
+        { name: "description", content: metadata.en.description },
+        { name: "theme-color", content: "#F4F1E8" },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: metadata.en.title },
+        { property: "og:description", content: metadata.en.description },
+        { property: "og:url", content: pageUrl },
+        ...(candidate
+          ? [{ name: "twitter:card", content: "summary" }]
+          : [
+              { property: "og:image", content: `${config.site}/og/jizrak.png` },
+              { property: "og:image:width", content: "1200" },
+              { property: "og:image:height", content: "630" },
+              { name: "twitter:card", content: "summary_large_image" },
+              {
+                name: "twitter:image",
+                content: `${config.site}/og/jizrak.png`,
+              },
+            ]),
+        ...(config.review || candidate
+          ? [{ name: "robots", content: "noindex, nofollow" }]
+          : []),
+      ],
+      links: [
+        {
+          rel: "preload",
+          href: "/fonts/Alexandria-Medium.woff2",
+          as: "font",
+          type: "font/woff2",
+          crossOrigin: "anonymous",
+        },
+        { rel: "stylesheet", href: stylesheet },
+        { rel: "canonical", href: pageUrl },
+        { rel: "icon", href: "/icons/favicon.svg", type: "image/svg+xml" },
+        { rel: "mask-icon", href: "/icons/mask.svg", color: "#153C2B" },
+        { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" },
+        { rel: "manifest", href: "/site.webmanifest" },
+      ],
+    };
+  },
   component: () => (
     <PreferenceProvider>
       <Outlet />
