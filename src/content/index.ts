@@ -43,6 +43,11 @@ export const copy = {
     "Inventory workflow",
     "مسار المخزون",
   ),
+  understandWorkflow: pair(
+    "understand-workflow",
+    "Performance reporting",
+    "تقارير الأداء",
+  ),
   close: pair("close-detail", "Workflow details", "تفاصيل سير العمل"),
   rootLabel: pair(
     "root-label",

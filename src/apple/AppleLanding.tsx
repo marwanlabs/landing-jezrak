@@ -587,6 +587,11 @@ export function AppleLanding() {
               />
             </Story>
             <div className="a-insight-performance">
+              <div className="a-workflow-header">
+                <h3>
+                  <Text text={copy.understandWorkflow} />
+                </h3>
+              </div>
               <StageLine
                 stages={toStages(narrativeCopy.understandFlow)}
                 label={section("understand").heading.en}
