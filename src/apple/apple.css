@@ -126,7 +126,7 @@
   }
 }
 .apple-page .a-brand {
-  font-size: 1.55rem;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.055em;
   min-height: 44px;
@@ -316,7 +316,8 @@
 }
 .apple-page .a-overview-title {
   font-size: 1.55rem;
-  font-weight: 600;
+  font-weight: 700;
+  text-align: start;
   margin-block-end: 2.2rem;
 }
 .apple-page .a-applications {
@@ -364,6 +365,7 @@
   grid-template-columns: minmax(0, 1fr) auto;
   column-gap: 2rem;
   align-items: end;
+  text-align: start;
   margin-block-start: 1.25rem;
   padding: 1.4rem 1.5rem;
   border-radius: 1.25rem;
@@ -398,13 +400,21 @@
   gap: 0.75rem;
   min-height: 44px;
   padding: 0.5rem 0.85rem;
-  border: 1px solid var(--dark-line);
+  border: 1px solid var(--sprout);
   border-radius: 999px;
   color: var(--on-dark);
   white-space: nowrap;
+  transition:
+    background 0.18s ease-out,
+    border-color 0.18s ease-out;
 }
 .apple-page .a-capability-detail a:hover {
   background: #153c2b;
+  border-color: var(--growth);
+}
+.apple-page .a-capability-detail a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
 }
 .apple-page .a-connected {
   padding-block: 5rem;
