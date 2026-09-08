@@ -1,5 +1,7 @@
 # `/apple` implementation verification
 
+Updated 8 September 2026 for the complete single-Store positioning candidate.
+
 Implemented as an independent sibling route. `/` remains the existing landing page; candidate styles, composition, controls and conceptual visuals live under `src/apple`. The only shared edits are additive route registration and route-aware canonical, OG and robots metadata. No shared copy, palette, root artwork, root CSS or root motion was changed.
 
 ## Content and design
@@ -15,18 +17,16 @@ Implemented as an independent sibling route. `/` remains the existing landing pa
 
 - TypeScript and ESLint: pass.
 - Full Vitest suite: 20 tests pass.
-- Existing root browser suite: 18 tests pass on each of Chromium, Firefox and WebKit (54 checks).
-- Candidate browser suite: 7 tests pass on each engine (21 checks), including focused reruns after fixes.
-- Review production build: pass, server-rendered/prerendered `/` and `/apple`.
-- Candidate suite against built output: 7 Chromium tests pass.
-- Axe: zero candidate violations in Arabic/English and light/dark across the tested engines.
-- Responsive checks: 320, 375, 768, 1024 and 1440 CSS pixels in both locales/themes; 200% text reflow at 320 pixels; forced colors; reduced motion; system theme changes.
+- Full Chromium browser suite: 28 tests pass, including 10 candidate tests and 18 root-route regression tests.
+- Review production build: pass; server-rendered/prerendered `/` and `/apple` were emitted.
+- Built-output audit: pass for English/Arabic and light/dark at 375×900, including serious/critical axe checks, overflow checks, and synthetic performance observations.
+- Candidate responsive/accessibility checks: 320, 375, 768, 1024 and 1440 CSS pixels; both locales and themes; 200% text reflow at 320 pixels; forced colors; reduced motion; system theme changes.
 - Resilience: disabled JavaScript/native disclosures, failed fonts, unavailable storage, browser-language initialization, deep links, language/disclosure/focus continuity, mobile Escape/selection dismissal, and client history navigation.
-- Root metadata and typography remain correct during Arabic `/` → `/apple` → back/forward navigation.
-- [Root comparison](apple-evidence/root-comparison.json): all eight full-page screenshots are byte-identical before/after implementation and after returning from `/apple`. Baselines use the starting commit `6ac01a580b9b7a2b1aa6e9d17604b14b2eb565bf`, reduced motion, 375/1440 widths, both locales/themes, 1000-pixel viewport height and the first feature disclosure expanded. Baselines were captured before implementing the route and were never replaced.
-- Final build emits separate candidate assets (about 7.64 kB JavaScript and 11.61 kB CSS before gzip), independent of root motion.
+- Content coverage: 778 bilingual entries; all 16 substantive topic identities; all 17 feature groups; visible, expanded, conditional, metadata, superseded, and excluded states are represented in [the coverage manifest](apple-content-coverage.json).
+- Root route: automated route-history assertions preserve root typography, layout, localized metadata, and return behavior. The [root comparison record](apple-evidence/root-comparison.json) reports exact byte matches at 375 pixels and small exact-image mismatches at 1440 pixels; visual inspection shows the desktop before/after/return captures are equivalent, but this is recorded as a limitation rather than converted into a pass claim.
+- Final build emits separate candidate assets (`apple-*.js` and `apple-*.css`); the root entry does not eagerly import the candidate module.
 
-The initial all-engine run could not locate Firefox/WebKit in the default cache. Both are available through `PLAYWRIGHT_BROWSERS_PATH=.tools/browsers`. Cross-browser checks found a 200% text navigation overflow, fixed with wrapping. Focus retention is tested through keyboard activation because WebKit does not focus buttons on pointer clicks. Reading-location verification uses a coordinate click on the sticky language control so locator auto-scrolling does not alter the initial position.
+The browser suite was run with Chromium in this checkout. Firefox/WebKit coverage is not claimed for this gate. Focus retention is tested through keyboard activation because pointer clicks do not focus buttons consistently across browsers. The evidence capture uses reduced motion and waits for fonts before screenshots; exact-image comparison remains sensitive to rendering differences.
 
 Production destination configuration is not supplied in this checkout. Review-build pending states were verified; live product/legal destinations and a configured production release were not exercised. No deployment was performed. Physical low-end hardware and assistive-technology reading remain manual review items; automated accessibility does not substitute for those checks.
 
@@ -45,7 +45,10 @@ Standards: 0 outstanding findings. Spec: 0 outstanding findings.
 - [English desktop](apple-evidence/apple-en-light-1440.png)
 - [Arabic mobile, dark](apple-evidence/apple-ar-dark-375.png)
 - [Arabic desktop](apple-evidence/apple-ar-light-1440.png)
-- The evidence directory includes all eight candidate combinations and root before/after/return screenshots.
+- The evidence directory includes all eight candidate combinations and root before/after/return screenshots. `docs/screenshots/built-mobile-*.png` contains the four built-output mobile locale/theme captures.
 - With the dev server on port 3000, run `node scripts/apple-evidence.mjs` to compare against the preserved baseline and refresh candidate/after/return captures.
-- Regenerate the manifest by bundling `scripts/apple-coverage.ts` with the installed esbuild, then running the generated module.
+- Regenerate the manifest with `node node_modules/jiti/lib/jiti-cli.mjs scripts/apple-coverage.ts`.
+- Run the built-output audit with the review server on port 4000 using `node scripts/audit-built.mjs`; it refreshes `docs/performance.json` and the built mobile screenshots.
 - Standard commands: `bun run typecheck`, `bun run lint`, `bun run test`, `bun run build:preview`, and `bun run e2e`. This machine used the corresponding local Node entry points because Bun was not on PATH.
+
+Configuration-dependent checks remain intentionally open: production start, demo, sign-in, privacy, and terms destinations were not supplied, so review-mode pending states were verified instead. No deployment, redirect, indexing change, analytics, or conversion measurement was performed. Manual screen-reader pronunciation, physical low-end hardware, and human Arabic/English editorial approval remain outside automated evidence.

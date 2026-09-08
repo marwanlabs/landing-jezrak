@@ -7,59 +7,64 @@
       "viewport": "375 × 900",
       "cpuSlowdown": 4,
       "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
-      "lcp": 884,
-      "cls": 0.0005281375514403293,
-      "longTaskMs": 258,
+      "lcp": 956,
+      "cls": 0.0005267054526748972,
+      "longTaskMs": 260,
       "resources": [
         {
-          "name": "globals-C7VPYw12.css",
-          "bytes": 8166,
-          "duration": 364
-        },
-        {
-          "name": "index-XTCQRykz.js",
-          "bytes": 119887,
-          "duration": 3033
-        },
-        {
-          "name": "index-OHCtPrxt.js",
-          "bytes": 8972,
+          "name": "globals-Cj_EZomQ.css",
+          "bytes": 9069,
           "duration": 410
+        },
+        {
+          "name": "index-DYPeKsYi.js",
+          "bytes": 120446,
+          "duration": 3079
+        },
+        {
+          "name": "index-Bl1DtDGx.js",
+          "bytes": 7818,
+          "duration": 378
+        },
+        {
+          "name": "package-check-AFzG54vX.js",
+          "bytes": 916,
+          "duration": 193
         },
         {
           "name": "Alexandria-Medium.woff2",
           "bytes": 58256,
-          "duration": 1402
+          "duration": 1356
         },
         {
           "name": "IBMPlexSans-Regular.woff2",
           "bytes": 63320,
-          "duration": 2236
+          "duration": 2235
         },
         {
           "name": "IBMPlexSans-SemiBold.woff2",
           "bytes": 67360,
-          "duration": 2267
+          "duration": 2271
         },
         {
           "name": "IBMPlexSansArabic-SemiBold.woff2",
           "bytes": 76708,
-          "duration": 2498
+          "duration": 2486
         },
         {
           "name": "IBMPlexSansArabic-Regular.woff2",
           "bytes": 72204,
-          "duration": 2699
+          "duration": 2656
         },
         {
           "name": "IBMPlexSans-Medium.woff2",
           "bytes": 67040,
-          "duration": 2900
+          "duration": 2845
         },
         {
-          "name": "LandingMotion-DITcva9Q.js",
-          "bytes": 41900,
-          "duration": 373
+          "name": "LandingMotion-BUbEHc-S.js",
+          "bytes": 41888,
+          "duration": 377
         }
       ],
       "overflow": false,
@@ -71,59 +76,64 @@
       "viewport": "375 × 900",
       "cpuSlowdown": 4,
       "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
-      "lcp": 884,
-      "cls": 0.0005281375514403293,
-      "longTaskMs": 230,
+      "lcp": 932,
+      "cls": 0.0005267054526748972,
+      "longTaskMs": 257,
       "resources": [
         {
-          "name": "globals-C7VPYw12.css",
-          "bytes": 8166,
-          "duration": 369
+          "name": "globals-Cj_EZomQ.css",
+          "bytes": 9069,
+          "duration": 413
         },
         {
-          "name": "index-XTCQRykz.js",
-          "bytes": 119887,
-          "duration": 3044
+          "name": "index-DYPeKsYi.js",
+          "bytes": 120446,
+          "duration": 3086
         },
         {
-          "name": "index-OHCtPrxt.js",
-          "bytes": 8972,
-          "duration": 415
+          "name": "index-Bl1DtDGx.js",
+          "bytes": 7818,
+          "duration": 381
+        },
+        {
+          "name": "package-check-AFzG54vX.js",
+          "bytes": 916,
+          "duration": 194
         },
         {
           "name": "Alexandria-Medium.woff2",
           "bytes": 58256,
-          "duration": 1427
+          "duration": 1389
         },
         {
           "name": "IBMPlexSans-Regular.woff2",
           "bytes": 63320,
-          "duration": 2226
+          "duration": 2221
         },
         {
           "name": "IBMPlexSans-SemiBold.woff2",
           "bytes": 67360,
-          "duration": 2256
+          "duration": 2252
         },
         {
           "name": "IBMPlexSansArabic-SemiBold.woff2",
           "bytes": 76708,
-          "duration": 2487
+          "duration": 2472
         },
         {
           "name": "IBMPlexSansArabic-Regular.woff2",
           "bytes": 72204,
-          "duration": 2706
+          "duration": 2689
         },
         {
           "name": "IBMPlexSans-Medium.woff2",
           "bytes": 67040,
-          "duration": 2908
+          "duration": 2861
         },
         {
-          "name": "LandingMotion-DITcva9Q.js",
-          "bytes": 41900,
-          "duration": 389
+          "name": "LandingMotion-BUbEHc-S.js",
+          "bytes": 41888,
+          "duration": 380
         }
       ],
       "overflow": false,
@@ -135,64 +145,69 @@
       "viewport": "375 × 900",
       "cpuSlowdown": 4,
       "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
-      "lcp": 868,
-      "cls": 0.03416501985596707,
-      "longTaskMs": 371,
+      "lcp": 908,
+      "cls": 0.05104995792181069,
+      "longTaskMs": 385,
       "resources": [
         {
-          "name": "globals-C7VPYw12.css",
-          "bytes": 8166,
-          "duration": 353
+          "name": "globals-Cj_EZomQ.css",
+          "bytes": 9069,
+          "duration": 403
         },
         {
-          "name": "index-XTCQRykz.js",
-          "bytes": 119887,
-          "duration": 3027
+          "name": "index-DYPeKsYi.js",
+          "bytes": 120446,
+          "duration": 3071
         },
         {
-          "name": "index-OHCtPrxt.js",
-          "bytes": 8972,
-          "duration": 398
+          "name": "index-Bl1DtDGx.js",
+          "bytes": 7818,
+          "duration": 370
+        },
+        {
+          "name": "package-check-AFzG54vX.js",
+          "bytes": 916,
+          "duration": 180
         },
         {
           "name": "Alexandria-Medium.woff2",
           "bytes": 58256,
-          "duration": 1423
+          "duration": 1378
         },
         {
           "name": "IBMPlexSans-Regular.woff2",
           "bytes": 63320,
-          "duration": 2240
+          "duration": 2221
         },
         {
           "name": "IBMPlexSans-SemiBold.woff2",
           "bytes": 67360,
-          "duration": 2270
+          "duration": 2267
         },
         {
           "name": "IBMPlexSansArabic-SemiBold.woff2",
           "bytes": 76708,
-          "duration": 2472
+          "duration": 2485
         },
         {
           "name": "IBMPlexSansArabic-Regular.woff2",
           "bytes": 72204,
-          "duration": 2707
+          "duration": 2686
         },
         {
           "name": "IBMPlexSans-Medium.woff2",
           "bytes": 67040,
-          "duration": 2944
+          "duration": 2874
         },
         {
-          "name": "LandingMotion-DITcva9Q.js",
-          "bytes": 41900,
-          "duration": 436
+          "name": "LandingMotion-BUbEHc-S.js",
+          "bytes": 41888,
+          "duration": 376
         },
         {
           "name": "IBMPlexSansArabic-Medium.woff2",
           "bytes": 76236,
-          "duration": 741
+          "duration": 712
         }
       ],
       "overflow": false,
@@ -204,29 +219,34 @@
       "viewport": "375 × 900",
       "cpuSlowdown": 4,
       "network": "150 ms latency, 200 kB/s down, local Nitro server with precompressed assets",
-      "lcp": 856,
-      "cls": 0.03416501985596707,
-      "longTaskMs": 344,
+      "lcp": 908,
+      "cls": 0.05104995792181069,
+      "longTaskMs": 380,
       "resources": [
         {
-          "name": "globals-C7VPYw12.css",
-          "bytes": 8166,
-          "duration": 368
+          "name": "globals-Cj_EZomQ.css",
+          "bytes": 9069,
+          "duration": 416
         },
         {
-          "name": "index-XTCQRykz.js",
-          "bytes": 119887,
-          "duration": 3045
+          "name": "index-DYPeKsYi.js",
+          "bytes": 120446,
+          "duration": 3067
         },
         {
-          "name": "index-OHCtPrxt.js",
-          "bytes": 8972,
-          "duration": 413
+          "name": "index-Bl1DtDGx.js",
+          "bytes": 7818,
+          "duration": 383
+        },
+        {
+          "name": "package-check-AFzG54vX.js",
+          "bytes": 916,
+          "duration": 180
         },
         {
           "name": "Alexandria-Medium.woff2",
           "bytes": 58256,
-          "duration": 1439
+          "duration": 1395
         },
         {
           "name": "IBMPlexSans-Regular.woff2",
@@ -236,32 +256,32 @@
         {
           "name": "IBMPlexSans-SemiBold.woff2",
           "bytes": 67360,
-          "duration": 2260
+          "duration": 2263
         },
         {
           "name": "IBMPlexSansArabic-SemiBold.woff2",
           "bytes": 76708,
-          "duration": 2462
+          "duration": 2466
         },
         {
           "name": "IBMPlexSansArabic-Regular.woff2",
           "bytes": 72204,
-          "duration": 2711
+          "duration": 2682
         },
         {
           "name": "IBMPlexSans-Medium.woff2",
           "bytes": 67040,
-          "duration": 2913
+          "duration": 2900
         },
         {
-          "name": "LandingMotion-DITcva9Q.js",
-          "bytes": 41900,
+          "name": "LandingMotion-BUbEHc-S.js",
+          "bytes": 41888,
           "duration": 401
         },
         {
           "name": "IBMPlexSansArabic-Medium.woff2",
           "bytes": 76236,
-          "duration": 734
+          "duration": 743
         }
       ],
       "overflow": false,
@@ -270,24 +290,39 @@
   ],
   "bundle": [
     {
-      "name": "globals-C7VPYw12.css",
-      "rawBytes": 42840,
-      "gzipBytes": 8939
+      "name": "apple-By1GbSCn.js",
+      "rawBytes": 30475,
+      "gzipBytes": 9294
     },
     {
-      "name": "index-OHCtPrxt.js",
-      "rawBytes": 31709,
-      "gzipBytes": 10094
+      "name": "apple-Cyu8d_dP.css",
+      "rawBytes": 24198,
+      "gzipBytes": 4879
     },
     {
-      "name": "index-XTCQRykz.js",
-      "rawBytes": 439416,
-      "gzipBytes": 139247
+      "name": "globals-Cj_EZomQ.css",
+      "rawBytes": 47339,
+      "gzipBytes": 9928
     },
     {
-      "name": "LandingMotion-DITcva9Q.js",
+      "name": "index-Bl1DtDGx.js",
+      "rawBytes": 28170,
+      "gzipBytes": 8595
+    },
+    {
+      "name": "index-DYPeKsYi.js",
+      "rawBytes": 444799,
+      "gzipBytes": 139903
+    },
+    {
+      "name": "LandingMotion-BUbEHc-S.js",
       "rawBytes": 118031,
-      "gzipBytes": 46641
+      "gzipBytes": 46640
+    },
+    {
+      "name": "package-check-AFzG54vX.js",
+      "rawBytes": 1574,
+      "gzipBytes": 674
     }
   ]
 }

@@ -11,8 +11,8 @@
     "locale": "en",
     "theme": "light",
     "width": 1440,
-    "identical": true,
-    "returnIdentical": true,
+    "identical": false,
+    "returnIdentical": false,
     "canonical": "http://127.0.0.1:3000"
   },
   {
@@ -27,8 +27,8 @@
     "locale": "en",
     "theme": "dark",
     "width": 1440,
-    "identical": true,
-    "returnIdentical": true,
+    "identical": false,
+    "returnIdentical": false,
     "canonical": "http://127.0.0.1:3000"
   },
   {
@@ -43,8 +43,8 @@
     "locale": "ar",
     "theme": "light",
     "width": 1440,
-    "identical": true,
-    "returnIdentical": true,
+    "identical": false,
+    "returnIdentical": false,
     "canonical": "http://127.0.0.1:3000"
   },
   {
@@ -59,8 +59,8 @@
     "locale": "ar",
     "theme": "dark",
     "width": 1440,
-    "identical": true,
-    "returnIdentical": true,
+    "identical": false,
+    "returnIdentical": false,
     "canonical": "http://127.0.0.1:3000"
   }
 ]
