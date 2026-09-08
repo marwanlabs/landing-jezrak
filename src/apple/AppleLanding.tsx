@@ -52,6 +52,7 @@ const inventoryStages: Stage[] = inventoryLabels.map((label, index) => ({
 }));
 const destination = (href: string) =>
   href.startsWith("#") ? `/apple${href}` : href;
+const wideNavigationQuery = "(min-width: 72rem)";
 const signinDestination =
   config.signin === "#sign-in" ? "/apple#footer" : destination(config.signin);
 const overviewDestinations: Record<string, string> = {
@@ -235,7 +236,7 @@ function Navigation() {
     };
   }, []);
   useEffect(() => {
-    const media = matchMedia("(min-width: 80rem)");
+    const media = matchMedia(wideNavigationQuery);
     const reset = () => {
       if (menu.current) menu.current.open = false;
     };

@@ -548,9 +548,9 @@
   min-width: 0;
   padding: 0.2rem 0.5rem 0.75rem;
   border: 0;
-  color: var(--muted);
+  color: var(--ink);
   background: transparent;
-  cursor: pointer;
+  cursor: default;
   font: inherit;
   text-align: center;
   opacity: 0;
@@ -567,7 +567,7 @@
 .apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(5) { transition-delay: 160ms; }
 .apple-page .stage-line-stage > .bilingual {
   min-height: 1.2rem;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
 }
 .apple-page .stage-line-dot {
   width: 1rem;
@@ -579,7 +579,7 @@
 }
 .apple-page .stage-line-index {
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
 }
 .apple-page .stage-line-stage[data-active="true"] {
   color: var(--forest);
@@ -593,17 +593,15 @@
   0%, 100% { border-color: currentColor; background: var(--chalk); }
   45% { border-color: #d86b43; background: #d86b43; }
 }
-.apple-page .stage-line-stage:hover {
-  color: #d86b43;
-}
-.apple-page .stage-line-stage:hover .stage-line-dot {
-  transform: scale(1.18);
-  border-color: #d86b43;
-  background: #d86b43;
-}
-.apple-page .stage-line-stage:focus-visible {
-  outline: 2px solid var(--focus);
-  outline-offset: 3px;
+@media (hover: hover) and (pointer: fine) {
+  .apple-page .stage-line-stage:hover {
+    color: #d86b43;
+  }
+  .apple-page .stage-line-stage:hover .stage-line-dot {
+    transform: scale(1.18);
+    border-color: #d86b43;
+    background: #d86b43;
+  }
 }
 @media (max-width: 48rem) {
   .apple-page .stage-line-track {
@@ -1179,7 +1177,7 @@
     margin-inline-start: auto;
   }
 }
-@media (max-width: 80rem) {
+@media (max-width: 72rem) {
   .apple-page .a-desktop,
   .apple-page .a-nav-signin,
   .apple-page .a-nav-start {

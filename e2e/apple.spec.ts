@@ -425,3 +425,30 @@ test("the hero restores the connected commerce capability card", async ({
     "under one Business",
   );
 });
+
+test("apple navigation and static workflow rails match their responsive affordances", async ({
+  page,
+}) => {
+  await page.goto("/apple");
+  await page.waitForFunction(
+    () => document.documentElement.dataset.hydrated === "true",
+  );
+
+  await page.setViewportSize({ width: 1265, height: 900 });
+  await expect(page.locator(".a-desktop")).toBeVisible();
+  await expect(page.locator(".a-menu")).not.toBeVisible();
+
+  await page.setViewportSize({ width: 1024, height: 900 });
+  await expect(page.locator(".a-desktop")).not.toBeVisible();
+  await expect(page.locator(".a-menu")).toBeVisible();
+
+  await page.locator("#inventory").scrollIntoViewIfNeeded();
+  await expect(page.locator("#inventory .stage-line-stage").first()).toHaveCSS(
+    "cursor",
+    "default",
+  );
+  await expect(page.locator("#inventory .stage-line-stage").first()).toHaveCSS(
+    "opacity",
+    "1",
+  );
+});
