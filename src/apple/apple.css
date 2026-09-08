@@ -815,6 +815,9 @@
   .apple-page .a-menu > summary::after {
     content: none;
   }
+  .apple-page .a-menu:not([open]) nav {
+    display: none;
+  }
   .apple-page .a-menu nav {
     position: absolute;
     inset-inline: 0;
