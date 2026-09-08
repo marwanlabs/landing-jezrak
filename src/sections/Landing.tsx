@@ -17,6 +17,7 @@ import {
   copy,
   narrativeCopy,
   nodes,
+  flow,
   workflowNames,
   type SectionContent,
 } from "../content";
@@ -28,16 +29,12 @@ import { Brand, Cta, PairedLink, RootMark } from "../components/Primitives";
 import {
   RootNetwork,
   LedgerDiagram,
-  InventoryDiagram,
   CatalogDiagram,
   IdentityDiagram,
-  MiniFlow,
 } from "../components/RootNetwork";
 import { Disclosure } from "../components/Disclosure";
-type MotionProps = {
-  scope: RefObject<HTMLDivElement | null>;
-  setStep: (step: number) => void;
-};
+import { StageFlow, type Stage } from "../components/StageFlow";
+type MotionProps = { scope: RefObject<HTMLDivElement | null> };
 function SectionHeading({
   content,
   number,
@@ -87,44 +84,21 @@ function Narrative({ id, index }: { id: string; index: number }) {
   let visual;
   if (id === "business") visual = <LedgerDiagram />;
   if (id === "catalog") visual = <CatalogDiagram />;
-  if (id === "inventory") visual = <InventoryDiagram />;
+  if (id === "inventory")
+    visual = <StageFlow mode="operational-story" stages={inventoryStages} />;
   if (id === "identity" || id === "operate") visual = <IdentityDiagram />;
   if (id === "sell")
-    visual = (
-      <MiniFlow
-        steps={narrativeCopy.sellFlow}
-      />
-    );
+    visual = <StageFlow mode="operational-story" stages={toStages(narrativeCopy.sellFlow)} />;
   if (id === "purchasing")
-    visual = (
-      <MiniFlow
-        steps={narrativeCopy.purchasingFlow}
-      />
-    );
+    visual = <StageFlow mode="operational-story" stages={toStages(narrativeCopy.purchasingFlow)} />;
   if (id === "orders")
-    visual = (
-      <MiniFlow
-        steps={narrativeCopy.ordersFlow}
-      />
-    );
+    visual = <StageFlow mode="operational-story" stages={toStages(narrativeCopy.ordersFlow)} />;
   if (id === "pos")
-    visual = (
-      <MiniFlow
-        steps={narrativeCopy.posFlow}
-      />
-    );
+    visual = <StageFlow mode="operational-story" stages={toStages(narrativeCopy.posFlow)} />;
   if (id === "customers")
-    visual = (
-      <MiniFlow
-        steps={narrativeCopy.customersFlow}
-      />
-    );
+    visual = <StageFlow mode="operational-story" stages={toStages(narrativeCopy.customersFlow)} />;
   if (id === "understand")
-    visual = (
-      <MiniFlow
-        steps={narrativeCopy.understandFlow}
-      />
-    );
+    visual = <StageFlow mode="operational-story" stages={toStages(narrativeCopy.understandFlow)} />;
   // Product truths take precedence over the working copy's platform-recovery reference.
   const body =
     id === "operate"
@@ -162,10 +136,17 @@ function Narrative({ id, index }: { id: string; index: number }) {
     </section>
   );
 }
+
+const toStages = (items: typeof narrativeCopy.sellFlow): Stage[] =>
+  items.map((label) => ({ id: label.id, label }));
+
+const inventoryStages: Stage[] = flow.map((label) => ({
+  id: label.id,
+  label,
+}));
 export function Landing() {
   const { locale } = usePreferences();
   const scope = useRef<HTMLDivElement>(null);
-  const [step, setStep] = useState(0);
   const [Motion, setMotion] = useState<ComponentType<MotionProps> | null>(null);
   useEffect(() => {
     let mounted = true;
@@ -269,41 +250,16 @@ export function Landing() {
             <div className="connected-intro">
               <SectionHeading content={connected} number="01" />
               <BilingualBlock text={connected.body} className="body-copy" />
-              <div className="workflow-key" aria-hidden="true">
-                {workflowNames.map((name, i) => (
-                  <span key={name.id} data-active={step === i}>
-                    <svg
-                      className="workflow-path"
-                      viewBox="0 0 100 20"
-                      fill="none"
-                      focusable="false"
-                    >
-                      <path d="M0 10H100" />
-                      <circle cx="8" cy="10" r="3" />
-                    </svg>
-                    <span>{String(i + 1).padStart(2, "0")}</span>
-                    <BilingualBlock text={name} />
-                  </span>
-                ))}
-              </div>
+              <StageFlow
+                mode="active-rail"
+                stages={workflowNames.map((label, i) => ({
+                  id: label.id,
+                  label,
+                  description: connected.details[i],
+                }))}
+                label={connected.heading.en}
+              />
             </div>
-            <ol className="workflow-steps">
-              {connected.details.map((detail, i) => (
-                <li
-                  key={detail.id}
-                  className="workflow-step"
-                  data-active={step === i}
-                >
-                  <span className="workflow-number">0{i + 1}</span>
-                  <div>
-                    <BilingualBlock text={detail} />
-                    <span className="current-step" aria-hidden="true">
-                      <BilingualBlock inline text={copy.currentStep} />
-                    </span>
-                  </div>
-                </li>
-              ))}
-            </ol>
           </div>
         </section>
         {[
@@ -473,7 +429,7 @@ export function Landing() {
           )}
         </div>
       </footer>
-      {Motion && <Motion scope={scope} setStep={setStep} />}
+      {Motion && <Motion scope={scope} />}
     </div>
   );
 }

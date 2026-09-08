@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   Boxes,
+  Building2,
   ChartNoAxesCombined,
   CreditCard,
   PackageCheck,
@@ -19,6 +20,7 @@ import {
   flow,
   narrativeCopy,
   diagramCopy,
+  inventoryStageDetails,
   ui,
   type BilingualText,
 } from "../content";
@@ -26,31 +28,28 @@ import "./apple.css";
 
 import { publicDetails } from "./publicContent";
 import { candidateCopy } from "./candidateContent";
+import { StageFlow, type Stage } from "../components/StageFlow";
+import { StageLine } from "../components/StageLine";
 function Text({ text }: { text: BilingualText }) {
   const { locale } = usePreferences();
   return <span data-copy={text.id}>{text[locale]}</span>;
 }
-function Path({
-  items,
-  icons,
-}: {
-  items: BilingualText[];
-  icons?: LucideIcon[];
-}) {
-  return (
-    <ol className="a-path">
-      {items.map((item, index) => {
-        const Icon = icons?.[index];
-        return (
-          <li key={item.id}>
-            {Icon && <Icon aria-hidden="true" focusable="false" />}
-            <Text text={item} />
-          </li>
-        );
-      })}
-    </ol>
-  );
-}
+const toStages = (items: BilingualText[]): Stage[] =>
+  items.map((label) => ({ id: label.id, label }));
+
+const orderJourneyStages: Stage[] = candidateCopy.orderJourney.steps.map(
+  (step) => ({
+    id: step.id,
+    label: step.heading,
+    description: step.body,
+  }),
+);
+const inventoryLabels = [...flow, narrativeCopy.understandFlow[2]];
+const inventoryStages: Stage[] = inventoryLabels.map((label, index) => ({
+  id: label.id,
+  label,
+  description: inventoryStageDetails[index],
+}));
 const destination = (href: string) =>
   href.startsWith("#") ? `/apple${href}` : href;
 const signinDestination =
@@ -63,6 +62,7 @@ const overviewDestinations: Record<string, string> = {
   purchasing: "purchasing",
   customers: "customers",
   finance: "understand",
+  "multi-store": "business",
 };
 const overviewIcons: Record<string, LucideIcon> = {
   storefront: ShoppingBag,
@@ -72,7 +72,12 @@ const overviewIcons: Record<string, LucideIcon> = {
   purchasing: Truck,
   customers: Search,
   finance: ChartNoAxesCombined,
+  "multi-store": Building2,
 };
+const overviewCapabilities = [
+  ...nodes,
+  candidateCopy.overviewMultiStore,
+];
 function Action({ kind = "start" }: { kind?: "start" | "demo" | "signin" }) {
   const isLocal = config[kind].startsWith("#");
   return (
@@ -332,7 +337,9 @@ function Navigation() {
 export function AppleLanding() {
   const { locale } = usePreferences();
   const [selectedCapability, setSelectedCapability] = useState(nodes[0].id);
-  const capability = nodes.find((node) => node.id === selectedCapability)!;
+  const capability = overviewCapabilities.find(
+    (node) => node.id === selectedCapability,
+  )!;
   const capabilitySection = overviewDestinations[capability.id];
   const CapabilityIcon = overviewIcons[capability.id];
   return (
@@ -371,7 +378,7 @@ export function AppleLanding() {
               className="a-applications"
               aria-label={candidateCopy.overviewLabel[locale]}
             >
-              {nodes.map((node) => (
+              {overviewCapabilities.map((node) => (
                 <button
                   type="button"
                   aria-pressed={selectedCapability === node.id}
@@ -394,7 +401,13 @@ export function AppleLanding() {
                 </strong>
               </div>
               <p>
-                <Text text={section(capabilitySection).body} />
+                <Text
+                  text={
+                    capability.id === "multi-store"
+                      ? candidateCopy.overviewMultiStoreBody
+                      : section(capabilitySection).body
+                  }
+                />
               </p>
               <a
                 href={`/apple#${capabilitySection}`}
@@ -424,23 +437,12 @@ export function AppleLanding() {
               <Text text={candidateCopy.orderJourney.body} />
             </p>
           </div>
-          <ol className="a-order-steps">
-            {candidateCopy.orderJourney.steps.map((step) => (
-              <li key={step.id}>
-                <span className="a-order-step-number" aria-hidden="true">
-                  {step.label}
-                </span>
-                <div>
-                  <h3>
-                    <Text text={step.heading} />
-                  </h3>
-                  <p>
-                    <Text text={step.body} />
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ol>
+          <StageFlow
+            mode="active-rail"
+            stages={orderJourneyStages}
+            label={candidateCopy.orderJourney.heading.en}
+            className="apple-stage-flow"
+          />
           <p className="a-caption">
             <Text text={candidateCopy.orderJourney.illustrative} />
           </p>
@@ -538,16 +540,25 @@ export function AppleLanding() {
           </p>
           <div className="a-operations-grid">
             <Story id="inventory">
-              <Path items={flow} />
+              <StageLine
+                stages={inventoryStages}
+                label={section("inventory").heading.en}
+              />
               <p className="a-caption">
                 <Text text={diagramCopy.inventoryEquivalent} />
               </p>
             </Story>
             <Story id="purchasing">
-              <Path items={narrativeCopy.purchasingFlow} />
+              <StageLine
+                stages={toStages(narrativeCopy.purchasingFlow)}
+                label={section("purchasing").heading.en}
+              />
             </Story>
             <Story id="orders">
-              <Path items={narrativeCopy.ordersFlow} />
+              <StageLine
+                stages={toStages(narrativeCopy.ordersFlow)}
+                label={section("orders").heading.en}
+              />
             </Story>
             <Story id="identity" />
           </div>
@@ -564,10 +575,16 @@ export function AppleLanding() {
           />
           <div className="a-insight-grid">
             <Story id="customers">
-              <Path items={narrativeCopy.customersFlow} />
+              <StageLine
+                stages={toStages(narrativeCopy.customersFlow)}
+                label={section("customers").heading.en}
+              />
             </Story>
             <div className="a-insight-performance">
-              <Path items={narrativeCopy.understandFlow} />
+              <StageLine
+                stages={toStages(narrativeCopy.understandFlow)}
+                label={section("understand").heading.en}
+              />
               <Details id="understand" />
             </div>
           </div>

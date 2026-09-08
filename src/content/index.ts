@@ -126,6 +126,13 @@ export const flow = [
   pair("sell", "Sell", "بيع"),
   pair("assemble", "Assemble", "تجميع"),
 ];
+export const inventoryStageDetails = [
+  pair("receive-detail", "Receive stock into the Store ledger.", "سجّل الاستلام في دفتر مخزون المتجر."),
+  pair("reserve-detail", "Reserve stock for an order before fulfilment.", "احجز المخزون للطلب قبل تجهيزه."),
+  pair("sell-detail", "Consume stock when the sale is recorded.", "استهلك المخزون عند تسجيل البيع."),
+  pair("assemble-detail", "Assemble components into finished stock.", "اجمع المكونات في مخزون نهائي."),
+  pair("reports-detail", "Follow stock movement in operational reports.", "تابع حركة المخزون في تقارير التشغيل."),
+];
 export const workflowNames = [
   pair("publish", "Publish", "نشر"),
   pair("sell-step", "Sell", "بيع"),
@@ -196,7 +203,7 @@ export const metadata = {
   ar: {
     title: "جِذرك — تجارة مترابطة لكل متجر",
     description:
-      "نظام واحد لإدارة المتاجر بعلاماتها والكتالوج والطلبات والمخزون والمشتريات والعملاء والمالية ونقاط البيع، مصمم للتجارة في المنطقة.",
+      "نظام واحد لإدارة المتاجر بعلاماتها والكتالوج والطلبات والمخزون والمشتريات والعملاء والمالية ونقاط البيع، مصمم للأنشطة التجارية العربية.",
   },
 };
 export const ui = {

@@ -1,0 +1,48 @@
+import { useEffect, useRef } from "react";
+import type { Stage } from "./StageFlow";
+import { BilingualBlock } from "./BilingualBlock";
+
+export function StageLine({
+  stages,
+  label,
+}: {
+  stages: Stage[];
+  label?: string;
+}) {
+  const root = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = root.current;
+    if (!element) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          element.dataset.visible = "true";
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 },
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={root} className="stage-line" role="group" aria-label={label}>
+      <div className="stage-line-track">
+        {stages.map((stage, index) => (
+          <div
+            key={stage.id}
+            className="stage-line-stage"
+          >
+            <BilingualBlock inline text={stage.label} />
+            <span className="stage-line-dot" aria-hidden="true" />
+            <span className="stage-line-index" aria-hidden="true">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

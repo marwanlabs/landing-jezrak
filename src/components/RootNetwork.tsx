@@ -12,7 +12,7 @@ import {
   Link2,
   ShieldCheck,
 } from "lucide-react";
-import { nodes, copy, diagramCopy, flow, type BilingualText } from "../content";
+import { nodes, copy, diagramCopy } from "../content";
 import { BilingualBlock } from "./BilingualBlock";
 import { RootMark } from "./Primitives";
 const icons = [
@@ -148,30 +148,6 @@ export function LedgerDiagram() {
     </figure>
   );
 }
-export function InventoryDiagram() {
-  return (
-    <figure className="inventory-diagram">
-      <div className="diagram-label">
-        <Boxes size={20} />
-        <BilingualBlock inline text={nodes[2]} />
-      </div>
-      <ol>
-        {flow.map((step, i) => (
-          <li className="inventory-flow-node" key={step.id}>
-            <span className="flow-number">0{i + 1}</span>
-            <BilingualBlock text={step} />
-            <span className="flow-connection" aria-hidden="true" />
-          </li>
-        ))}
-      </ol>
-      <figcaption>
-        <BilingualBlock
-          text={diagramCopy.inventoryEquivalent}
-        />
-      </figcaption>
-    </figure>
-  );
-}
 export function CatalogDiagram() {
   return (
     <div className="catalog-diagram" aria-hidden="true">
@@ -215,18 +191,6 @@ export function IdentityDiagram() {
       </div>
       <ShieldCheck size={22} />
       <BilingualBlock text={copy.stock} />
-    </div>
-  );
-}
-export function MiniFlow({ steps }: { steps: BilingualText[] }) {
-  return (
-    <div className="mini-flow" aria-hidden="true">
-      {steps.map((text, i) => (
-        <div key={text.id}>
-          <span>0{i + 1}</span>
-          <BilingualBlock text={text} />
-        </div>
-      ))}
     </div>
   );
 }

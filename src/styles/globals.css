@@ -671,6 +671,7 @@ h3 {
   grid-template-columns: 1fr 1.12fr;
   gap: 110px;
 }
+.connected-grid > .connected-intro { grid-column: 1 / -1; }
 .connected-section .eyebrow,
 .connected-section .heading-pair > .secondary-language {
   color: var(--sprout);
@@ -2299,6 +2300,79 @@ h3 {
 }
 .workflow-key > span[data-active="true"] .workflow-path circle {
   fill: var(--dark-muted);
+}
+
+/* Shared stage flows. */
+.stage-flow { min-width: 0; }
+.stage-flow-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  border-block-end: 1px solid var(--line);
+}
+.stage-flow-tab {
+  min-width: 0;
+  min-height: 5.2rem;
+  padding: 0.85rem 0.7rem 0.75rem;
+  border: 0;
+  border-block-start: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  text-align: start;
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+.stage-flow-tab[data-active="true"] {
+  border-block-start: 3px solid var(--forest);
+  padding-block-start: calc(0.85rem - 2px);
+  color: var(--forest);
+  background: color-mix(in srgb, var(--forest) 5%, transparent);
+}
+.stage-flow-tab:focus-visible, .stage-flow-panel:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.stage-flow-tab > .bilingual { display: block; margin-block-start: 0.45rem; font-size: 0.78rem; }
+.stage-flow-marker { display: flex; align-items: center; gap: 0.5rem; color: var(--muted); font-size: 0.7rem; letter-spacing: 0.08em; }
+.stage-flow-marker-circle { flex-direction: column; gap: 0.35rem; letter-spacing: 0; }
+.stage-flow-dot { width: 1rem; height: 1rem; border: 2px solid currentColor; border-radius: 50%; background: transparent; }
+.stage-flow-index { font-size: 0.7rem; }
+.stage-flow-marker-label { display: none; }
+.stage-flow-panel {
+  min-height: 8rem;
+  padding: 1.45rem 1.25rem;
+  border-block-end: 1px solid var(--line);
+  animation: stage-flow-panel-in 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.stage-flow-panel > .bilingual { max-width: 58ch; margin-block-start: 0.55rem; color: var(--muted); line-height: 1.65; }
+.stage-flow-current { display: block; color: var(--forest); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.stage-flow-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.8rem; list-style: none; }
+.stage-flow-item { min-width: 0; padding: 1rem; border-block-start: 2px solid var(--forest); background: var(--limestone); animation: stage-flow-item-in 220ms cubic-bezier(0.23, 1, 0.32, 1) both; }
+.stage-flow-item:nth-child(2) { animation-delay: 40ms; }
+.stage-flow-item:nth-child(3) { animation-delay: 80ms; }
+.stage-flow-item:nth-child(4) { animation-delay: 120ms; }
+.stage-flow-content > .bilingual { margin-block-start: 0.65rem; }
+.stage-flow-label { color: var(--forest); font-weight: 600; }
+.stage-flow-description { margin-block-start: 0.45rem; color: var(--muted); font-size: 0.85rem; line-height: 1.55; }
+.connected-section .stage-flow-tab, .connected-section .stage-flow-panel { border-color: var(--dark-line); }
+.connected-section .stage-flow-tab { color: var(--dark-muted); }
+.connected-section .stage-flow-tab[data-active="true"] { border-block-start-color: var(--sprout); color: var(--on-dark); background: color-mix(in srgb, var(--sprout) 7%, transparent); }
+.connected-section .stage-flow-panel > .bilingual { color: var(--dark-muted); }
+.connected-section .stage-flow-current, .connected-section .stage-flow-label { color: var(--sprout); }
+.connected-section .stage-flow-marker { color: var(--dark-muted); }
+@keyframes stage-flow-panel-in { from { opacity: 0; transform: translateY(0.35rem); } to { opacity: 1; transform: translateY(0); } }
+@keyframes stage-flow-item-in { from { opacity: 0; transform: translateY(0.3rem); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 700px) {
+  .stage-flow-tabs { grid-template-columns: 1fr; border-block-end: 0; }
+  .stage-flow-tab { min-height: 0; display: flex; align-items: center; gap: 0.8rem; border-block-start: 1px solid var(--line); padding: 0.75rem; }
+  .stage-flow-tab[data-active="true"] { border-inline-start: 3px solid var(--forest); border-block-start-width: 1px; padding-block: 0.75rem; }
+  .stage-flow-tab > .bilingual { margin-block-start: 0; }
+  .stage-flow-panel { min-height: 0; }
+  .stage-flow-list { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-flow-tab { transition: none; }
+  .stage-flow-panel, .stage-flow-item { animation: none; }
 }
 /* One selected language per surface, per the updated product direction. */
 .hero-copy {

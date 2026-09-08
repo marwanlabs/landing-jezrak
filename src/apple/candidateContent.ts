@@ -26,6 +26,16 @@ export const candidateCopy = {
     en: "Run your Store from one place.",
     ar: "أدر متجرك من مكان واحد.",
   } satisfies BilingualText,
+  overviewMultiStore: {
+    id: "multi-store",
+    en: "Multiple Stores",
+    ar: "متاجر متعددة",
+  } satisfies BilingualText,
+  overviewMultiStoreBody: {
+    id: "apple-overview-multi-store-body",
+    en: "Run multiple Stores under one Business while keeping each Store's brand, team, orders, customers, finances, and stock ledger separate.",
+    ar: "أدر عدة متاجر تحت نشاط تجاري واحد، مع إبقاء علامة كل متجر وفريقه وطلباته وعملائه وماليته ودفتر مخزونه مستقلة.",
+  } satisfies BilingualText,
   orderJourney: {
     eyebrow: {
       id: "apple-order-journey-eyebrow",

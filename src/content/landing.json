@@ -45,7 +45,7 @@
     "premise": {
       "id": "top-premise",
       "en": "Your idea is yours. Jizrak connects the work that supports it.",
-      "ar": "فكرتك لك. ويربط جِذرك الأعمال التي تدعمها."
+      "ar": "فكرتك لك. ويربط جِذرك العمليات التي تدعمها."
     },
     "details": []
   },
@@ -167,7 +167,7 @@
     "heading": {
       "id": "sell-heading",
       "en": "A Storefront that helps customers find products and check out with confidence.",
-        "ar": "واجهة متجر تساعد العملاء على العثور على المنتجات وإتمام الشراء بثقة."
+        "ar": "واجهة متجر تساعد العملاء على العثور على المنتجات وإتمام الشراء."
     },
     "body": {
       "id": "sell-body",
@@ -208,12 +208,12 @@
       {
         "id": "sell-detail-6",
         "en": "Persistent Store-scoped cart, quantity changes, combo-offer detection, authoritative line and stock reconciliation, and coupons.",
-        "ar": "سلة محفوظة خاصة بكل متجر وتعديل الكميات واكتشاف العروض المجمعة ومراجعة موثوقة لبنود السلة والمخزون والكوبونات."
+        "ar": "سلة محفوظة خاصة بكل متجر وتعديل الكميات واكتشاف العروض المجمعة ومطابقة بنود السلة والمخزون مع بيانات الخادم والكوبونات."
       },
       {
         "id": "sell-detail-7",
         "en": "Staged checkout with saved or new addresses, Egyptian governorate and area shipping, configured shipping and tax, cash on delivery where enabled, server-authoritative totals, indivisible order placement, and protection when customers compete for the last unit.",
-        "ar": "دفع على مراحل بعناوين محفوظة أو جديدة وشحن حسب المحافظة والمنطقة وإعدادات الشحن والضريبة والدفع عند الاستلام عند تفعيله وإجماليات يحسبها الخادم وإنشاء الطلب كوحدة واحدة وحماية عند محاولة أكثر من عميل شراء آخر قطعة."
+        "ar": "إتمام الشراء على مراحل بعناوين محفوظة أو جديدة وشحن حسب المحافظة والمنطقة وإعدادات الشحن والضريبة والدفع عند الاستلام عند تفعيله وإجماليات يحسبها الخادم وإنشاء الطلب كوحدة واحدة وحماية عند محاولة أكثر من عميل شراء آخر قطعة."
       },
       {
         "id": "sell-detail-8",
@@ -790,7 +790,7 @@
     "heading": {
       "id": "identity-heading",
       "en": "Set each Store's identity, language, selling rules, and search presence.",
-        "ar": "تحديد هوية كل متجر ولغته وقواعد البيع وظهوره في البحث."
+        "ar": "حدّد هوية كل متجر ولغته وقواعد البيع وظهوره في البحث."
     },
     "body": {
       "id": "identity-body",
@@ -876,12 +876,12 @@
     "heading": {
       "id": "operate-heading",
       "en": "Give people the access they need while keeping Store boundaries clear.",
-        "ar": "الصلاحيات اللازمة للمستخدمين مع حدود واضحة لكل متجر."
+        "ar": "امنح المستخدمين الصلاحيات اللازمة مع حدود واضحة لكل متجر."
     },
     "body": {
       "id": "operate-body",
       "en": "Business ownership, Store-specific grants, controlled stock movements, auditable events, private media, and restricted platform recovery infrastructure create a safer operating foundation without turning the landing page into a certification claim.",
-      "ar": "توفّر ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة وبنية استعادة المنصة المقيّدة أساساً أكثر أماناً، دون تقديم ادعاءات اعتماد غير مثبتة."
+      "ar": "تحدد ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة وبنية استعادة المنصة المقيّدة حدود التشغيل بوضوح، من دون الادعاء بأن المنتج حاصل على اعتماد."
     },
     "premise": {
       "id": "operate-premise",

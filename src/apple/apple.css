@@ -322,7 +322,7 @@
 }
 .apple-page .a-applications {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: clamp(0.5rem, 1.2vw, 1.25rem);
 }
 .apple-page .a-applications button {
@@ -465,6 +465,175 @@
 .apple-page .a-order-journey > .a-caption {
   max-width: 70ch;
   margin-block-start: 1.5rem;
+}
+.apple-page .apple-stage-flow {
+  margin-block: 2.5rem 1rem;
+}
+.apple-page .apple-stage-flow .stage-flow-tab {
+  border-color: var(--line);
+  color: var(--muted);
+}
+.apple-page .apple-stage-flow .stage-flow-tab[data-active="true"] {
+  border-block-start-color: var(--forest);
+  color: var(--forest);
+  background: color-mix(in srgb, var(--forest) 6%, transparent);
+}
+.apple-page .apple-stage-flow .stage-flow-tab[data-marker="circle"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  text-align: center;
+}
+.apple-page .apple-stage-flow .stage-flow-tab[data-marker="circle"] > .bilingual {
+  order: -1;
+  margin-block-start: 0;
+}
+.apple-page .apple-stage-flow .stage-flow-tab[data-marker="circle"][data-active="true"] .stage-flow-dot {
+  color: var(--accent, #d86b43);
+  background: currentColor;
+  border-color: currentColor;
+}
+.apple-page .apple-stage-flow .stage-flow-tabs[data-compact="true"] {
+  border-block-end: 0;
+}
+.apple-page .apple-stage-flow .stage-flow-tabs[data-compact="true"] .stage-flow-tab {
+  border-block-start: 1px solid var(--line);
+  background: transparent;
+}
+.apple-page .apple-stage-flow .stage-flow-tabs[data-compact="true"] .stage-flow-tab[data-active="true"] {
+  border-block-start: 3px solid var(--forest);
+  padding-block-start: calc(0.85rem - 2px);
+  background: color-mix(in srgb, var(--forest) 7%, transparent);
+}
+.apple-page .apple-stage-flow .stage-flow-panel {
+  border-color: var(--line);
+}
+.apple-page .apple-stage-flow .stage-flow-list {
+  gap: 1rem;
+}
+.apple-page .apple-stage-flow .stage-flow-item {
+  border-block-start-color: var(--forest);
+  background: var(--chalk);
+}
+.apple-page .apple-stage-flow .stage-flow-panel > .bilingual {
+  color: var(--muted);
+}
+.apple-page .apple-stage-flow .stage-flow-current,
+.apple-page .apple-stage-flow .stage-flow-label {
+  color: var(--forest);
+}
+.apple-page .stage-line {
+  margin-block: 2.5rem 1rem;
+}
+.apple-page .stage-line-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  position: relative;
+}
+.apple-page .stage-line-track::before {
+  content: "";
+  position: absolute;
+  inset-inline: 10%;
+  /* Align the connector with the dot's center: stage padding + label + gap + half dot. */
+  inset-block-start: calc(0.2rem + 1.2rem + 0.55rem + 0.5rem);
+  border-block-start: 1px solid var(--line);
+}
+.apple-page .stage-line-stage {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0.2rem 0.5rem 0.75rem;
+  border: 0;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(0.35rem);
+  transition: color 160ms ease, opacity 220ms cubic-bezier(0.23, 1, 0.32, 1), transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.apple-page .stage-line[data-visible="true"] .stage-line-stage {
+  opacity: 1;
+  transform: translateY(0);
+}
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(2) { transition-delay: 40ms; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(3) { transition-delay: 80ms; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(4) { transition-delay: 120ms; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(5) { transition-delay: 160ms; }
+.apple-page .stage-line-stage > .bilingual {
+  min-height: 1.2rem;
+  font-size: 0.78rem;
+}
+.apple-page .stage-line-dot {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--chalk);
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+.apple-page .stage-line-index {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+.apple-page .stage-line-stage[data-active="true"] {
+  color: var(--forest);
+}
+.apple-page .stage-line[data-visible="true"] .stage-line-dot { animation: stage-line-scroll-color 700ms ease-out; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(2) .stage-line-dot { animation-delay: 40ms; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(3) .stage-line-dot { animation-delay: 80ms; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(4) .stage-line-dot { animation-delay: 120ms; }
+.apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(5) .stage-line-dot { animation-delay: 160ms; }
+@keyframes stage-line-scroll-color {
+  0%, 100% { border-color: currentColor; background: var(--chalk); }
+  45% { border-color: #d86b43; background: #d86b43; }
+}
+.apple-page .stage-line-stage:hover {
+  color: #d86b43;
+}
+.apple-page .stage-line-stage:hover .stage-line-dot {
+  transform: scale(1.18);
+  border-color: #d86b43;
+  background: #d86b43;
+}
+.apple-page .stage-line-stage:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+@media (max-width: 48rem) {
+  .apple-page .stage-line-track {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .apple-page .stage-line-track::before {
+    inset-inline: auto;
+    inset-block: 1rem;
+    inset-inline-start: 50%;
+    border-block-start: 0;
+    border-inline-start: 1px solid var(--line);
+  }
+  .apple-page .stage-line-stage {
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .apple-page .stage-line-stage > .bilingual { grid-column: 1; justify-self: end; }
+  .apple-page .stage-line-dot { grid-column: 2; grid-row: 1; }
+  .apple-page .stage-line-index { grid-column: 3; justify-self: start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .apple-page .stage-line-stage {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .apple-page .stage-line-dot { animation: none; }
 }
 .apple-page .a-workflow {
   list-style: none;

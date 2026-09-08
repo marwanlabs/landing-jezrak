@@ -5,10 +5,8 @@ import type { RefObject } from "react";
 if (typeof window !== "undefined") gsap.registerPlugin(ScrollTrigger, useGSAP);
 export function LandingMotion({
   scope,
-  setStep,
 }: {
   scope: RefObject<HTMLDivElement | null>;
-  setStep: (step: number) => void;
 }) {
   useGSAP(
     () => {
@@ -150,30 +148,6 @@ export function LandingMotion({
               },
             });
           }
-          const steps = [...root.querySelectorAll(".workflow-step")];
-          const update = () => {
-            let best = 0;
-            let distance = Infinity;
-            steps.forEach((element, i) => {
-              const box = element.getBoundingClientRect();
-              const delta = Math.abs(
-                box.top + box.height / 2 - innerHeight / 2,
-              );
-              if (delta < distance) {
-                distance = delta;
-                best = i;
-              }
-            });
-            setStep(best);
-          };
-          ScrollTrigger.create({
-            trigger: root.querySelector("#connected"),
-            start: "top center",
-            end: "bottom center",
-            onUpdate: update,
-            onEnter: update,
-            onEnterBack: update,
-          });
           return () => timeline.kill();
         });
         if (matchMedia("(prefers-reduced-motion: reduce)").matches)

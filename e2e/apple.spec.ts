@@ -416,9 +416,12 @@ test("the hero restores the connected commerce capability card", async ({
   await expect(page.locator(".a-overview")).toContainText(
     "Run your Store from one place.",
   );
-  await expect(page.locator(".a-applications button")).toHaveCount(7);
-  await page.getByRole("button", { name: "Finance" }).click();
+  await expect(page.locator(".a-applications button")).toHaveCount(8);
+  await page.getByRole("button", { name: "Multiple Stores" }).click();
   await expect(
     page.locator('.a-applications button[aria-pressed="true"]'),
-  ).toHaveText("Finance");
+  ).toHaveText("Multiple Stores");
+  await expect(page.locator(".a-capability-detail")).toContainText(
+    "under one Business",
+  );
 });

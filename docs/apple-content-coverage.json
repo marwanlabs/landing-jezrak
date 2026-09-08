@@ -4699,6 +4699,34 @@
       "state": "visible"
     },
     {
+      "id": "apple-overview-multi-store",
+      "locale": "en",
+      "text": "Multiple Stores",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-overview-multi-store",
+      "locale": "ar",
+      "text": "متاجر متعددة",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-overview-multi-store-body",
+      "locale": "en",
+      "text": "Run multiple Stores under one Business while keeping each Store's brand, team, orders, customers, finances, and stock ledger separate.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-overview-multi-store-body",
+      "locale": "ar",
+      "text": "أدر عدة متاجر تحت نشاط تجاري واحد، مع إبقاء علامة كل متجر وفريقه وطلباته وعملائه وماليته ودفتر مخزونه مستقلة.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
       "id": "apple-order-journey-eyebrow",
       "locale": "en",
       "text": "One order, one Store",

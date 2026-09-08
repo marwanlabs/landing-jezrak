@@ -221,6 +221,8 @@ addCandidateCopy(
     body: candidateCopy.body,
     reassurance: candidateCopy.reassurance,
     overviewLabel: candidateCopy.overviewLabel,
+    overviewMultiStore: candidateCopy.overviewMultiStore,
+    overviewMultiStoreBody: candidateCopy.overviewMultiStoreBody,
   },
   "#top",
 );

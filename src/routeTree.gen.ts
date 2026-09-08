@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AppleRouteImport } from './routes/apple'
+import { Route as PrototypeWorkflowItemsRouteImport } from './routes/prototype.workflow-items'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const AppleRoute = AppleRouteImport.update({
   path: '/apple',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrototypeWorkflowItemsRoute = PrototypeWorkflowItemsRouteImport.update({
+  id: '/prototype/workflow-items',
+  path: '/prototype/workflow-items',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/apple': typeof AppleRoute
+  '/prototype/workflow-items': typeof PrototypeWorkflowItemsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/apple': typeof AppleRoute
+  '/prototype/workflow-items': typeof PrototypeWorkflowItemsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/apple': typeof AppleRoute
+  '/prototype/workflow-items': typeof PrototypeWorkflowItemsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/apple'
+  fullPaths: '/' | '/apple' | '/prototype/workflow-items'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/apple'
-  id: '__root__' | '/' | '/apple'
+  to: '/' | '/apple' | '/prototype/workflow-items'
+  id: '__root__' | '/' | '/apple' | '/prototype/workflow-items'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AppleRoute: typeof AppleRoute
+  PrototypeWorkflowItemsRoute: typeof PrototypeWorkflowItemsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/prototype/workflow-items': {
+      id: '/prototype/workflow-items'
+      path: '/prototype/workflow-items'
+      fullPath: '/prototype/workflow-items'
+      preLoaderRoute: typeof PrototypeWorkflowItemsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AppleRoute: AppleRoute,
+  PrototypeWorkflowItemsRoute: PrototypeWorkflowItemsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
