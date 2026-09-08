@@ -3,8 +3,7 @@
     "Section title fields are source-only editorial names, never public copy.",
     "Exact duplicate strings may be consolidated.",
     "Conditional notices and links follow existing configuration.",
-    "Excluded root decorative labels do not describe product capabilities.",
-    "Candidate-owned hero copy is paired by locale; superseded source strings remain listed for auditability."
+    "Excluded root decorative labels do not describe product capabilities."
   ],
   "entries": [
     {
@@ -77,7 +76,7 @@
       "text": "Jizrak. Connected commerce in one system.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-eyebrow",
@@ -85,7 +84,7 @@
       "text": "جِذرك. تجارة مترابطة في نظام واحد.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-headline",
@@ -93,7 +92,7 @@
       "text": "One commerce foundation for every Store.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-headline",
@@ -101,7 +100,7 @@
       "text": "أساس تجاري واحد لكل متجر.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-body",
@@ -109,7 +108,7 @@
       "text": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances in one system. Every Store keeps its own brand, team, and stock ledger.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-body",
@@ -117,7 +116,7 @@
       "text": "يجمع نظام واحد واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية. ويحتفظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-premise",
@@ -125,7 +124,7 @@
       "text": "Your idea is yours. Jizrak connects the work that supports it.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "top-premise",
@@ -133,49 +132,55 @@
       "text": "فكرتك لك. ويربط جِذرك الأعمال التي تدعمها.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store hero copy"
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-eyebrow",
       "locale": "en",
       "text": "One connected foundation",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-eyebrow",
       "locale": "ar",
       "text": "أساس تشغيلي واحد",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-heading",
       "locale": "en",
       "text": "Keep every Store connected as your Business grows.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-heading",
       "locale": "ar",
       "text": "أبقِ متاجرك مترابطة مع توسّع نشاطك التجاري.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-body",
       "locale": "en",
       "text": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and Store ledgers share one Business foundation. Each Store stays separate.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-body",
       "locale": "ar",
       "text": "يجمع أساس تجاري واحد الكتالوج والطلبات وتنفيذ الطلبات والمشتريات والموردين والمالية ودفاتر المتاجر، مع بقاء كل متجر مستقلاً.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "connected-premise",
@@ -198,70 +203,80 @@
       "locale": "en",
       "text": "Publish a product once its variants and stock links are ready.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-1",
       "locale": "ar",
       "text": "انشر المنتج بعد تجهيز خياراته وربطه بالمخزون.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-2",
       "locale": "en",
       "text": "Sell it through the Storefront or POS against the correct Store ledger.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-2",
       "locale": "ar",
       "text": "نفّذ البيع من واجهة المتجر أو نقطة البيع باستخدام دفتر مخزون المتجر الصحيح.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-3",
       "locale": "en",
       "text": "Reserve and move stock through controlled inventory flows.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-3",
       "locale": "ar",
       "text": "احجز المخزون وحرّكه من خلال عمليات مخزون منضبطة.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-4",
       "locale": "en",
       "text": "Replenish through suppliers, purchase orders, receiving, or assembly.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-4",
       "locale": "ar",
       "text": "أعد تزويد المخزون عبر الموردين وأوامر الشراء والاستلام أو التجميع.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-5",
       "locale": "en",
       "text": "Follow orders, refunds, costs, and performance without rebuilding the story in spreadsheets.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "connected-detail-5",
       "locale": "ar",
       "text": "تابع الطلبات والاستردادات والتكاليف والأداء دون إعادة تجميع البيانات في ملفات منفصلة.",
       "destination": "#connected-details",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "business-eyebrow",
@@ -410,42 +425,48 @@
       "locale": "en",
       "text": "Sell online",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "sell-eyebrow",
       "locale": "ar",
       "text": "البيع عبر الإنترنت",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "sell-heading",
       "locale": "en",
       "text": "A Storefront that helps customers find products and check out with confidence.",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "sell-heading",
       "locale": "ar",
       "text": "واجهة متجر تساعد العملاء على العثور على المنتجات وإتمام الشراء بثقة.",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "sell-body",
       "locale": "en",
       "text": "Give each Store a branded shopping experience, from search and product selection through cart, shipping, payment, confirmation, and post-purchase service.",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "sell-body",
       "locale": "ar",
       "text": "امنح كل متجر تجربة تسوق بعلامته، من البحث واكتشاف المنتجات واختيار الخيارات إلى السلة والشحن وطريقة الدفع والتأكيد وخدمات ما بعد الشراء.",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "sell-premise",
@@ -594,42 +615,48 @@
       "locale": "en",
       "text": "Shape the offer",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "catalog-eyebrow",
       "locale": "ar",
       "text": "صمّم عرضك التجاري",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "catalog-heading",
       "locale": "en",
       "text": "From a single product to a catalog with variants and bundles.",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "catalog-heading",
       "locale": "ar",
       "text": "من منتج واحد إلى كتالوج يضم الخيارات والباقات.",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "catalog-body",
       "locale": "en",
       "text": "Build a bilingual catalog, reuse option groups, generate variant combinations, connect every sellable choice to the right inventory, and merchandise products through categories, images, bundles, offers, banners, and reviews.",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "catalog-body",
       "locale": "ar",
       "text": "أنشئ كتالوجاً ثنائي اللغة، وأعد استخدام مجموعات الخيارات، وولّد تركيبات المنتجات، واربط كل اختيار قابل للبيع بمخزونه الصحيح، ثم اعرضه بالفئات والصور والباقات والعروض والبانرات والمراجعات.",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "catalog-premise",
@@ -1344,42 +1371,48 @@
       "locale": "en",
       "text": "Sell in person",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "pos-eyebrow",
       "locale": "ar",
       "text": "البيع داخل المتجر",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "pos-heading",
       "locale": "en",
       "text": "A register built on the same inventory rules.",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "pos-heading",
       "locale": "ar",
       "text": "نقطة بيع تعتمد قواعد المخزون نفسها.",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "pos-body",
       "locale": "en",
       "text": "Select the Store, Location, and register; open a shift; search products and variants; record cash, card, transfer, or other tender; calculate change for cash; issue a receipt; and keep the sale and stock movement durable and retry-safe.",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "pos-body",
       "locale": "ar",
       "text": "اختر المتجر والموقع وصندوق البيع، وافتح الوردية، وابحث عن المنتجات وتركيباتها، وسجّل الدفع النقدي أو البطاقة أو التحويل أو طريقة أخرى، واحسب الباقي للنقد، واعرض الإيصال، وامنع تكرار البيع عند إعادة المحاولة.",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
     },
     {
       "id": "pos-premise",
@@ -3572,14 +3605,14 @@
       "locale": "en",
       "text": "Connected commerce for every Store.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "root-label",
       "locale": "ar",
       "text": "تجارة مترابطة لكل متجر.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "ledger-note",
@@ -3684,42 +3717,42 @@
       "locale": "en",
       "text": "For Arab businesses.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "native-label",
       "locale": "ar",
       "text": "للأنشطة التجارية العربية.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "stock-label",
       "locale": "en",
       "text": "Independent Stores. Shared operations.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "stock-label",
       "locale": "ar",
       "text": "متاجر مستقلة وعمليات مشتركة.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "egp-label",
       "locale": "en",
       "text": "For Egyptian commerce.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "egp-label",
       "locale": "ar",
       "text": "للتجارة في مصر.",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded"
     },
     {
       "id": "current-step",
@@ -3968,168 +4001,192 @@
       "locale": "en",
       "text": "Storefront",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "storefront",
       "locale": "ar",
       "text": "واجهة المتجر",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "pos",
       "locale": "en",
       "text": "POS",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "pos",
       "locale": "ar",
       "text": "نقطة البيع",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "inventory",
       "locale": "en",
       "text": "Inventory",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "inventory",
       "locale": "ar",
       "text": "المخزون",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "orders",
       "locale": "en",
       "text": "Orders",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "orders",
       "locale": "ar",
       "text": "الطلبات",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "purchasing",
       "locale": "en",
       "text": "Purchasing",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "purchasing",
       "locale": "ar",
       "text": "المشتريات",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "customers",
       "locale": "en",
       "text": "Customers",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "customers",
       "locale": "ar",
       "text": "العملاء",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "finance",
       "locale": "en",
       "text": "Finance",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "finance",
       "locale": "ar",
       "text": "المالية",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Seven-capability hero explorer replaced by the candidate-owned Store visual"
     },
     {
       "id": "publish",
       "locale": "en",
       "text": "Publish",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "publish",
       "locale": "ar",
       "text": "نشر",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "sell-step",
       "locale": "en",
       "text": "Sell",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "sell-step",
       "locale": "ar",
       "text": "بيع",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "reserve-step",
       "locale": "en",
       "text": "Reserve",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "reserve-step",
       "locale": "ar",
       "text": "حجز",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "replenish",
       "locale": "en",
       "text": "Replenish",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "replenish",
       "locale": "ar",
       "text": "تجديد",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "understand-step",
       "locale": "en",
       "text": "Understand",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "understand-step",
       "locale": "ar",
       "text": "فهم الأرقام",
       "destination": "#connected",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by the candidate-owned single-order journey"
     },
     {
       "id": "receive",
@@ -4192,42 +4249,48 @@
       "locale": "en",
       "text": "Catalog",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "catalogue-visual",
       "locale": "ar",
       "text": "الكتالوج",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "variants-visual",
       "locale": "en",
       "text": "Variants",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "variants-visual",
       "locale": "ar",
       "text": "تركيبات المنتج",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "stock-visual",
       "locale": "en",
       "text": "Store ledger",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "stock-visual",
       "locale": "ar",
       "text": "دفتر مخزون المتجر",
       "destination": "#catalog",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "inventory-equivalent",
@@ -4248,42 +4311,48 @@
       "locale": "en",
       "text": "Discover",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "discover",
       "locale": "ar",
       "text": "الاكتشاف",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "choose",
       "locale": "en",
       "text": "Choose",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "choose",
       "locale": "ar",
       "text": "الاختيار",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "checkout",
       "locale": "en",
       "text": "Checkout",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "checkout",
       "locale": "ar",
       "text": "إتمام الشراء",
       "destination": "#sell",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "supplier",
@@ -4374,42 +4443,48 @@
       "locale": "en",
       "text": "Open a shift",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "open-shift",
       "locale": "ar",
       "text": "فتح الوردية",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "record-sale",
       "locale": "en",
       "text": "Record a sale",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "record-sale",
       "locale": "ar",
       "text": "تسجيل البيع",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "receipt",
       "locale": "en",
       "text": "Issue a receipt",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "receipt",
       "locale": "ar",
       "text": "إصدار الإيصال",
       "destination": "#pos",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Consolidated into the candidate-owned selling chapter"
     },
     {
       "id": "business-label",
@@ -4522,6 +4597,524 @@
       "text": "تطبيق قابل للتثبيت وأصول مخزنة؛ إشعارات ويب عند الإعداد؛ عناوين واعية بالمتجر؛ عناوين مُدارة؛ سجل النطاقات؛ وسائط خاصة.",
       "destination": "#group-17",
       "state": "expanded"
+    },
+    {
+      "id": "apple-hero-eyebrow",
+      "locale": "en",
+      "text": "Jizrak for your Store",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-eyebrow",
+      "locale": "ar",
+      "text": "جِذرك لمتجرك",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-heading",
+      "locale": "en",
+      "text": "Sell your products. Run your store.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-heading",
+      "locale": "ar",
+      "text": "بع منتجاتك. أدر متجرك.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-body",
+      "locale": "en",
+      "text": "Manage your online storefront, orders, stock, and customers in one place. Add point of sale when you sell in person.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-body",
+      "locale": "ar",
+      "text": "أدر واجهة متجرك الإلكترونية وطلباتك ومخزونك وعملاءك في مكان واحد. واستخدم نقطة البيع عندما تبيع لعملائك مباشرةً.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-reassurance",
+      "locale": "en",
+      "text": "One store today. Room for more when you need it.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-reassurance",
+      "locale": "ar",
+      "text": "ابدأ بمتجر واحد، وأضف المزيد عندما تحتاج إليه.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-label",
+      "locale": "en",
+      "text": "Your Store",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-label",
+      "locale": "ar",
+      "text": "متجرك",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-order",
+      "locale": "en",
+      "text": "Order #1042 · Ready to fulfil",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-order",
+      "locale": "ar",
+      "text": "الطلب رقم ١٠٤٢ · جاهز للتجهيز",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-stock",
+      "locale": "en",
+      "text": "In stock · 24",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-stock",
+      "locale": "ar",
+      "text": "متاح في المخزون · ٢٤",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-note",
+      "locale": "en",
+      "text": "Conceptual Store view",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-note",
+      "locale": "ar",
+      "text": "تصوّر لواجهة المتجر",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product",
+      "locale": "en",
+      "text": "Everyday essentials",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product",
+      "locale": "ar",
+      "text": "منتجاتك اليومية",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product-note",
+      "locale": "en",
+      "text": "Simple storefront, clear orders.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product-note",
+      "locale": "ar",
+      "text": "واجهة بسيطة وطلبات واضحة.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-eyebrow",
+      "locale": "en",
+      "text": "One order, one Store",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-eyebrow",
+      "locale": "ar",
+      "text": "طلب واحد، متجر واحد",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-heading",
+      "locale": "en",
+      "text": "See what happens after a customer chooses.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-heading",
+      "locale": "ar",
+      "text": "تابع ما يحدث بعد أن يختار العميل.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-body",
+      "locale": "en",
+      "text": "Start with Everyday essentials in your Store. The same order connects the storefront, checkout, inventory, fulfilment, customer history, and supported financial records.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-body",
+      "locale": "ar",
+      "text": "تبدأ الرحلة من منتجاتك اليومية في متجرك. ويربط الطلب نفسه بين واجهة المتجر وإتمام الشراء والمخزون والتجهيز وسجل العميل والسجلات المالية المدعومة.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-illustrative",
+      "locale": "en",
+      "text": "Illustrative order journey — sample values, not a production order.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-journey-illustrative",
+      "locale": "ar",
+      "text": "رحلة طلب توضيحية — القيم المعروضة نموذجية وليست طلبًا حقيقيًا.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-discover-heading",
+      "locale": "en",
+      "text": "Discover and choose",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-discover-heading",
+      "locale": "ar",
+      "text": "الاكتشاف والاختيار",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-discover-body",
+      "locale": "en",
+      "text": "A customer finds Everyday essentials in the branded Storefront and chooses the product or available variant.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-discover-body",
+      "locale": "ar",
+      "text": "يجد العميل منتجاتك اليومية في واجهة المتجر بعلامتك التجارية، ثم يختار المنتج أو التركيبة المتاحة.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-checkout-heading",
+      "locale": "en",
+      "text": "Checkout creates the order",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-checkout-heading",
+      "locale": "ar",
+      "text": "يُنشئ إتمام الشراء الطلب",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-checkout-body",
+      "locale": "en",
+      "text": "Configured shipping, tax, and payment behavior shape the checkout. Order placement is one indivisible operation with server-authoritative totals.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-checkout-body",
+      "locale": "ar",
+      "text": "تحدد إعدادات الشحن والضريبة والدفع شكل إتمام الشراء. ويُنشأ الطلب في عملية واحدة غير قابلة للتجزئة مع احتساب نهائي من الخادم.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-reserve-heading",
+      "locale": "en",
+      "text": "The Store reserves availability",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-reserve-heading",
+      "locale": "ar",
+      "text": "يحجز المتجر الكمية المتاحة",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-reserve-body",
+      "locale": "en",
+      "text": "The Store ledger tracks reserved and available quantity for the order. Reservation is a separate inventory state; it is not the same event as consuming stock on sale.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-reserve-body",
+      "locale": "ar",
+      "text": "يتابع دفتر المتجر الكمية المحجوزة والمتاحة للطلب. والحجز حالة مستقلة في المخزون، وليس هو حدث استهلاك المخزون عند البيع.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-fulfil-heading",
+      "locale": "en",
+      "text": "The merchant fulfils",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-fulfil-heading",
+      "locale": "ar",
+      "text": "يجهّز التاجر الطلب",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-fulfil-body",
+      "locale": "en",
+      "text": "The merchant manages the order through controlled status changes and fulfilment records, while the customer can follow the visible progress timeline.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-fulfil-body",
+      "locale": "ar",
+      "text": "يدير التاجر الطلب عبر حالات تغيير مضبوطة وسجلات تجهيز، ويمكن للعميل متابعة خط سير التقدم الظاهر له.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-consequences-heading",
+      "locale": "en",
+      "text": "The record keeps unfolding",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-consequences-heading",
+      "locale": "ar",
+      "text": "تستمر آثار الطلب في السجلات",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-consequences-body",
+      "locale": "en",
+      "text": "Supported workflows can record stock consumption, payment attempts and events, customer history, and financial records for sales, costs, refunds, receipts, and expenses. These are related records, not one guaranteed simultaneous update.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-order-consequences-body",
+      "locale": "ar",
+      "text": "يمكن لسير العمل المدعوم تسجيل استهلاك المخزون ومحاولات الدفع وأحداثها وسجل العميل والسجلات المالية للمبيعات والتكاليف والمبالغ المستردة والإيصالات والمصروفات. هذه سجلات مترابطة، وليست تحديثًا واحدًا متزامنًا بالضرورة.",
+      "destination": "#connected",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-chapter-eyebrow",
+      "locale": "en",
+      "text": "Present and sell products",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-chapter-eyebrow",
+      "locale": "ar",
+      "text": "اعرض منتجاتك وبِعها",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-chapter-heading",
+      "locale": "en",
+      "text": "Give every product a clear path to purchase.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-chapter-heading",
+      "locale": "ar",
+      "text": "امنح كل منتج طريقًا واضحًا إلى الشراء.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-chapter-body",
+      "locale": "en",
+      "text": "Build the Storefront, shape the catalog, guide checkout, and keep post-purchase service connected to the same Store rules.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-chapter-body",
+      "locale": "ar",
+      "text": "أنشئ واجهة المتجر، ونظّم الكتالوج، ووجّه إتمام الشراء، وأبقِ خدمة ما بعد الشراء مرتبطة بقواعد المتجر نفسها.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-storefront",
+      "locale": "en",
+      "text": "Storefront",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-storefront",
+      "locale": "ar",
+      "text": "واجهة المتجر",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-storefront-body",
+      "locale": "en",
+      "text": "Present a branded, bilingual Storefront with native RTL/LTR layouts. Customers can search, browse, choose variants, add to cart, and see live orderable quantity.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-storefront-body",
+      "locale": "ar",
+      "text": "اعرض واجهة متجر تحمل علامتك التجارية باللغتين، مع تخطيط أصلي من اليمين إلى اليسار أو من اليسار إلى اليمين. ويمكن للعملاء البحث والتصفح واختيار التركيبات والإضافة إلى السلة ورؤية الكمية القابلة للطلب.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-catalog",
+      "locale": "en",
+      "text": "Catalog and merchandising",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-catalog",
+      "locale": "ar",
+      "text": "الكتالوج وتسويق المنتجات",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-catalog-body",
+      "locale": "en",
+      "text": "Write Arabic and English product content, reuse option groups, generate variants, connect each sellable choice to inventory, and merchandise with categories, images, bundles, offers, banners, and reviews.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-catalog-body",
+      "locale": "ar",
+      "text": "اكتب محتوى المنتج بالعربية والإنجليزية، وأعد استخدام مجموعات الخيارات، وأنشئ التركيبات، واربط كل خيار قابل للبيع بالمخزون، وسوّق المنتجات عبر التصنيفات والصور والحزم والعروض واللافتات والتقييمات.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-checkout",
+      "locale": "en",
+      "text": "Cart, shipping, and payment",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-checkout",
+      "locale": "ar",
+      "text": "السلة والشحن والدفع",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-checkout-body",
+      "locale": "en",
+      "text": "A Store-scoped cart carries quantity changes, offers, coupons, saved or new addresses, configured shipping and tax, and cash on delivery where enabled. Totals are authoritative at the server and order placement protects the last unit.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-checkout-body",
+      "locale": "ar",
+      "text": "تحافظ السلة الخاصة بالمتجر على تغييرات الكمية والعروض والقسائم والعناوين المحفوظة أو الجديدة وإعدادات الشحن والضريبة والدفع عند الاستلام عند تفعيله. ويحتسب الخادم الإجماليات النهائية، ويحمي إنشاء الطلب الوحدة الأخيرة.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-service",
+      "locale": "en",
+      "text": "Confirmation and post-purchase service",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-service",
+      "locale": "ar",
+      "text": "التأكيد وخدمة ما بعد الشراء",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-service-body",
+      "locale": "en",
+      "text": "After confirmation, customers can look up orders, follow progress, recover an abandoned checkout, and reorder. Email delivery and recovery messages require configured provider and worker infrastructure.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-service-body",
+      "locale": "ar",
+      "text": "بعد التأكيد، يمكن للعملاء البحث عن طلباتهم ومتابعة تقدمها واستعادة عملية شراء متروكة وإعادة الطلب. ويتطلب إرسال البريد ورسائل الاستعادة مزودًا وبنية تشغيل مضبوطة.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-pos",
+      "locale": "en",
+      "text": "Optional in-person path",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-pos",
+      "locale": "ar",
+      "text": "مسار اختياري للبيع المباشر",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-pos-body",
+      "locale": "en",
+      "text": "When you sell in person, POS uses the same Store inventory rules. Select the Store, Location, and register, open a shift, record the configured tender, issue a receipt, and keep the sale retry-safe. POS is optional; online selling does not depend on it.",
+      "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-sell-pos-body",
+      "locale": "ar",
+      "text": "عند البيع مباشرةً، تستخدم نقطة البيع قواعد مخزون المتجر نفسها. اختر المتجر والموقع والصندوق، وافتح وردية، وسجّل وسيلة الدفع المفعّلة، وأصدر إيصالًا، واحفظ البيع مع حماية من التكرار عند إعادة المحاولة. نقطة البيع اختيارية، ولا يعتمد البيع عبر الإنترنت عليها.",
+      "destination": "#sell",
+      "state": "visible"
     },
     {
       "id": "ui.skip",
@@ -4749,146 +5342,6 @@
       "locale": "ar",
       "text": "© {current year} Jizrak — جِذرك",
       "destination": "footer",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-eyebrow",
-      "locale": "en",
-      "text": "Jizrak for your Store",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-eyebrow",
-      "locale": "ar",
-      "text": "جِذرك لمتجرك",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-heading",
-      "locale": "en",
-      "text": "Sell your products. Run your store.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-heading",
-      "locale": "ar",
-      "text": "بع منتجاتك. أدر متجرك.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-body",
-      "locale": "en",
-      "text": "Manage your online storefront, orders, stock, and customers in one place. Add point of sale when you sell in person.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-body",
-      "locale": "ar",
-      "text": "أدر واجهة متجرك الإلكترونية وطلباتك ومخزونك وعملاءك في مكان واحد. واستخدم نقطة البيع عندما تبيع لعملائك مباشرةً.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-reassurance",
-      "locale": "en",
-      "text": "One store today. Room for more when you need it.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-hero-reassurance",
-      "locale": "ar",
-      "text": "ابدأ بمتجر واحد، وأضف المزيد عندما تحتاج إليه.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-label",
-      "locale": "en",
-      "text": "Your Store",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-label",
-      "locale": "ar",
-      "text": "متجرك",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-order",
-      "locale": "en",
-      "text": "Order #1042 · Ready to fulfil",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-order",
-      "locale": "ar",
-      "text": "الطلب رقم ١٠٤٢ · جاهز للتجهيز",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-stock",
-      "locale": "en",
-      "text": "In stock · 24",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-stock",
-      "locale": "ar",
-      "text": "متاح في المخزون · ٢٤",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-note",
-      "locale": "en",
-      "text": "Conceptual Store view",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-note",
-      "locale": "ar",
-      "text": "تصوّر لواجهة المتجر",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product",
-      "locale": "en",
-      "text": "Everyday essentials",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product",
-      "locale": "ar",
-      "text": "منتجاتك اليومية",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product-note",
-      "locale": "en",
-      "text": "Simple storefront, clear orders.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product-note",
-      "locale": "ar",
-      "text": "واجهة بسيطة وطلبات واضحة.",
-      "destination": "#top",
       "state": "visible"
     }
   ]

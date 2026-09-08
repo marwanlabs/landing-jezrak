@@ -521,6 +521,50 @@
 .apple-page .a-connected .a-intro {
   max-width: 48rem;
 }
+.apple-page .a-order-journey {
+  padding-block: 4.5rem 5rem;
+}
+.apple-page .a-order-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin-block: 3rem 1.5rem;
+  counter-reset: order-step;
+}
+.apple-page .a-order-steps li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 0;
+  padding: 1.25rem;
+  border-block-start: 2px solid var(--forest);
+  background: var(--chalk);
+}
+.apple-page .a-order-step-number {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--chalk);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.apple-page .a-order-steps h3 {
+  font-size: 1.05rem;
+}
+.apple-page .a-order-steps p {
+  margin-block-start: 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.apple-page .a-order-journey > .a-caption {
+  max-width: 70ch;
+  margin-block-start: 1.5rem;
+}
 .apple-page .a-workflow {
   list-style: none;
   display: grid;
@@ -592,6 +636,50 @@
 .apple-page .a-sell {
   grid-column: 1/9;
   padding-block: 4rem;
+}
+.apple-page .a-sell-chapter {
+  grid-column: 1/-1;
+}
+.apple-page .a-sell-chapter .a-intro {
+  max-width: 52rem;
+}
+.apple-page .a-sell-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block-start: 3rem;
+}
+.apple-page .a-sell-part {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: var(--chalk);
+}
+.apple-page .a-sell-part h3 {
+  font-size: 1.25rem;
+}
+.apple-page .a-sell-part p {
+  margin-block-start: 0.8rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.apple-page .a-sell-part .a-details {
+  margin-block-start: 1.5rem;
+}
+.apple-page .a-sell-pos-part {
+  border-color: var(--forest);
+  background: var(--forest);
+  color: var(--chalk);
+}
+.apple-page .a-sell-pos-part p {
+  color: inherit;
+}
+.apple-page .a-sell-pos-part .a-details {
+  border-color: color-mix(in srgb, var(--chalk) 35%, transparent);
+}
+.apple-page .a-sell-chapter > .a-details {
+  margin-block-start: 2rem;
 }
 .apple-page .a-pos {
   grid-column: 9/-1;
@@ -986,6 +1074,9 @@
   .apple-page .a-workflow {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .apple-page .a-order-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .apple-page .a-sell,
   .apple-page .a-pos {
     grid-column: 1/-1;
@@ -1069,14 +1160,21 @@
     border-radius: 1.4rem;
   }
   .apple-page .a-business,
-  .apple-page .a-catalog {
+  .apple-page .a-catalog,
+  .apple-page .a-sell-chapter-grid {
     display: block;
+  }
+  .apple-page .a-sell-part + .a-sell-part {
+    margin-block-start: 1rem;
   }
   .apple-page .a-business-model {
     margin-block-start: 2rem;
     padding: 1rem;
   }
   .apple-page .a-workflow {
+    grid-template-columns: 1fr;
+  }
+  .apple-page .a-order-steps {
     grid-template-columns: 1fr;
   }
   .apple-page .a-path {

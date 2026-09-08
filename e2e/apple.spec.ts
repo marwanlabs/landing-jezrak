@@ -17,6 +17,33 @@ test("apple is an independent complete journey", async ({ page }) => {
   await expect(page.locator(".a-store-visual")).toContainText(
     "Conceptual Store view",
   );
+  await expect(page.locator("#connected")).toContainText("Discover and choose");
+  await expect(page.locator("#connected")).toContainText(
+    "Reservation is a separate inventory state",
+  );
+  await expect(page.locator("#connected")).toContainText(
+    "not one guaranteed simultaneous update",
+  );
+  await expect(page.locator("#sell")).toContainText(
+    "Present and sell products",
+  );
+  await expect(page.locator("#sell")).toContainText("Optional in-person path");
+  await expect(page.locator("#catalog")).toContainText(
+    "Catalog and merchandising",
+  );
+  await expect(page.locator("#pos")).toContainText(
+    "online selling does not depend on it",
+  );
+  const majorSections = await page
+    .locator("main > section")
+    .evaluateAll((sections) => sections.map((section) => section.id));
+  expect(majorSections.indexOf("connected")).toBe(1);
+  expect(majorSections.indexOf("connected")).toBeLessThan(
+    majorSections.indexOf("business"),
+  );
+  expect(majorSections.indexOf("connected")).toBeLessThan(
+    majorSections.indexOf("sell"),
+  );
   for (const id of [
     "top",
     "connected",
@@ -126,6 +153,12 @@ test("native fallback and route-local anchors work without JavaScript", async ({
 
   await expect(page.locator("h1")).toHaveText(
     "Sell your products. Run your store.",
+  );
+  await expect(page.locator("#connected")).toContainText(
+    "The Store reserves availability",
+  );
+  await expect(page.locator("#sell")).toContainText(
+    "Cart, shipping, and payment",
   );
   await page.locator("#group-17 summary").click();
   await expect(page.locator("#group-17 p")).toBeVisible();

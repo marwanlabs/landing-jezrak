@@ -43,7 +43,9 @@ for (const s of sections) {
   for (const key of ["eyebrow", "heading", "body", "premise"] as const) {
     const text = s[key];
     const overridden = s.id === "operate" && key === "body";
-    const superseded = s.id === "top";
+    const superseded = ["top", "connected", "sell", "catalog", "pos"].includes(
+      s.id,
+    );
     add(
       text,
       `#${s.id}`,
@@ -57,7 +59,7 @@ for (const s of sections) {
       !text.en
         ? "Empty placeholder"
         : superseded
-          ? "Replaced by candidate-owned single-Store hero copy"
+          ? "Replaced by candidate-owned single-Store or selling-chapter copy"
           : overridden
             ? "Replaced by operate-body-public"
             : undefined,
@@ -71,13 +73,15 @@ for (const s of sections) {
       restricted || s.id === "features"
         ? "excluded"
         : s.id === "connected"
-          ? "visible"
+          ? "superseded"
           : "expanded",
       restricted
         ? "Internal-only operating detail"
-        : s.id === "features"
-          ? "Duplicate inventory: rendered using named feature groups and public group-17 override"
-          : undefined,
+        : s.id === "connected"
+          ? "Replaced by the candidate-owned single-order journey"
+          : s.id === "features"
+            ? "Duplicate inventory: rendered using named feature groups and public group-17 override"
+            : undefined,
     );
   }
   for (const group of s.groups ?? []) {
@@ -133,7 +137,9 @@ for (const [key, text] of Object.entries(copy))
               "signPending",
             ].includes(key)
           ? "conditional"
-          : "visible",
+          : ["native", "stock", "egp"].includes(key)
+            ? "superseded"
+            : "visible",
     excluded[key],
   );
 for (const item of nav) add({ ...item, id: `nav-${item.id}` }, "header");
@@ -144,9 +150,21 @@ for (const item of nodes)
     "superseded",
     "Seven-capability hero explorer replaced by the candidate-owned Store visual",
   );
-for (const item of workflowNames) add(item, "#connected");
+for (const item of workflowNames)
+  add(
+    item,
+    "#connected",
+    "superseded",
+    "Replaced by the candidate-owned single-order journey",
+  );
 for (const item of flow) add(item, "#inventory");
-for (const item of diagramCopy.catalogSurfaces) add(item, "#catalog");
+for (const item of diagramCopy.catalogSurfaces)
+  add(
+    item,
+    "#catalog",
+    "superseded",
+    "Consolidated into the candidate-owned selling chapter",
+  );
 add(diagramCopy.inventoryEquivalent, "#inventory");
 const destinations: Record<string, string> = {
   sellFlow: "sell",
@@ -163,9 +181,49 @@ for (const [key, value] of Object.entries(narrativeCopy))
     add(
       item,
       `#${destinations[key]}`,
-      key === "platform" ? "expanded" : "visible",
+      ["sellFlow", "posFlow"].includes(key)
+        ? "superseded"
+        : key === "platform"
+          ? "expanded"
+          : "visible",
+      ["sellFlow", "posFlow"].includes(key)
+        ? "Consolidated into the candidate-owned selling chapter"
+        : undefined,
     );
-for (const text of Object.values(candidateCopy)) add(text, "#top");
+function addCandidateCopy(value: unknown, destination: string) {
+  if (Array.isArray(value)) {
+    for (const item of value) addCandidateCopy(item, destination);
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  const record = value as Record<string, unknown>;
+  if (
+    typeof record.id === "string" &&
+    typeof record.en === "string" &&
+    typeof record.ar === "string"
+  ) {
+    add(record as BilingualText, destination);
+    return;
+  }
+  for (const item of Object.values(record)) addCandidateCopy(item, destination);
+}
+addCandidateCopy(
+  {
+    eyebrow: candidateCopy.eyebrow,
+    heading: candidateCopy.heading,
+    body: candidateCopy.body,
+    reassurance: candidateCopy.reassurance,
+    visualLabel: candidateCopy.visualLabel,
+    visualOrder: candidateCopy.visualOrder,
+    visualStock: candidateCopy.visualStock,
+    visualNote: candidateCopy.visualNote,
+    visualProduct: candidateCopy.visualProduct,
+    visualProductNote: candidateCopy.visualProductNote,
+  },
+  "#top",
+);
+addCandidateCopy(candidateCopy.orderJourney, "#connected");
+addCandidateCopy(candidateCopy.sellChapter, "#sell");
 for (const locale of ["en", "ar"] as const) {
   for (const [key, text] of Object.entries(ui[locale].translation))
     entries.push({

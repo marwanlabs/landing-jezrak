@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   Boxes,
-  CreditCard,
   PackageCheck,
-  Search,
   ShoppingBag,
   type LucideIcon,
 } from "lucide-react";
@@ -14,7 +12,6 @@ import {
   copy,
   nav,
   flow,
-  workflowNames,
   narrativeCopy,
   diagramCopy,
   ui,
@@ -368,29 +365,119 @@ export function AppleLanding() {
         </section>
         <section
           id="connected"
-          className="a-connected"
+          className="a-connected a-order-journey"
           aria-labelledby="connected-heading"
         >
-          <Intro id="connected" />
-          <ol className="a-workflow">
-            {section("connected").details.map((item, i) => (
-              <li key={item.id}>
-                <h3>
-                  <Text text={workflowNames[i]} />
-                </h3>
-                <p>
-                  <Text text={item} />
-                </p>
+          <div className="a-intro">
+            <p className="a-kicker">
+              <Text text={candidateCopy.orderJourney.eyebrow} />
+            </p>
+            <h2 id="connected-heading" lang={locale}>
+              <Text text={candidateCopy.orderJourney.heading} />
+            </h2>
+            <p className="a-body">
+              <Text text={candidateCopy.orderJourney.body} />
+            </p>
+          </div>
+          <ol className="a-order-steps">
+            {candidateCopy.orderJourney.steps.map((step) => (
+              <li key={step.id}>
+                <span className="a-order-step-number" aria-hidden="true">
+                  {step.label}
+                </span>
+                <div>
+                  <h3>
+                    <Text text={step.heading} />
+                  </h3>
+                  <p>
+                    <Text text={step.body} />
+                  </p>
+                </div>
               </li>
             ))}
           </ol>
-          <div className="a-positioning">
-            {[copy.native, copy.stock, copy.egp].map((item) => (
-              <p key={item.id}>
-                <Text text={item} />
-              </p>
-            ))}
+          <p className="a-caption">
+            <Text text={candidateCopy.orderJourney.illustrative} />
+          </p>
+        </section>
+        <section
+          id="sell"
+          className="a-story a-sell a-sell-chapter"
+          aria-labelledby="sell-heading"
+        >
+          <div className="a-intro">
+            <p className="a-kicker">
+              <Text text={candidateCopy.sellChapter.eyebrow} />
+            </p>
+            <h2 id="sell-heading" lang={locale}>
+              <Text text={candidateCopy.sellChapter.heading} />
+            </h2>
+            <p className="a-body">
+              <Text text={candidateCopy.sellChapter.body} />
+            </p>
           </div>
+          <div className="a-sell-chapter-grid">
+            <section
+              className="a-sell-part"
+              aria-labelledby="sell-storefront-heading"
+            >
+              <h3 id="sell-storefront-heading" lang={locale}>
+                <Text text={candidateCopy.sellChapter.storefront} />
+              </h3>
+              <p>
+                <Text text={candidateCopy.sellChapter.storefrontBody} />
+              </p>
+            </section>
+            <section
+              id="catalog"
+              className="a-sell-part"
+              aria-labelledby="catalog-heading"
+            >
+              <h3 id="catalog-heading" lang={locale}>
+                <Text text={candidateCopy.sellChapter.catalog} />
+              </h3>
+              <p>
+                <Text text={candidateCopy.sellChapter.catalogBody} />
+              </p>
+              <Details id="catalog" />
+            </section>
+            <section
+              className="a-sell-part"
+              aria-labelledby="sell-checkout-heading"
+            >
+              <h3 id="sell-checkout-heading" lang={locale}>
+                <Text text={candidateCopy.sellChapter.checkout} />
+              </h3>
+              <p>
+                <Text text={candidateCopy.sellChapter.checkoutBody} />
+              </p>
+            </section>
+            <section
+              className="a-sell-part"
+              aria-labelledby="sell-service-heading"
+            >
+              <h3 id="sell-service-heading" lang={locale}>
+                <Text text={candidateCopy.sellChapter.service} />
+              </h3>
+              <p>
+                <Text text={candidateCopy.sellChapter.serviceBody} />
+              </p>
+            </section>
+            <section
+              id="pos"
+              className="a-sell-part a-sell-pos-part"
+              aria-labelledby="pos-heading"
+            >
+              <h3 id="pos-heading" lang={locale}>
+                <Text text={candidateCopy.sellChapter.pos} />
+              </h3>
+              <p>
+                <Text text={candidateCopy.sellChapter.posBody} />
+              </p>
+              <Details id="pos" />
+            </section>
+          </div>
+          <Details id="sell" />
         </section>
         <Story id="business">
           <div className="a-business-model">
@@ -416,18 +503,6 @@ export function AppleLanding() {
               <Text text={copy.ledgerNote} />
             </p>
           </div>
-        </Story>
-        <Story id="sell">
-          <Path
-            items={narrativeCopy.sellFlow}
-            icons={[Search, ShoppingBag, CreditCard]}
-          />
-        </Story>
-        <Story id="pos">
-          <Path items={narrativeCopy.posFlow} />
-        </Story>
-        <Story id="catalog">
-          <Path items={diagramCopy.catalogSurfaces} />
         </Story>
         <Story id="inventory">
           <Path items={flow} />
