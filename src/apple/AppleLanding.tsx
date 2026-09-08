@@ -541,6 +541,11 @@ export function AppleLanding() {
           </p>
           <div className="a-operations-grid">
             <Story id="inventory">
+              <div className="a-workflow-header">
+                <h3>
+                  <Text text={copy.inventoryWorkflow} />
+                </h3>
+              </div>
               <StageLine
                 stages={inventoryStages}
                 label={section("inventory").heading.en}

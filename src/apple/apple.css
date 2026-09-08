@@ -649,6 +649,14 @@
   color: var(--muted);
   font-size: 0.95rem;
 }
+.apple-page .a-workflow-header {
+  margin-block-start: 2rem;
+}
+.apple-page .a-workflow-header h3 {
+  margin: 0;
+  color: var(--forest);
+  font-size: 1.05rem;
+}
 .apple-page .a-positioning {
   display: flex;
   justify-content: space-between;
