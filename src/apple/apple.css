@@ -68,10 +68,8 @@
   outline: 3px solid var(--focus);
   outline-offset: 4px;
 }
-.apple-page :is(a, button, summary) {
-  transition:
-    transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
-    opacity 0.2s;
+.apple-page :is(button, .a-button, summary) {
+  transition: transform 0.14s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .apple-page :is(button, .a-button, summary):active {
   transform: scale(0.98);
@@ -255,8 +253,8 @@
   stroke-width: 1.5;
 }
 .apple-page .a-menu-icon path {
-  transform-origin: center;
-  transition: transform 0.25s ease;
+  transform-origin: 12px 12px;
+  transition: transform 0.18s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .apple-page .a-menu[open] .a-menu-icon path:first-child {
   transform: rotate(45deg) translateY(4px);
@@ -487,6 +485,43 @@
 .apple-page .a-pos .a-path {
   flex-direction: column;
 }
+.apple-page .a-sell .a-path {
+  gap: 1rem;
+  margin-block: 2.5rem;
+}
+.apple-page .a-sell .a-path li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--chalk);
+  min-width: 0;
+}
+.apple-page .a-sell .a-path svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--forest);
+  stroke-width: 1.5;
+}
+.apple-page .a-catalog .a-path {
+  flex-direction: column;
+  align-self: center;
+  gap: 0;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: var(--limestone);
+}
+.apple-page .a-catalog .a-path li {
+  flex: none;
+  padding-block: 1.25rem;
+  border-color: var(--line);
+}
+.apple-page .a-catalog .a-path li:first-child {
+  border: 0;
+}
 .apple-page .a-caption {
   color: var(--muted);
   max-width: 65ch;
@@ -546,7 +581,7 @@
   font-size: 1.4rem;
   font-weight: 400;
 }
-.apple-page details[open] > summary::after {
+.apple-page details[open]:not(.a-menu) > summary::after {
   content: "−";
 }
 .apple-page .a-details ul {
@@ -815,7 +850,7 @@
     width: calc(100% - 2rem);
     column-gap: 0;
   }
-  .apple-page main > section {
+  .apple-page main > section.a-story {
     grid-column: 1/-1;
   }
   .apple-page .a-nav {
@@ -857,6 +892,14 @@
   }
   .apple-page .a-path li {
     flex-basis: 40%;
+  }
+  .apple-page .a-sell .a-path {
+    flex-direction: column;
+  }
+  .apple-page .a-sell .a-path li {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
   }
   .apple-page .a-connected,
   .apple-page .a-features {

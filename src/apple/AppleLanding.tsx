@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { Search, ShoppingBag, CreditCard, type LucideIcon } from "lucide-react";
 import { usePreferences, type Theme } from "../app/preferences";
 import { config } from "../app/config";
 import {
@@ -20,14 +21,24 @@ function Text({ text }: { text: BilingualText }) {
   const { locale } = usePreferences();
   return <span data-copy={text.id}>{text[locale]}</span>;
 }
-function Path({ items }: { items: BilingualText[] }) {
+function Path({
+  items,
+  icons,
+}: {
+  items: BilingualText[];
+  icons?: LucideIcon[];
+}) {
   return (
     <ol className="a-path">
-      {items.map((item) => (
-        <li key={item.id}>
-          <Text text={item} />
-        </li>
-      ))}
+      {items.map((item, index) => {
+        const Icon = icons?.[index];
+        return (
+          <li key={item.id}>
+            {Icon && <Icon aria-hidden="true" focusable="false" />}
+            <Text text={item} />
+          </li>
+        );
+      })}
     </ol>
   );
 }
@@ -97,8 +108,29 @@ function Navigation() {
   const labels = ui[locale].translation;
   const header = useRef<HTMLElement>(null);
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
   const menu = useRef<HTMLDetailsElement>(null);
   const trigger = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const dismissOutside = (event: PointerEvent) => {
+      if (menu.current?.open && !menu.current.contains(event.target as Node)) {
+        menu.current.open = false;
+      }
+    };
+    const dismissEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && menu.current?.open) {
+        event.preventDefault();
+        menu.current.open = false;
+        trigger.current?.focus();
+      }
+    };
+    document.addEventListener("pointerdown", dismissOutside);
+    document.addEventListener("keydown", dismissEscape);
+    return () => {
+      document.removeEventListener("pointerdown", dismissOutside);
+      document.removeEventListener("keydown", dismissEscape);
+    };
+  }, []);
   useEffect(() => {
     const main = header.current?.closest(".apple-page")?.querySelector("main");
     if (!main) return;
@@ -208,15 +240,12 @@ function Navigation() {
       <details
         className="a-menu"
         ref={menu}
-        onKeyDown={(event) => {
-          if (event.key === "Escape") {
-            event.preventDefault();
-            if (menu.current) menu.current.open = false;
-            trigger.current?.focus();
-          }
-        }}
+        onToggle={(event) => setMenuOpen(event.currentTarget.open)}
       >
-        <summary ref={trigger} aria-label={labels.open}>
+        <summary
+          ref={trigger}
+          aria-label={menuOpen ? labels.close : labels.open}
+        >
           <svg
             className="a-menu-icon"
             viewBox="0 0 24 24"
@@ -351,7 +380,10 @@ export function AppleLanding() {
           </div>
         </Story>
         <Story id="sell">
-          <Path items={narrativeCopy.sellFlow} />
+          <Path
+            items={narrativeCopy.sellFlow}
+            icons={[Search, ShoppingBag, CreditCard]}
+          />
         </Story>
         <Story id="pos">
           <Path items={narrativeCopy.posFlow} />
@@ -429,6 +461,20 @@ export function AppleLanding() {
             <Text text={copy.closing} />
           </p>
         </section>
+        {config.signin === "#sign-in" && (
+          <section
+            id="sign-in"
+            className="a-signin"
+            aria-labelledby="sign-in-heading"
+          >
+            <h2 id="sign-in-heading">
+              <Text text={copy.signin} />
+            </h2>
+            <p>
+              <Text text={copy.signPending} />
+            </p>
+          </section>
+        )}
       </main>
       <footer id="footer" className="a-footer">
         <div className="a-footer-main">
@@ -484,7 +530,9 @@ export function AppleLanding() {
           <a
             className="a-footer-top"
             href="/apple#top"
-            aria-label="Jizrak — جِذرك"
+            aria-label={
+              locale === "ar" ? "العودة إلى أعلى الصفحة" : "Back to top"
+            }
           >
             <svg
               viewBox="0 0 24 24"

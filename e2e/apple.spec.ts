@@ -144,13 +144,50 @@ test("mobile navigation dismisses, restores focus and survives rapid input", asy
   const trigger = page.locator(".a-menu > summary");
   // A native summary exposes a button role in Chromium.
   await trigger.click();
+  await expect(trigger).toHaveAccessibleName("Close navigation");
+  expect(
+    await trigger.evaluate((el) => getComputedStyle(el, "::after").content),
+  ).toBe("none");
+  await page.locator("h1").evaluate((el) => {
+    el.setAttribute("tabindex", "-1");
+    el.focus();
+  });
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
+  await expect(page.locator(".a-menu")).not.toHaveAttribute("open", "");
+  await trigger.click();
+  await page.mouse.click(8, 850);
   await expect(page.locator(".a-menu")).not.toHaveAttribute("open", "");
   await trigger.click();
   await page.locator('.a-menu a[href="/apple#features"]').click();
   await expect(page.locator(".a-menu")).not.toHaveAttribute("open", "");
   await expect(page).toHaveURL(/\/apple#features$/);
+});
+
+test("mobile stories use the full reading width in both languages", async ({
+  page,
+}) => {
+  await page.goto("/apple");
+  await page.waitForFunction(
+    () => document.documentElement.dataset.hydrated === "true",
+  );
+  for (const locale of ["en", "ar"]) {
+    if (locale === "ar")
+      await page.getByRole("button", { name: "العربية", exact: true }).click();
+    for (const width of [320, 375, 768]) {
+      await page.setViewportSize({ width, height: 900 });
+      for (const id of ["purchasing", "orders", "identity", "operate"]) {
+        const size = await page.locator(`#${id}`).evaluate((el) => ({
+          story: el.getBoundingClientRect().width,
+          main: el.closest("main")!.getBoundingClientRect().width,
+        }));
+        expect(size.story, `${locale} ${width} ${id}`).toBeCloseTo(
+          size.main,
+          0,
+        );
+      }
+    }
+  }
 });
 
 test("preferences, reading position and presentation remain usable under adverse conditions", async ({
