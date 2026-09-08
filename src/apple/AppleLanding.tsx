@@ -45,13 +45,14 @@ function Path({
 const destination = (href: string) =>
   href.startsWith("#") ? `/apple${href}` : href;
 function Action({ kind = "start" }: { kind?: "start" | "demo" | "signin" }) {
+  const isLocal = config[kind].startsWith("#");
   return (
     <a
       className={kind === "start" ? "a-button" : "a-link"}
       href={destination(config[kind])}
     >
       <Text text={copy[kind]} />
-      <span aria-hidden="true"> ↗</span>
+      {!isLocal && <span aria-hidden="true"> ↗</span>}
     </a>
   );
 }
@@ -503,11 +504,15 @@ export function AppleLanding() {
             <Action />
             <a href={destination(config.demo)}>
               <Text text={copy.demo} />
-              <span aria-hidden="true">↗</span>
+              {!config.demo.startsWith("#") && (
+                <span aria-hidden="true">↗</span>
+              )}
             </a>
             <a href={destination(config.signin)}>
               <Text text={copy.signin} />
-              <span aria-hidden="true">↗</span>
+              {!config.signin.startsWith("#") && (
+                <span aria-hidden="true">↗</span>
+              )}
             </a>
           </nav>
         </div>
