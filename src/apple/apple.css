@@ -320,54 +320,91 @@
   margin-block-end: 2.2rem;
 }
 .apple-page .a-applications {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.4rem;
-}
-.apple-page .a-applications a {
   display: grid;
-  justify-items: center;
-  gap: 0.8rem;
-  font-size: 0.85rem;
-  min-width: 6rem;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: clamp(0.5rem, 1.2vw, 1.25rem);
 }
-.apple-page .a-symbol {
-  width: 4rem;
-  height: 4rem;
-  display: block;
-  border-radius: 1.1rem;
+.apple-page .a-applications button {
+  min-height: 8.5rem;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.75rem;
+  padding: 1rem 0.5rem;
+  border-radius: 1.25rem;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: center;
   background: var(--chalk);
   border: 1px solid var(--line);
-  position: relative;
+  cursor: pointer;
   box-shadow: 0 5px 12px #0b241909;
+  transition:
+    transform 0.18s ease-out,
+    border-color 0.18s ease-out,
+    background 0.18s ease-out;
 }
-.apple-page .a-symbol::before {
-  content: "";
-  position: absolute;
-  inset: 1rem;
-  border: 2px solid var(--forest);
-  border-radius: 0.35rem;
+.apple-page .a-applications button:hover {
+  transform: translateY(-3px);
+  border-color: var(--growth);
 }
-.apple-page .a-symbol-pos::before {
-  inset: 0.9rem 1.3rem;
+.apple-page .a-applications button[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--chalk) 72%, var(--sprout));
+  border-color: var(--forest);
 }
-.apple-page .a-symbol-inventory::before {
-  box-shadow: 5px 5px 0 var(--sprout);
+.apple-page .a-applications svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--forest);
+  stroke-width: 1.5;
 }
-.apple-page .a-symbol-orders::before {
-  border-radius: 50%;
+.apple-page .a-capability-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 2rem;
+  align-items: end;
+  margin-block-start: 1.25rem;
+  padding: 1.4rem 1.5rem;
+  border-radius: 1.25rem;
+  background: var(--deep-root);
+  color: var(--on-dark);
 }
-.apple-page .a-symbol-purchasing::before {
-  transform: rotate(45deg);
-  inset: 1.2rem;
+.apple-page .a-capability-detail > * {
+  min-width: 0;
 }
-.apple-page .a-symbol-customers::before {
-  border-radius: 50% 50% 0.2rem 0.2rem;
+.apple-page .a-capability-detail-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.1rem;
 }
-.apple-page .a-symbol-finance::before {
-  border-width: 0 0 2px 2px;
-  border-radius: 0;
+.apple-page .a-capability-detail-heading svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  stroke-width: 1.5;
+}
+.apple-page .a-capability-detail p {
+  grid-column: 1;
+  margin-block: 0.75rem 0;
+  color: var(--dark-muted);
+  line-height: 1.7;
+}
+.apple-page .a-capability-detail a {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--dark-line);
+  border-radius: 999px;
+  color: var(--on-dark);
+  white-space: nowrap;
+}
+.apple-page .a-capability-detail a:hover {
+  background: #153c2b;
 }
 .apple-page .a-connected {
   padding-block: 5rem;
@@ -872,7 +909,31 @@
     margin-block-start: 3rem;
   }
   .apple-page .a-applications {
-    gap: 1.2rem 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+  .apple-page .a-applications button {
+    min-height: 6.7rem;
+    font-size: 0.78rem;
+  }
+  .apple-page .a-applications svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .apple-page .a-capability-detail {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 1.25rem;
+  }
+  .apple-page .a-capability-detail p {
+    grid-column: 1;
+    margin-block: 0;
+  }
+  .apple-page .a-capability-detail a {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+    white-space: normal;
   }
   .apple-page .a-story,
   .apple-page .a-demo {
@@ -928,7 +989,8 @@
 @media (forced-colors: active) {
   .apple-page .a-button,
   .apple-page .a-story,
-  .apple-page .a-symbol {
+  .apple-page .a-applications button,
+  .apple-page .a-capability-detail {
     border: 1px solid ButtonText;
   }
 }

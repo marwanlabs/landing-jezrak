@@ -1,5 +1,14 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Search, ShoppingBag, CreditCard, type LucideIcon } from "lucide-react";
+import {
+  Boxes,
+  ChartNoAxesCombined,
+  CreditCard,
+  PackageCheck,
+  Search,
+  ShoppingBag,
+  Truck,
+  type LucideIcon,
+} from "lucide-react";
 import { usePreferences, type Theme } from "../app/preferences";
 import { config } from "../app/config";
 import {
@@ -44,6 +53,24 @@ function Path({
 }
 const destination = (href: string) =>
   href.startsWith("#") ? `/apple${href}` : href;
+const overviewDestinations: Record<string, string> = {
+  storefront: "sell",
+  pos: "pos",
+  inventory: "inventory",
+  orders: "orders",
+  purchasing: "purchasing",
+  customers: "customers",
+  finance: "understand",
+};
+const overviewIcons: Record<string, LucideIcon> = {
+  storefront: ShoppingBag,
+  pos: CreditCard,
+  inventory: Boxes,
+  orders: PackageCheck,
+  purchasing: Truck,
+  customers: Search,
+  finance: ChartNoAxesCombined,
+};
 function Action({ kind = "start" }: { kind?: "start" | "demo" | "signin" }) {
   const isLocal = config[kind].startsWith("#");
   return (
@@ -281,6 +308,10 @@ function Navigation() {
 export function AppleLanding() {
   const { locale } = usePreferences();
   const hero = section("top");
+  const [selectedCapability, setSelectedCapability] = useState(nodes[0].id);
+  const capability = nodes.find((node) => node.id === selectedCapability)!;
+  const capabilitySection = overviewDestinations[capability.id];
+  const CapabilityIcon = overviewIcons[capability.id];
   return (
     <div
       className="apple-page"
@@ -313,19 +344,40 @@ export function AppleLanding() {
             <div className="a-overview-title">
               <Text text={copy.rootLabel} />
             </div>
-            <div className="a-applications">
+            <div className="a-applications" aria-label={copy.rootLabel[locale]}>
               {nodes.map((node) => (
-                <a
-                  href={`/apple#${node.id === "storefront" ? "sell" : node.id === "finance" ? "understand" : node.id}`}
+                <button
+                  type="button"
+                  aria-pressed={selectedCapability === node.id}
+                  onClick={() => setSelectedCapability(node.id)}
+                  onFocus={() => setSelectedCapability(node.id)}
                   key={node.id}
                 >
-                  <span
-                    className={`a-symbol a-symbol-${node.id}`}
-                    aria-hidden="true"
-                  />
+                  {(() => {
+                    const Icon = overviewIcons[node.id];
+                    return <Icon aria-hidden="true" focusable="false" />;
+                  })()}
                   <Text text={node} />
-                </a>
+                </button>
               ))}
+            </div>
+            <div className="a-capability-detail" aria-live="polite">
+              <div className="a-capability-detail-heading">
+                <CapabilityIcon aria-hidden="true" focusable="false" />
+                <strong>
+                  <Text text={capability} />
+                </strong>
+              </div>
+              <p>
+                <Text text={section(capabilitySection).body} />
+              </p>
+              <a
+                href={`/apple#${capabilitySection}`}
+                aria-label={section(capabilitySection).heading[locale]}
+              >
+                <Text text={copy.detail} />
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
         </section>

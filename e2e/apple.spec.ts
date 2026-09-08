@@ -317,3 +317,22 @@ test("section navigation follows the reading position and clears at the introduc
   await page.evaluate(() => window.scrollTo(0, 0));
   await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
 });
+
+test("recognizable capability cards reveal context before linking to the full section", async ({
+  page,
+}) => {
+  await page.goto("/apple");
+  await page.waitForFunction(
+    () => document.documentElement.dataset.hydrated === "true",
+  );
+  const cards = page.locator(".a-applications button");
+  await expect(cards).toHaveCount(7);
+  await cards.filter({ hasText: "Inventory" }).click();
+  await expect(cards.filter({ hasText: "Inventory" })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  const detail = page.locator(".a-capability-detail");
+  await expect(detail).toContainText("Inventory");
+  await expect(detail.locator('a[href="/apple#inventory"]')).toBeVisible();
+});
