@@ -911,6 +911,22 @@
 .apple-page .a-insight-grid > .a-story .a-intro {
   max-width: 42rem;
 }
+.apple-page .a-insight-card .a-intro h2 {
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+}
+.apple-page[dir="rtl"] .a-insight-card .a-intro h2 {
+  line-height: 1.35;
+  letter-spacing: normal;
+}
+.apple-page .a-insight-card .a-workflow-intro {
+  max-width: 42rem;
+}
+.apple-page .a-workflow-intro .a-body {
+  max-width: 38ch;
+  margin-block-start: 0.75rem;
+}
 .apple-page .a-operations-grid > .a-story:first-child {
   grid-column: 1/-1;
 }

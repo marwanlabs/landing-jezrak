@@ -48,6 +48,11 @@ export const copy = {
     "Performance reporting",
     "تقارير الأداء",
   ),
+  understandWorkflowBody: pair(
+    "understand-workflow-body",
+    "Follow sales, financial records, and operational reports together.",
+    "تابع المبيعات والسجلات المالية وتقارير التشغيل معًا.",
+  ),
   close: pair("close-detail", "Workflow details", "تفاصيل سير العمل"),
   rootLabel: pair(
     "root-label",

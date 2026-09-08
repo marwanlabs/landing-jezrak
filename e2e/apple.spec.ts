@@ -452,12 +452,18 @@ test("apple navigation and static workflow rails match their responsive affordan
     "1",
   );
   await expect(
-    page.locator("#understand .a-insight-performance"),
+    page.locator("#understand-performance"),
   ).toHaveRole("region");
   await expect(
-    page.locator("#understand .a-insight-performance h3"),
+    page.locator("#understand-performance h2"),
   ).toHaveText("Performance reporting");
   await expect(
-    page.locator("#understand .a-insight-performance .a-details"),
+    page.locator("#understand-performance .a-details"),
   ).toBeVisible();
+  const insightHeadingSizes = await page
+    .locator("#understand .a-insight-card .a-intro h2")
+    .evaluateAll((headings) =>
+      headings.map((heading) => getComputedStyle(heading).fontSize),
+    );
+  expect(new Set(insightHeadingSizes).size).toBe(1);
 });

@@ -160,6 +160,35 @@ function Story({ id, children }: { id: string; children?: ReactNode }) {
     </section>
   );
 }
+function InsightWorkflowCard({
+  id,
+  headingId,
+  className,
+  intro,
+  stages,
+  label,
+  detailsId = id,
+}: {
+  id: string;
+  headingId: string;
+  className: string;
+  intro: ReactNode;
+  stages: Stage[];
+  label: string;
+  detailsId?: string;
+}) {
+  return (
+    <section
+      id={id}
+      className={`a-story a-insight-card ${className}`}
+      aria-labelledby={headingId}
+    >
+      {intro}
+      <StageLine stages={stages} label={label} />
+      <Details id={detailsId} />
+    </section>
+  );
+}
 function Navigation() {
   const { locale, theme, setLocale, setTheme } = usePreferences();
   const labels = ui[locale].translation;
@@ -580,27 +609,32 @@ export function AppleLanding() {
             content={candidateCopy.insightChapter}
           />
           <div className="a-insight-grid">
-            <Story id="customers">
-              <StageLine
-                stages={toStages(narrativeCopy.customersFlow)}
-                label={section("customers").heading.en}
-              />
-            </Story>
-            <section
-              className="a-story a-insight-performance"
-              aria-labelledby="understand-performance-heading"
-            >
-              <div className="a-workflow-header">
-                <h3 id="understand-performance-heading">
-                  <Text text={copy.understandWorkflow} />
-                </h3>
-              </div>
-              <StageLine
-                stages={toStages(narrativeCopy.understandFlow)}
-                label={section("understand").heading.en}
-              />
-              <Details id="understand" />
-            </section>
+            <InsightWorkflowCard
+              id="customers"
+              headingId="customers-heading"
+              className="a-customers"
+              intro={<Intro id="customers" />}
+              stages={toStages(narrativeCopy.customersFlow)}
+              label={section("customers").heading.en}
+            />
+            <InsightWorkflowCard
+              id="understand-performance"
+              headingId="understand-performance-heading"
+              className="a-insight-performance"
+              intro={
+                <div className="a-intro a-workflow-intro">
+                  <h2 id="understand-performance-heading">
+                    <Text text={copy.understandWorkflow} />
+                  </h2>
+                  <p className="a-body">
+                    <Text text={copy.understandWorkflowBody} />
+                  </p>
+                </div>
+              }
+              stages={toStages(narrativeCopy.understandFlow)}
+              label={section("understand").heading.en}
+              detailsId="understand"
+            />
           </div>
         </section>
         <section
