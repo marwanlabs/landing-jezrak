@@ -252,3 +252,31 @@ test("client route history preserves root presentation and localized metadata", 
   await page.goForward();
   await expect(page.locator(".apple-page")).toBeVisible();
 });
+
+test("section navigation follows the reading position and clears at the introduction", async ({
+  page,
+}) => {
+  await page.goto("/apple");
+  await page.waitForFunction(
+    () => document.documentElement.dataset.hydrated === "true",
+  );
+  const links = page.locator(".a-desktop a");
+  await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
+  await links.filter({ hasText: "Sell" }).click();
+  await expect(
+    page.locator('.a-desktop a[href="/apple#sell"]'),
+  ).toHaveAttribute("aria-current", "location");
+  await page
+    .locator("#inventory")
+    .evaluate((element) =>
+      window.scrollTo(
+        0,
+        window.scrollY + element.getBoundingClientRect().top - 100,
+      ),
+    );
+  await expect(
+    page.locator('.a-desktop a[href="/apple#operate"]'),
+  ).toHaveAttribute("aria-current", "location");
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
+});

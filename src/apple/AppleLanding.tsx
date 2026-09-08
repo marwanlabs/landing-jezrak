@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { usePreferences, type Theme } from "../app/preferences";
 import { config } from "../app/config";
 import {
@@ -95,8 +95,56 @@ function Story({ id, children }: { id: string; children?: ReactNode }) {
 function Navigation() {
   const { locale, theme, setLocale, setTheme } = usePreferences();
   const labels = ui[locale].translation;
+  const header = useRef<HTMLElement>(null);
+  const [activeSection, setActiveSection] = useState("");
   const menu = useRef<HTMLDetailsElement>(null);
   const trigger = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const main = header.current?.closest(".apple-page")?.querySelector("main");
+    if (!main) return;
+    const groups: Record<string, string> = {
+      connected: "connected",
+      business: "connected",
+      sell: "sell",
+      pos: "sell",
+      catalog: "sell",
+      inventory: "operate",
+      purchasing: "operate",
+      orders: "operate",
+      customers: "understand",
+      understand: "understand",
+      identity: "operate",
+      operate: "operate",
+      features: "features",
+    };
+    const sections = [
+      ...main.querySelectorAll<HTMLElement>(":scope > section"),
+    ];
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const threshold =
+        (header.current?.getBoundingClientRect().bottom ?? 0) + 120;
+      const current = sections
+        .filter((section) => section.getBoundingClientRect().top <= threshold)
+        .at(-1);
+      setActiveSection(current ? (groups[current.id] ?? "") : "");
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    const resize = new ResizeObserver(schedule);
+    resize.observe(main);
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    schedule();
+    return () => {
+      cancelAnimationFrame(frame);
+      resize.disconnect();
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
+  }, []);
   useEffect(() => {
     const media = matchMedia("(min-width: 80rem)");
     const reset = () => {
@@ -106,13 +154,17 @@ function Navigation() {
     return () => media.removeEventListener("change", reset);
   }, []);
   return (
-    <header className="a-nav">
+    <header className="a-nav" ref={header}>
       <a className="a-brand" href="/apple#top" aria-label="Jizrak — جِذرك">
         Jizrak
       </a>
       <nav className="a-desktop" aria-label={labels.mainNav}>
         {nav.map((item) => (
-          <a key={item.id} href={`/apple#${item.id}`}>
+          <a
+            key={item.id}
+            href={`/apple#${item.id}`}
+            aria-current={activeSection === item.id ? "location" : undefined}
+          >
             {item[locale]}
           </a>
         ))}
