@@ -429,20 +429,6 @@ export function AppleLanding() {
             <Text text={copy.closing} />
           </p>
         </section>
-        {config.signin === "#sign-in" && (
-          <section
-            id="sign-in"
-            className="a-signin"
-            aria-labelledby="sign-in-heading"
-          >
-            <h2 id="sign-in-heading">
-              <Text text={copy.signin} />
-            </h2>
-            <p>
-              <Text text={copy.signPending} />
-            </p>
-          </section>
-        )}
       </main>
       <footer id="footer" className="a-footer">
         <div className="a-footer-main">

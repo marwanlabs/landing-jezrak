@@ -604,13 +604,6 @@
   color: var(--forest);
   text-wrap: balance;
 }
-.apple-page .a-signin {
-  padding-block: 2rem 4rem;
-}
-.apple-page .a-signin h2 {
-  font-size: 1.5rem;
-  margin-block-end: 1rem;
-}
 .apple-page .a-footer {
   padding: 4.5rem max(1.5rem, calc((100% - var(--a-width)) / 2)) 1.5rem;
   background: #0b2419;
