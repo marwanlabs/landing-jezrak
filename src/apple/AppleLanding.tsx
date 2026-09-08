@@ -98,7 +98,7 @@ function Navigation() {
   const menu = useRef<HTMLDetailsElement>(null);
   const trigger = useRef<HTMLElement>(null);
   useEffect(() => {
-    const media = matchMedia("(min-width: 70rem)");
+    const media = matchMedia("(min-width: 80rem)");
     const reset = () => {
       if (menu.current) menu.current.open = false;
     };
@@ -108,7 +108,7 @@ function Navigation() {
   return (
     <header className="a-nav">
       <a className="a-brand" href="/apple#top" aria-label="Jizrak — جِذرك">
-        Jizrak<span aria-hidden="true">.</span>
+        Jizrak
       </a>
       <nav className="a-desktop" aria-label={labels.mainNav}>
         {nav.map((item) => (
@@ -125,17 +125,27 @@ function Navigation() {
         >
           {labels.locale}
         </button>
-        <select
-          aria-label={labels.theme}
-          value={theme}
-          onChange={(event) => setTheme(event.target.value as Theme)}
-        >
-          {(["light", "dark", "system"] as const).map((value) => (
-            <option key={value} value={value}>
-              {labels[value]}
-            </option>
-          ))}
-        </select>
+        <span className="a-theme-control" title={labels.theme}>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="8" />
+            <path
+              d="M12 4v16a8 8 0 0 0 0-16Z"
+              fill="currentColor"
+              stroke="none"
+            />
+          </svg>
+          <select
+            aria-label={labels.theme}
+            value={theme}
+            onChange={(event) => setTheme(event.target.value as Theme)}
+          >
+            {(["light", "dark", "system"] as const).map((value) => (
+              <option key={value} value={value}>
+                {labels[value]}
+              </option>
+            ))}
+          </select>
+        </span>
         <span className="a-nav-signin">
           <Action kind="signin" />
         </span>
@@ -155,7 +165,15 @@ function Navigation() {
         }}
       >
         <summary ref={trigger} aria-label={labels.open}>
-          <span aria-hidden="true">☰</span>
+          <svg
+            className="a-menu-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M4 8h16" />
+            <path d="M4 16h16" />
+          </svg>
         </summary>
         <nav
           aria-label={labels.mainNav}
