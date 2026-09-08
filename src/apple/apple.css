@@ -306,6 +306,105 @@
   font-size: 0.95rem;
   color: var(--muted);
 }
+.apple-page .a-store-visual {
+  max-width: 50rem;
+  margin: 4rem auto 0;
+  text-align: start;
+}
+.apple-page .a-store-visual-window {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1.8rem;
+  background: var(--limestone);
+  box-shadow: 0 24px 55px #0b24191a;
+}
+.apple-page .a-store-visual-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.25rem;
+  border-block-end: 1px solid var(--line);
+  background: var(--chalk);
+}
+.apple-page .a-store-visual-dots {
+  display: inline-flex;
+  gap: 0.3rem;
+  margin-inline-end: auto;
+}
+.apple-page .a-store-visual-dots i {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--growth);
+}
+.apple-page .a-store-visual-status {
+  color: var(--growth);
+  font-size: 0.7rem;
+}
+.apple-page .a-store-visual-content {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr) minmax(11rem, 0.9fr);
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+}
+.apple-page .a-store-visual-product {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 1.2rem;
+  background: var(--deep-root);
+  color: var(--on-dark);
+}
+.apple-page .a-store-visual-product svg {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 1.35;
+}
+.apple-page .a-store-visual-product span {
+  position: absolute;
+}
+.apple-page .a-store-visual-copy {
+  display: grid;
+  gap: 0.3rem;
+}
+.apple-page .a-store-visual-copy p,
+.apple-page .a-store-visual-copy span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.apple-page .a-store-visual-copy strong {
+  font-size: 1.5rem;
+}
+.apple-page .a-store-visual-cards {
+  display: grid;
+  gap: 0.75rem;
+}
+.apple-page .a-store-visual-cards div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: var(--chalk);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.apple-page .a-store-visual-cards svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  color: var(--forest);
+}
+.apple-page .a-store-visual-note {
+  margin-block-start: 0.7rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: end;
+}
 .apple-page .a-overview {
   margin-block-start: 4.5rem;
   padding: 2.7rem 2rem;
@@ -917,6 +1016,25 @@
   .apple-page .a-overview {
     padding: 2rem 1rem;
     margin-block-start: 3rem;
+  }
+  .apple-page .a-store-visual {
+    margin-block-start: 3rem;
+  }
+  .apple-page .a-store-visual-content {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .apple-page .a-store-visual-product {
+    grid-row: span 2;
+  }
+  .apple-page .a-store-visual-cards {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .apple-page .a-store-visual-cards div {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
   .apple-page .a-applications {
     grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -1,4 +1,5 @@
 import { isPublicDetail } from "../src/apple/publicContent";
+import { candidateCopy } from "../src/apple/candidateContent";
 import { writeFileSync } from "node:fs";
 import {
   sections,
@@ -42,15 +43,24 @@ for (const s of sections) {
   for (const key of ["eyebrow", "heading", "body", "premise"] as const) {
     const text = s[key];
     const overridden = s.id === "operate" && key === "body";
+    const superseded = s.id === "top";
     add(
       text,
       `#${s.id}`,
-      !text.en ? "excluded" : overridden ? "excluded" : "visible",
+      !text.en
+        ? "excluded"
+        : superseded
+          ? "superseded"
+          : overridden
+            ? "excluded"
+            : "visible",
       !text.en
         ? "Empty placeholder"
-        : overridden
-          ? "Replaced by operate-body-public"
-          : undefined,
+        : superseded
+          ? "Replaced by candidate-owned single-Store hero copy"
+          : overridden
+            ? "Replaced by operate-body-public"
+            : undefined,
     );
   }
   for (const text of s.details) {
@@ -112,20 +122,28 @@ for (const [key, text] of Object.entries(copy))
                   : "header, footer, actions",
     excluded[key]
       ? "excluded"
-      : [
-            "preview",
-            "privacy",
-            "terms",
-            "startPending",
-            "demoPending",
-            "signPending",
-          ].includes(key)
-        ? "conditional"
-        : "visible",
+      : key === "rootLabel"
+        ? "superseded"
+        : [
+              "preview",
+              "privacy",
+              "terms",
+              "startPending",
+              "demoPending",
+              "signPending",
+            ].includes(key)
+          ? "conditional"
+          : "visible",
     excluded[key],
   );
 for (const item of nav) add({ ...item, id: `nav-${item.id}` }, "header");
-for (const item of nodes) add(item, "#top");
+for (const item of nodes)
+  add(
+    item,
+    "#top",
+    "superseded",
+    "Seven-capability hero explorer replaced by the candidate-owned Store visual",
+  );
 for (const item of workflowNames) add(item, "#connected");
 for (const item of flow) add(item, "#inventory");
 for (const item of diagramCopy.catalogSurfaces) add(item, "#catalog");
@@ -147,6 +165,7 @@ for (const [key, value] of Object.entries(narrativeCopy))
       `#${destinations[key]}`,
       key === "platform" ? "expanded" : "visible",
     );
+for (const text of Object.values(candidateCopy)) add(text, "#top");
 for (const locale of ["en", "ar"] as const) {
   for (const [key, text] of Object.entries(ui[locale].translation))
     entries.push({

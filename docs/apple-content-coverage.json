@@ -3,7 +3,8 @@
     "Section title fields are source-only editorial names, never public copy.",
     "Exact duplicate strings may be consolidated.",
     "Conditional notices and links follow existing configuration.",
-    "Excluded root decorative labels do not describe product capabilities."
+    "Excluded root decorative labels do not describe product capabilities.",
+    "Candidate-owned hero copy is paired by locale; superseded source strings remain listed for auditability."
   ],
   "entries": [
     {
@@ -75,56 +76,64 @@
       "locale": "en",
       "text": "Jizrak. Connected commerce in one system.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-eyebrow",
       "locale": "ar",
       "text": "جِذرك. تجارة مترابطة في نظام واحد.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-headline",
       "locale": "en",
       "text": "One commerce foundation for every Store.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-headline",
       "locale": "ar",
       "text": "أساس تجاري واحد لكل متجر.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-body",
       "locale": "en",
       "text": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances in one system. Every Store keeps its own brand, team, and stock ledger.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-body",
       "locale": "ar",
       "text": "يجمع نظام واحد واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية. ويحتفظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-premise",
       "locale": "en",
       "text": "Your idea is yours. Jizrak connects the work that supports it.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "top-premise",
       "locale": "ar",
       "text": "فكرتك لك. ويربط جِذرك الأعمال التي تدعمها.",
       "destination": "#top",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned single-Store hero copy"
     },
     {
       "id": "connected-eyebrow",
@@ -4740,6 +4749,146 @@
       "locale": "ar",
       "text": "© {current year} Jizrak — جِذرك",
       "destination": "footer",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-eyebrow",
+      "locale": "en",
+      "text": "Jizrak for your Store",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-eyebrow",
+      "locale": "ar",
+      "text": "جِذرك لمتجرك",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-heading",
+      "locale": "en",
+      "text": "Sell your products. Run your store.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-heading",
+      "locale": "ar",
+      "text": "بع منتجاتك. أدر متجرك.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-body",
+      "locale": "en",
+      "text": "Manage your online storefront, orders, stock, and customers in one place. Add point of sale when you sell in person.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-body",
+      "locale": "ar",
+      "text": "أدر واجهة متجرك الإلكترونية وطلباتك ومخزونك وعملاءك في مكان واحد. واستخدم نقطة البيع عندما تبيع لعملائك مباشرةً.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-reassurance",
+      "locale": "en",
+      "text": "One store today. Room for more when you need it.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-hero-reassurance",
+      "locale": "ar",
+      "text": "ابدأ بمتجر واحد، وأضف المزيد عندما تحتاج إليه.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-label",
+      "locale": "en",
+      "text": "Your Store",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-label",
+      "locale": "ar",
+      "text": "متجرك",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-order",
+      "locale": "en",
+      "text": "Order #1042 · Ready to fulfil",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-order",
+      "locale": "ar",
+      "text": "الطلب رقم ١٠٤٢ · جاهز للتجهيز",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-stock",
+      "locale": "en",
+      "text": "In stock · 24",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-stock",
+      "locale": "ar",
+      "text": "متاح في المخزون · ٢٤",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-note",
+      "locale": "en",
+      "text": "Conceptual Store view",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-note",
+      "locale": "ar",
+      "text": "تصوّر لواجهة المتجر",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product",
+      "locale": "en",
+      "text": "Everyday essentials",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product",
+      "locale": "ar",
+      "text": "منتجاتك اليومية",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product-note",
+      "locale": "en",
+      "text": "Simple storefront, clear orders.",
+      "destination": "#top",
+      "state": "visible"
+    },
+    {
+      "id": "apple-store-visual-product-note",
+      "locale": "ar",
+      "text": "واجهة بسيطة وطلبات واضحة.",
+      "destination": "#top",
       "state": "visible"
     }
   ]

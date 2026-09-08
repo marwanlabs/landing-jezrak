@@ -6,7 +6,16 @@ test("apple is an independent complete journey", async ({ page }) => {
   );
   await expect(page.locator(".a-signin")).toHaveCount(0);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "One commerce foundation for every Store.",
+    "Sell your products. Run your store.",
+  );
+  await expect(page.locator(".a-hero")).toContainText(
+    "Manage your online storefront, orders, stock, and customers in one place.",
+  );
+  await expect(page.locator(".a-hero")).toContainText(
+    "One store today. Room for more when you need it.",
+  );
+  await expect(page.locator(".a-store-visual")).toContainText(
+    "Conceptual Store view",
   );
   for (const id of [
     "top",
@@ -116,7 +125,7 @@ test("native fallback and route-local anchors work without JavaScript", async ({
   await page.goto("/apple");
 
   await expect(page.locator("h1")).toHaveText(
-    "One commerce foundation for every Store.",
+    "Sell your products. Run your store.",
   );
   await page.locator("#group-17 summary").click();
   await expect(page.locator("#group-17 p")).toBeVisible();
@@ -319,21 +328,17 @@ test("section navigation follows the reading position and clears at the introduc
   await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
 });
 
-test("recognizable capability cards reveal context before linking to the full section", async ({
+test("the hero uses a single Store visual with supporting order and stock states", async ({
   page,
 }) => {
   await page.goto("/apple");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
-  const cards = page.locator(".a-applications button");
-  await expect(cards).toHaveCount(7);
-  await cards.filter({ hasText: "Inventory" }).click();
-  await expect(cards.filter({ hasText: "Inventory" })).toHaveAttribute(
-    "aria-pressed",
-    "true",
+  await expect(page.locator(".a-store-visual")).toContainText("Your Store");
+  await expect(page.locator(".a-store-visual")).toContainText(
+    "Order #1042 · Ready to fulfil",
   );
-  const detail = page.locator(".a-capability-detail");
-  await expect(detail).toContainText("Inventory");
-  await expect(detail.locator('a[href="/apple#inventory"]')).toBeVisible();
+  await expect(page.locator(".a-store-visual")).toContainText("In stock · 24");
+  await expect(page.locator(".a-applications")).toHaveCount(0);
 });
