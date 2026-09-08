@@ -792,6 +792,50 @@
   background: transparent;
   padding-inline: 0;
 }
+.apple-page .a-operations-chapter,
+.apple-page .a-insight-chapter {
+  grid-column: 1/-1;
+  padding: 4rem 3rem;
+}
+.apple-page .a-operations-chapter > .a-intro,
+.apple-page .a-insight-chapter > .a-intro {
+  max-width: 54rem;
+}
+.apple-page .a-operations-grid,
+.apple-page .a-insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block-start: 3rem;
+}
+.apple-page .a-operations-grid > .a-story,
+.apple-page .a-insight-grid > .a-story,
+.apple-page .a-insight-performance {
+  min-width: 0;
+  grid-column: auto;
+  margin: 0;
+  padding: 1.75rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background: var(--chalk);
+}
+.apple-page .a-operations-grid > .a-story .a-intro,
+.apple-page .a-insight-grid > .a-story .a-intro {
+  max-width: 42rem;
+}
+.apple-page .a-operations-grid > .a-story:first-child {
+  grid-column: 1/-1;
+}
+.apple-page .a-operations-grid > .a-story .a-details,
+.apple-page .a-insight-grid > .a-story .a-details {
+  margin-block-start: 1.5rem;
+}
+.apple-page .a-insight-performance {
+  align-self: start;
+}
+.apple-page .a-operations-chapter > .a-details {
+  margin-block-start: 2rem;
+}
 .apple-page .a-details {
   margin-block-start: 2rem;
   border-block-start: 1px solid var(--line);
@@ -1161,8 +1205,16 @@
   }
   .apple-page .a-business,
   .apple-page .a-catalog,
-  .apple-page .a-sell-chapter-grid {
+  .apple-page .a-sell-chapter-grid,
+  .apple-page .a-operations-grid,
+  .apple-page .a-insight-grid {
     display: block;
+  }
+  .apple-page .a-operations-grid > .a-story,
+  .apple-page .a-insight-grid > .a-story,
+  .apple-page .a-insight-performance {
+    margin-block: 1rem;
+    border-radius: 0;
   }
   .apple-page .a-sell-part + .a-sell-part {
     margin-block-start: 1rem;

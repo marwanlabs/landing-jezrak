@@ -76,7 +76,7 @@
       "text": "Jizrak. Connected commerce in one system.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-eyebrow",
@@ -84,7 +84,7 @@
       "text": "جِذرك. تجارة مترابطة في نظام واحد.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-headline",
@@ -92,7 +92,7 @@
       "text": "One commerce foundation for every Store.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-headline",
@@ -100,7 +100,7 @@
       "text": "أساس تجاري واحد لكل متجر.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-body",
@@ -108,7 +108,7 @@
       "text": "Run your storefront, point of sale, products, inventory, purchasing, orders, customers, and finances in one system. Every Store keeps its own brand, team, and stock ledger.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-body",
@@ -116,7 +116,7 @@
       "text": "يجمع نظام واحد واجهة المتجر ونقطة البيع والمنتجات والمخزون والمشتريات والطلبات والعملاء والمالية. ويحتفظ كل متجر بعلامته وفريقه ودفتر مخزونه المستقل.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-premise",
@@ -124,7 +124,7 @@
       "text": "Your idea is yours. Jizrak connects the work that supports it.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "top-premise",
@@ -132,7 +132,7 @@
       "text": "فكرتك لك. ويربط جِذرك الأعمال التي تدعمها.",
       "destination": "#top",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-eyebrow",
@@ -140,7 +140,7 @@
       "text": "One connected foundation",
       "destination": "#connected",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-eyebrow",
@@ -148,7 +148,7 @@
       "text": "أساس تشغيلي واحد",
       "destination": "#connected",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-heading",
@@ -156,7 +156,7 @@
       "text": "Keep every Store connected as your Business grows.",
       "destination": "#connected",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-heading",
@@ -164,7 +164,7 @@
       "text": "أبقِ متاجرك مترابطة مع توسّع نشاطك التجاري.",
       "destination": "#connected",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-body",
@@ -172,7 +172,7 @@
       "text": "Catalog, orders, fulfilment, purchasing, suppliers, finance, and Store ledgers share one Business foundation. Each Store stays separate.",
       "destination": "#connected",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-body",
@@ -180,7 +180,7 @@
       "text": "يجمع أساس تجاري واحد الكتالوج والطلبات وتنفيذ الطلبات والمشتريات والموردين والمالية ودفاتر المتاجر، مع بقاء كل متجر مستقلاً.",
       "destination": "#connected",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "connected-premise",
@@ -426,7 +426,7 @@
       "text": "Sell online",
       "destination": "#sell",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "sell-eyebrow",
@@ -434,7 +434,7 @@
       "text": "البيع عبر الإنترنت",
       "destination": "#sell",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "sell-heading",
@@ -442,7 +442,7 @@
       "text": "A Storefront that helps customers find products and check out with confidence.",
       "destination": "#sell",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "sell-heading",
@@ -450,7 +450,7 @@
       "text": "واجهة متجر تساعد العملاء على العثور على المنتجات وإتمام الشراء بثقة.",
       "destination": "#sell",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "sell-body",
@@ -458,7 +458,7 @@
       "text": "Give each Store a branded shopping experience, from search and product selection through cart, shipping, payment, confirmation, and post-purchase service.",
       "destination": "#sell",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "sell-body",
@@ -466,7 +466,7 @@
       "text": "امنح كل متجر تجربة تسوق بعلامته، من البحث واكتشاف المنتجات واختيار الخيارات إلى السلة والشحن وطريقة الدفع والتأكيد وخدمات ما بعد الشراء.",
       "destination": "#sell",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "sell-premise",
@@ -616,7 +616,7 @@
       "text": "Shape the offer",
       "destination": "#catalog",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "catalog-eyebrow",
@@ -624,7 +624,7 @@
       "text": "صمّم عرضك التجاري",
       "destination": "#catalog",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "catalog-heading",
@@ -632,7 +632,7 @@
       "text": "From a single product to a catalog with variants and bundles.",
       "destination": "#catalog",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "catalog-heading",
@@ -640,7 +640,7 @@
       "text": "من منتج واحد إلى كتالوج يضم الخيارات والباقات.",
       "destination": "#catalog",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "catalog-body",
@@ -648,7 +648,7 @@
       "text": "Build a bilingual catalog, reuse option groups, generate variant combinations, connect every sellable choice to the right inventory, and merchandise products through categories, images, bundles, offers, banners, and reviews.",
       "destination": "#catalog",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "catalog-body",
@@ -656,7 +656,7 @@
       "text": "أنشئ كتالوجاً ثنائي اللغة، وأعد استخدام مجموعات الخيارات، وولّد تركيبات المنتجات، واربط كل اختيار قابل للبيع بمخزونه الصحيح، ثم اعرضه بالفئات والصور والباقات والعروض والبانرات والمراجعات.",
       "destination": "#catalog",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "catalog-premise",
@@ -1372,7 +1372,7 @@
       "text": "Sell in person",
       "destination": "#pos",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "pos-eyebrow",
@@ -1380,7 +1380,7 @@
       "text": "البيع داخل المتجر",
       "destination": "#pos",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "pos-heading",
@@ -1388,7 +1388,7 @@
       "text": "A register built on the same inventory rules.",
       "destination": "#pos",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "pos-heading",
@@ -1396,7 +1396,7 @@
       "text": "نقطة بيع تعتمد قواعد المخزون نفسها.",
       "destination": "#pos",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "pos-body",
@@ -1404,7 +1404,7 @@
       "text": "Select the Store, Location, and register; open a shift; search products and variants; record cash, card, transfer, or other tender; calculate change for cash; issue a receipt; and keep the sale and stock movement durable and retry-safe.",
       "destination": "#pos",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "pos-body",
@@ -1412,7 +1412,7 @@
       "text": "اختر المتجر والموقع وصندوق البيع، وافتح الوردية، وابحث عن المنتجات وتركيباتها، وسجّل الدفع النقدي أو البطاقة أو التحويل أو طريقة أخرى، واحسب الباقي للنقد، واعرض الإيصال، وامنع تكرار البيع عند إعادة المحاولة.",
       "destination": "#pos",
       "state": "superseded",
-      "reason": "Replaced by candidate-owned single-Store or selling-chapter copy"
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "pos-premise",
@@ -1759,42 +1759,48 @@
       "locale": "en",
       "text": "Measure Store performance",
       "destination": "#understand",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "understand-eyebrow",
       "locale": "ar",
       "text": "قياس أداء المتجر",
       "destination": "#understand",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "understand-heading",
       "locale": "en",
       "text": "Use stock and sales data to understand the Business.",
       "destination": "#understand",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "understand-heading",
       "locale": "ar",
       "text": "فهم أداء النشاط من بيانات المخزون والمبيعات.",
       "destination": "#understand",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "understand-body",
       "locale": "en",
       "text": "Follow Store performance by date range, understand product and customer patterns, and maintain core accounting records without separating commerce from its financial consequences.",
       "destination": "#understand",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "understand-body",
       "locale": "ar",
       "text": "تابع أداء المتجر حسب الفترة، وافهم أنماط المنتجات والعملاء، واحتفظ بالسجلات المحاسبية الأساسية دون فصل العمليات التجارية عن نتائجها المالية.",
       "destination": "#understand",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "understand-premise",
@@ -2295,44 +2301,48 @@
       "locale": "en",
       "text": "Clear access and Store boundaries",
       "destination": "#operate",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "operate-eyebrow",
       "locale": "ar",
       "text": "صلاحيات واضحة وحدود محددة للمتجر",
       "destination": "#operate",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "operate-heading",
       "locale": "en",
       "text": "Give people the access they need while keeping Store boundaries clear.",
       "destination": "#operate",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "operate-heading",
       "locale": "ar",
       "text": "الصلاحيات اللازمة للمستخدمين مع حدود واضحة لكل متجر.",
       "destination": "#operate",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "operate-body",
       "locale": "en",
       "text": "Business ownership, Store-specific grants, controlled stock movements, auditable events, private media, and restricted platform recovery infrastructure create a safer operating foundation without turning the landing page into a certification claim.",
       "destination": "#operate",
-      "state": "excluded",
-      "reason": "Replaced by operate-body-public"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "operate-body",
       "locale": "ar",
       "text": "توفّر ملكية النشاط وصلاحيات كل متجر وحركات المخزون المنضبطة والأحداث القابلة للمراجعة والوسائط الخاصة وبنية استعادة المنصة المقيّدة أساساً أكثر أماناً، دون تقديم ادعاءات اعتماد غير مثبتة.",
       "destination": "#operate",
-      "state": "excluded",
-      "reason": "Replaced by operate-body-public"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "operate-premise",
@@ -5114,6 +5124,90 @@
       "locale": "ar",
       "text": "عند البيع مباشرةً، تستخدم نقطة البيع قواعد مخزون المتجر نفسها. اختر المتجر والموقع والصندوق، وافتح وردية، وسجّل وسيلة الدفع المفعّلة، وأصدر إيصالًا، واحفظ البيع مع حماية من التكرار عند إعادة المحاولة. نقطة البيع اختيارية، ولا يعتمد البيع عبر الإنترنت عليها.",
       "destination": "#sell",
+      "state": "visible"
+    },
+    {
+      "id": "apple-operations-chapter-eyebrow",
+      "locale": "en",
+      "text": "Keep orders and stock under control",
+      "destination": "#operate",
+      "state": "visible"
+    },
+    {
+      "id": "apple-operations-chapter-eyebrow",
+      "locale": "ar",
+      "text": "أبقِ الطلبات والمخزون تحت السيطرة",
+      "destination": "#operate",
+      "state": "visible"
+    },
+    {
+      "id": "apple-operations-chapter-heading",
+      "locale": "en",
+      "text": "Know what can be sold, what needs attention, and what happens next.",
+      "destination": "#operate",
+      "state": "visible"
+    },
+    {
+      "id": "apple-operations-chapter-heading",
+      "locale": "ar",
+      "text": "اعرف ما يمكن بيعه، وما يحتاج إلى متابعة، وما سيحدث بعد ذلك.",
+      "destination": "#operate",
+      "state": "visible"
+    },
+    {
+      "id": "apple-operations-chapter-body",
+      "locale": "en",
+      "text": "Run the daily work of one Store from availability through fulfilment, replenishment, and controlled stock movement. The advanced pieces stay available when the Store needs them; they are not a prerequisite for a simple setup.",
+      "destination": "#operate",
+      "state": "visible"
+    },
+    {
+      "id": "apple-operations-chapter-body",
+      "locale": "ar",
+      "text": "أدر العمل اليومي لمتجر واحد من معرفة المتاح للبيع إلى التجهيز وإعادة التوريد وحركات المخزون المنضبطة. وتبقى الأدوات المتقدمة متاحة عندما يحتاج إليها المتجر، لكنها ليست شرطًا لإعداد بسيط.",
+      "destination": "#operate",
+      "state": "visible"
+    },
+    {
+      "id": "apple-insight-chapter-eyebrow",
+      "locale": "en",
+      "text": "Understand customers and sales",
+      "destination": "#understand",
+      "state": "visible"
+    },
+    {
+      "id": "apple-insight-chapter-eyebrow",
+      "locale": "ar",
+      "text": "افهم العملاء والمبيعات",
+      "destination": "#understand",
+      "state": "visible"
+    },
+    {
+      "id": "apple-insight-chapter-heading",
+      "locale": "en",
+      "text": "See the patterns behind the Store’s everyday decisions.",
+      "destination": "#understand",
+      "state": "visible"
+    },
+    {
+      "id": "apple-insight-chapter-heading",
+      "locale": "ar",
+      "text": "شاهد الأنماط التي تقف وراء قرارات المتجر اليومية.",
+      "destination": "#understand",
+      "state": "visible"
+    },
+    {
+      "id": "apple-insight-chapter-body",
+      "locale": "en",
+      "text": "Follow customer history, product and sales patterns, Store performance by date range, and the financial records connected to supported commerce flows.",
+      "destination": "#understand",
+      "state": "visible"
+    },
+    {
+      "id": "apple-insight-chapter-body",
+      "locale": "ar",
+      "text": "تابع سجل العملاء وأنماط المنتجات والمبيعات وأداء المتجر حسب النطاق الزمني والسجلات المالية المرتبطة بسير التجارة المدعوم.",
+      "destination": "#understand",
       "state": "visible"
     },
     {

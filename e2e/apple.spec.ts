@@ -34,6 +34,15 @@ test("apple is an independent complete journey", async ({ page }) => {
   await expect(page.locator("#pos")).toContainText(
     "online selling does not depend on it",
   );
+  await expect(page.locator("#operate")).toContainText(
+    "Keep orders and stock under control",
+  );
+  await expect(page.locator("#operate")).toContainText("Replenish");
+  await expect(page.locator("#operate")).toContainText("Fulfil");
+  await expect(page.locator("#understand")).toContainText(
+    "Understand customers and sales",
+  );
+  await expect(page.locator("#understand")).toContainText("Financial records");
   const majorSections = await page
     .locator("main > section")
     .evaluateAll((sections) => sections.map((section) => section.id));
@@ -160,6 +169,8 @@ test("native fallback and route-local anchors work without JavaScript", async ({
   await expect(page.locator("#sell")).toContainText(
     "Cart, shipping, and payment",
   );
+  await expect(page.locator("#operate")).toContainText("Know what can be sold");
+  await expect(page.locator("#understand")).toContainText("See the patterns");
   await page.locator("#group-17 summary").click();
   await expect(page.locator("#group-17 p")).toBeVisible();
   const hrefs = await page
@@ -207,7 +218,7 @@ test("mobile navigation dismisses, restores focus and survives rapid input", asy
   await expect(page).toHaveURL(/\/apple#features$/);
 });
 
-test("mobile stories use the full reading width in both languages", async ({
+test("mobile stories stay within the reading column in both languages", async ({
   page,
 }) => {
   await page.goto("/apple");
@@ -224,9 +235,9 @@ test("mobile stories use the full reading width in both languages", async ({
           story: el.getBoundingClientRect().width,
           main: el.closest("main")!.getBoundingClientRect().width,
         }));
-        expect(size.story, `${locale} ${width} ${id}`).toBeCloseTo(
-          size.main,
-          0,
+        expect(size.story, `${locale} ${width} ${id}`).toBeGreaterThan(0);
+        expect(size.story, `${locale} ${width} ${id}`).toBeLessThanOrEqual(
+          size.main + 1,
         );
       }
     }

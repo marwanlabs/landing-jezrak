@@ -212,4 +212,38 @@ export const candidateCopy = {
       ar: "عند البيع مباشرةً، تستخدم نقطة البيع قواعد مخزون المتجر نفسها. اختر المتجر والموقع والصندوق، وافتح وردية، وسجّل وسيلة الدفع المفعّلة، وأصدر إيصالًا، واحفظ البيع مع حماية من التكرار عند إعادة المحاولة. نقطة البيع اختيارية، ولا يعتمد البيع عبر الإنترنت عليها.",
     } satisfies BilingualText,
   },
+  operationsChapter: {
+    eyebrow: {
+      id: "apple-operations-chapter-eyebrow",
+      en: "Keep orders and stock under control",
+      ar: "أبقِ الطلبات والمخزون تحت السيطرة",
+    } satisfies BilingualText,
+    heading: {
+      id: "apple-operations-chapter-heading",
+      en: "Know what can be sold, what needs attention, and what happens next.",
+      ar: "اعرف ما يمكن بيعه، وما يحتاج إلى متابعة، وما سيحدث بعد ذلك.",
+    } satisfies BilingualText,
+    body: {
+      id: "apple-operations-chapter-body",
+      en: "Run the daily work of one Store from availability through fulfilment, replenishment, and controlled stock movement. The advanced pieces stay available when the Store needs them; they are not a prerequisite for a simple setup.",
+      ar: "أدر العمل اليومي لمتجر واحد من معرفة المتاح للبيع إلى التجهيز وإعادة التوريد وحركات المخزون المنضبطة. وتبقى الأدوات المتقدمة متاحة عندما يحتاج إليها المتجر، لكنها ليست شرطًا لإعداد بسيط.",
+    } satisfies BilingualText,
+  },
+  insightChapter: {
+    eyebrow: {
+      id: "apple-insight-chapter-eyebrow",
+      en: "Understand customers and sales",
+      ar: "افهم العملاء والمبيعات",
+    } satisfies BilingualText,
+    heading: {
+      id: "apple-insight-chapter-heading",
+      en: "See the patterns behind the Store’s everyday decisions.",
+      ar: "شاهد الأنماط التي تقف وراء قرارات المتجر اليومية.",
+    } satisfies BilingualText,
+    body: {
+      id: "apple-insight-chapter-body",
+      en: "Follow customer history, product and sales patterns, Store performance by date range, and the financial records connected to supported commerce flows.",
+      ar: "تابع سجل العملاء وأنماط المنتجات والمبيعات وأداء المتجر حسب النطاق الزمني والسجلات المالية المرتبطة بسير التجارة المدعوم.",
+    } satisfies BilingualText,
+  },
 };

@@ -81,6 +81,27 @@ function Intro({ id }: { id: string }) {
     </div>
   );
 }
+function CandidateIntro({
+  content,
+  id,
+}: {
+  content: (typeof candidateCopy)["operationsChapter"];
+  id: string;
+}) {
+  return (
+    <div className="a-intro">
+      <p className="a-kicker">
+        <Text text={content.eyebrow} />
+      </p>
+      <h2 id={`${id}-heading`}>
+        <Text text={content.heading} />
+      </h2>
+      <p className="a-body">
+        <Text text={content.body} />
+      </p>
+    </div>
+  );
+}
 function Details({ id }: { id: string }) {
   return (
     <details className="a-details" id={`${id}-details`}>
@@ -504,26 +525,54 @@ export function AppleLanding() {
             </p>
           </div>
         </Story>
-        <Story id="inventory">
-          <Path items={flow} />
-          <p className="a-caption">
-            <Text text={diagramCopy.inventoryEquivalent} />
+        <section
+          id="operate"
+          className="a-story a-operations-chapter"
+          aria-labelledby="operate-heading"
+        >
+          <CandidateIntro
+            id="operate"
+            content={candidateCopy.operationsChapter}
+          />
+          <p className="a-caption a-chapter-qualification">
+            <Text text={narrativeCopy.operateBody} />
           </p>
-        </Story>
-        <Story id="purchasing">
-          <Path items={narrativeCopy.purchasingFlow} />
-        </Story>
-        <Story id="orders">
-          <Path items={narrativeCopy.ordersFlow} />
-        </Story>
-        <Story id="customers">
-          <Path items={narrativeCopy.customersFlow} />
-        </Story>
-        <Story id="understand">
-          <Path items={narrativeCopy.understandFlow} />
-        </Story>
-        <Story id="identity" />
-        <Story id="operate" />
+          <div className="a-operations-grid">
+            <Story id="inventory">
+              <Path items={flow} />
+              <p className="a-caption">
+                <Text text={diagramCopy.inventoryEquivalent} />
+              </p>
+            </Story>
+            <Story id="purchasing">
+              <Path items={narrativeCopy.purchasingFlow} />
+            </Story>
+            <Story id="orders">
+              <Path items={narrativeCopy.ordersFlow} />
+            </Story>
+            <Story id="identity" />
+          </div>
+          <Details id="operate" />
+        </section>
+        <section
+          id="understand"
+          className="a-story a-insight-chapter"
+          aria-labelledby="understand-heading"
+        >
+          <CandidateIntro
+            id="understand"
+            content={candidateCopy.insightChapter}
+          />
+          <div className="a-insight-grid">
+            <Story id="customers">
+              <Path items={narrativeCopy.customersFlow} />
+            </Story>
+            <div className="a-insight-performance">
+              <Path items={narrativeCopy.understandFlow} />
+              <Details id="understand" />
+            </div>
+          </div>
+        </section>
         <section
           id="features"
           className="a-features"

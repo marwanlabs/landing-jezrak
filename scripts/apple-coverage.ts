@@ -43,9 +43,15 @@ for (const s of sections) {
   for (const key of ["eyebrow", "heading", "body", "premise"] as const) {
     const text = s[key];
     const overridden = s.id === "operate" && key === "body";
-    const superseded = ["top", "connected", "sell", "catalog", "pos"].includes(
-      s.id,
-    );
+    const superseded = [
+      "top",
+      "connected",
+      "sell",
+      "catalog",
+      "pos",
+      "operate",
+      "understand",
+    ].includes(s.id);
     add(
       text,
       `#${s.id}`,
@@ -59,7 +65,7 @@ for (const s of sections) {
       !text.en
         ? "Empty placeholder"
         : superseded
-          ? "Replaced by candidate-owned single-Store or selling-chapter copy"
+          ? "Replaced by candidate-owned chapter copy"
           : overridden
             ? "Replaced by operate-body-public"
             : undefined,
@@ -224,6 +230,8 @@ addCandidateCopy(
 );
 addCandidateCopy(candidateCopy.orderJourney, "#connected");
 addCandidateCopy(candidateCopy.sellChapter, "#sell");
+addCandidateCopy(candidateCopy.operationsChapter, "#operate");
+addCandidateCopy(candidateCopy.insightChapter, "#understand");
 for (const locale of ["en", "ar"] as const) {
   for (const [key, text] of Object.entries(ui[locale].translation))
     entries.push({
