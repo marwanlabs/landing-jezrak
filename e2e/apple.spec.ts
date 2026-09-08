@@ -460,6 +460,13 @@ test("apple navigation and static workflow rails match their responsive affordan
   await expect(
     page.locator("#understand-performance .a-details"),
   ).toBeVisible();
+  const insightCards = page.locator("#understand .a-insight-card");
+  await expect(insightCards).toHaveCount(2);
+  for (const card of await insightCards.all()) {
+    await expect(card.locator(".a-kicker")).toBeVisible();
+    await expect(card.locator(".a-intro h2")).toBeVisible();
+    await expect(card.locator(".a-intro .a-body")).toBeVisible();
+  }
   const insightHeadingSizes = await page
     .locator("#understand .a-insight-card .a-intro h2")
     .evaluateAll((headings) =>

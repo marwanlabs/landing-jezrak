@@ -164,7 +164,9 @@ function InsightWorkflowCard({
   id,
   headingId,
   className,
-  intro,
+  eyebrow,
+  heading,
+  body,
   stages,
   label,
   detailsId = id,
@@ -172,18 +174,31 @@ function InsightWorkflowCard({
   id: string;
   headingId: string;
   className: string;
-  intro: ReactNode;
+  eyebrow: BilingualText;
+  heading: BilingualText;
+  body: BilingualText;
   stages: Stage[];
   label: string;
   detailsId?: string;
 }) {
+  const { locale } = usePreferences();
   return (
     <section
       id={id}
       className={`a-story a-insight-card ${className}`}
       aria-labelledby={headingId}
     >
-      {intro}
+      <div className="a-intro">
+        <p className="a-kicker">
+          <Text text={eyebrow} />
+        </p>
+        <h2 id={headingId} lang={locale}>
+          <Text text={heading} />
+        </h2>
+        <p className="a-body">
+          <Text text={body} />
+        </p>
+      </div>
       <StageLine stages={stages} label={label} />
       <Details id={detailsId} />
     </section>
@@ -613,7 +628,9 @@ export function AppleLanding() {
               id="customers"
               headingId="customers-heading"
               className="a-customers"
-              intro={<Intro id="customers" />}
+              eyebrow={section("customers").eyebrow}
+              heading={section("customers").heading}
+              body={section("customers").body}
               stages={toStages(narrativeCopy.customersFlow)}
               label={section("customers").heading.en}
             />
@@ -621,16 +638,9 @@ export function AppleLanding() {
               id="understand-performance"
               headingId="understand-performance-heading"
               className="a-insight-performance"
-              intro={
-                <div className="a-intro a-workflow-intro">
-                  <h2 id="understand-performance-heading">
-                    <Text text={copy.understandWorkflow} />
-                  </h2>
-                  <p className="a-body">
-                    <Text text={copy.understandWorkflowBody} />
-                  </p>
-                </div>
-              }
+              eyebrow={section("understand").eyebrow}
+              heading={copy.understandWorkflow}
+              body={copy.understandWorkflowBody}
               stages={toStages(narrativeCopy.understandFlow)}
               label={section("understand").heading.en}
               detailsId="understand"

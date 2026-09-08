@@ -920,13 +920,6 @@
   line-height: 1.35;
   letter-spacing: normal;
 }
-.apple-page .a-insight-card .a-workflow-intro {
-  max-width: 42rem;
-}
-.apple-page .a-workflow-intro .a-body {
-  max-width: 38ch;
-  margin-block-start: 0.75rem;
-}
 .apple-page .a-operations-grid > .a-story:first-child {
   grid-column: 1/-1;
 }
