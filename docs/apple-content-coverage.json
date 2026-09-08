@@ -4685,86 +4685,16 @@
       "state": "visible"
     },
     {
-      "id": "apple-store-visual-label",
+      "id": "apple-overview-label",
       "locale": "en",
-      "text": "Your Store",
+      "text": "Run your Store from one place.",
       "destination": "#top",
       "state": "visible"
     },
     {
-      "id": "apple-store-visual-label",
+      "id": "apple-overview-label",
       "locale": "ar",
-      "text": "متجرك",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-order",
-      "locale": "en",
-      "text": "Order #1042 · Ready to fulfil",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-order",
-      "locale": "ar",
-      "text": "الطلب رقم ١٠٤٢ · جاهز للتجهيز",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-stock",
-      "locale": "en",
-      "text": "In stock · 24",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-stock",
-      "locale": "ar",
-      "text": "متاح في المخزون · ٢٤",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-note",
-      "locale": "en",
-      "text": "Conceptual Store view",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-note",
-      "locale": "ar",
-      "text": "تصوّر لواجهة المتجر",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product",
-      "locale": "en",
-      "text": "Everyday essentials",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product",
-      "locale": "ar",
-      "text": "منتجاتك اليومية",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product-note",
-      "locale": "en",
-      "text": "Simple storefront, clear orders.",
-      "destination": "#top",
-      "state": "visible"
-    },
-    {
-      "id": "apple-store-visual-product-note",
-      "locale": "ar",
-      "text": "واجهة بسيطة وطلبات واضحة.",
+      "text": "أدر متجرك من مكان واحد.",
       "destination": "#top",
       "state": "visible"
     },

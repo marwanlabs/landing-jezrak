@@ -21,35 +21,10 @@ export const candidateCopy = {
     en: "One store today. Room for more when you need it.",
     ar: "ابدأ بمتجر واحد، وأضف المزيد عندما تحتاج إليه.",
   } satisfies BilingualText,
-  visualLabel: {
-    id: "apple-store-visual-label",
-    en: "Your Store",
-    ar: "متجرك",
-  } satisfies BilingualText,
-  visualOrder: {
-    id: "apple-store-visual-order",
-    en: "Order #1042 · Ready to fulfil",
-    ar: "الطلب رقم ١٠٤٢ · جاهز للتجهيز",
-  } satisfies BilingualText,
-  visualStock: {
-    id: "apple-store-visual-stock",
-    en: "In stock · 24",
-    ar: "متاح في المخزون · ٢٤",
-  } satisfies BilingualText,
-  visualNote: {
-    id: "apple-store-visual-note",
-    en: "Conceptual Store view",
-    ar: "تصوّر لواجهة المتجر",
-  } satisfies BilingualText,
-  visualProduct: {
-    id: "apple-store-visual-product",
-    en: "Everyday essentials",
-    ar: "منتجاتك اليومية",
-  } satisfies BilingualText,
-  visualProductNote: {
-    id: "apple-store-visual-product-note",
-    en: "Simple storefront, clear orders.",
-    ar: "واجهة بسيطة وطلبات واضحة.",
+  overviewLabel: {
+    id: "apple-overview-label",
+    en: "Run your Store from one place.",
+    ar: "أدر متجرك من مكان واحد.",
   } satisfies BilingualText,
   orderJourney: {
     eyebrow: {

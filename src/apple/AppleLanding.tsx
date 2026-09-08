@@ -1,8 +1,12 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
   Boxes,
+  ChartNoAxesCombined,
+  CreditCard,
   PackageCheck,
+  Search,
   ShoppingBag,
+  Truck,
   type LucideIcon,
 } from "lucide-react";
 import { usePreferences, type Theme } from "../app/preferences";
@@ -11,6 +15,7 @@ import {
   section,
   copy,
   nav,
+  nodes,
   flow,
   narrativeCopy,
   diagramCopy,
@@ -50,6 +55,24 @@ const destination = (href: string) =>
   href.startsWith("#") ? `/apple${href}` : href;
 const signinDestination =
   config.signin === "#sign-in" ? "/apple#footer" : destination(config.signin);
+const overviewDestinations: Record<string, string> = {
+  storefront: "sell",
+  pos: "pos",
+  inventory: "inventory",
+  orders: "orders",
+  purchasing: "purchasing",
+  customers: "customers",
+  finance: "understand",
+};
+const overviewIcons: Record<string, LucideIcon> = {
+  storefront: ShoppingBag,
+  pos: CreditCard,
+  inventory: Boxes,
+  orders: PackageCheck,
+  purchasing: Truck,
+  customers: Search,
+  finance: ChartNoAxesCombined,
+};
 function Action({ kind = "start" }: { kind?: "start" | "demo" | "signin" }) {
   const isLocal = config[kind].startsWith("#");
   return (
@@ -308,6 +331,10 @@ function Navigation() {
 }
 export function AppleLanding() {
   const { locale } = usePreferences();
+  const [selectedCapability, setSelectedCapability] = useState(nodes[0].id);
+  const capability = nodes.find((node) => node.id === selectedCapability)!;
+  const capabilitySection = overviewDestinations[capability.id];
+  const CapabilityIcon = overviewIcons[capability.id];
   return (
     <div
       className="apple-page"
@@ -336,53 +363,49 @@ export function AppleLanding() {
           <p className="a-premise">
             <Text text={candidateCopy.reassurance} />
           </p>
-          <div
-            className="a-store-visual"
-            aria-label={candidateCopy.visualNote[locale]}
-          >
-            <div className="a-store-visual-window">
-              <div className="a-store-visual-bar">
-                <span className="a-store-visual-dots" aria-hidden="true">
-                  <i />
-                  <i />
-                  <i />
-                </span>
-                <strong>
-                  <Text text={candidateCopy.visualLabel} />
-                </strong>
-                <span className="a-store-visual-status">●</span>
-              </div>
-              <div className="a-store-visual-content">
-                <div className="a-store-visual-product" aria-hidden="true">
-                  <ShoppingBag />
-                  <span />
-                </div>
-                <div className="a-store-visual-copy">
-                  <p>
-                    <Text text={candidateCopy.visualLabel} />
-                  </p>
-                  <strong>
-                    <Text text={candidateCopy.visualProduct} />
-                  </strong>
-                  <span>
-                    <Text text={candidateCopy.visualProductNote} />
-                  </span>
-                </div>
-                <div className="a-store-visual-cards">
-                  <div>
-                    <PackageCheck aria-hidden="true" />
-                    <Text text={candidateCopy.visualOrder} />
-                  </div>
-                  <div>
-                    <Boxes aria-hidden="true" />
-                    <Text text={candidateCopy.visualStock} />
-                  </div>
-                </div>
-              </div>
+          <div className="a-overview">
+            <div className="a-overview-title">
+              <Text text={candidateCopy.overviewLabel} />
             </div>
-            <p className="a-store-visual-note">
-              <Text text={candidateCopy.visualNote} />
-            </p>
+            <div
+              className="a-applications"
+              aria-label={candidateCopy.overviewLabel[locale]}
+            >
+              {nodes.map((node) => (
+                <button
+                  type="button"
+                  aria-pressed={selectedCapability === node.id}
+                  onClick={() => setSelectedCapability(node.id)}
+                  key={node.id}
+                >
+                  {(() => {
+                    const Icon = overviewIcons[node.id];
+                    return <Icon aria-hidden="true" focusable="false" />;
+                  })()}
+                  <Text text={node} />
+                </button>
+              ))}
+            </div>
+            <div className="a-capability-detail" aria-live="polite">
+              <div className="a-capability-detail-heading">
+                <CapabilityIcon aria-hidden="true" focusable="false" />
+                <strong>
+                  <Text text={capability} />
+                </strong>
+              </div>
+              <p>
+                <Text text={section(capabilitySection).body} />
+              </p>
+              <a
+                href={`/apple#${capabilitySection}`}
+                aria-label={`${copy.detail[locale]}: ${
+                  section(capabilitySection).heading[locale]
+                }`}
+              >
+                <Text text={copy.detail} />
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </section>
         <section

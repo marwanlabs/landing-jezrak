@@ -220,12 +220,7 @@ addCandidateCopy(
     heading: candidateCopy.heading,
     body: candidateCopy.body,
     reassurance: candidateCopy.reassurance,
-    visualLabel: candidateCopy.visualLabel,
-    visualOrder: candidateCopy.visualOrder,
-    visualStock: candidateCopy.visualStock,
-    visualNote: candidateCopy.visualNote,
-    visualProduct: candidateCopy.visualProduct,
-    visualProductNote: candidateCopy.visualProductNote,
+    overviewLabel: candidateCopy.overviewLabel,
   },
   "#top",
 );

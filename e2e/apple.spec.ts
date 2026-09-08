@@ -14,8 +14,15 @@ test("apple is an independent complete journey", async ({ page }) => {
   await expect(page.locator(".a-hero")).toContainText(
     "One store today. Room for more when you need it.",
   );
-  await expect(page.locator(".a-store-visual")).toContainText(
-    "Conceptual Store view",
+  await expect(page.locator(".a-overview")).toContainText(
+    "Run your Store from one place.",
+  );
+  await expect(page.locator('.a-applications button[aria-pressed="true"]')).toHaveText(
+    "Storefront",
+  );
+  await page.getByRole("button", { name: "Inventory" }).click();
+  await expect(page.locator('.a-applications button[aria-pressed="true"]')).toHaveText(
+    "Inventory",
   );
   await expect(page.locator("#connected")).toContainText("Discover and choose");
   await expect(page.locator("#connected")).toContainText(
@@ -399,17 +406,19 @@ test("section navigation follows the reading position and clears at the introduc
   await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
 });
 
-test("the hero uses a single Store visual with supporting order and stock states", async ({
+test("the hero restores the connected commerce capability card", async ({
   page,
 }) => {
   await page.goto("/apple");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
-  await expect(page.locator(".a-store-visual")).toContainText("Your Store");
-  await expect(page.locator(".a-store-visual")).toContainText(
-    "Order #1042 · Ready to fulfil",
+  await expect(page.locator(".a-overview")).toContainText(
+    "Run your Store from one place.",
   );
-  await expect(page.locator(".a-store-visual")).toContainText("In stock · 24");
-  await expect(page.locator(".a-applications")).toHaveCount(0);
+  await expect(page.locator(".a-applications button")).toHaveCount(7);
+  await page.getByRole("button", { name: "Finance" }).click();
+  await expect(
+    page.locator('.a-applications button[aria-pressed="true"]'),
+  ).toHaveText("Finance");
 });
