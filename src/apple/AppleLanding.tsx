@@ -444,37 +444,74 @@ export function AppleLanding() {
           </section>
         )}
       </main>
-      <footer className="a-footer">
-        <a className="a-footer-brand" href="/apple#top" dir="ltr">
-          Jizrak — <span lang="ar">جِذرك</span>
-        </a>
-        <nav aria-label={copy.footerNav[locale]}>
-          <a href="/apple#features">
-            <Text text={copy.featureLink} />
-          </a>
-          <a href={destination(config.demo)}>
-            <Text text={copy.demoLink} />
-          </a>
-          <Action kind="signin" />
-          {config.privacy && (
-            <a href={config.privacy}>
-              <Text text={copy.privacy} />
+      <footer id="footer" className="a-footer">
+        <div className="a-footer-main">
+          <div className="a-footer-identity">
+            <a className="a-footer-brand" href="/apple#top" dir="ltr">
+              Jizrak — <span lang="ar">جِذرك</span>
             </a>
-          )}
-          {config.terms && (
-            <a href={config.terms}>
-              <Text text={copy.terms} />
+            <p>
+              <Text text={copy.rootLabel} />
+            </p>
+          </div>
+          <nav
+            className="a-footer-explore"
+            aria-label={copy.featureLink[locale]}
+          >
+            <h2>
+              <Text text={copy.featureLink} />
+            </h2>
+            {nav.map((item) => (
+              <a key={item.id} href={`/apple#${item.id}`}>
+                {item[locale]}
+              </a>
+            ))}
+          </nav>
+          <nav className="a-footer-actions" aria-label={copy.footerNav[locale]}>
+            <Action />
+            <a href={destination(config.demo)}>
+              <Text text={copy.demo} />
+              <span aria-hidden="true">↗</span>
             </a>
-          )}
-          <a href="/apple#top" aria-label="Jizrak — جِذرك">
-            ↑
+            <a href={destination(config.signin)}>
+              <Text text={copy.signin} />
+              <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
+        </div>
+        <div className="a-footer-bottom">
+          <p dir="ltr">
+            © {new Date().getFullYear()} Jizrak — <span lang="ar">جِذرك</span>
+          </p>
+          <div className="a-footer-legal">
+            {config.privacy && (
+              <a href={config.privacy}>
+                <Text text={copy.privacy} />
+              </a>
+            )}
+            {config.terms && (
+              <a href={config.terms}>
+                <Text text={copy.terms} />
+              </a>
+            )}
+          </div>
+          <a
+            className="a-footer-top"
+            href="/apple#top"
+            aria-label="Jizrak — جِذرك"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M12 19V5m-6 6 6-6 6 6" />
+            </svg>
           </a>
-        </nav>
-        <p dir="ltr">
-          © {new Date().getFullYear()} Jizrak — <span lang="ar">جِذرك</span>
-        </p>
+        </div>
         {config.review && (
-          <p className="a-notice">
+          <p className="a-footer-preview">
             <Text text={copy.preview} />
           </p>
         )}
