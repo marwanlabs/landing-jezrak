@@ -586,9 +586,12 @@ export function AppleLanding() {
                 label={section("customers").heading.en}
               />
             </Story>
-            <div className="a-insight-performance">
+            <section
+              className="a-story a-insight-performance"
+              aria-labelledby="understand-performance-heading"
+            >
               <div className="a-workflow-header">
-                <h3>
+                <h3 id="understand-performance-heading">
                   <Text text={copy.understandWorkflow} />
                 </h3>
               </div>
@@ -597,7 +600,7 @@ export function AppleLanding() {
                 label={section("understand").heading.en}
               />
               <Details id="understand" />
-            </div>
+            </section>
           </div>
         </section>
         <section

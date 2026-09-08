@@ -451,4 +451,13 @@ test("apple navigation and static workflow rails match their responsive affordan
     "opacity",
     "1",
   );
+  await expect(
+    page.locator("#understand .a-insight-performance"),
+  ).toHaveRole("region");
+  await expect(
+    page.locator("#understand .a-insight-performance h3"),
+  ).toHaveText("Performance reporting");
+  await expect(
+    page.locator("#understand .a-insight-performance .a-details"),
+  ).toBeVisible();
 });
