@@ -4,6 +4,7 @@ test("apple is an independent complete journey", async ({ page }) => {
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
+  await expect(page.locator(".a-signin")).toHaveCount(0);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "One commerce foundation for every Store.",
   );

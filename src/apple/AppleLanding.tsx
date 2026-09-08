@@ -53,6 +53,8 @@ function Path({
 }
 const destination = (href: string) =>
   href.startsWith("#") ? `/apple${href}` : href;
+const signinDestination =
+  config.signin === "#sign-in" ? "/apple#footer" : destination(config.signin);
 const overviewDestinations: Record<string, string> = {
   storefront: "sell",
   pos: "pos",
@@ -76,7 +78,7 @@ function Action({ kind = "start" }: { kind?: "start" | "demo" | "signin" }) {
   return (
     <a
       className={kind === "start" ? "a-button" : "a-link"}
-      href={destination(config[kind])}
+      href={kind === "signin" ? signinDestination : destination(config[kind])}
     >
       <Text text={copy[kind]} />
       {!isLocal && <span aria-hidden="true"> ↗</span>}
@@ -350,7 +352,6 @@ export function AppleLanding() {
                   type="button"
                   aria-pressed={selectedCapability === node.id}
                   onClick={() => setSelectedCapability(node.id)}
-                  onFocus={() => setSelectedCapability(node.id)}
                   key={node.id}
                 >
                   {(() => {
@@ -373,7 +374,9 @@ export function AppleLanding() {
               </p>
               <a
                 href={`/apple#${capabilitySection}`}
-                aria-label={section(capabilitySection).heading[locale]}
+                aria-label={`${copy.detail[locale]}: ${
+                  section(capabilitySection).heading[locale]
+                }`}
               >
                 <Text text={copy.detail} />
                 <span aria-hidden="true">↗</span>
@@ -514,20 +517,6 @@ export function AppleLanding() {
             <Text text={copy.closing} />
           </p>
         </section>
-        {config.signin === "#sign-in" && (
-          <section
-            id="sign-in"
-            className="a-signin"
-            aria-labelledby="sign-in-heading"
-          >
-            <h2 id="sign-in-heading">
-              <Text text={copy.signin} />
-            </h2>
-            <p>
-              <Text text={copy.signPending} />
-            </p>
-          </section>
-        )}
       </main>
       <footer id="footer" className="a-footer">
         <div className="a-footer-main">
@@ -560,7 +549,7 @@ export function AppleLanding() {
                 <span aria-hidden="true">↗</span>
               )}
             </a>
-            <a href={destination(config.signin)}>
+            <a href={signinDestination}>
               <Text text={copy.signin} />
               {!config.signin.startsWith("#") && (
                 <span aria-hidden="true">↗</span>
