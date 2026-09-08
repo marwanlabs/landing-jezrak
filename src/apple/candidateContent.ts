@@ -246,4 +246,92 @@ export const candidateCopy = {
       ar: "تابع سجل العملاء وأنماط المنتجات والمبيعات وأداء المتجر حسب النطاق الزمني والسجلات المالية المرتبطة بسير التجارة المدعوم.",
     } satisfies BilingualText,
   },
+  growthChapter: {
+    eyebrow: {
+      id: "apple-growth-chapter-eyebrow",
+      en: "When one store becomes more",
+      ar: "عندما يتوسع نشاطك إلى أكثر من متجر",
+    } satisfies BilingualText,
+    heading: {
+      id: "apple-growth-chapter-heading",
+      en: "Add another Store without combining its records with the first.",
+      ar: "أضف متجرًا آخر من دون دمج سجلاته مع سجلات متجرك الأول.",
+    } satisfies BilingualText,
+    body: {
+      id: "apple-growth-chapter-body",
+      en: "Start with one Store, then let the same Business oversee more when the work calls for it. A shared physical Location can serve multiple Stores, while every Store keeps its own rules and stock ledger.",
+      ar: "ابدأ بمتجر واحد، ثم دع النشاط نفسه يشرف على المزيد عندما يتطلب العمل ذلك. ويمكن لموقع فعلي مشترك أن يخدم عدة متاجر، مع احتفاظ كل متجر بقواعده ودفتر مخزونه المستقل.",
+    } satisfies BilingualText,
+  },
+  faqChapter: {
+    eyebrow: {
+      id: "apple-faq-chapter-eyebrow",
+      en: "Before you begin",
+      ar: "قبل أن تبدأ",
+    } satisfies BilingualText,
+    heading: {
+      id: "apple-faq-chapter-heading",
+      en: "A few practical answers.",
+      ar: "إجابات عن أسئلة عملية.",
+    } satisfies BilingualText,
+    body: {
+      id: "apple-faq-chapter-body",
+      en: "The answers below stay close to the product behavior documented on this page.",
+      ar: "تلتزم الإجابات التالية بسلوك المنتج الموضح في هذه الصفحة.",
+    } satisfies BilingualText,
+    items: [
+      {
+        id: "apple-faq-one-store",
+        question: {
+          id: "apple-faq-one-store-question",
+          en: "Can I use Jizrak for one Store?",
+          ar: "هل يمكنني استخدام جِذرك لمتجر واحد؟",
+        } satisfies BilingualText,
+        answer: {
+          id: "apple-faq-one-store-answer",
+          en: "Yes. One Store is enough to start; adding more Stores is an option for a growing Business, not a requirement.",
+          ar: "نعم. يكفي متجر واحد للبدء؛ وإضافة متاجر أخرى خيار لنشاط يتوسع، وليست شرطًا.",
+        } satisfies BilingualText,
+      },
+      {
+        id: "apple-faq-pos",
+        question: {
+          id: "apple-faq-pos-question",
+          en: "Do I need to use POS?",
+          ar: "هل يجب أن أستخدم نقطة البيع؟",
+        } satisfies BilingualText,
+        answer: {
+          id: "apple-faq-pos-answer",
+          en: "No. POS is an optional in-person sales path. Online selling does not depend on it.",
+          ar: "لا. نقطة البيع مسار اختياري للبيع المباشر، ولا يعتمد البيع عبر الإنترنت عليها.",
+        } satisfies BilingualText,
+      },
+      {
+        id: "apple-faq-start",
+        question: {
+          id: "apple-faq-start-question",
+          en: "What do I need to start?",
+          ar: "ما الذي أحتاج إليه للبدء؟",
+        } satisfies BilingualText,
+        answer: {
+          id: "apple-faq-start-answer",
+          en: "The page establishes a Business with a Store as the starting model. Exact onboarding requirements are not published here, so they depend on the configured product flow.",
+          ar: "توضح الصفحة أن نموذج البدء يتكون من نشاط تجاري ومتجر. أما متطلبات الإعداد التفصيلية فغير منشورة هنا، وقد تعتمد على مسار المنتج المفعّل.",
+        } satisfies BilingualText,
+      },
+      {
+        id: "apple-faq-payment-shipping",
+        question: {
+          id: "apple-faq-payment-shipping-question",
+          en: "Which payment and shipping options are available?",
+          ar: "ما خيارات الدفع والشحن المتاحة؟",
+        } satisfies BilingualText,
+        answer: {
+          id: "apple-faq-payment-shipping-answer",
+          en: "Options follow the Store's configured checkout behavior. The documented examples include shipping by Egyptian governorate and area, and cash on delivery where enabled; other availability depends on configuration.",
+          ar: "تتبع الخيارات إعدادات إتمام الشراء الخاصة بالمتجر. وتشمل الأمثلة الموضحة الشحن حسب المحافظة والمنطقة في مصر، والدفع عند الاستلام عند تفعيله؛ أما الخيارات الأخرى فتعتمد على الإعدادات.",
+        } satisfies BilingualText,
+      },
+    ],
+  },
 };

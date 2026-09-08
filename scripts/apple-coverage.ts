@@ -51,6 +51,7 @@ for (const s of sections) {
       "pos",
       "operate",
       "understand",
+      "business",
     ].includes(s.id);
     add(
       text,
@@ -232,6 +233,8 @@ addCandidateCopy(candidateCopy.orderJourney, "#connected");
 addCandidateCopy(candidateCopy.sellChapter, "#sell");
 addCandidateCopy(candidateCopy.operationsChapter, "#operate");
 addCandidateCopy(candidateCopy.insightChapter, "#understand");
+addCandidateCopy(candidateCopy.growthChapter, "#business");
+addCandidateCopy(candidateCopy.faqChapter, "#faq");
 for (const locale of ["en", "ar"] as const) {
   for (const [key, text] of Object.entries(ui[locale].translation))
     entries.push({

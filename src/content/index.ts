@@ -65,11 +65,7 @@ export const copy = {
     "Independent Stores. Shared operations.",
     "متاجر مستقلة وعمليات مشتركة.",
   ),
-  egp: pair(
-    "egp-label",
-    "For Egyptian commerce.",
-    "للتجارة في مصر.",
-  ),
+  egp: pair("egp-label", "For Egyptian commerce.", "للتجارة في مصر."),
   currentStep: pair("current-step", "Current step", "الخطوة الحالية"),
   closing: pair(
     "closing",
@@ -112,6 +108,7 @@ export const nav = [
   { id: "sell", en: "Sell", ar: "البيع" },
   { id: "operate", en: "Operate", ar: "التشغيل" },
   { id: "understand", en: "Understand", ar: "فهم الأرقام" },
+  { id: "business", en: "Grow", ar: "التوسع" },
   { id: "features", en: "All features", ar: "كل المزايا" },
 ];
 export const nodes = [

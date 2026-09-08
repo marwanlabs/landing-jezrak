@@ -283,42 +283,48 @@
       "locale": "en",
       "text": "One Business, independent Stores",
       "destination": "#business",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "business-eyebrow",
       "locale": "ar",
       "text": "نشاط تجاري واحد، متاجر مستقلة",
       "destination": "#business",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "business-heading",
       "locale": "en",
       "text": "Run multiple brands without mixing their operations.",
       "destination": "#business",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "business-heading",
       "locale": "ar",
       "text": "شغّل علامات متعددة مع استقلال عمليات كل متجر.",
       "destination": "#business",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "business-body",
       "locale": "en",
       "text": "A Business can own multiple Stores and shared physical Locations. Each Store keeps its own branding, catalog, customers, orders, finances, permissions, and inventory ledger. Business Owners retain oversight while operators enter only the Stores they are allowed to run.",
       "destination": "#business",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "business-body",
       "locale": "ar",
       "text": "يمكن للنشاط التجاري امتلاك عدة متاجر واستخدام مواقع فعلية مشتركة. يحتفظ كل متجر بعلامته وكتالوجه وعملائه وطلباته وماليته وصلاحياته ودفتر مخزونه. يظل لمالك النشاط إشراف كامل، بينما يدخل كل مشغّل إلى المتاجر المصرح له بإدارتها فقط.",
       "destination": "#business",
-      "state": "visible"
+      "state": "superseded",
+      "reason": "Replaced by candidate-owned chapter copy"
     },
     {
       "id": "business-premise",
@@ -3993,6 +3999,20 @@
       "state": "visible"
     },
     {
+      "id": "nav-business",
+      "locale": "en",
+      "text": "Grow",
+      "destination": "header",
+      "state": "visible"
+    },
+    {
+      "id": "nav-business",
+      "locale": "ar",
+      "text": "التوسع",
+      "destination": "header",
+      "state": "visible"
+    },
+    {
       "id": "nav-features",
       "locale": "en",
       "text": "All features",
@@ -5208,6 +5228,202 @@
       "locale": "ar",
       "text": "تابع سجل العملاء وأنماط المنتجات والمبيعات وأداء المتجر حسب النطاق الزمني والسجلات المالية المرتبطة بسير التجارة المدعوم.",
       "destination": "#understand",
+      "state": "visible"
+    },
+    {
+      "id": "apple-growth-chapter-eyebrow",
+      "locale": "en",
+      "text": "When one store becomes more",
+      "destination": "#business",
+      "state": "visible"
+    },
+    {
+      "id": "apple-growth-chapter-eyebrow",
+      "locale": "ar",
+      "text": "عندما يتوسع نشاطك إلى أكثر من متجر",
+      "destination": "#business",
+      "state": "visible"
+    },
+    {
+      "id": "apple-growth-chapter-heading",
+      "locale": "en",
+      "text": "Add another Store without combining its records with the first.",
+      "destination": "#business",
+      "state": "visible"
+    },
+    {
+      "id": "apple-growth-chapter-heading",
+      "locale": "ar",
+      "text": "أضف متجرًا آخر من دون دمج سجلاته مع سجلات متجرك الأول.",
+      "destination": "#business",
+      "state": "visible"
+    },
+    {
+      "id": "apple-growth-chapter-body",
+      "locale": "en",
+      "text": "Start with one Store, then let the same Business oversee more when the work calls for it. A shared physical Location can serve multiple Stores, while every Store keeps its own rules and stock ledger.",
+      "destination": "#business",
+      "state": "visible"
+    },
+    {
+      "id": "apple-growth-chapter-body",
+      "locale": "ar",
+      "text": "ابدأ بمتجر واحد، ثم دع النشاط نفسه يشرف على المزيد عندما يتطلب العمل ذلك. ويمكن لموقع فعلي مشترك أن يخدم عدة متاجر، مع احتفاظ كل متجر بقواعده ودفتر مخزونه المستقل.",
+      "destination": "#business",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-chapter-eyebrow",
+      "locale": "en",
+      "text": "Before you begin",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-chapter-eyebrow",
+      "locale": "ar",
+      "text": "قبل أن تبدأ",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-chapter-heading",
+      "locale": "en",
+      "text": "A few practical answers.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-chapter-heading",
+      "locale": "ar",
+      "text": "إجابات عن أسئلة عملية.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-chapter-body",
+      "locale": "en",
+      "text": "The answers below stay close to the product behavior documented on this page.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-chapter-body",
+      "locale": "ar",
+      "text": "تلتزم الإجابات التالية بسلوك المنتج الموضح في هذه الصفحة.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-one-store-question",
+      "locale": "en",
+      "text": "Can I use Jizrak for one Store?",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-one-store-question",
+      "locale": "ar",
+      "text": "هل يمكنني استخدام جِذرك لمتجر واحد؟",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-one-store-answer",
+      "locale": "en",
+      "text": "Yes. One Store is enough to start; adding more Stores is an option for a growing Business, not a requirement.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-one-store-answer",
+      "locale": "ar",
+      "text": "نعم. يكفي متجر واحد للبدء؛ وإضافة متاجر أخرى خيار لنشاط يتوسع، وليست شرطًا.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-pos-question",
+      "locale": "en",
+      "text": "Do I need to use POS?",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-pos-question",
+      "locale": "ar",
+      "text": "هل يجب أن أستخدم نقطة البيع؟",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-pos-answer",
+      "locale": "en",
+      "text": "No. POS is an optional in-person sales path. Online selling does not depend on it.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-pos-answer",
+      "locale": "ar",
+      "text": "لا. نقطة البيع مسار اختياري للبيع المباشر، ولا يعتمد البيع عبر الإنترنت عليها.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-start-question",
+      "locale": "en",
+      "text": "What do I need to start?",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-start-question",
+      "locale": "ar",
+      "text": "ما الذي أحتاج إليه للبدء؟",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-start-answer",
+      "locale": "en",
+      "text": "The page establishes a Business with a Store as the starting model. Exact onboarding requirements are not published here, so they depend on the configured product flow.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-start-answer",
+      "locale": "ar",
+      "text": "توضح الصفحة أن نموذج البدء يتكون من نشاط تجاري ومتجر. أما متطلبات الإعداد التفصيلية فغير منشورة هنا، وقد تعتمد على مسار المنتج المفعّل.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-payment-shipping-question",
+      "locale": "en",
+      "text": "Which payment and shipping options are available?",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-payment-shipping-question",
+      "locale": "ar",
+      "text": "ما خيارات الدفع والشحن المتاحة؟",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-payment-shipping-answer",
+      "locale": "en",
+      "text": "Options follow the Store's configured checkout behavior. The documented examples include shipping by Egyptian governorate and area, and cash on delivery where enabled; other availability depends on configuration.",
+      "destination": "#faq",
+      "state": "visible"
+    },
+    {
+      "id": "apple-faq-payment-shipping-answer",
+      "locale": "ar",
+      "text": "تتبع الخيارات إعدادات إتمام الشراء الخاصة بالمتجر. وتشمل الأمثلة الموضحة الشحن حسب المحافظة والمنطقة في مصر، والدفع عند الاستلام عند تفعيله؛ أما الخيارات الأخرى فتعتمد على الإعدادات.",
+      "destination": "#faq",
       "state": "visible"
     },
     {

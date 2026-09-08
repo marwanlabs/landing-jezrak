@@ -600,6 +600,18 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+.apple-page .a-growth {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.9fr);
+  gap: 2rem;
+}
+.apple-page .a-growth > .a-intro {
+  align-self: center;
+  max-width: 42rem;
+}
+.apple-page .a-growth > .a-details {
+  grid-column: 1/-1;
+}
 .apple-page .a-business .a-details {
   grid-column: 1/-1;
 }
@@ -872,6 +884,27 @@
 }
 .apple-page .a-features {
   padding-block: 5rem;
+}
+.apple-page .a-faq {
+  padding-block: 4rem;
+}
+.apple-page .a-faq .a-intro {
+  max-width: 42rem;
+  margin-block-end: 2.5rem;
+}
+.apple-page .a-faq-list {
+  border-block-start: 1px solid var(--line);
+}
+.apple-page .a-faq-list details {
+  border-block-end: 1px solid var(--line);
+}
+.apple-page .a-faq-list summary {
+  font-size: 1.1rem;
+}
+.apple-page .a-faq-list p {
+  max-width: 72ch;
+  padding-block: 0.25rem 1.5rem;
+  color: var(--muted);
 }
 .apple-page .a-features .a-intro {
   max-width: 50rem;
@@ -1204,6 +1237,7 @@
     border-radius: 1.4rem;
   }
   .apple-page .a-business,
+  .apple-page .a-growth,
   .apple-page .a-catalog,
   .apple-page .a-sell-chapter-grid,
   .apple-page .a-operations-grid,
@@ -1222,6 +1256,9 @@
   .apple-page .a-business-model {
     margin-block-start: 2rem;
     padding: 1rem;
+  }
+  .apple-page .a-growth > .a-intro {
+    margin-block-end: 1rem;
   }
   .apple-page .a-workflow {
     grid-template-columns: 1fr;

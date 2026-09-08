@@ -43,6 +43,20 @@ test("apple is an independent complete journey", async ({ page }) => {
     "Understand customers and sales",
   );
   await expect(page.locator("#understand")).toContainText("Financial records");
+  await expect(page.locator("#business")).toContainText(
+    "When one store becomes more",
+  );
+  await expect(page.locator("#business")).toContainText(
+    "Two separate stock ledgers",
+  );
+  await expect(page.locator("#business")).not.toContainText("shared inventory");
+  await expect(page.locator("#faq")).toContainText(
+    "Can I use Jizrak for one Store?",
+  );
+  await expect(page.locator("#faq")).toContainText(
+    "POS is an optional in-person sales path",
+  );
+  await expect(page.locator("#faq details")).toHaveCount(4);
   const majorSections = await page
     .locator("main > section")
     .evaluateAll((sections) => sections.map((section) => section.id));
@@ -52,6 +66,9 @@ test("apple is an independent complete journey", async ({ page }) => {
   );
   expect(majorSections.indexOf("connected")).toBeLessThan(
     majorSections.indexOf("sell"),
+  );
+  expect(majorSections.indexOf("understand")).toBeLessThan(
+    majorSections.indexOf("business"),
   );
   for (const id of [
     "top",
@@ -67,6 +84,7 @@ test("apple is an independent complete journey", async ({ page }) => {
     "understand",
     "identity",
     "operate",
+    "faq",
     "features",
     "demo",
     "start",
@@ -171,6 +189,15 @@ test("native fallback and route-local anchors work without JavaScript", async ({
   );
   await expect(page.locator("#operate")).toContainText("Know what can be sold");
   await expect(page.locator("#understand")).toContainText("See the patterns");
+  await expect(page.locator("#business")).toContainText(
+    "Add another Store without combining its records with the first.",
+  );
+  await expect(page.locator("#faq")).toContainText(
+    "Exact onboarding requirements are not published here",
+  );
+  await expect(page.locator("#faq")).toContainText(
+    "cash on delivery where enabled",
+  );
   await page.locator("#group-17 summary").click();
   await expect(page.locator("#group-17 p")).toBeVisible();
   const hrefs = await page

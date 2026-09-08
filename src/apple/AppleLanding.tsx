@@ -164,7 +164,7 @@ function Navigation() {
     if (!main) return;
     const groups: Record<string, string> = {
       connected: "connected",
-      business: "connected",
+      business: "business",
       sell: "sell",
       pos: "sell",
       catalog: "sell",
@@ -175,6 +175,7 @@ function Navigation() {
       understand: "understand",
       identity: "operate",
       operate: "operate",
+      faq: "faq",
       features: "features",
     };
     const sections = [
@@ -500,31 +501,6 @@ export function AppleLanding() {
           </div>
           <Details id="sell" />
         </section>
-        <Story id="business">
-          <div className="a-business-model">
-            <h3>
-              <Text text={copy.business} />
-            </h3>
-            <div className="a-store-pair">
-              {[copy.storeA, copy.storeB].map((store, i) => (
-                <div key={store.id}>
-                  <h3>
-                    <Text text={store} />
-                  </h3>
-                  <p>
-                    <Text text={i === 0 ? copy.ledgerA : copy.ledgerB} />
-                  </p>
-                </div>
-              ))}
-            </div>
-            <p className="a-location">
-              <Text text={copy.location} />
-            </p>
-            <p>
-              <Text text={copy.ledgerNote} />
-            </p>
-          </div>
-        </Story>
         <section
           id="operate"
           className="a-story a-operations-chapter"
@@ -571,6 +547,62 @@ export function AppleLanding() {
               <Path items={narrativeCopy.understandFlow} />
               <Details id="understand" />
             </div>
+          </div>
+        </section>
+        <section
+          id="business"
+          className="a-story a-growth"
+          aria-labelledby="business-heading"
+        >
+          <CandidateIntro id="business" content={candidateCopy.growthChapter} />
+          <div className="a-business-model">
+            <h3>
+              <Text text={copy.business} />
+            </h3>
+            <div className="a-store-pair">
+              {[copy.storeA, copy.storeB].map((store, i) => (
+                <div key={store.id}>
+                  <h3>
+                    <Text text={store} />
+                  </h3>
+                  <p>
+                    <Text text={i === 0 ? copy.ledgerA : copy.ledgerB} />
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p className="a-location">
+              <Text text={copy.location} />
+            </p>
+            <p>
+              <Text text={copy.ledgerNote} />
+            </p>
+          </div>
+          <Details id="business" />
+        </section>
+        <section id="faq" className="a-faq" aria-labelledby="faq-heading">
+          <div className="a-intro">
+            <p className="a-kicker">
+              <Text text={candidateCopy.faqChapter.eyebrow} />
+            </p>
+            <h2 id="faq-heading" lang={locale}>
+              <Text text={candidateCopy.faqChapter.heading} />
+            </h2>
+            <p className="a-body">
+              <Text text={candidateCopy.faqChapter.body} />
+            </p>
+          </div>
+          <div className="a-faq-list">
+            {candidateCopy.faqChapter.items.map((item) => (
+              <details key={item.id} id={item.id}>
+                <summary>
+                  <Text text={item.question} />
+                </summary>
+                <p>
+                  <Text text={item.answer} />
+                </p>
+              </details>
+            ))}
           </div>
         </section>
         <section
