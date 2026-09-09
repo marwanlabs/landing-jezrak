@@ -473,4 +473,47 @@ test("apple navigation and static workflow rails match their responsive affordan
       headings.map((heading) => getComputedStyle(heading).fontSize),
     );
   expect(new Set(insightHeadingSizes).size).toBe(1);
+
+  await page.setViewportSize({ width: 1265, height: 900 });
+  await page.locator("#understand").scrollIntoViewIfNeeded();
+  const desktopCardRects = await page
+    .locator("#understand .a-insight-card")
+    .evaluateAll((cards) =>
+      cards.map((card) => {
+        const rect = card.getBoundingClientRect();
+        return { top: rect.top, width: rect.width };
+      }),
+    );
+  expect(Math.abs(desktopCardRects[1].top - desktopCardRects[0].top)).toBeLessThan(2);
+  expect(desktopCardRects[0].width).toBeGreaterThan(400);
+  expect(desktopCardRects[1].width).toBeGreaterThan(400);
+
+  await page.setViewportSize({ width: 820, height: 900 });
+  await page.locator("#understand").scrollIntoViewIfNeeded();
+  const insightCardRects = await page
+    .locator("#understand .a-insight-card")
+    .evaluateAll((cards) =>
+      cards.map((card) => {
+        const rect = card.getBoundingClientRect();
+        return { left: rect.left, top: rect.top, width: rect.width };
+      }),
+    );
+  expect(insightCardRects).toHaveLength(2);
+  expect(insightCardRects[1].top).toBeGreaterThan(insightCardRects[0].top);
+  expect(insightCardRects[0].width).toBeGreaterThan(500);
+  expect(insightCardRects[1].width).toBeGreaterThan(500);
+  for (const card of await insightCards.all()) {
+    await expect(card.locator(".a-kicker")).toBeVisible();
+    await expect(card.locator(".a-intro h2")).toBeVisible();
+    await expect(card.locator(".stage-line")).toBeVisible();
+  }
+
+  await page.setViewportSize({ width: 640, height: 900 });
+  await page.locator("#understand").scrollIntoViewIfNeeded();
+  const narrowCardTops = await page
+    .locator("#understand .a-insight-card")
+    .evaluateAll((cards) =>
+      cards.map((card) => card.getBoundingClientRect().top),
+    );
+  expect(narrowCardTops[1]).toBeGreaterThan(narrowCardTops[0]);
 });

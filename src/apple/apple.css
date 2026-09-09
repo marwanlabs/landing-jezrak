@@ -892,13 +892,14 @@
 .apple-page .a-operations-grid,
 .apple-page .a-insight-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-block-start: 3rem;
 }
+.apple-page .a-insight-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+}
 .apple-page .a-operations-grid > .a-story,
-.apple-page .a-insight-grid > .a-story,
-.apple-page .a-insight-performance {
+.apple-page .a-insight-grid > .a-insight-card {
   min-width: 0;
   grid-column: auto;
   margin: 0;
@@ -908,7 +909,7 @@
   background: var(--chalk);
 }
 .apple-page .a-operations-grid > .a-story .a-intro,
-.apple-page .a-insight-grid > .a-story .a-intro {
+.apple-page .a-insight-grid > .a-insight-card .a-intro {
   max-width: 42rem;
 }
 .apple-page .a-insight-card .a-intro h2 {
@@ -924,11 +925,8 @@
   grid-column: 1/-1;
 }
 .apple-page .a-operations-grid > .a-story .a-details,
-.apple-page .a-insight-grid > .a-story .a-details {
+.apple-page .a-insight-grid > .a-insight-card .a-details {
   margin-block-start: 1.5rem;
-}
-.apple-page .a-insight-performance {
-  align-self: start;
 }
 .apple-page .a-operations-chapter > .a-details {
   margin-block-start: 2rem;
@@ -1311,8 +1309,7 @@
     display: block;
   }
   .apple-page .a-operations-grid > .a-story,
-  .apple-page .a-insight-grid > .a-story,
-  .apple-page .a-insight-performance {
+  .apple-page .a-insight-grid > .a-insight-card {
     margin-block: 1rem;
     border-radius: 0;
   }
