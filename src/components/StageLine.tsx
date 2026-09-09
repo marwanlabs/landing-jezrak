@@ -31,14 +31,13 @@ export function StageLine({
     <div ref={root} className="stage-line" role="group" aria-label={label}>
       <div className="stage-line-track">
         {stages.map((stage, index) => (
-          <div
-            key={stage.id}
-            className="stage-line-stage"
-          >
+          <div key={stage.id} className="stage-line-stage">
             <BilingualBlock inline text={stage.label} />
-            <span className="stage-line-dot" aria-hidden="true" />
-            <span className="stage-line-index" aria-hidden="true">
-              {String(index + 1).padStart(2, "0")}
+            <span className="stage-line-marker" aria-hidden="true">
+              <span className="stage-line-dot" />
+              <span className="stage-line-index">
+                {String(index + 1).padStart(2, "0")}
+              </span>
             </span>
           </div>
         ))}

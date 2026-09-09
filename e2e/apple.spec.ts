@@ -274,6 +274,48 @@ test("mobile stories stay within the reading column in both languages", async ({
           size.main + 1,
         );
       }
+      if (width === 320) {
+        const stages = page.locator("#inventory .stage-line-stage");
+        await expect(stages).toHaveCount(5);
+        await expect(
+          stages.first().locator(".stage-line-marker .stage-line-index"),
+        ).toHaveText("01");
+        await expect(
+          stages.first().locator(".stage-line-marker"),
+        ).toBeVisible();
+        await expect(stages.first().locator(".stage-line-dot")).toHaveCSS(
+          "width",
+          "44px",
+        );
+        await expect(stages.first()).toHaveCSS("border-bottom-width", "1px");
+        const stageTops = await stages.evaluateAll((elements) =>
+          elements.map((element) => element.getBoundingClientRect().top),
+        );
+        expect(
+          stageTops
+            .slice(1)
+            .every((top, index) => top - stageTops[index] > 40),
+        ).toBe(true);
+        const markerCenters = await stages
+          .locator(".stage-line-marker")
+          .evaluateAll((elements) =>
+            elements.map((element) => {
+              const rect = element.getBoundingClientRect();
+              return rect.left + rect.width / 2;
+            }),
+          );
+        expect(
+          markerCenters.every(
+            (center) => Math.abs(center - markerCenters[0]) < 1,
+          ),
+        ).toBe(true);
+        expect(
+          await page.evaluate(
+            () => document.documentElement.scrollWidth <= innerWidth + 1,
+          ),
+          `${locale} ${width} workflow timeline overflow`,
+        ).toBe(true);
+      }
     }
   }
 });
