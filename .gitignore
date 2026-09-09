@@ -9,3 +9,6 @@ dist/
 test-results/
 playwright-report/
 *.log
+
+# Worktrees
+.worktrees/*

@@ -1,7 +1,40 @@
 .apple-page {
   --a-width: 76rem;
-  background: var(--chalk);
-  color: var(--ink);
+  /* Route-local semantic palette. The rest of the site continues to use its own tokens. */
+  --a-color-bg-page: #fcfbf7;
+  --a-color-bg-surface: #f4f1e8;
+  --a-color-bg-raised: #fcfbf7;
+  --a-color-bg-inverse: #0b2419;
+  --a-color-bg-inverse-hover: #153c2b;
+  --a-color-text-primary: #17221c;
+  --a-color-text-secondary: #59635b;
+  --a-color-text-on-inverse: #f4f1e8;
+  --a-color-text-inverse-secondary: #bbc9b9;
+  --a-color-border: #d5d8cb;
+  --a-color-border-inverse: #345240;
+  --a-color-accent: #153c2b;
+  --a-color-accent-hover: #4f9368;
+  --a-color-accent-subtle: #a9c9a8;
+  --a-color-accent-warm: #d86b43;
+  --a-color-focus: #387549;
+  --a-shadow-elevated: rgb(11 36 25 / 5%);
+  --a-shadow-card: rgb(11 36 25 / 3.5%);
+  /* Compatibility aliases keep existing route rules on semantic roles. */
+  --chalk: var(--a-color-bg-raised);
+  --limestone: var(--a-color-bg-surface);
+  --deep-root: var(--a-color-bg-inverse);
+  --ink: var(--a-color-text-primary);
+  --muted: var(--a-color-text-secondary);
+  --on-dark: var(--a-color-text-on-inverse);
+  --dark-muted: var(--a-color-text-inverse-secondary);
+  --line: var(--a-color-border);
+  --dark-line: var(--a-color-border-inverse);
+  --forest: var(--a-color-accent);
+  --growth: var(--a-color-accent-hover);
+  --sprout: var(--a-color-accent-subtle);
+  --focus: var(--a-color-focus);
+  background: var(--a-color-bg-page);
+  color: var(--a-color-text-primary);
   min-height: 100vh;
   font:
     400 1rem/1.6 system-ui,
@@ -13,6 +46,26 @@
   letter-spacing: normal;
   overflow-wrap: anywhere;
   isolation: isolate;
+}
+:root[data-theme="dark"] .apple-page {
+  --a-color-bg-page: #1c2d23;
+  --a-color-bg-surface: #15231b;
+  --a-color-bg-raised: #1c2d23;
+  --a-color-bg-inverse: #09150f;
+  --a-color-bg-inverse-hover: #153c2b;
+  --a-color-text-primary: #f1f3ed;
+  --a-color-text-secondary: #bac7bc;
+  --a-color-text-on-inverse: #f4f1e8;
+  --a-color-text-inverse-secondary: #bbc9b9;
+  --a-color-border: #3c5142;
+  --a-color-border-inverse: #345240;
+  --a-color-accent: #78b88f;
+  --a-color-accent-hover: #70b889;
+  --a-color-accent-subtle: #3a6a4b;
+  --a-color-accent-warm: #ee9069;
+  --a-color-focus: #8bcea0;
+  --a-shadow-elevated: rgb(0 0 0 / 24%);
+  --a-shadow-card: rgb(0 0 0 / 18%);
 }
 .apple-page *,
 .apple-page [lang] {
@@ -65,7 +118,7 @@
   touch-action: manipulation;
 }
 .apple-page :is(a, button, select, summary):focus-visible {
-  outline: 3px solid var(--focus);
+  outline: 3px solid var(--a-color-focus);
   outline-offset: 4px;
 }
 .apple-page :is(button, .a-button, summary) {
@@ -82,15 +135,15 @@
   min-height: 48px;
   padding: 0.7rem 1.35rem;
   border-radius: 99px;
-  background: var(--forest);
-  color: var(--chalk);
+  background: var(--a-color-accent);
+  color: var(--a-color-text-on-inverse);
   font-weight: 600;
 }
 .apple-page .a-link {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  color: var(--forest);
+  color: var(--a-color-accent);
 }
 .apple-page .a-link:hover {
   text-decoration: underline;
@@ -101,7 +154,7 @@
   inset-inline-start: 1rem;
   z-index: 50;
   padding: 1rem;
-  background: var(--chalk);
+  background: var(--a-color-bg-raised);
 }
 .apple-page .a-skip:focus {
   inset-block-start: 1rem;
@@ -116,12 +169,12 @@
   width: 100%;
   min-height: 4.5rem;
   padding: 0.65rem max(1.5rem, calc((100% - var(--a-width)) / 2));
-  border-block-end: 1px solid var(--line);
-  background: var(--chalk);
+  border-block-end: 1px solid var(--a-color-border);
+  background: var(--a-color-bg-raised);
 }
 @supports (backdrop-filter: blur(20px)) {
   .apple-page .a-nav {
-    background: color-mix(in srgb, var(--chalk) 92%, transparent);
+    background: color-mix(in srgb, var(--a-color-bg-raised) 92%, transparent);
     backdrop-filter: blur(20px);
   }
 }
@@ -312,7 +365,7 @@
   border-radius: 2.4rem;
   background: var(--limestone);
   border: 1px solid var(--line);
-  box-shadow: 0 24px 55px #0b24190c;
+  box-shadow: 0 24px 55px var(--a-shadow-elevated);
 }
 .apple-page .a-overview-title {
   font-size: 1.55rem;
@@ -340,7 +393,7 @@
   background: var(--chalk);
   border: 1px solid var(--line);
   cursor: pointer;
-  box-shadow: 0 5px 12px #0b241909;
+  box-shadow: 0 5px 12px var(--a-shadow-card);
   transition:
     transform 0.18s ease-out,
     border-color 0.18s ease-out,
@@ -409,8 +462,8 @@
     border-color 0.18s ease-out;
 }
 .apple-page .a-capability-detail a:hover {
-  background: #153c2b;
-  border-color: var(--growth);
+  background: var(--a-color-bg-inverse-hover);
+  border-color: var(--a-color-accent-hover);
 }
 .apple-page .a-capability-detail a:focus-visible {
   outline: 2px solid var(--focus);
@@ -490,7 +543,7 @@
   margin-block-start: 0;
 }
 .apple-page .apple-stage-flow .stage-flow-tab[data-marker="circle"][data-active="true"] .stage-flow-dot {
-  color: var(--accent, #d86b43);
+  color: var(--a-color-accent-warm);
   background: currentColor;
   border-color: currentColor;
 }
@@ -591,16 +644,16 @@
 .apple-page .stage-line[data-visible="true"] .stage-line-stage:nth-child(5) .stage-line-dot { animation-delay: 160ms; }
 @keyframes stage-line-scroll-color {
   0%, 100% { border-color: currentColor; background: var(--chalk); }
-  45% { border-color: #d86b43; background: #d86b43; }
+  45% { border-color: var(--a-color-accent-warm); background: var(--a-color-accent-warm); }
 }
 @media (hover: hover) and (pointer: fine) {
   .apple-page .stage-line-stage:hover {
-    color: #d86b43;
+    color: var(--a-color-accent-warm);
   }
   .apple-page .stage-line-stage:hover .stage-line-dot {
     transform: scale(1.18);
-    border-color: #d86b43;
-    background: #d86b43;
+    border-color: var(--a-color-accent-warm);
+    background: var(--a-color-accent-warm);
   }
 }
 @media (max-width: 48rem) {
@@ -1035,8 +1088,8 @@
 }
 .apple-page .a-footer {
   padding: 4.5rem max(1.5rem, calc((100% - var(--a-width)) / 2)) 1.5rem;
-  background: #0b2419;
-  color: var(--on-dark);
+  background: var(--a-color-bg-inverse);
+  color: var(--a-color-text-on-inverse);
 }
 .apple-page .a-footer-main {
   display: grid;
@@ -1089,8 +1142,8 @@
   gap: 0.4rem;
 }
 .apple-page .a-footer .a-button {
-  background: var(--on-dark);
-  color: #0b2419;
+  background: var(--a-color-text-on-inverse);
+  color: var(--a-color-bg-inverse);
   padding: 0.7rem 1.3rem;
   margin-block-end: 0.8rem;
   font-weight: 600;
@@ -1135,7 +1188,7 @@
   flex-shrink: 0;
 }
 .apple-page .a-footer-top:hover {
-  background: #153c2b;
+  background: var(--a-color-bg-inverse-hover);
 }
 .apple-page .a-footer-top svg {
   width: 20px;
@@ -1152,7 +1205,7 @@
   color: var(--dark-muted);
 }
 .apple-page .a-footer :is(a, button):focus-visible {
-  outline-color: #8bcea0;
+  outline-color: var(--a-color-focus);
 }
 @media (max-width: 60rem) {
   .apple-page .a-footer-main {
@@ -1223,7 +1276,7 @@
     display: grid;
     max-height: 75vh;
     overflow: auto;
-    box-shadow: 0 12px 30px #0b24191a;
+    box-shadow: 0 12px 30px var(--a-shadow-elevated);
   }
   .apple-page .a-menu nav a {
     padding: 0.7rem;
