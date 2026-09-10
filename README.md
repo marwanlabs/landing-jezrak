@@ -26,8 +26,12 @@ The `build:preview` command intentionally uses a noindex review mode. Its local 
 - `src/content/index.ts`: typed content and interface strings.
 - `src/components/BilingualBlock.tsx`: selects one language from paired source data; renders a single semantic heading or text fragment without a duplicate translation.
 - `src/app/preferences.tsx`: first-paint preferences, storage fallback, locale reflow, and theme behavior.
-- `src/apple/AppleLanding.tsx`: the sole root landing page and product journey.
-- `e2e/apple.spec.ts`: cross-browser acceptance checks for the promoted root experience.
+- `src/world/WorldLanding.tsx`: the root merchant-first continuous world and interactive sample store.
+- `src/world/world.css`: dimensional scene, responsive composition, themes, and reduced-motion styles.
+- `src/apple/AppleLanding.tsx`: retained earlier landing implementation, no longer routed.
+- `e2e/world.spec.ts`: merchant journey, reservation, locale, dialog, and reduced-motion regression checks.
+- `scripts/verify-world.mjs`: visual and accessibility checks for all world waypoints; set `WORLD_URL` for a built preview.
+- `scrollcraft/builds/jizrak-world/`: brief, design contract, and visual verification evidence.
 - `e2e/landing.spec.ts`: public route-surface checks for the sole root route.
 - `scripts/audit-built.mjs`: local mobile performance observations against port 4000.
 
