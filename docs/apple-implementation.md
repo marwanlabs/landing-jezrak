@@ -1,8 +1,8 @@
-# `/apple` implementation verification
+# Promoted root implementation verification
 
 Updated 8 September 2026 for the complete single-Store positioning candidate.
 
-Implemented as an independent sibling route. `/` remains the existing landing page; candidate styles, composition, controls and conceptual visuals live under `src/apple`. The only shared edits are additive route registration and route-aware canonical, OG and robots metadata. No shared copy, palette, root artwork, root CSS or root motion was changed.
+The Apple landing experience is the sole root route. Its styles, composition, controls and conceptual visuals remain under `src/apple`; the implementation directory name is intentionally unchanged.
 
 ## Content and design
 
@@ -18,7 +18,7 @@ Implemented as an independent sibling route. `/` remains the existing landing pa
 - TypeScript and ESLint: pass.
 - Full Vitest suite: 20 tests pass.
 - Full Chromium browser suite: 28 tests pass, including 10 candidate tests and 18 root-route regression tests.
-- Review production build: pass; server-rendered/prerendered `/` and `/apple` were emitted.
+- Review production build: pass; server-rendered/prerendered `/` was emitted.
 - Built-output audit: pass for English/Arabic and light/dark at 375×900, including serious/critical axe checks, overflow checks, and synthetic performance observations.
 - Candidate responsive/accessibility checks: 320, 375, 768, 1024 and 1440 CSS pixels; both locales and themes; 200% text reflow at 320 pixels; forced colors; reduced motion; system theme changes.
 - Resilience: disabled JavaScript/native disclosures, failed fonts, unavailable storage, browser-language initialization, deep links, language/disclosure/focus continuity, mobile Escape/selection dismissal, and client history navigation.
@@ -46,7 +46,7 @@ Standards: 0 outstanding findings. Spec: 0 outstanding findings.
 - [Arabic mobile, dark](apple-evidence/apple-ar-dark-375.png)
 - [Arabic desktop](apple-evidence/apple-ar-light-1440.png)
 - The evidence directory includes all eight candidate combinations and root before/after/return screenshots. `docs/screenshots/built-mobile-*.png` contains the four built-output mobile locale/theme captures.
-- With the dev server on port 3000, run `node scripts/apple-evidence.mjs` to compare against the preserved baseline and refresh candidate/after/return captures.
+- Historical candidate evidence remains under `docs/apple-evidence/`; active verification uses the root route and `bun run e2e`.
 - Regenerate the manifest with `node node_modules/jiti/lib/jiti-cli.mjs scripts/apple-coverage.ts`.
 - Run the built-output audit with the review server on port 4000 using `node scripts/audit-built.mjs`; it refreshes `docs/performance.json` and the built mobile screenshots.
 - Standard commands: `bun run typecheck`, `bun run lint`, `bun run test`, `bun run build:preview`, and `bun run e2e`. This machine used the corresponding local Node entry points because Bun was not on PATH.

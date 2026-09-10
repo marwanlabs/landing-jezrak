@@ -11,9 +11,8 @@ import { BilingualBlock } from "../components/BilingualBlock";
 import { Cta } from "../components/Primitives";
 import stylesheet from "../styles/globals.css?url";
 export const Route = createRootRoute({
-  head: ({ matches }) => {
-    const candidate = matches.some((match) => match.pathname === "/apple");
-    const pageUrl = candidate ? `${config.site}/apple` : config.site;
+  head: () => {
+    const pageUrl = config.site;
     return {
       meta: [
         { charSet: "utf-8" },
@@ -25,19 +24,15 @@ export const Route = createRootRoute({
         { property: "og:title", content: metadata.en.title },
         { property: "og:description", content: metadata.en.description },
         { property: "og:url", content: pageUrl },
-        ...(candidate
-          ? [{ name: "twitter:card", content: "summary" }]
-          : [
-              { property: "og:image", content: `${config.site}/og/jizrak.png` },
-              { property: "og:image:width", content: "1200" },
-              { property: "og:image:height", content: "630" },
-              { name: "twitter:card", content: "summary_large_image" },
-              {
-                name: "twitter:image",
-                content: `${config.site}/og/jizrak.png`,
-              },
-            ]),
-        ...(config.review || candidate
+        { property: "og:image", content: `${config.site}/og/jizrak.png` },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "twitter:image",
+          content: `${config.site}/og/jizrak.png`,
+        },
+        ...(config.review
           ? [{ name: "robots", content: "noindex, nofollow" }]
           : []),
       ],

@@ -2279,28 +2279,6 @@ h3 {
     font-size: 1rem;
   }
 }
-.landing {
-  overflow-anchor: none;
-}
-.workflow-path {
-  position: absolute;
-  inset-inline: 0;
-  inset-block-start: -12px;
-  width: 100%;
-  height: 20px;
-  stroke: var(--dark-line);
-  stroke-width: 1;
-}
-.workflow-path circle {
-  fill: var(--deep-root);
-}
-.workflow-key > span[data-active="true"] .workflow-path {
-  stroke: var(--dark-muted);
-  stroke-width: 3;
-}
-.workflow-key > span[data-active="true"] .workflow-path circle {
-  fill: var(--dark-muted);
-}
 
 /* Shared stage flows. */
 .stage-flow { min-width: 0; }
@@ -2373,74 +2351,4 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
   .stage-flow-tab { transition: none; }
   .stage-flow-panel, .stage-flow-item { animation: none; }
-}
-/* One selected language per surface, per the updated product direction. */
-.hero-copy {
-  padding-block: 20px;
-}
-.hero-body {
-  max-width: 54ch;
-  margin-block: 28px 32px;
-  line-height: 1.85;
-}
-.hero .cta {
-  min-height: 54px;
-}
-.network-node {
-  min-height: 57px;
-}
-.network-business {
-  min-height: 72px;
-}
-.feature-atlas .disclosure summary {
-  min-height: 74px;
-}
-@media (min-width: 768px) {
-  .hero-headline {
-    font-size: clamp(2.7rem, 4.3vw, 3.85rem);
-  }
-  .hero-grid {
-    padding-block: 46px 32px;
-  }
-  .hero-art {
-    max-height: 580px;
-  }
-  .hero-art .root-network {
-    max-width: 530px;
-    max-height: 580px;
-  }
-  .hero-premise {
-    padding-block: 20px;
-  }
-  .header-row .cta.compact {
-    min-height: 44px;
-  }
-}
-@media (max-width: 767px) {
-  .hero-copy {
-    padding-block: 0;
-  }
-  .hero .cta {
-    min-height: 52px;
-  }
-  .hero-grid {
-    gap: 30px;
-  }
-  .hero-body {
-    margin-block: 24px 28px;
-  }
-}
-@media (max-width: 479px) {
-  .network-node:before {
-    left: auto;
-    right: auto;
-    inset-inline-start: -12px;
-    inset-inline-end: auto;
-  }
-  .network-node:nth-of-type(even):before {
-    left: auto;
-    right: auto;
-    inset-inline-start: auto;
-    inset-inline-end: -12px;
-  }
 }

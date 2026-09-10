@@ -20,7 +20,7 @@ for (const locale of ["en", "ar"])
       () => document.documentElement.dataset.hydrated === "true",
     );
     await page.waitForFunction(
-      () => document.querySelector(".landing")?.dataset.motionState === "ready",
+      () => document.querySelector(".apple-page") !== null,
     );
     await page.evaluate(() => document.fonts.ready);
     await page.screenshot({

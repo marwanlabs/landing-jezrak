@@ -51,10 +51,10 @@ const inventoryStages: Stage[] = inventoryLabels.map((label, index) => ({
   description: inventoryStageDetails[index],
 }));
 const destination = (href: string) =>
-  href.startsWith("#") ? `/apple${href}` : href;
+  href.startsWith("#") ? `/${href}` : href;
 const wideNavigationQuery = "(min-width: 72rem)";
 const signinDestination =
-  config.signin === "#sign-in" ? "/apple#footer" : destination(config.signin);
+  config.signin === "#sign-in" ? "/#footer" : destination(config.signin);
 const overviewDestinations: Record<string, string> = {
   storefront: "sell",
   pos: "pos",
@@ -289,14 +289,14 @@ function Navigation() {
   }, []);
   return (
     <header className="a-nav" ref={header}>
-      <a className="a-brand" href="/apple#top" aria-label="Jizrak — جِذرك">
+      <a className="a-brand" href="/#top" aria-label="Jizrak — جِذرك">
         Jizrak
       </a>
       <nav className="a-desktop" aria-label={labels.mainNav}>
         {nav.map((item) => (
           <a
             key={item.id}
-            href={`/apple#${item.id}`}
+            href={`/#${item.id}`}
             aria-current={activeSection === item.id ? "location" : undefined}
           >
             {item[locale]}
@@ -368,7 +368,7 @@ function Navigation() {
           }}
         >
           {nav.map((item) => (
-            <a key={item.id} href={`/apple#${item.id}`}>
+            <a key={item.id} href={`/#${item.id}`}>
               {item[locale]}
             </a>
           ))}
@@ -393,7 +393,7 @@ export function AppleLanding() {
       lang={locale}
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
-      <a className="a-skip" href="/apple#main">
+      <a className="a-skip" href="/#main">
         {ui[locale].translation.skip}
       </a>
       <Navigation />
@@ -455,7 +455,7 @@ export function AppleLanding() {
                 />
               </p>
               <a
-                href={`/apple#${capabilitySection}`}
+                href={`/#${capabilitySection}`}
                 aria-label={`${copy.detail[locale]}: ${
                   section(capabilitySection).heading[locale]
                 }`}
@@ -757,7 +757,7 @@ export function AppleLanding() {
       <footer id="footer" className="a-footer">
         <div className="a-footer-main">
           <div className="a-footer-identity">
-            <a className="a-footer-brand" href="/apple#top" dir="ltr">
+            <a className="a-footer-brand" href="/#top" dir="ltr">
               Jizrak — <span lang="ar">جِذرك</span>
             </a>
             <p>
@@ -772,7 +772,7 @@ export function AppleLanding() {
               <Text text={copy.featureLink} />
             </h2>
             {nav.map((item) => (
-              <a key={item.id} href={`/apple#${item.id}`}>
+              <a key={item.id} href={`/#${item.id}`}>
                 {item[locale]}
               </a>
             ))}
@@ -811,7 +811,7 @@ export function AppleLanding() {
           </div>
           <a
             className="a-footer-top"
-            href="/apple#top"
+            href="/#top"
             aria-label={
               locale === "ar" ? "العودة إلى أعلى الصفحة" : "Back to top"
             }

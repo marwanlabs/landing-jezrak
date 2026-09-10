@@ -66,7 +66,7 @@ for (const s of sections) {
       !text.en
         ? "Empty placeholder"
         : superseded
-          ? "Replaced by candidate-owned chapter copy"
+          ? "Replaced by promoted chapter copy"
           : overridden
             ? "Replaced by operate-body-public"
             : undefined,
@@ -85,7 +85,7 @@ for (const s of sections) {
       restricted
         ? "Internal-only operating detail"
         : s.id === "connected"
-          ? "Replaced by the candidate-owned single-order journey"
+          ? "Replaced by the promoted single-order journey"
           : s.id === "features"
             ? "Duplicate inventory: rendered using named feature groups and public group-17 override"
             : undefined,
@@ -104,7 +104,7 @@ for (const s of sections) {
 const excluded: Record<string, string> = {
   rootSystem: "Root-artwork label; artwork deliberately replaced",
   currentStep:
-    "Root sticky-workflow state; candidate shows every step together",
+    "Root sticky-workflow state; promoted page shows every step together",
   close: "Unused source control label",
   error: "Application error fallback retained unchanged",
 };
@@ -155,14 +155,14 @@ for (const item of nodes)
     item,
     "#top",
     "superseded",
-    "Seven-capability hero explorer replaced by the candidate-owned Store visual",
+    "Seven-capability hero explorer replaced by the promoted Store visual",
   );
 for (const item of workflowNames)
   add(
     item,
     "#connected",
     "superseded",
-    "Replaced by the candidate-owned single-order journey",
+    "Replaced by the promoted single-order journey",
   );
 for (const item of flow) add(item, "#inventory");
 for (const item of diagramCopy.catalogSurfaces)
@@ -170,7 +170,7 @@ for (const item of diagramCopy.catalogSurfaces)
     item,
     "#catalog",
     "superseded",
-    "Consolidated into the candidate-owned selling chapter",
+    "Consolidated into the promoted selling chapter",
   );
 add(diagramCopy.inventoryEquivalent, "#inventory");
 const destinations: Record<string, string> = {
@@ -194,7 +194,7 @@ for (const [key, value] of Object.entries(narrativeCopy))
           ? "expanded"
           : "visible",
       ["sellFlow", "posFlow"].includes(key)
-        ? "Consolidated into the candidate-owned selling chapter"
+        ? "Consolidated into the promoted selling chapter"
         : undefined,
     );
 function addCandidateCopy(value: unknown, destination: string) {

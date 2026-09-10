@@ -26,9 +26,9 @@ The `build:preview` command intentionally uses a noindex review mode. Its local 
 - `src/content/index.ts`: typed content and interface strings.
 - `src/components/BilingualBlock.tsx`: selects one language from paired source data; renders a single semantic heading or text fragment without a duplicate translation.
 - `src/app/preferences.tsx`: first-paint preferences, storage fallback, locale reflow, and theme behavior.
-- `src/sections/Landing.tsx`: the single-page narrative and diagrams.
-- `src/motion/LandingMotion.tsx`: scoped, fail-open GSAP motion and reduced-motion behavior.
-- `e2e/landing.spec.ts`: cross-browser acceptance checks.
+- `src/apple/AppleLanding.tsx`: the sole root landing page and product journey.
+- `e2e/apple.spec.ts`: cross-browser acceptance checks for the promoted root experience.
+- `e2e/landing.spec.ts`: public route-surface checks for the sole root route.
 - `scripts/audit-built.mjs`: local mobile performance observations against port 4000.
 
 Read the [TanStack prerendering documentation](https://tanstack.com/start/latest/docs/framework/react/guide/static-prerendering) and [hosting documentation](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) before changing the adapter. The public copy intentionally omits platform-only recovery operations in accordance with the supplied product-truth rules.

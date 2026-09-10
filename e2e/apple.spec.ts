@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 test("apple is an independent complete journey", async ({ page }) => {
-  await page.goto("/apple");
+  await page.goto("/");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
@@ -120,7 +120,7 @@ for (const locale of ["en", "ar"] as const) {
       (locale) => localStorage.setItem("jizrak.locale", locale),
       locale,
     );
-    await page.goto("/apple");
+    await page.goto("/");
     await page.waitForFunction(
       () => document.documentElement.dataset.hydrated === "true",
     );
@@ -183,7 +183,7 @@ test("native fallback and route-local anchors work without JavaScript", async ({
   browser,
 }) => {
   const page = await browser.newPage({ javaScriptEnabled: false });
-  await page.goto("/apple");
+  await page.goto("/");
 
   await expect(page.locator("h1")).toHaveText(
     "Sell your products. Run your store.",
@@ -208,16 +208,15 @@ test("native fallback and route-local anchors work without JavaScript", async ({
   await page.locator("#group-17 summary").click();
   await expect(page.locator("#group-17 p")).toBeVisible();
   const hrefs = await page
-    .locator('a[href^="/apple#"]')
+    .locator('a[href^="/#"]')
     .evaluateAll((elements) =>
       elements.map((element) => element.getAttribute("href")!),
     );
-  for (const href of hrefs)
-    await expect(page.locator(href.replace("/apple", ""))).toHaveCount(1);
+  for (const href of hrefs) await expect(page.locator(href)).toHaveCount(1);
   await expect(page.locator("link[rel=canonical]")).toHaveCount(1);
   await expect(page.locator("link[rel=canonical]")).toHaveAttribute(
     "href",
-    /\/apple$/,
+    /\/$/,
   );
   await page.close();
 });
@@ -225,7 +224,7 @@ test("mobile navigation dismisses, restores focus and survives rapid input", asy
   page,
 }) => {
   await page.setViewportSize({ width: 375, height: 900 });
-  await page.goto("/apple");
+  await page.goto("/");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
@@ -247,15 +246,15 @@ test("mobile navigation dismisses, restores focus and survives rapid input", asy
   await page.mouse.click(8, 850);
   await expect(page.locator(".a-menu")).not.toHaveAttribute("open", "");
   await trigger.click();
-  await page.locator('.a-menu a[href="/apple#features"]').click();
+  await page.locator('.a-menu a[href="/#features"]').click();
   await expect(page.locator(".a-menu")).not.toHaveAttribute("open", "");
-  await expect(page).toHaveURL(/\/apple#features$/);
+  await expect(page).toHaveURL(/\/#features$/);
 });
 
 test("mobile stories stay within the reading column in both languages", async ({
   page,
 }) => {
-  await page.goto("/apple");
+  await page.goto("/");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
@@ -338,7 +337,7 @@ test("preferences, reading position and presentation remain usable under adverse
     };
   });
   await page.route("**/*.woff2", (route) => route.abort());
-  await page.goto("/apple#inventory");
+  await page.goto("/#inventory");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
@@ -394,17 +393,17 @@ test("client route history preserves root presentation and localized metadata", 
     size: getComputedStyle(el).fontSize,
   }));
   await page.evaluate(() => {
-    history.pushState({}, "", "/apple");
+    history.pushState({}, "", "/#inventory");
     dispatchEvent(new PopStateEvent("popstate"));
   });
   await expect(page.locator(".apple-page")).toBeVisible();
   await expect(page.locator("link[rel=canonical]")).toHaveAttribute(
     "href",
-    /\/apple$/,
+    /\/$/,
   );
   await expect(page).toHaveTitle(title);
   await page.goBack();
-  await expect(page.locator(".landing")).toBeVisible();
+  await expect(page.locator(".apple-page")).toBeVisible();
   await expect(page).toHaveTitle(title);
   expect(
     await page.locator("h1").evaluate((el) => ({
@@ -412,9 +411,9 @@ test("client route history preserves root presentation and localized metadata", 
       size: getComputedStyle(el).fontSize,
     })),
   ).toEqual(before);
-  await expect(page.locator("link[rel=canonical]")).not.toHaveAttribute(
+  await expect(page.locator("link[rel=canonical]")).toHaveAttribute(
     "href",
-    /\/apple$/,
+    /\/$/,
   );
   await page.goForward();
   await expect(page.locator(".apple-page")).toBeVisible();
@@ -423,7 +422,7 @@ test("client route history preserves root presentation and localized metadata", 
 test("section navigation follows the reading position and clears at the introduction", async ({
   page,
 }) => {
-  await page.goto("/apple");
+  await page.goto("/");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
@@ -431,7 +430,7 @@ test("section navigation follows the reading position and clears at the introduc
   await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
   await links.filter({ hasText: "Sell" }).click();
   await expect(
-    page.locator('.a-desktop a[href="/apple#sell"]'),
+    page.locator('.a-desktop a[href="/#sell"]'),
   ).toHaveAttribute("aria-current", "location");
   await page
     .locator("#inventory")
@@ -442,7 +441,7 @@ test("section navigation follows the reading position and clears at the introduc
       ),
     );
   await expect(
-    page.locator('.a-desktop a[href="/apple#operate"]'),
+    page.locator('.a-desktop a[href="/#operate"]'),
   ).toHaveAttribute("aria-current", "location");
   await page.evaluate(() => window.scrollTo(0, 0));
   await expect(page.locator(".a-desktop a[aria-current]")).toHaveCount(0);
@@ -451,7 +450,7 @@ test("section navigation follows the reading position and clears at the introduc
 test("the hero restores the connected commerce capability card", async ({
   page,
 }) => {
-  await page.goto("/apple");
+  await page.goto("/");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
@@ -471,7 +470,7 @@ test("the hero restores the connected commerce capability card", async ({
 test("apple navigation and static workflow rails match their responsive affordances", async ({
   page,
 }) => {
-  await page.goto("/apple");
+  await page.goto("/");
   await page.waitForFunction(
     () => document.documentElement.dataset.hydrated === "true",
   );
