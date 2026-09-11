@@ -29,7 +29,12 @@ export default defineConfig(({ mode, command, isPreview }) => {
     plugins: [
       tanstackStart({
         prerender: { enabled: true, crawlLinks: false, failOnError: true },
-        pages: [{ path: "/" }, { path: "/features" }],
+        pages: [
+          { path: "/" },
+          { path: "/features" },
+          { path: "/login" },
+          { path: "/signup" },
+        ],
       }),
       nitro({
         preset: "node-server",

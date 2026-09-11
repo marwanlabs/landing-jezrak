@@ -11,6 +11,7 @@ import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { metadata, ui, type Locale } from "../content";
 import { featureMetadata } from "../features/content";
+import { authMetadata } from "../auth/content";
 export type Theme = "light" | "dark" | "system";
 export function readLocale(stored: string | null, browser: string): Locale {
   return stored === "ar" || stored === "en"
@@ -85,7 +86,13 @@ export function PreferenceProvider({
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
     void i18n.changeLanguage(locale);
     const pageMetadata =
-      pathname === "/features" ? featureMetadata[locale] : metadata[locale];
+      pathname === "/login"
+        ? authMetadata.login[locale]
+        : pathname === "/signup"
+          ? authMetadata.signup[locale]
+          : pathname === "/features"
+            ? featureMetadata[locale]
+            : metadata[locale];
     document.title = pageMetadata.title;
     document
       .querySelector('meta[name="description"]')

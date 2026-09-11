@@ -22,6 +22,7 @@ import { config } from "../app/config";
 import { StageLine } from "../components/StageLine";
 import { featureGroups, text, type FeatureGroup } from "./content";
 import "./features.css";
+import { mountFeatureMotion } from "./motion";
 
 const topics = [
   { id: "brand", label: text("Make it yours", "هويتك") },
@@ -93,6 +94,7 @@ export function FeatureJourney() {
   useEffect(() => {
     const element = root.current;
     if (!element) return;
+    const cleanMotion = mountFeatureMotion(element);
     let cancelled = false;
     let layout: (() => void) | undefined;
     const mount = () => {
@@ -123,6 +125,7 @@ export function FeatureJourney() {
       .querySelectorAll<HTMLElement>("[data-topic]")
       .forEach((section) => observer.observe(section));
     return () => {
+      cleanMotion();
       cancelled = true;
       script?.removeEventListener("load", mount);
       observer.disconnect();
@@ -497,7 +500,11 @@ export function FeatureJourney() {
                     <bdi>480</bdi> {t("EGP", "ج.م")}
                   </span>
                 </div>
-                <div className="f-stock-ledger" aria-live="polite">
+                <div
+                  className="f-stock-ledger"
+                  aria-live="polite"
+                  key={`${channel}-${step}`}
+                >
                   <div>
                     <span>{t("On hand", "الموجود")}</span>
                     <strong>{onHand}</strong>
@@ -780,7 +787,8 @@ export function FeatureJourney() {
                 <span>{t("One shared location", "موقع مشترك واحد")}</span>
               </div>
               <svg viewBox="0 0 440 100" fill="none" aria-hidden="true">
-                <path d="M220 0V45H95V100M220 45H345V100" pathLength="1" />
+                <path d="M220 0V45H95V100" pathLength="1" />
+                <path d="M220 0V45H345V100" pathLength="1" />
               </svg>
               <div className="f-store-pair">
                 <div>

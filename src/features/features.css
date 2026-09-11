@@ -506,6 +506,36 @@
 .feature-journey .stage-line-dot {
   display: none;
 }
+.feature-journey .stage-line-marker::after {
+  content: "";
+  position: absolute;
+  inset-inline: -12px;
+  height: 2px;
+  background: var(--f-accent);
+  transform: scaleX(var(--stage-progress, 1));
+  transform-origin: left;
+}
+.feature-journey[dir="rtl"] .stage-line-marker::after {
+  transform-origin: right;
+}
+.feature-journey .stage-line-index {
+  z-index: 1;
+  color: var(--f-ink);
+  box-shadow: 0 0 0 calc(var(--stage-progress, 0) * 4px) var(--f-soft);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .feature-journey .stage-line-stage > :first-child {
+    translate: 0 calc((1 - var(--stage-progress, 1)) * 12px);
+  }
+  .f-store-pair > div {
+    translate: 0 calc((1 - var(--diagram-progress, 1)) * 22px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .feature-journey .stage-line-marker::after {
+    transform: none;
+  }
+}
 .f-sell {
   padding-block: 90px;
   background: #173b2c;
@@ -664,8 +694,29 @@
   min-height: 44px;
 }
 .f-sale-story {
+  position: relative;
   padding-inline-start: 30px;
   border-inline-start: 1px solid var(--f-line);
+}
+.f-sale-story::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: -1px;
+  inset-block: 0;
+  width: 2px;
+  background: #d5e4bd;
+  transform: scaleY(var(--story-progress, 1));
+  transform-origin: top;
+}
+.f-story-mark {
+  transition:
+    color 250ms ease,
+    scale 350ms ease;
+  color: var(--f-muted);
+}
+.f-passed .f-story-mark {
+  color: #e2eecd;
+  scale: 1.12;
 }
 .f-sale-story article {
   position: relative;
@@ -787,7 +838,7 @@
   stroke: var(--f-accent);
   stroke-width: 1;
   stroke-dasharray: 1;
-  stroke-dashoffset: calc(1 - clamp(0, var(--sc-p, 1) * 2.5, 1));
+  stroke-dashoffset: calc(1 - var(--diagram-progress, 1));
 }
 .f-store-pair {
   display: grid;
@@ -1025,6 +1076,99 @@ body:has(.f-drawer[open]) {
   }
 }
 @media (prefers-reduced-motion: no-preference) {
+  .f-brand-sheet {
+    transition:
+      background-color 350ms ease,
+      color 350ms ease;
+    animation: f-sheet-arrive 950ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  }
+  .f-brand-slip {
+    animation: f-slip-arrive 850ms 160ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  }
+  .f-stock-ledger strong {
+    animation: f-stock-update 400ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  }
+  .f-stock-ledger > div:nth-child(2) strong {
+    animation-delay: 55ms;
+  }
+  .f-stock-ledger > div:nth-child(3) strong {
+    animation-delay: 110ms;
+  }
+  .f-drawer[open] {
+    animation: f-drawer-enter 320ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  }
+  .feature-journey[dir="rtl"] .f-drawer {
+    --drawer-entry: -35px;
+  }
+  .f-drawer[open]::backdrop {
+    animation: f-backdrop-enter 250ms ease-out both;
+  }
+  .f-reference-list details[open] > :not(summary) {
+    animation: f-enter 260ms ease-out both;
+  }
+  .f-reference-list summary svg {
+    transition: rotate 220ms ease;
+  }
+  @keyframes f-sheet-arrive {
+    from {
+      opacity: 1;
+      scale: 0.9;
+      rotate: -13deg;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+      rotate: -6deg;
+    }
+  }
+  @keyframes f-slip-arrive {
+    from {
+      opacity: 1;
+      translate: 25px 30px;
+      rotate: 10deg;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+      rotate: 3deg;
+    }
+  }
+  @keyframes f-stock-update {
+    from {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes f-branch-draw {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes f-drawer-enter {
+    from {
+      opacity: 1;
+      transform: translateX(var(--drawer-entry, 35px));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes f-backdrop-enter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .f-ready [data-sc-in].sc-in > * {
     animation: f-enter 550ms cubic-bezier(0.23, 1, 0.32, 1) both;
   }
@@ -1033,7 +1177,7 @@ body:has(.f-drawer[open]) {
   }
   @keyframes f-enter {
     from {
-      opacity: 0.5;
+      opacity: 1;
       transform: translateY(14px);
     }
     to {

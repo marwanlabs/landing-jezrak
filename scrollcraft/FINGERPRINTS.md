@@ -30,6 +30,7 @@ changes only grammar and world will fail it.
 |---|---|---|---|---|---|---|---|---|
 | Jizrak connected business | Continuous world | Merchant waypoint map with platform drawer | Layered native commerce diagram | Five worldflight legs, 1.2/1.2/2/1.2/1.2, 7.8vh total | Independent second-store arrival and held onboarding action | Merchant category propagates through storefront, reservation, and close | Forest and silver technical world | 4000 |
 | Jizrak feature guide | Merchant field guide | Sticky topic ribbon and searchable native reference | Editable brand specimen with bounded independent planes | Five natural-flow story chapters plus reference, about 6.6 desktop vh | Expandable capability index and configured next action | Online/counter sample transaction carries stock state into financial arithmetic | Shared forest/silver identity, merchant diagrams | 4100 |
+| Jizrak account entry | Merchant entry desk | Home, locale/theme utilities, reciprocal account links | Stable form beside assembling shop identity | Compact account form; companion illustration below on mobile | Inline validation and honest preview result | Store-name input imprints the shop identity without exposing credentials | Shared forest/limestone identity, technical illustration | 3000 |
 
 First build has no prior rows to clear. Subsequent builds compare against this row.
 
