@@ -290,6 +290,7 @@ export function WorldLanding() {
           <span>{t("jizrak", "جِذرك")}</span>
         </a>
         <div className="w-header-links">
+          <a href="/features">{t("Features", "الميزات")}</a>
           <button onClick={() => openPanel("features")}>
             {t("Explore the platform", "استكشف المنصة")} <Plus size={14} />
           </button>
@@ -814,6 +815,10 @@ export function WorldLanding() {
                 "من إنشاء واجهة متجرك إلى إدارة النشاط الذي تعمل من أجله.",
               )}
             </p>
+            <a href="/features" className="w-primary">
+              {t("Explore the feature story", "استكشف قصة الميزات")}{" "}
+              <ArrowUpRight size={17} />
+            </a>
             <div className="w-feature-details">
               {sections
                 .filter(

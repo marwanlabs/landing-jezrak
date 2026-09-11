@@ -29,6 +29,7 @@ changes only grammar and world will fail it.
 | Build | Grammar | Nav treatment | Hero device | Act-sequence shape | Close pattern | Signature move | World | Port |
 |---|---|---|---|---|---|---|---|---|
 | Jizrak connected business | Continuous world | Merchant waypoint map with platform drawer | Layered native commerce diagram | Five worldflight legs, 1.2/1.2/2/1.2/1.2, 7.8vh total | Independent second-store arrival and held onboarding action | Merchant category propagates through storefront, reservation, and close | Forest and silver technical world | 4000 |
+| Jizrak feature guide | Merchant field guide | Sticky topic ribbon and searchable native reference | Editable brand specimen with bounded independent planes | Five natural-flow story chapters plus reference, about 6.6 desktop vh | Expandable capability index and configured next action | Online/counter sample transaction carries stock state into financial arithmetic | Shared forest/silver identity, merchant diagrams | 4100 |
 
 First build has no prior rows to clear. Subsequent builds compare against this row.
 
@@ -42,6 +43,7 @@ act-count-and-length band. The shared columns are what the next build inherits
 as a constraint, so writing them down is the whole point.
 
 - Jizrak claims the merchant waypoint map, five-leg 7.8vh native commerce world, category-to-reservation carry-through, and independent-store arrival ending. No prior rows share these dimensions.
+- Feature guide claims the topic ribbon, short field-guide sequence, searchable reference ending and transaction-to-record demonstration. It shares Jizrak's identity and native diagram medium with the homepage, but differs on all six structural dimensions.
 
 ---
 

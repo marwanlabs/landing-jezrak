@@ -10,6 +10,7 @@ import {
 import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { metadata, ui, type Locale } from "../content";
+import { featureMetadata } from "../features/content";
 export type Theme = "light" | "dark" | "system";
 export function readLocale(stored: string | null, browser: string): Locale {
   return stored === "ar" || stored === "en"
@@ -49,7 +50,13 @@ function persist(key: string, value: string) {
     /* Session preference remains usable. */
   }
 }
-export function PreferenceProvider({ children }: { children: ReactNode }) {
+export function PreferenceProvider({
+  children,
+  pathname = "/",
+}: {
+  children: ReactNode;
+  pathname?: string;
+}) {
   const [locale, updateLocale] = useState<Locale>("en");
   const [theme, updateTheme] = useState<Theme>("system");
   const [ready, setReady] = useState(false);
@@ -77,16 +84,18 @@ export function PreferenceProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = locale;
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
     void i18n.changeLanguage(locale);
-    document.title = metadata[locale].title;
+    const pageMetadata =
+      pathname === "/features" ? featureMetadata[locale] : metadata[locale];
+    document.title = pageMetadata.title;
     document
       .querySelector('meta[name="description"]')
-      ?.setAttribute("content", metadata[locale].description);
+      ?.setAttribute("content", pageMetadata.description);
     document
       .querySelector('meta[property="og:title"]')
-      ?.setAttribute("content", metadata[locale].title);
+      ?.setAttribute("content", pageMetadata.title);
     document
       .querySelector('meta[property="og:description"]')
-      ?.setAttribute("content", metadata[locale].description);
+      ?.setAttribute("content", pageMetadata.description);
     if (scroll.current) {
       const position = scroll.current;
       const restore = () =>
@@ -103,7 +112,7 @@ export function PreferenceProvider({ children }: { children: ReactNode }) {
       scroll.current = null;
     }
     window.dispatchEvent(new Event("jizrak:reflow"));
-  }, [locale, ready, i18n]);
+  }, [locale, ready, i18n, pathname]);
   useEffect(() => {
     if (!ready) return;
     const media = window.matchMedia("(prefers-color-scheme: dark)");

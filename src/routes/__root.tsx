@@ -3,6 +3,7 @@ import {
   HeadContent,
   Scripts,
   Outlet,
+  useRouterState,
 } from "@tanstack/react-router";
 import { PreferenceProvider, preferenceScript } from "../app/preferences";
 import { metadata, copy } from "../content";
@@ -10,6 +11,16 @@ import { config } from "../app/config";
 import { BilingualBlock } from "../components/BilingualBlock";
 import { Cta } from "../components/Primitives";
 import stylesheet from "../styles/globals.css?url";
+function RootContent() {
+  const pathname = useRouterState({
+    select: (state) => state.location.pathname,
+  });
+  return (
+    <PreferenceProvider pathname={pathname}>
+      <Outlet />
+    </PreferenceProvider>
+  );
+}
 export const Route = createRootRoute({
   head: () => {
     const pageUrl = config.site;
@@ -45,7 +56,6 @@ export const Route = createRootRoute({
           crossOrigin: "anonymous",
         },
         { rel: "stylesheet", href: stylesheet },
-        { rel: "canonical", href: pageUrl },
         { rel: "icon", href: "/icons/favicon.svg", type: "image/svg+xml" },
         { rel: "mask-icon", href: "/icons/mask.svg", color: "#153C2B" },
         { rel: "apple-touch-icon", href: "/icons/apple-touch-icon.png" },
@@ -53,11 +63,7 @@ export const Route = createRootRoute({
       ],
     };
   },
-  component: () => (
-    <PreferenceProvider>
-      <Outlet />
-    </PreferenceProvider>
-  ),
+  component: RootContent,
   shellComponent: ({ children }) => (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>

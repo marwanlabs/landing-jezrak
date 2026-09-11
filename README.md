@@ -32,7 +32,11 @@ The `build:preview` command intentionally uses a noindex review mode. Its local 
 - `e2e/world.spec.ts`: merchant journey, reservation, locale, dialog, and reduced-motion regression checks.
 - `scripts/verify-world.mjs`: visual and accessibility checks for all world waypoints; set `WORLD_URL` for a built preview.
 - `scrollcraft/builds/jizrak-world/`: brief, design contract, and visual verification evidence.
-- `e2e/landing.spec.ts`: public route-surface checks for the sole root route.
+- `src/features/FeatureJourney.tsx`: `/features`, a merchant story with interactive examples and detail drawers.
+- `src/features/content.ts`: bilingual merchant capability groups and documented boundaries from the supplied feature list.
+- `scripts/verify-features.mjs`: final-package visual, accessibility and interaction checks; optional `FEATURE_URL` and `FEATURE_OUT` overrides.
+- `scrollcraft/builds/jizrak-features/`: creative brief, unchanged engine references and verification report. Local screenshots are ignored.
+- `e2e/landing.spec.ts`: public route checks for the root and feature guide, plus retired-route checks.
 - `scripts/audit-built.mjs`: local mobile performance observations against port 4000.
 
 Read the [TanStack prerendering documentation](https://tanstack.com/start/latest/docs/framework/react/guide/static-prerendering) and [hosting documentation](https://tanstack.com/start/latest/docs/framework/react/guide/hosting) before changing the adapter. The public copy intentionally omits platform-only recovery operations in accordance with the supplied product-truth rules.

@@ -7,7 +7,7 @@ export function siteAssets(site: string, review: boolean): Plugin {
     .replaceAll("&", "&amp;")
     .replaceAll('"', "&quot;")
     .replaceAll("<", "&lt;");
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escaped}/</loc></url></urlset>`;
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${escaped}/</loc></url><url><loc>${escaped}/features</loc></url></urlset>`;
   return {
     name: "jizrak-site-assets",
     configureServer(server) {
