@@ -5,12 +5,15 @@ import {
   Outlet,
   useRouterState,
 } from "@tanstack/react-router";
+import { RefreshCw } from "lucide-react";
 import { PreferenceProvider, preferenceScript } from "../app/preferences";
 import { metadata, copy } from "../content";
 import { config } from "../app/config";
 import { BilingualBlock } from "../components/BilingualBlock";
 import { Cta } from "../components/Primitives";
+import { NotFoundPage } from "../components/NotFoundPage";
 import stylesheet from "../styles/globals.css?url";
+const reloadPage = { id: "reload-page", en: "Reload this page", ar: "أعد تحميل الصفحة" };
 function RootContent() {
   const pathname = useRouterState({
     select: (state) => state.location.pathname,
@@ -64,6 +67,7 @@ export const Route = createRootRoute({
     };
   },
   component: RootContent,
+  notFoundComponent: NotFoundPage,
   shellComponent: ({ children }) => (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
@@ -79,11 +83,18 @@ export const Route = createRootRoute({
   errorComponent: () => (
     <PreferenceProvider>
       <main className="container error-page">
-        <BilingualBlock heading="h1" text={copy.error} />
-        <div className="actions">
-          <Cta />
-          <Cta kind="demo" />
-        </div>
+        <section className="error-shell" aria-labelledby="route-error-heading">
+          <div className="error-marker" aria-hidden="true"><RefreshCw size={24} /></div>
+          <BilingualBlock id="route-error-heading" heading="h1" text={copy.error} />
+          <div className="actions">
+            <button className="error-reload" type="button" onClick={() => window.location.reload()}>
+              <RefreshCw size={17} aria-hidden="true" />
+              <BilingualBlock inline text={reloadPage} />
+            </button>
+            <Cta />
+            <Cta kind="demo" />
+          </div>
+        </section>
       </main>
     </PreferenceProvider>
   ),

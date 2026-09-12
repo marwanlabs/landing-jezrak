@@ -93,8 +93,98 @@ img {
   height: auto;
 }
 :focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 5px;
+  outline: 2px solid color-mix(in srgb, var(--focus) 50%, var(--chalk));
+  outline-offset: 2px;
+}
+@media (forced-colors: active) {
+  :focus-visible {
+    outline-color: CanvasText;
+  }
+}
+.select-menu {
+  position: relative;
+  min-width: 0;
+}
+.select-menu-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--chalk);
+  color: var(--ink);
+  font: inherit;
+  text-align: start;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.select-menu-trigger:hover:not(:disabled),
+.select-menu[data-open] .select-menu-trigger {
+  border-color: color-mix(in srgb, var(--focus) 55%, var(--line));
+}
+.select-menu-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.select-menu-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select-menu-icon {
+  color: var(--muted);
+  transition: transform 160ms ease;
+}
+.select-menu[data-open] .select-menu-icon {
+  transform: rotate(180deg);
+}
+.select-menu-popover {
+  position: absolute;
+  z-index: 30;
+  inset-inline: 0;
+  top: calc(100% + 6px);
+  display: grid;
+  gap: 3px;
+  min-width: max-content;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--ink) 18%, transparent);
+  animation: select-menu-in 160ms ease-out both;
+}
+.select-menu-option {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.8125rem;
+  text-align: start;
+  white-space: nowrap;
+}
+.select-menu-option:hover:not(:disabled),
+.select-menu-option[aria-selected="true"] {
+  background: color-mix(in srgb, var(--focus) 16%, var(--chalk));
+}
+.select-menu-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+@keyframes select-menu-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .select-menu-icon,
+  .select-menu-trigger { transition: none; }
+  .select-menu-popover { animation: none; }
 }
 ::selection {
   background: var(--sprout);
@@ -1420,11 +1510,61 @@ h3 {
   margin-block-start: 4px;
 }
 .error-page {
-  padding-block: 100px;
+  display: grid;
+  min-height: min(660px, calc(100vh - 80px));
+  place-items: center;
+  padding-block: clamp(72px, 12vw, 150px);
 }
-.error-page .actions {
-  margin-block-start: 30px;
+.error-shell {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 760px);
+  overflow: hidden;
+  padding: clamp(30px, 6vw, 68px);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--chalk);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--ink) 9%, transparent);
 }
+.error-shell::before,
+.error-shell::after {
+  position: absolute;
+  z-index: -1;
+  width: 220px;
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--focus) 55%, transparent);
+  border-radius: 50%;
+  content: "";
+}
+.error-shell::before { inset: -92px -70px auto auto; }
+.error-shell::after { inset: auto auto -150px -100px; }
+.error-marker {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  aspect-ratio: 1;
+  margin-block-end: 28px;
+  border: 1px solid color-mix(in srgb, var(--focus) 55%, var(--line));
+  border-radius: 14px;
+  color: var(--forest);
+  background: color-mix(in srgb, var(--focus) 10%, var(--chalk));
+}
+.error-page h1 { max-width: 650px; }
+.error-page .actions { margin-block-start: 30px; }
+.error-reload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 52px;
+  padding: 12px 18px;
+  border: 1px solid var(--forest);
+  border-radius: 6px;
+  background: var(--forest);
+  color: var(--on-dark);
+  font: inherit;
+}
+.error-reload:hover { background: color-mix(in srgb, var(--forest) 88%, black); }
 @media (min-width: 1600px) {
   .hero-grid {
     gap: 75px;

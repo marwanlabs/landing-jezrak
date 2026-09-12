@@ -28,9 +28,11 @@ changes only grammar and world will fail it.
 
 | Build | Grammar | Nav treatment | Hero device | Act-sequence shape | Close pattern | Signature move | World | Port |
 |---|---|---|---|---|---|---|---|---|
+| not-found | Recovery poster | Home-linked masthead | Dimensional type with reconnecting root branch | One compact recognition-to-recovery surface | Home and demo links, root sign-off | Branch reconnects across 404 around RootMark | Native brand vector | 4301 |
 | Jizrak connected business | Continuous world | Merchant waypoint map with platform drawer | Layered native commerce diagram | Five worldflight legs, 1.2/1.2/2/1.2/1.2, 7.8vh total | Independent second-store arrival and held onboarding action | Merchant category propagates through storefront, reservation, and close | Forest and silver technical world | 4000 |
 | Jizrak feature guide | Merchant field guide | Sticky topic ribbon and searchable native reference | Editable brand specimen with bounded independent planes | Five natural-flow story chapters plus reference, about 6.6 desktop vh | Expandable capability index and configured next action | Online/counter sample transaction carries stock state into financial arithmetic | Shared forest/silver identity, merchant diagrams | 4100 |
 | Jizrak account entry | Merchant entry desk | Home, locale/theme utilities, reciprocal account links | Stable form beside assembling shop identity | Compact account form; companion illustration below on mobile | Inline validation and honest preview result | Store-name input imprints the shop identity without exposing credentials | Shared forest/limestone identity, technical illustration | 3000 |
+| Jizrak platform workspaces | Live working surface | Persistent workspace rail with governance group | Layered Business context and independent status slip | Task-specific workspaces and five short demo beats | Held result with a connected next action | Sample order becomes a reserved stock unit and an activity record | Existing forest/limestone tokens and native commerce illustration | 4300 |
 
 First build has no prior rows to clear. Subsequent builds compare against this row.
 
@@ -45,6 +47,7 @@ as a constraint, so writing them down is the whole point.
 
 - Jizrak claims the merchant waypoint map, five-leg 7.8vh native commerce world, category-to-reservation carry-through, and independent-store arrival ending. No prior rows share these dimensions.
 - Feature guide claims the topic ribbon, short field-guide sequence, searchable reference ending and transaction-to-record demonstration. It shares Jizrak's identity and native diagram medium with the homepage, but differs on all six structural dimensions.
+- Platform workspaces claim the persistent scope rail, multi-route task sequence, Business-to-Store context layers and order-to-reservation ledger. Shares palette with prior builds; differs on six dimensions from connected-business and feature-guide, five from account-entry (inline outcome shared).
 
 ---
 

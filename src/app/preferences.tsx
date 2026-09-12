@@ -86,13 +86,26 @@ export function PreferenceProvider({
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
     void i18n.changeLanguage(locale);
     const pageMetadata =
-      pathname === "/login"
+      pathname === "/login" || pathname === "/auth/login"
         ? authMetadata.login[locale]
         : pathname === "/signup"
           ? authMetadata.signup[locale]
           : pathname === "/features"
             ? featureMetadata[locale]
-            : metadata[locale];
+            : /^\/(businesses|stores|platform|demo|account|auth)(\/|$)/.test(
+                  pathname,
+                )
+              ? {
+                  title:
+                    locale === "ar"
+                      ? "جِذرك | مساحة العمل"
+                      : "Jizrak | Workspace",
+                  description:
+                    locale === "ar"
+                      ? "أنشطتك ومتاجرك في مساحة عمل واحدة."
+                      : "Your Businesses and Stores in one considered workspace.",
+                }
+              : metadata[locale];
     document.title = pageMetadata.title;
     document
       .querySelector('meta[name="description"]')

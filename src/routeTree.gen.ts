@@ -10,13 +10,39 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AccountRouteImport } from './routes/account'
+import { Route as DemoRouteImport } from './routes/demo'
 import { Route as FeaturesRouteImport } from './routes/features'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as SignupRouteImport } from './routes/signup'
+import { Route as AuthAcceptInviteRouteImport } from './routes/auth.accept-invite'
+import { Route as AuthForgotPasswordRouteImport } from './routes/auth.forgot-password'
+import { Route as AuthLoginRouteImport } from './routes/auth.login'
+import { Route as AuthRecoveryRouteImport } from './routes/auth.recovery'
+import { Route as AuthResetPasswordRouteImport } from './routes/auth.reset-password'
+import { Route as BusinessesIndexRouteImport } from './routes/businesses.index'
+import { Route as BusinessesBusinessIdRouteImport } from './routes/businesses.$businessId'
+import { Route as BusinessesNewRouteImport } from './routes/businesses.new'
+import { Route as PlatformIndexRouteImport } from './routes/platform.index'
+import { Route as PlatformLifecycleRouteImport } from './routes/platform.lifecycle'
+import { Route as PlatformSupportRouteImport } from './routes/platform.support'
+import { Route as StoresIndexRouteImport } from './routes/stores.index'
+import { Route as StoresNewRouteImport } from './routes/stores.new'
+import { Route as PlatformBusinessBusinessIdRouteImport } from './routes/platform.business.$businessId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccountRoute = AccountRouteImport.update({
+  id: '/account',
+  path: '/account',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DemoRoute = DemoRouteImport.update({
+  id: '/demo',
+  path: '/demo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FeaturesRoute = FeaturesRouteImport.update({
@@ -34,39 +60,235 @@ const SignupRoute = SignupRouteImport.update({
   path: '/signup',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthAcceptInviteRoute = AuthAcceptInviteRouteImport.update({
+  id: '/auth/accept-invite',
+  path: '/auth/accept-invite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthForgotPasswordRoute = AuthForgotPasswordRouteImport.update({
+  id: '/auth/forgot-password',
+  path: '/auth/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthLoginRoute = AuthLoginRouteImport.update({
+  id: '/auth/login',
+  path: '/auth/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRecoveryRoute = AuthRecoveryRouteImport.update({
+  id: '/auth/recovery',
+  path: '/auth/recovery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthResetPasswordRoute = AuthResetPasswordRouteImport.update({
+  id: '/auth/reset-password',
+  path: '/auth/reset-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessesIndexRoute = BusinessesIndexRouteImport.update({
+  id: '/businesses/',
+  path: '/businesses/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessesBusinessIdRoute = BusinessesBusinessIdRouteImport.update({
+  id: '/businesses/$businessId',
+  path: '/businesses/$businessId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessesNewRoute = BusinessesNewRouteImport.update({
+  id: '/businesses/new',
+  path: '/businesses/new',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlatformIndexRoute = PlatformIndexRouteImport.update({
+  id: '/platform/',
+  path: '/platform/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlatformLifecycleRoute = PlatformLifecycleRouteImport.update({
+  id: '/platform/lifecycle',
+  path: '/platform/lifecycle',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlatformSupportRoute = PlatformSupportRouteImport.update({
+  id: '/platform/support',
+  path: '/platform/support',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoresIndexRoute = StoresIndexRouteImport.update({
+  id: '/stores/',
+  path: '/stores/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoresNewRoute = StoresNewRouteImport.update({
+  id: '/stores/new',
+  path: '/stores/new',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlatformBusinessBusinessIdRoute =
+  PlatformBusinessBusinessIdRouteImport.update({
+    id: '/platform/business/$businessId',
+    path: '/platform/business/$businessId',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/account': typeof AccountRoute
+  '/demo': typeof DemoRoute
   '/features': typeof FeaturesRoute
   '/login': typeof LoginRoute
   '/signup': typeof SignupRoute
+  '/auth/accept-invite': typeof AuthAcceptInviteRoute
+  '/auth/forgot-password': typeof AuthForgotPasswordRoute
+  '/auth/login': typeof AuthLoginRoute
+  '/auth/recovery': typeof AuthRecoveryRoute
+  '/auth/reset-password': typeof AuthResetPasswordRoute
+  '/businesses/$businessId': typeof BusinessesBusinessIdRoute
+  '/businesses/new': typeof BusinessesNewRoute
+  '/platform/lifecycle': typeof PlatformLifecycleRoute
+  '/platform/support': typeof PlatformSupportRoute
+  '/stores/new': typeof StoresNewRoute
+  '/businesses/': typeof BusinessesIndexRoute
+  '/platform/': typeof PlatformIndexRoute
+  '/stores/': typeof StoresIndexRoute
+  '/platform/business/$businessId': typeof PlatformBusinessBusinessIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/account': typeof AccountRoute
+  '/demo': typeof DemoRoute
   '/features': typeof FeaturesRoute
   '/login': typeof LoginRoute
   '/signup': typeof SignupRoute
+  '/auth/accept-invite': typeof AuthAcceptInviteRoute
+  '/auth/forgot-password': typeof AuthForgotPasswordRoute
+  '/auth/login': typeof AuthLoginRoute
+  '/auth/recovery': typeof AuthRecoveryRoute
+  '/auth/reset-password': typeof AuthResetPasswordRoute
+  '/businesses/$businessId': typeof BusinessesBusinessIdRoute
+  '/businesses/new': typeof BusinessesNewRoute
+  '/platform/lifecycle': typeof PlatformLifecycleRoute
+  '/platform/support': typeof PlatformSupportRoute
+  '/stores/new': typeof StoresNewRoute
+  '/businesses': typeof BusinessesIndexRoute
+  '/platform': typeof PlatformIndexRoute
+  '/stores': typeof StoresIndexRoute
+  '/platform/business/$businessId': typeof PlatformBusinessBusinessIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/account': typeof AccountRoute
+  '/demo': typeof DemoRoute
   '/features': typeof FeaturesRoute
   '/login': typeof LoginRoute
   '/signup': typeof SignupRoute
+  '/auth/accept-invite': typeof AuthAcceptInviteRoute
+  '/auth/forgot-password': typeof AuthForgotPasswordRoute
+  '/auth/login': typeof AuthLoginRoute
+  '/auth/recovery': typeof AuthRecoveryRoute
+  '/auth/reset-password': typeof AuthResetPasswordRoute
+  '/businesses/$businessId': typeof BusinessesBusinessIdRoute
+  '/businesses/new': typeof BusinessesNewRoute
+  '/platform/lifecycle': typeof PlatformLifecycleRoute
+  '/platform/support': typeof PlatformSupportRoute
+  '/stores/new': typeof StoresNewRoute
+  '/businesses/': typeof BusinessesIndexRoute
+  '/platform/': typeof PlatformIndexRoute
+  '/stores/': typeof StoresIndexRoute
+  '/platform/business/$businessId': typeof PlatformBusinessBusinessIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/features' | '/login' | '/signup'
+  fullPaths:
+    | '/'
+    | '/account'
+    | '/demo'
+    | '/features'
+    | '/login'
+    | '/signup'
+    | '/auth/accept-invite'
+    | '/auth/forgot-password'
+    | '/auth/login'
+    | '/auth/recovery'
+    | '/auth/reset-password'
+    | '/businesses/$businessId'
+    | '/businesses/new'
+    | '/platform/lifecycle'
+    | '/platform/support'
+    | '/stores/new'
+    | '/businesses/'
+    | '/platform/'
+    | '/stores/'
+    | '/platform/business/$businessId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/features' | '/login' | '/signup'
-  id: '__root__' | '/' | '/features' | '/login' | '/signup'
+  to:
+    | '/'
+    | '/account'
+    | '/demo'
+    | '/features'
+    | '/login'
+    | '/signup'
+    | '/auth/accept-invite'
+    | '/auth/forgot-password'
+    | '/auth/login'
+    | '/auth/recovery'
+    | '/auth/reset-password'
+    | '/businesses/$businessId'
+    | '/businesses/new'
+    | '/platform/lifecycle'
+    | '/platform/support'
+    | '/stores/new'
+    | '/businesses'
+    | '/platform'
+    | '/stores'
+    | '/platform/business/$businessId'
+  id:
+    | '__root__'
+    | '/'
+    | '/account'
+    | '/demo'
+    | '/features'
+    | '/login'
+    | '/signup'
+    | '/auth/accept-invite'
+    | '/auth/forgot-password'
+    | '/auth/login'
+    | '/auth/recovery'
+    | '/auth/reset-password'
+    | '/businesses/$businessId'
+    | '/businesses/new'
+    | '/platform/lifecycle'
+    | '/platform/support'
+    | '/stores/new'
+    | '/businesses/'
+    | '/platform/'
+    | '/stores/'
+    | '/platform/business/$businessId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AccountRoute: typeof AccountRoute
+  DemoRoute: typeof DemoRoute
   FeaturesRoute: typeof FeaturesRoute
   LoginRoute: typeof LoginRoute
   SignupRoute: typeof SignupRoute
+  AuthAcceptInviteRoute: typeof AuthAcceptInviteRoute
+  AuthForgotPasswordRoute: typeof AuthForgotPasswordRoute
+  AuthLoginRoute: typeof AuthLoginRoute
+  AuthRecoveryRoute: typeof AuthRecoveryRoute
+  AuthResetPasswordRoute: typeof AuthResetPasswordRoute
+  BusinessesBusinessIdRoute: typeof BusinessesBusinessIdRoute
+  BusinessesNewRoute: typeof BusinessesNewRoute
+  PlatformLifecycleRoute: typeof PlatformLifecycleRoute
+  PlatformSupportRoute: typeof PlatformSupportRoute
+  StoresNewRoute: typeof StoresNewRoute
+  BusinessesIndexRoute: typeof BusinessesIndexRoute
+  PlatformIndexRoute: typeof PlatformIndexRoute
+  StoresIndexRoute: typeof StoresIndexRoute
+  PlatformBusinessBusinessIdRoute: typeof PlatformBusinessBusinessIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -76,6 +298,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/account': {
+      id: '/account'
+      path: '/account'
+      fullPath: '/account'
+      preLoaderRoute: typeof AccountRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/demo': {
+      id: '/demo'
+      path: '/demo'
+      fullPath: '/demo'
+      preLoaderRoute: typeof DemoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/features': {
@@ -99,14 +335,128 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SignupRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/auth/accept-invite': {
+      id: '/auth/accept-invite'
+      path: '/auth/accept-invite'
+      fullPath: '/auth/accept-invite'
+      preLoaderRoute: typeof AuthAcceptInviteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth/forgot-password': {
+      id: '/auth/forgot-password'
+      path: '/auth/forgot-password'
+      fullPath: '/auth/forgot-password'
+      preLoaderRoute: typeof AuthForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth/login': {
+      id: '/auth/login'
+      path: '/auth/login'
+      fullPath: '/auth/login'
+      preLoaderRoute: typeof AuthLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth/recovery': {
+      id: '/auth/recovery'
+      path: '/auth/recovery'
+      fullPath: '/auth/recovery'
+      preLoaderRoute: typeof AuthRecoveryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth/reset-password': {
+      id: '/auth/reset-password'
+      path: '/auth/reset-password'
+      fullPath: '/auth/reset-password'
+      preLoaderRoute: typeof AuthResetPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/businesses/': {
+      id: '/businesses/'
+      path: '/businesses'
+      fullPath: '/businesses/'
+      preLoaderRoute: typeof BusinessesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/businesses/$businessId': {
+      id: '/businesses/$businessId'
+      path: '/businesses/$businessId'
+      fullPath: '/businesses/$businessId'
+      preLoaderRoute: typeof BusinessesBusinessIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/businesses/new': {
+      id: '/businesses/new'
+      path: '/businesses/new'
+      fullPath: '/businesses/new'
+      preLoaderRoute: typeof BusinessesNewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/platform/': {
+      id: '/platform/'
+      path: '/platform'
+      fullPath: '/platform/'
+      preLoaderRoute: typeof PlatformIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/platform/lifecycle': {
+      id: '/platform/lifecycle'
+      path: '/platform/lifecycle'
+      fullPath: '/platform/lifecycle'
+      preLoaderRoute: typeof PlatformLifecycleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/platform/support': {
+      id: '/platform/support'
+      path: '/platform/support'
+      fullPath: '/platform/support'
+      preLoaderRoute: typeof PlatformSupportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stores/': {
+      id: '/stores/'
+      path: '/stores'
+      fullPath: '/stores/'
+      preLoaderRoute: typeof StoresIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stores/new': {
+      id: '/stores/new'
+      path: '/stores/new'
+      fullPath: '/stores/new'
+      preLoaderRoute: typeof StoresNewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/platform/business/$businessId': {
+      id: '/platform/business/$businessId'
+      path: '/platform/business/$businessId'
+      fullPath: '/platform/business/$businessId'
+      preLoaderRoute: typeof PlatformBusinessBusinessIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AccountRoute: AccountRoute,
+  DemoRoute: DemoRoute,
   FeaturesRoute: FeaturesRoute,
   LoginRoute: LoginRoute,
   SignupRoute: SignupRoute,
+  AuthAcceptInviteRoute: AuthAcceptInviteRoute,
+  AuthForgotPasswordRoute: AuthForgotPasswordRoute,
+  AuthLoginRoute: AuthLoginRoute,
+  AuthRecoveryRoute: AuthRecoveryRoute,
+  AuthResetPasswordRoute: AuthResetPasswordRoute,
+  BusinessesBusinessIdRoute: BusinessesBusinessIdRoute,
+  BusinessesNewRoute: BusinessesNewRoute,
+  PlatformLifecycleRoute: PlatformLifecycleRoute,
+  PlatformSupportRoute: PlatformSupportRoute,
+  StoresNewRoute: StoresNewRoute,
+  BusinessesIndexRoute: BusinessesIndexRoute,
+  PlatformIndexRoute: PlatformIndexRoute,
+  StoresIndexRoute: StoresIndexRoute,
+  PlatformBusinessBusinessIdRoute: PlatformBusinessBusinessIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
