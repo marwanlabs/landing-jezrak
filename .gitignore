@@ -14,3 +14,11 @@ playwright-report/
 
 # Worktrees
 .worktrees/*
+
+# Generated scroll-craft labs and local skill cache
+scrollcraft/builds/*/lab/
+.agents/skills/scroll-craft/
+# Previous scroll-craft build notes and captures not shipped with this page
+scrollcraft/builds/jizrak-workspaces/
+scrollcraft/builds/not-found/
+scrollcraft/builds/jizrak-day/merchant-original.png
