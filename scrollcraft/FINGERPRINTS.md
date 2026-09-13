@@ -71,3 +71,8 @@ If you want to see what a filled-in table looks like, and which shapes tend to
 collide, read `EXAMPLES.md` in the scroll-craft repository. Treat it as
 illustration only: those rows are somebody else's builds and they do **not**
 constrain yours.
+
+## Pricing refinement, 2026-09-12
+
+The stronger-roots page now has an asymmetric Seed/Grow/Canopy pricing catalog, a live configured order-cost estimate and native capacity/feature disclosures. This is a section refinement, retaining the existing navigation, hero and close; it is not a new full-site fingerprint candidate. Brief and verification: builds/pricing-refinement/.
+

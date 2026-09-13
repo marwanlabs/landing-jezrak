@@ -18,6 +18,7 @@ import {
   Check,
   Leaf,
   Compass,
+  SlidersHorizontal,
 } from "lucide-react";
 import { usePreferences } from "../app/preferences";
 import { useSampleData, type Translate } from "./model";
@@ -25,6 +26,7 @@ import { BusinessPages } from "./BusinessPages";
 import { Governance } from "./Governance";
 import { Identity } from "./Identity";
 import { Demo } from "./Demo";
+import { PricingEditor } from "../pricing/PricingEditor";
 import "./workspace.css";
 
 export function Button({
@@ -208,6 +210,11 @@ export function Workspace() {
       label: t("Support access", "صلاحيات الدعم"),
       icon: LifeBuoy,
     },
+    {
+      href: "/platform/pricing",
+      label: t("Pricing", "الأسعار"),
+      icon: SlidersHorizontal,
+    },
   ];
   useEffect(() => {
     const element = root.current;
@@ -380,6 +387,8 @@ export function Workspace() {
         <main id="workspace-main" className="ws-main" key={path}>
           {path === "/demo" ? (
             <Demo t={t} />
+          ) : path === "/platform/pricing" ? (
+            <PricingEditor />
           ) : path.startsWith("/platform") ? (
             <Governance path={path} data={data} t={t} ar={ar} />
           ) : path === "/account" || path.startsWith("/auth/") ? (

@@ -25,6 +25,7 @@ import { Route as BusinessesBusinessIdRouteImport } from './routes/businesses.$b
 import { Route as BusinessesNewRouteImport } from './routes/businesses.new'
 import { Route as PlatformIndexRouteImport } from './routes/platform.index'
 import { Route as PlatformLifecycleRouteImport } from './routes/platform.lifecycle'
+import { Route as PlatformPricingRouteImport } from './routes/platform.pricing'
 import { Route as PlatformSupportRouteImport } from './routes/platform.support'
 import { Route as StoresIndexRouteImport } from './routes/stores.index'
 import { Route as StoresNewRouteImport } from './routes/stores.new'
@@ -110,6 +111,11 @@ const PlatformLifecycleRoute = PlatformLifecycleRouteImport.update({
   path: '/platform/lifecycle',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PlatformPricingRoute = PlatformPricingRouteImport.update({
+  id: '/platform/pricing',
+  path: '/platform/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlatformSupportRoute = PlatformSupportRouteImport.update({
   id: '/platform/support',
   path: '/platform/support',
@@ -147,6 +153,7 @@ export interface FileRoutesByFullPath {
   '/businesses/$businessId': typeof BusinessesBusinessIdRoute
   '/businesses/new': typeof BusinessesNewRoute
   '/platform/lifecycle': typeof PlatformLifecycleRoute
+  '/platform/pricing': typeof PlatformPricingRoute
   '/platform/support': typeof PlatformSupportRoute
   '/stores/new': typeof StoresNewRoute
   '/businesses/': typeof BusinessesIndexRoute
@@ -169,6 +176,7 @@ export interface FileRoutesByTo {
   '/businesses/$businessId': typeof BusinessesBusinessIdRoute
   '/businesses/new': typeof BusinessesNewRoute
   '/platform/lifecycle': typeof PlatformLifecycleRoute
+  '/platform/pricing': typeof PlatformPricingRoute
   '/platform/support': typeof PlatformSupportRoute
   '/stores/new': typeof StoresNewRoute
   '/businesses': typeof BusinessesIndexRoute
@@ -192,6 +200,7 @@ export interface FileRoutesById {
   '/businesses/$businessId': typeof BusinessesBusinessIdRoute
   '/businesses/new': typeof BusinessesNewRoute
   '/platform/lifecycle': typeof PlatformLifecycleRoute
+  '/platform/pricing': typeof PlatformPricingRoute
   '/platform/support': typeof PlatformSupportRoute
   '/stores/new': typeof StoresNewRoute
   '/businesses/': typeof BusinessesIndexRoute
@@ -216,6 +225,7 @@ export interface FileRouteTypes {
     | '/businesses/$businessId'
     | '/businesses/new'
     | '/platform/lifecycle'
+    | '/platform/pricing'
     | '/platform/support'
     | '/stores/new'
     | '/businesses/'
@@ -238,6 +248,7 @@ export interface FileRouteTypes {
     | '/businesses/$businessId'
     | '/businesses/new'
     | '/platform/lifecycle'
+    | '/platform/pricing'
     | '/platform/support'
     | '/stores/new'
     | '/businesses'
@@ -260,6 +271,7 @@ export interface FileRouteTypes {
     | '/businesses/$businessId'
     | '/businesses/new'
     | '/platform/lifecycle'
+    | '/platform/pricing'
     | '/platform/support'
     | '/stores/new'
     | '/businesses/'
@@ -283,6 +295,7 @@ export interface RootRouteChildren {
   BusinessesBusinessIdRoute: typeof BusinessesBusinessIdRoute
   BusinessesNewRoute: typeof BusinessesNewRoute
   PlatformLifecycleRoute: typeof PlatformLifecycleRoute
+  PlatformPricingRoute: typeof PlatformPricingRoute
   PlatformSupportRoute: typeof PlatformSupportRoute
   StoresNewRoute: typeof StoresNewRoute
   BusinessesIndexRoute: typeof BusinessesIndexRoute
@@ -405,6 +418,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PlatformLifecycleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/platform/pricing': {
+      id: '/platform/pricing'
+      path: '/platform/pricing'
+      fullPath: '/platform/pricing'
+      preLoaderRoute: typeof PlatformPricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/platform/support': {
       id: '/platform/support'
       path: '/platform/support'
@@ -451,6 +471,7 @@ const rootRouteChildren: RootRouteChildren = {
   BusinessesBusinessIdRoute: BusinessesBusinessIdRoute,
   BusinessesNewRoute: BusinessesNewRoute,
   PlatformLifecycleRoute: PlatformLifecycleRoute,
+  PlatformPricingRoute: PlatformPricingRoute,
   PlatformSupportRoute: PlatformSupportRoute,
   StoresNewRoute: StoresNewRoute,
   BusinessesIndexRoute: BusinessesIndexRoute,

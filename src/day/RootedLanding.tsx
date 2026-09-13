@@ -21,6 +21,7 @@ import { RootMark } from "../components/Primitives";
 import { StageLine } from "../components/StageLine";
 import { pair } from "../content";
 import { roots, trust } from "./content";
+import { PricingSection } from "../pricing/PricingSection";
 import "./rooted.css";
 
 const stages = [
@@ -170,6 +171,7 @@ export function RootedLanding() {
         >
           <a href="#roots">{t("The root system", "منظومة الجذور")}</a>
           <a href="/features">{t("Features", "المزايا")}</a>
+          <a href="#pricing">{t("Pricing", "الأسعار")}</a>
           <a href={demoHref}>{t("Explore the demo", "استكشف التجربة")}</a>
         </nav>
         <div className="rd-utilities">
@@ -229,6 +231,9 @@ export function RootedLanding() {
             {t("The root system", "منظومة الجذور")}
           </a>
           <a href="/features">{t("All features", "كل المزايا")}</a>
+          <a href="#pricing" onClick={() => setMenu(false)}>
+            {t("Pricing", "الأسعار")}
+          </a>
           <a href={demoHref}>{t("Explore the demo", "استكشف التجربة")}</a>
           <a href={config.signin}>{t("Sign in", "تسجيل الدخول")}</a>
           <a href={config.start}>{startText}</a>
@@ -614,6 +619,8 @@ export function RootedLanding() {
           </div>
         </section>
 
+        <PricingSection />
+
         <section
           className="rd-close"
           aria-labelledby="rd-close-title"
@@ -648,6 +655,7 @@ export function RootedLanding() {
             </span>
             <nav aria-label={t("Footer navigation", "روابط التذييل")}>
               <a href="/features">{t("Features", "المزايا")}</a>
+              <a href="#pricing">{t("Pricing", "الأسعار")}</a>
               <a href={demoHref}>{t("Demo", "التجربة")}</a>
               {config.privacy && (
                 <a href={config.privacy}>{t("Privacy", "الخصوصية")}</a>
