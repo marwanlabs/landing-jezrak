@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MapPin, Minus, Plus, Store, UsersRound } from "lucide-react";
+import { Check, MapPin, Store, UsersRound, X } from "lucide-react";
 import { usePreferences } from "../app/preferences";
 import { Heading, Notice } from "../workspace/Workspace";
 import {
@@ -30,12 +30,48 @@ const extraResources = [
 ] as const;
 
 const planFields = [
-  { field: "monthlyPrice", en: "Monthly price", ar: "السعر الشهري", type: "money", unit: "EGP" },
-  { field: "completedOrderFee", en: "Completed-order fee", ar: "رسوم الطلب المكتمل", type: "money", unit: "EGP" },
-  { field: "includedStores", en: "Included stores", ar: "المتاجر المشمولة", type: "quantity", unit: null },
-  { field: "includedLocations", en: "Included locations", ar: "المواقع المشمولة", type: "quantity", unit: null },
-  { field: "includedStaff", en: "Included staff", ar: "الموظفون المشمولون", type: "quantity", unit: null },
-  { field: "includedDomains", en: "Included managed domains", ar: "النطاقات المُدارة", type: "quantity", unit: null },
+  {
+    field: "monthlyPrice",
+    en: "Monthly price",
+    ar: "السعر الشهري",
+    type: "money",
+    unit: "EGP",
+  },
+  {
+    field: "completedOrderFee",
+    en: "Completed-order fee",
+    ar: "رسوم الطلب المكتمل",
+    type: "money",
+    unit: "EGP",
+  },
+  {
+    field: "includedStores",
+    en: "Included stores",
+    ar: "المتاجر المشمولة",
+    type: "quantity",
+    unit: null,
+  },
+  {
+    field: "includedLocations",
+    en: "Included locations",
+    ar: "المواقع المشمولة",
+    type: "quantity",
+    unit: null,
+  },
+  {
+    field: "includedStaff",
+    en: "Included staff",
+    ar: "الموظفون المشمولون",
+    type: "quantity",
+    unit: null,
+  },
+  {
+    field: "includedDomains",
+    en: "Included managed domains",
+    ar: "النطاقات المُدارة",
+    type: "quantity",
+    unit: null,
+  },
 ] as const satisfies ReadonlyArray<{
   field: keyof PlanPricing;
   en: string;
@@ -43,6 +79,15 @@ const planFields = [
   type: "money" | "quantity";
   unit: "EGP" | null;
 }>;
+
+const seedAddOnCatalog = {
+  pos: { en: "Point of sale", ar: "نقطة البيع" },
+  purchasing: { en: "Purchasing", ar: "المشتريات" },
+  advanced_inventory: { en: "Advanced inventory", ar: "المخزون المتقدم" },
+  finance: { en: "Finance", ar: "المالية" },
+  growth_tools: { en: "Growth tools", ar: "أدوات النمو" },
+  advanced_analytics: { en: "Advanced analytics", ar: "التحليلات المتقدمة" },
+} as const;
 
 export function PricingEditor() {
   const { locale } = usePreferences();
@@ -188,26 +233,33 @@ export function PricingEditor() {
           <h2>{ar ? "أسعار الخطط والحدود" : "Plan pricing and limits"}</h2>
           {draft.plans.map((plan) => (
             <fieldset className="pricing-plan-card" key={plan.code}>
-              <legend>
-                <span>{planCatalog[plan.code].name[ar ? "ar" : "en"]}</span>
-                <small>{planCatalog[plan.code].descriptor[ar ? "ar" : "en"]}</small>
+              <legend className="pricing-plan-heading">
+                <span className="pricing-plan-name">
+                  {planCatalog[plan.code].name[ar ? "ar" : "en"]}
+                </span>
+                <small>
+                  {planCatalog[plan.code].descriptor[ar ? "ar" : "en"]}
+                </small>
               </legend>
               <div className="editor-grid">
-                {planFields.map(({ field, en, ar: arabic, type, unit }) => (
-                  <label key={field}>
-                    <span className="editor-field-label">{ar ? arabic : en}</span>
-                    <input
-                      className={type === "money" ? "editor-money-input" : ""}
-                      type="number"
-                      inputMode="numeric"
-                      min="0"
-                      step="1"
-                      value={Number.isNaN(plan[field]) ? "" : plan[field]}
-                      onChange={(e) =>
-                        updatePlan(plan.code, field, e.target.value)
-                      }
-                    />
-                    {unit && <span className="editor-input-unit">{unit}</span>}
+                {planFields.map(({ field, en, ar: arabic, unit }) => (
+                  <label className="editor-field" key={field}>
+                    <span className="editor-field-label">
+                      {ar ? arabic : en}
+                    </span>
+                    <span className="pricing-money-input editor-number-input">
+                      <input
+                        type="number"
+                        inputMode="numeric"
+                        min="0"
+                        step="1"
+                        value={Number.isNaN(plan[field]) ? "" : plan[field]}
+                        onChange={(e) =>
+                          updatePlan(plan.code, field, e.target.value)
+                        }
+                      />
+                      <span>{unit ?? (ar ? "مشمول" : "included")}</span>
+                    </span>
                   </label>
                 ))}
               </div>
@@ -274,9 +326,9 @@ export function PricingEditor() {
                           aria-hidden="true"
                         >
                           {resource.enabled ? (
-                            <Plus size={14} strokeWidth={2.4} />
+                            <Check size={14} strokeWidth={2.4} />
                           ) : (
-                            <Minus size={14} strokeWidth={2.4} />
+                            <X size={14} strokeWidth={2.4} />
                           )}
                           {resource.enabled
                             ? ar
@@ -326,34 +378,48 @@ export function PricingEditor() {
         </section>
         <section className="ws-panel">
           <h2>{ar ? `إضافات ${planCatalog.seed.name.ar}` : "Seed add-ons"}</h2>
-          <div className="editor-grid">
+          <p className="pricing-editor-intro">
+            {ar
+              ? "الرسوم الشهرية للميزات الاختيارية المتاحة فقط لخطة البذرة."
+              : "Monthly fees for optional features available only with the Seed plan."}
+          </p>
+          <div className="editor-grid pricing-addon-grid">
             {draft.seedAddOns.map((addon) => (
-              <label key={addon.code}>
-                {addon.code.replaceAll("_", " ")}
-                <input
-                  type="number"
-                  inputMode="numeric"
-                  min="0"
-                  step="1"
-                  value={addon.monthlyPrice}
-                  onChange={(e) =>
-                    setDraft({
-                      ...draft,
-                      seedAddOns: draft.seedAddOns.map((a) =>
-                        a.code === addon.code
-                          ? {
-                              ...a,
-                              monthlyPrice:
-                                e.target.value === ""
-                                  ? Number.NaN
-                                  : Number(e.target.value),
-                            }
-                          : a,
-                      ),
-                    })
-                  }
-                />
-                <span>EGP / month</span>
+              <label
+                className="editor-field pricing-addon-field"
+                key={addon.code}
+              >
+                <span className="editor-field-label">
+                  {seedAddOnCatalog[addon.code][ar ? "ar" : "en"]}
+                </span>
+                <span className="pricing-money-input editor-number-input">
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    min="0"
+                    step="1"
+                    value={
+                      Number.isNaN(addon.monthlyPrice) ? "" : addon.monthlyPrice
+                    }
+                    onChange={(e) =>
+                      setDraft({
+                        ...draft,
+                        seedAddOns: draft.seedAddOns.map((a) =>
+                          a.code === addon.code
+                            ? {
+                                ...a,
+                                monthlyPrice:
+                                  e.target.value === ""
+                                    ? Number.NaN
+                                    : Number(e.target.value),
+                              }
+                            : a,
+                        ),
+                      })
+                    }
+                  />
+                  <span>{ar ? "جنيه / شهر" : "EGP / month"}</span>
+                </span>
               </label>
             ))}
           </div>
